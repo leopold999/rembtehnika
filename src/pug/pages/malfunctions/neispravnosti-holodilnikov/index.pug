@@ -1,0 +1,110 @@
+extends ../../../layout/repair_page_layout.pug
+
+block variables
+  - var title = 'Неисправности холодильников'
+  - var descriptionContent = 'Устранение любых неисправностей холодильников в кратчайшие сроки'
+block head
+  
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    'Неисправности холодильников': '#',
+  })
+  .repair-page-text-section
+    H1.page-title-h1(itemprop="name")=title
+  .repair-page-list-wrapper
+    -var pathToImg = domen + '/assets/img/pictures/repair-img/fridges/'
+    ul.repair-page-list-container
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'hol-gromko-rabotaet' + '.webp' alt='Холодильник громко работает')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-holodilnikov' + '/holodilnik-gromko-rabotaet' + '.html') Холодильник громко работает
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'hol-gudit' + '.webp'  alt='Холодильник гудит')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-holodilnikov/' + 'holodilnik-gudit' + '.html') Холодильник гудит
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'hol-ne-morozit' + '.webp' alt='Холодильник не морозит')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-holodilnikov/' + 'holodilnik-ne-morozit' + '.html') Холодильник не морозит
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'hol-ne-otkluchaetsa' + '.webp' alt='Холодильник не отключается')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-holodilnikov/' + 'holodilnik-ne-otklyuchaetsya' + '.html') Холодильник не отключается
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'hol-ne-vkluchaetsa' + '.webp' alt='Холодильник не включается')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-holodilnikov/' + 'holodilnik-ne-vklyuchaetsya' + '.html') Холодильник не включается
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'hol-pishit' + '.webp' alt='Холодильник пищит')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-holodilnikov/' + 'holodilnik-pishchit' + '.html') Холодильник пищит
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'hol-ploho-morozit' + '.webp' alt='Холодильник плохо морозит')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-holodilnikov/' + 'holodilnik-ploho-morozit' + '.html') Холодильник плохо морозит
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'hol-pokazivaet-oshibka' + '.webp' alt='Холодильник показывает ошибку')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-holodilnikov/' + 'holodilnik-pokazyvaet-oshibku' + '.html') Холодильник показывает ошибку
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'hol-shelkaet' + '.webp' alt='Холодильник щелкает')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-holodilnikov/' + 'holodilnik-shchelkaet' + '.html') Холодильник щелкает
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'hol-silno-morozit' + '.webp' alt='Холодильник сильно морозит')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-holodilnikov/' + 'holodilnik-silno-morozit' + '.html') Холодильник сильно морозит
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'hol-plachet' + '.webp' alt='Холодильник течет')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-holodilnikov/' + 'holodilnik-techet' + '.html') Холодильник течет
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'hol-vkluchaetsa-i-otkluchaetsa' + '.webp' alt='Холодильник выключается и сразу отключается')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-holodilnikov/' + 'holodilnik-vklyuchaetsya-i-srazu-otklyuchaetsya' + '.html') Холодильник выключается и сразу отключается
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'hol-vibivaet-avtomat' + '.webp' alt='Холодильник выбивает автомат')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-holodilnikov/' + 'holodilnik-vybivaet-avtomat' + '.html') Холодильник выбивает автомат
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'hol-led-v-holodilke' + '.webp' alt='Лёд в холодильной камере' )
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-holodilnikov/' + 'led-v-kamere-holodilnika' + '.html') Лёд в холодильной камере
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'hol-led-v-morozilke' + '.webp' alt='Лёд в морозильной камере')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-holodilnikov/' + 'led-v-morozilnoj-kamere' + '.html') Лёд в морозильной камере
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'hol-ne-ohl-holodilka' + '.webp' alt='Не работает холодильная камера')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-holodilnikov/' + 'ne-rabotaet-holodilnaya-kamera' + '.html') Не работает холодильная камера
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'hol-ne-rabotaet-morozilka' + '.webp' alt='Не работает морозилка')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-holodilnikov/' + 'ne-rabotaet-morozilka' + '.html') Не работает морозилка
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'hol-voda-v-holodilnike' + '.webp' alt='Вода в холодильнике')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-holodilnikov/' + 'voda-v-holodilnike' + '.html') Вода в холодильнике
+
+
+

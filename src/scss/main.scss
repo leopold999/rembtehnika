@@ -1,0 +1,96 @@
+@import "../blocks/page-blocks/page-blocks.scss";
+@import "../vars/vars.scss";
+@import "../mixins/mixins.scss";
+@import "../blocks/elements/elements.scss";
+@import "../fonts/fonts.scss";
+@import "./pages/landing-page/landing-page.scss";
+@import "./pages/repair-page/repair-page.scss";
+@import "./pages/articles-page/articles-page.scss";
+@import "./pages/errors-page/errors-page.scss";
+@import "./pages/reviews-page/reviews-page.scss";
+@import "./pages/education-page/education-page.scss";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+H1, H2, H3, p {
+    all: none;
+
+}
+
+html { 
+    
+
+    font-size: 22px;
+    scroll-behavior: smooth;
+    min-width: $minWidth;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 24px;
+    }
+    @media screen and (max-width: 1200px) and (min-width: 1000px) {
+        font-size: 23px;
+    }
+    // @media screen and (max-width: 1000px) and (min-width: 800px) {
+    //     font-size: 22px;
+    // }
+    @media screen and (max-width: 800px) {
+        font-size: 22px;
+    }
+    
+}
+   
+body {
+    margin: 0;
+    padding: 0;
+    position: relative !important;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+a {
+    color: inherit;
+}
+input {outline:none !important;}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.content-wrapper {
+    max-width: $maxWidth;
+    width: 100%;
+    // width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    // display: flex;
+    // position: relative;
+    
+
+}
+.content {
+    // position: relative;
+    min-width: $minWidth;
+    // max-width: $maxWidth;
+    // width: 100%;
+    height: 100%;
+    width: 100%;
+   
+    
+    
+
+    // min-width: 800px;
+    // max-width: 1200px;
+    // width: 100%;
+    // margin: auto;
+}

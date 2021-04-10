@@ -1,0 +1,526 @@
+@import "../../../vars/vars.scss";
+@import "../../../mixins/mixins.scss";
+
+@import "../../../js/plugins/CodeHimMenu/codehim-dropdown.scss";
+@import "../../../js/plugins/CodeHimMenu/animate.scss";
+
+$heightMenu: rem(80);
+
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-width: $minWidth;
+    // height: rem(110);
+    height: auto;
+    // position: fixed;
+    // top: 0;
+    z-index: 9999;
+    box-sizing: border-box;
+    border-bottom: 1px solid $dark25;;
+    position: relative;
+    @media screen and (max-width: 1000px) {  
+        // height: rem(140);
+    }
+    @media screen and (max-width: 800px) {  
+        // height: rem(250);
+    }
+
+
+}
+
+.header-wrapper {
+    box-sizing: border-box; 
+    // max-width: $maxWidth;
+    width: 100%;
+    height: auto;
+    // position: fixed;
+    // top:0;
+    // left: 0;
+
+}
+.header-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box; 
+    background-color: $white;
+    padding-top: $heightMenu;
+}
+
+
+.header-menu-section-wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    // @include justify-center;
+    background-color: $colorMain-1-095;
+    z-index: 9999;
+}
+
+.header-menu-section  {
+    
+    margin: auto;
+    max-width: $maxWidth;
+    height: $heightMenu;
+    @include justify-space-between;
+    
+    box-sizing: border-box; 
+    padding: 0 rem(10);
+    z-index: 9999;
+    @media screen and (max-width: 1024px) {   
+        border-bottom: 1px solid $dark25;  
+    }
+    @media screen and (max-width: 800px) {  
+        // height: rem(80);  
+    }
+
+}
+
+
+
+.menu-open-button {
+    display: none;
+    position: relative;
+    // top: 0;
+    height: rem(50);
+    // height: 100%;
+    @media screen and (max-width: 1024px) { 
+        display: block;
+    }
+    @include fontH2(rem(20));
+    color: $colorTextHeader-1;
+    text-decoration: uppercase;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.services-button {
+    &:before {
+        content: "menu";
+        @include material-icon(rem(50));
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+.menu-button {
+   &:after {
+        content: "menu";
+        @include material-icon(rem(50));
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+.header__logo-section {
+    width: rem(250);
+    height: 100%;
+    box-sizing: border-box;  
+    
+}
+.logo-img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    & a {
+        display: block;
+        width: 100%;
+        height: 100%;
+
+    }
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.main-menu  {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between; 
+    @include fontH2(rem(18), rem(25));
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    z-index: 9999;
+    
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        height: auto;
+        width: rem(500);
+        background-color: $colorMain-1-095;
+        position: absolute;
+        transition: 0.5s;
+        top: rem(80);
+        
+    }
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.menu_invisible {
+    @media screen and (max-width: 1024px) {
+        right: -1000px;
+    }
+}
+.menu_visible {
+
+    @media screen and (max-width: 1024px) {
+        right: 0;
+    }
+}
+
+.main-menu__item {
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 0 rem(30);
+    // width: 100%;
+    width: auto;
+    height: 100%;
+    position: relative;
+    @include justify-center;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 9000;
+    
+    &:hover {
+        background-color: $colorMain-1;
+    }
+    & a {
+        display: block;
+        // white-space: nowrap;
+        text-align: center;
+        vertical-align: center;
+    }
+    @media screen and (max-width: 1280px) {
+        padding: 0 rem(10);
+    }
+    @media screen and (max-width: 1024px) {
+        border-bottom: 1px solid $dark25;
+        width: 100%;
+        padding:  0 !important;
+        height: rem(50);
+        // overflow: hidden;
+        
+
+
+    }
+
+}
+.main-menu__item_home {
+    &:before {
+        content: "home";
+        color: white;
+        @include material-icon(rem(30));
+    }  
+}
+.main-menu__item-drop-list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transition: 0.5s;
+    height: auto;
+    left: 0;
+    top: -400px;
+    // background-color: white;
+    width: 100%;
+    margin: 0;
+    box-sizing: content-box;
+    z-index: 9000;
+  
+
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+}
+.main-menu__item-drop-list_visible {
+    @media screen and (max-width: 1024px) {
+        // bottom: 0;
+        // // transition: 0.5s;
+        top: rem(50);
+        display: block;
+        // z-index: 99999;
+       
+    }
+}
+
+.main-menu__item-arrow {
+    // padding-right: rem(60);
+    
+    position: relative;
+    z-index: 9999;
+    &:after {
+        content: "expand_more";
+        color: white;
+        @include material-icon(rem(30));
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: rem(-15);
+        transition: 0.5s;
+        
+    }
+    &:hover:after {
+        @media screen and (min-width: 1024px) {
+            transform: rotate(180deg);
+            transition: 0.5s;
+        }
+    }
+    &:hover .main-menu__item-drop-list {
+        @media screen and (min-width: 1024px) {
+            top: $heightMenu;
+            transition: 0.5s;
+            z-index: 9999;
+
+           
+        }
+        @media screen and (max-width: 1024px) {
+            // bottom: 0;
+            // // transition: 0.5s;
+            // top: rem(50);
+            // display: block;
+            // z-index: 99999;
+           
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+        padding-right: rem(30);
+    }
+    @media screen and (max-width: 1024px) {
+        padding:  0 !important;
+    }
+}
+
+.drop-list__item {
+    @include justify-center;
+    height: $heightMenu;
+    background-color: $colorMain-1-095;
+    position: relative;
+    z-index: 9999;
+    &:hover {
+        background-color: $colorMain-1;
+    }
+
+    @media screen and (max-width: 1024px) {
+        // @include fontH2(rem(18));
+        font-size: inherit;
+        background-color: $colorMain-1;
+        height: rem(50);
+        width: 100%;
+        font-size: rem(18);
+        text-transform: none;
+    }
+}
+.drop-list__item:not(:last-child) {
+    width: 100%;
+}
+
+//////////////////////////////////////////////
+.header-contacts-section-wrapper {
+    width: 100%;
+    background-color: $colorMain-1-005;
+}
+
+.header-contacts-section {
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    // align-items: center;
+    margin: auto;
+    max-width: $maxWidth;
+    width: 100%;
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "phone1 phone2 callback orders"
+        "info info callback orders";
+    // height: 100%;
+    @include fontBody(rem(15), rem(20));
+    box-sizing: border-box; 
+    z-index: 1;
+    padding: rem(15) rem(30);
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "phone1 phone2"
+            "callback orders"
+            "info info";
+        padding: rem(10);
+    }
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "phone1"
+            "phone2"
+            "callback"
+            "orders"
+            "info";
+        padding: rem(10);
+    }
+}
+.contact-section-item {
+    // @include justify-center;
+    margin: 0 auto;
+    
+}
+
+.contact-section__tel {
+    @include fontH2(rem(30), rem(30));
+    white-space: nowrap;
+    font-weight: bold;
+    position: relative;
+    padding: 0 rem(15) 0 rem(40);
+    z-index: 1;
+    & a {
+        color: $colorMain-1;
+    }  
+    @media screen and (max-width: 1024px) {
+        // padding: rem(10) rem(10) rem(25);
+        // margin-bottom: rem(25);
+    }
+ 
+}
+
+.contact-section__tel:hover:before {
+    animation: contact-tel-animation 1000ms linear infinite;
+}
+
+
+@keyframes contact-tel-animation {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+.phone-number-1 {
+    grid-area: phone1;
+    margin: auto !important;
+    &:before {
+        content: "call";
+        @include material-icon(rem(30));
+        color: $colorMain-1;
+        position: absolute;
+        left: 0;
+    }
+}
+
+.phone-number-2 {
+    grid-area: phone2;
+    margin: auto !important;
+    &:before {
+        content: "phonelink_ring";
+        @include material-icon(rem(30));
+        color: $colorMain-1;
+        position: absolute;
+        left: 0;
+    }
+}
+
+.header-button {
+    margin: auto;
+    width: rem(200);
+    height: rem(50);
+    // margin-right: rem(20);
+    padding: rem(5) rem(10);
+    border: 2px solid $colorMain-1;
+    border-radius: rem(25);
+    @include justify-center;
+    @include fontH2(rem(16), rem(16));
+    white-space: nowrap;
+    color: $colorMain-1;
+    text-transform: uppercase;
+    &:hover {
+        cursor: pointer;
+        background-color: $colorMain-1;
+        color: $white;
+    }
+    @media screen and (max-width: 768px) {
+        margin-bottom: rem(15);
+    }
+}
+
+.contact-section__info {
+    grid-area: info;
+    @include fontBody(rem(18), rem(25));
+    @include justify-center;
+    & p {
+        color: $colorMain-1;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding: rem(8) rem(5) rem(4) ;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+    }
+}
+
+.info-map-button {
+    width: auto;
+    height: auto;
+    padding: rem(5) rem(10);
+    @include fontH3(rem(14), rem(20));
+    @include justify-center;
+    border-radius: rem(15);
+    // background-color: $white;
+    border: 2px solid $colorMain-1;
+    color: $colorMain-1;
+    letter-spacing: 1px;
+    
+    white-space: nowrap;
+    text-align: center;
+    &:hover {
+        background-color: $colorMain-1;
+        color: $white;
+    }
+
+    @media screen and (max-width: 1000px) {
+        width: 30%;
+
+    }
+    @media screen and (max-width: 800px) {
+        width: auto;
+        padding: rem(5) rem(15);
+
+    }
+
+}
+.button-callback {
+    grid-area: callback;
+    
+}
+.button-order {
+    grid-area: orders;
+}

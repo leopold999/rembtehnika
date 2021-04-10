@@ -1,0 +1,248 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Стиральная машина вибрирует' 
+  - var content = 'Причины сильной вибрации стиральной машины могут крыться как внутри устройства, так и в окружающей обстановке. Но, независимо от причины появления вибрации, эксплуатировать аппарат в таком режиме нельзя.'
+  - var pathToImgArticles = domen + '/assets/img/pictures/repair-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    'Неисправности стиральных машин': domen + '/neispravnosti-stiralnyh-mashin/',
+    "Стиральная машина вибрирует": "#"})
+
+  .article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    h1.page-title-h1(itemprop="name")= title 
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-011.webp'
+    })
+    .page-text.page-text-hidden-container(itemprop="articleBody")
+      .page-text-hidden__bgrnd
+      .page-text-hidden__button.page-text-hidden__button_down
+      img.page-img.page-img_float-left( src= pathToImgArticles + "wash-mash/" + "sm-vibriruet" + ".webp" alt= 'Стиральная машина вибрирует' itemprop="image")
+
+      h2.page-title-h2 Причины вибрации стиральной машины
+        
+      h3.page-title-h3 Машина установлена на неровную поверхность.
+      p
+        | В случае, когда пол прогибается, имеет впадины или выпуклости устойчивость машинки нарушается. Результат этого прыгающая или сильно 
+        | вибрирующая стиральная машина
+        | . Нейтрализовать такую проблему можно проверив ножки под агрегатом, которые в процессе стирки могут откручиваться, что всегда вызывает неустойчивость.
+      p Устранить проблему можно закрепив все ножки с помощью контргайки.
+    
+      h3.page-title-h3 Поломка амортизаторов.
+      p
+        | В таких машинах всегда устанавливаются амортизаторы и пружинные механизмы, которые призваны исключить колебания бака и предотвратить его удары в корпус. В результате поломки
+      p
+        | этих механизмов, 
+        | стиральная машина сильно вибрирует и скачет
+        | . Проверить исправность амортизатора, можно просто придвинув к себе бак и отпустив его. В случае если бак легко вернется в исходное положение, можно считать рессоры исправными. Если бак будет колыхаться, амортизаторы нужно заменить.
+      p
+        | Неисправность амортизаторов наступает, обычно при поломке обкладок из пластика, которые отходят от бака и облегают трубки. Из-за того что эти элементы – соединены с баком, они передают
+      p
+        | вибрации на обкладки из пластика, а те в свою очередь на обшивку. В результате 
+        | трясется стиральная машинка
+        | .
+      p
+        | Решить проблему можно заменой обкладок из пластика. Для этого потребуется открутить винты и снять амортизатор с креплений. За счет этого вы отсоедините от корпуса агрегата
+        | амортизатор. Затем нужно снять детали с повреждением и установить новые.
+      p  Монтаж новых обкладок начинается с разжимания П-образных стержней. Для чего можно один отвести рукой, при этом другой придерживать с помощью ноги. Затем следует установить между прутьями новые детали и отвести их назад, ослабив натяжение.
+      h3.page-title-h3 Неисправности противовесов.
+      p
+        | Сильные вибрации стиральных машин при отжиме по причине
+        |  разболтавшихся креплениях противовесов, при их смещении или разрушении возникают часто. Противовесом называют тяжёлый блок, призванный обеспечивать устойчивость агрегата, и предотвращать вибрации. Обычно он выполнен из бетона либо тяжелого пластика.
+      p
+        | Противовесы, подвергаются нагрузкам, поэтому постепенно разваливаются. Также зачастую происходит разбалтывание их креплений, что является причиной того, 
+        | почему стиральные машины начинают сильно вибрировать 
+        | и стучать.
+      p Решение: отрегулировать или заменить крепёжные болты либо сам противовес.
+    
+      h3.page-title-h3 Износ подшипников барабана машинки.
+      p
+        | Часто 
+        | вибрации стиральной машины при отжимах бывают по причине
+        |  разрушенного или заржавевшего подшипника, который временами портится из-за влияния влажной среды. Сначала машинка начинает скрежетать. Затем возникают боковые смещения вала и повышенная вибрация. Использовать машинку с подобными проблемами не рекомендуют, поскольку если подшипник рассыпаться в процессе стирки белья, произойдет повреждение его осколками прочих узлов.
+      p
+        | Когда 
+        | вибрирует стиральная машина при отжимах из-за подшипника, что делать
+        |  вам объяснит мастер. Поскольку самостоятельно демонтировать и устанавливать подшипник не рекомендуют. Этот трудоемкий процесс требует специальных знаний.
+    
+      h3.page-title-h3 Забыли убрать транспортировочные устройства.
+      p
+        | Зачастую, устанавливая стиральную машину самостоятельно, неопытные хозяева забывают удалять транспортировочные болты и не понимают, почему 
+        | стиральная машина начинает вибрировать
+        | . Не стоит забывать, что такое устройство необходимо только при перевозке агрегата. Оно призвано фиксировать барабан в машине, чтоб при доставке его не повредить.
+      p
+        | Решить проблему, можно просто удалив это устройство после транспортировки. Иначе возникнет сильная вибрация, которая в последствие станет причиной быстрого износа многих узлов машины.
+    
+      h3.page-title-h3 Белье в машинке распределено неправильно.
+      p
+        | В этом варианте 
+        | вибрация стиральной машины возникла по причине
+        | , которая устраняется наиболее легко. Для этого нужно просто прервать отжим и разложить все фрагменты белья, так, чтоб они легко распределились перед отжимом.
+      p
+        | Нужно учитывать, что вибрация и прыжки машинки могут, привези не только к поломке самого агрегата, а и к порче мебели, плитки, ванной и так далее. Поэтому если 
+        | стиральная машина сильно вибрирует, что делать 
+        | вам подскажет эта статья или опытный мастер.
+    .page-text
+      h2.page-title-h2 Основные причины неисправности и стоимость их устранения
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p
+                  b Неисправность
+              th
+                p
+                  b Возможный ремонт
+              th
+                p
+                  b Стоимость работы
+            tr
+              td
+                p Неправильная установка
+              td
+                p Установка стиральной машины
+              td
+                p от 400 р.
+            tr
+              td
+                p Износ амортизаторов
+              td
+                p Замена амортизаторов
+              td
+                p от 1500 р.
+            tr
+              td
+                p Поломка противовеса
+              td
+                p Замена противовеса
+              td
+                p от 800 р.
+            tr
+              td
+                p Износ подшипников
+              td
+                p Замена подшипников
+              td
+                p от 2100 р.
+
+
+    .calc-banner.page-banner
+      .page-banner-img
+        img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/men_1.webp' alt="")
+      .page-banner-content
+        .page-banner-content__title 
+          p Доверьте ремонт Вашей стиральной машины профессионалам!
+        .page-banner-content__text 
+          p  телефоны для связи
+          a(href='#')= telNumber_1 
+          |  или 
+          a(href='#')= telNumber_2 
+
+        .page-banner-content__text Также Вы можете оформить on-line заказ или заказать звонок
+        .page-banner-content-buttons
+          .page-banner-button.button-order 
+            | Оформить заявку
+            br
+            | on-line
+          .page-banner-button.button-callback Заказать звонок 
+    +brands-washmach({
+      title: "Ремонтируем стиральные машины любых брендов"
+    })
+    .page-articles-link
+      h2.page-title-h2 Другие возможные неисправности стиральных машин
+      .page-articles-link-wrapper
+        -var pathToPage = domen + '/neispravnosti-stiralnyh-mashin/'
+        .page-articles-link-item
+          a(href=pathToPage + 'ne-krutitsya-baraban-v-stiralnoj-mashine' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-krutit' + '.webp' alt='Стиральная машина не крутит барабан')
+            p Стиральная машина не крутит барабан
+        .page-articles-link-item
+          a(href=pathToPage + 'pena-iz-stiralnoj-mashiny' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-penitsa' + '.webp' alt='Пена из стиральной машины')
+            p Пена из стиральной машины
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-bet-tokom' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-bjet-tokom' + '.webp' alt='Стиральная машина бьет')
+            p Стиральная машина бьет
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-gudit' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-gudit' + '.webp' alt='Стиральная машина гудит')
+            p Стиральная машина гудит
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-migaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-migaet' + '.webp' alt='На стиральной машине мигают все лампочки')
+            p На стиральной машине мигают все лампочки
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-greet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-greet' + '.webp' alt='Стиральная машина не греет воду')
+            p Стиральная машина не греет воду
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-nabiraet-vodu' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-nabiraet' + '.webp' alt='Стиральная машина не набирает воду')
+            p Стиральная машина не набирает воду
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-ostanavlivaetsya-stiraet-bez-ostanovki' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-nabiraet' + '.webp' alt='Стиральная машина не останавливается')
+            p Стиральная машина не останавливается
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-otkryvaetsya' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-otkrivaet' + '.webp' alt='Стиральная машина не открывает дверь')
+            p Стиральная машина не открывает дверь
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-otzhimaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-otgimaet' + '.webp' alt='Стиральная машина не отжимает')
+            p Стиральная машина не отжимает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-poloskaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-poloskaet' + '.webp' alt='Стиральная машина не полоскает')
+            p Стиральная машина не полоскает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-slivaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-slivaet' + '.webp' alt='Стиральная машина не сливает')
+            p Стиральная машина не сливает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-vklyuchaetsya' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-vkluchaetsa' + '.webp' alt='Стиральная машина не включается')
+            p Стиральная машина не включается
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-zakryvaetsya' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-blokiruet' + '.webp' alt='Стиральная машина не блокирует дверь')
+            p Стиральная машина не блокирует дверь
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ploho-stiraet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ploho-stiraet' + '.webp' alt='Стиральная машина не отстирывает вещи')
+            p Стиральная машина не отстирывает вещи
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-pokazyvaet-oshibku' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-pokazivaet-oshibku' + '.webp' alt='Стиральная машина показывает ошибку')
+            p Стиральная машина показывает ошибку
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-prygaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-prigaet' + '.webp' alt='Стиральная машина прыгает')
+            p Стиральная машина прыгает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-skripit' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-scripit' + '.webp' alt='Стиральная машина скрипит')
+            p Стиральная машина скрипит
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-srazu-slivaet-vodu' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-srazu-slivaet' + '.webp' alt='Стиральная машина набирает и сразу сливает воду')
+            p Стиральная машина набирает и сразу сливает воду
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-techet-podtekaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-techet' + '.webp' alt='Стиральная машина подтекает')
+            p Стиральная машина подтекает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-vibriruet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-vibriruet' + '.webp' alt='Стиральная машина сильно вибрирует')
+            p Стиральная машина сильно вибрирует
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-zavisaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-migaet' + '.webp' alt='Стиральная машина зависает в одном режиме')
+            p Стиральная машина зависает в одном режиме

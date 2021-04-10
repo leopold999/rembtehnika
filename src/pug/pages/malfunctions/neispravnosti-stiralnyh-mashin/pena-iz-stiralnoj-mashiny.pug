@@ -1,0 +1,243 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Пена из стиральной машины' 
+  - var content = 'Пена из стиральной машины может проникнуть и в мотор. Из-за этого может произойти короткое замыкание, способное привести к тому, что сломается вся техника. Если вы столкнулись с этой проблемой, медлить нельзя.'
+  - var pathToImgArticles = domen + '/assets/img/pictures/repair-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    'Неисправности стиральных машин': domen + '/neispravnosti-stiralnyh-mashin/',
+    "Пена из стиральной машины": "#"})
+
+  .article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    h1.page-title-h1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-010.webp'
+    })
+    .page-text.page-text-hidden-container(itemprop="articleBody")
+      .page-text-hidden__bgrnd
+      .page-text-hidden__button.page-text-hidden__button_down
+      img.page-img.page-img_float-left( src= pathToImgArticles + "wash-mash/" + "sm-penitsa" + ".webp" alt= 'Пена из стиральной машины' itemprop="image")
+
+      p
+        | Предположим, вы идете в ванную комнату, чтобы проверить, постиралось ли белье, и видите, что из стиральной машины пошла пена. Медлить в этом случае нельзя. Пена свидетельствует о поломке, поэтому в первую очередь нужно вытащить штепсель из розетки. Необходимо понимать, что пена из стиральной машины может проникнуть и в мотор. Из-за этого может произойти короткое замыкание, способное привести к тому, что сломается вся техника. Если вы столкнулись с этой проблемой, медлить нельзя. Мы подготовили для вас статью, из которой вы узнаете как нужно действовать в такой ситуации.
+      h2.page-title-h2 Много пены в стиральной машине: порядок действий
+      p Если вы заметили поломку, нужно срочно принять меры:
+      ul.page-list.page-list-ul
+        li Выключите технику.
+        li
+          | Откройте сливной фильтр и опустошите бак. Для этого нужно открыть небольшой люк снизу корпуса. Машинку при этом следует аккуратно отклонить назад и поставить под нее большой тазик. Фильтр выкручивается против часовой стрелки.
+        li
+          | После этого требуется достать все стиравшееся белья и собрать пену. Внутри барабана необходимо все протереть сухой тряпкой. Другие элементы также рекомендуется просушить.
+        li
+          | Включите полоскание. Если после этого еще остается пена в стиральной машине, включите цикл снова. Повторяйте, пока машинка полностью не очистится.
+      p
+        | Мы узнали, как убрать все мыльные скопления. После того как они окончательно будут удалены, можно начинать искать источник неисправности. Если вы считаете, что у вас исправная стиральная машина, много пены может быть из-за неправильной стирки. Наиболее распространены следующие причины:
+      ul.page-list.page-list-ul
+        li Использование плохого порошка или другого моющего средства.
+        li Стирка слишком пористого белья.
+        li Использование жидкости с небольшим содержанием солей.
+      p
+        | Все перечисленные особенности необходимо учитывать еще до начала стирки. Ниже мы подробнее остановимся на каждом пункте. Однако следует знать, что существуют и причины неисправности посерьезнее. Это поломки различных элементов:
+      ul.page-list.page-list-ul
+        li
+          | Если вытекает мыльная вода, источником проблемы может быть то, что сливные шланги и патрубки разгерметизированы.
+        li Если идет пенка, скорее всего неисправна уплотнительная резинка люка.
+      p Начнем с причинами, которые обычно связаны с эксплуатацией машинки.
+      h3.page-title-h3 Порошок
+      p
+        | В вашей стиральной машине пена, что делать? Первым делом нужно проверить, правильно ли вы наполняете машинку порошком. Необходимое количество обычно указано в инструкции по эксплуатации к технике или же к самому моющему средству. Многие считают, чем больше порошка, тем лучше простираются вещи, однако это заблуждение. Хорошая машина удалит все загрязнения с маленьким объемом моющего средства.
+      p
+        | Проблема может быть и в качестве порошка. Перед его покупкой рекомендуется прочитать состав. Известные и дорогостоящие марки нередко подделывают. Многие не умеют выбирать моющее средство. К примеру, применять порошок для ручной стирки в машинке нельзя. Высокий объем быстро приведет к мыльности.
+      h3.page-title-h3 Особенности воды и вещей
+      p
+        | Если у вас в городе довольно жесткая вода, то она будет быстро потреблять большое количество порошка, так как в ней мало соли и магния, которые понижают мыльность. Однако бывает так, что качество воды стало лучше, а пена все равно появляется. Причина может крыться в том, что вы переехали в другой регион, где в составе воды больше конкретных элементов, или же вы подключили к машинке магнитный фильтр, смягчающий воду. В таком случае стоит добавлять в воду немного больше порошка.
+      p
+        | В стиральной много пены может быть и потому, что вы стираете пористые вещи. К примеру, шторы или комбинезоны, требующие небольшого количества порошка. Из-за структуры ткани пена образовывается быстрее. Чтобы рассчитать необходимый объем моющего средства, рекомендуется воспользоваться специальным стаканчиком.
+      p
+        | Если вы исключили указанные причины, стоит проверить детали на исправность и целостность.
+      h3.page-title-h3 Протекает манжетка люка
+      p Резина может протекать в связи со следующими проблемами:
+      ul.page-list.page-list-ul
+        li Поверхность повреждается предметами, которые забыты в карманах.
+        li
+          | Оставшаяся вода накапливается в складках резины, из-за чего появляется плесень, влияющая на ее прочность.
+        li Неаккуратная эксплуатация, в том числе резкие хлопки дверцей.
+      p
+        | Если пена при стирке в стиральной машине выливается через дверь люка, скорее всего это свидетельствует о повреждении внутренней части.
+      p
+        | Многие рекомендуют сделать заплатку на поврежденный элемент. Но при этом стоит понимать, что это лишь временное решение. Легче всего не медлить и сразу же заменить резину.
+      p Порядок действий при замене:
+      ol.page-list.page-list-ol
+        li откройте люк;
+        li подвиньте манжету, чтобы увидеть металлический хомут;
+        li аккуратно снимите его;
+        li постепенно, зацепившись за манжету, отделяйте резину от панели;
+        li снимите внутреннюю часть с бака;
+        li выкрутите винты, чтобы снять крышку;
+        li когда вы увидите другой хомут, его нужно также снять.
+      p
+        | Перед началом монтажа внимательно осмотрите деталь. На верхнем креплении располагается стрелка. При установке она должна быть смотреть вверх. Аккуратно прикрепите элемент. Загните манжету и открутите винты, чтобы закрепить хомут. Далее проденьте в отверстие отвертку и зацепите хомут. Далее остается вернуть его на прежнее место. Это обязательно поможет, если пошла пена из стиральной машины именно по этой причине.
+      p
+        | Монтаж следует проводить максимально внимательно. Если вы неровно установите детали, может снова возникнуть протечка.
+      h3.page-title-h3 Неисправность сливных деталей
+      p
+        | Некоторые элементы нередко повреждаются или соскакивают со своего места. Поэтому следует проверить систему:
+      ul.page-list.page-list-ul
+        li После выключения стиральной машинки, аккуратно переверните ее на заднюю сторону.
+        li Под днищем вы разглядите сливной насос и все шланги.
+        li Проверьте все соединения, затяните хомуты.
+        li
+          | Если вы нашли элемент, из-за которого происходит протечка, его необходимо заменить.
+      p
+        | Если в стиральной машине много пены, что делать теперь вы знаете. Проблему нужно сразу же решить, так как одна неисправность может привести к полной поломке машинки.
+    .page-text
+      h2.page-title-h2 Основные причины неисправности и стоимость их устранения
+      .table-container_scroll   
+        table(border='1')
+          tbody
+            tr
+              th
+                p
+                  b Неисправность
+              th
+                p
+                  b Возможный ремонт
+              th
+                p
+                  b Стоимость работы
+            tr
+              td
+                p Засор сливной системы
+              td
+                p Чистка сливной системы
+              td
+                p от 600 р.
+            tr
+              td
+                p Неисправность сливной помпы
+              td
+                p Замена сливного насоса (помпы)
+              td
+                p от 1200 р.
+
+
+    .calc-banner.page-banner
+      .page-banner-img
+        img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/men_1.webp' alt="")
+      .page-banner-content
+        .page-banner-content__title 
+          p Доверьте ремонт Вашей стиральной машины профессионалам!
+        .page-banner-content__text 
+          p  телефоны для связи
+          a(href='#')= telNumber_1 
+          |  или 
+          a(href='#')= telNumber_2 
+
+        .page-banner-content__text Также Вы можете оформить on-line заказ или заказать звонок
+        .page-banner-content-buttons
+          .page-banner-button.button-order 
+            | Оформить заявку
+            br
+            | on-line
+          .page-banner-button.button-callback Заказать звонок 
+    +brands-washmach({
+      title: "Ремонтируем стиральные машины любых брендов"
+    })
+    .page-articles-link
+      h2.page-title-h2 Другие возможные неисправности стиральных машин
+      .page-articles-link-wrapper
+        -var pathToPage = domen + '/neispravnosti-stiralnyh-mashin/'
+        .page-articles-link-item
+          a(href=pathToPage + 'ne-krutitsya-baraban-v-stiralnoj-mashine' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-krutit' + '.webp' alt='Стиральная машина не крутит барабан')
+            p Стиральная машина не крутит барабан
+        .page-articles-link-item
+          a(href=pathToPage + 'pena-iz-stiralnoj-mashiny' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-penitsa' + '.webp' alt='Пена из стиральной машины')
+            p Пена из стиральной машины
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-bet-tokom' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-bjet-tokom' + '.webp' alt='Стиральная машина бьет')
+            p Стиральная машина бьет
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-gudit' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-gudit' + '.webp' alt='Стиральная машина гудит')
+            p Стиральная машина гудит
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-migaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-migaet' + '.webp' alt='На стиральной машине мигают все лампочки')
+            p На стиральной машине мигают все лампочки
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-greet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-greet' + '.webp' alt='Стиральная машина не греет воду')
+            p Стиральная машина не греет воду
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-nabiraet-vodu' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-nabiraet' + '.webp' alt='Стиральная машина не набирает воду')
+            p Стиральная машина не набирает воду
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-ostanavlivaetsya-stiraet-bez-ostanovki' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-nabiraet' + '.webp' alt='Стиральная машина не останавливается')
+            p Стиральная машина не останавливается
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-otkryvaetsya' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-otkrivaet' + '.webp' alt='Стиральная машина не открывает дверь')
+            p Стиральная машина не открывает дверь
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-otzhimaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-otgimaet' + '.webp' alt='Стиральная машина не отжимает')
+            p Стиральная машина не отжимает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-poloskaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-poloskaet' + '.webp' alt='Стиральная машина не полоскает')
+            p Стиральная машина не полоскает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-slivaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-slivaet' + '.webp' alt='Стиральная машина не сливает')
+            p Стиральная машина не сливает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-vklyuchaetsya' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-vkluchaetsa' + '.webp' alt='Стиральная машина не включается')
+            p Стиральная машина не включается
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-zakryvaetsya' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-blokiruet' + '.webp' alt='Стиральная машина не блокирует дверь')
+            p Стиральная машина не блокирует дверь
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ploho-stiraet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ploho-stiraet' + '.webp' alt='Стиральная машина не отстирывает вещи')
+            p Стиральная машина не отстирывает вещи
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-pokazyvaet-oshibku' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-pokazivaet-oshibku' + '.webp' alt='Стиральная машина показывает ошибку')
+            p Стиральная машина показывает ошибку
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-prygaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-prigaet' + '.webp' alt='Стиральная машина прыгает')
+            p Стиральная машина прыгает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-skripit' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-scripit' + '.webp' alt='Стиральная машина скрипит')
+            p Стиральная машина скрипит
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-srazu-slivaet-vodu' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-srazu-slivaet' + '.webp' alt='Стиральная машина набирает и сразу сливает воду')
+            p Стиральная машина набирает и сразу сливает воду
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-techet-podtekaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-techet' + '.webp' alt='Стиральная машина подтекает')
+            p Стиральная машина подтекает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-vibriruet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-vibriruet' + '.webp' alt='Стиральная машина сильно вибрирует')
+            p Стиральная машина сильно вибрирует
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-zavisaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-migaet' + '.webp' alt='Стиральная машина зависает в одном режиме')
+            p Стиральная машина зависает в одном режиме

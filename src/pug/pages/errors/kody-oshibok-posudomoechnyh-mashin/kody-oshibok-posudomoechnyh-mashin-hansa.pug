@@ -1,0 +1,84 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок посудомоечных машин Ardo (Ардо)'
+  - var content = "Расшифровка ошибок посудомоечных машин Ardo (Ардо)"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок посудомоечных машин": "/errors/kody-oshibok-posudomoechnyh-mashin/",
+    "Коды ошибок посудомоечных машин Ardo (Ардо)" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    H1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-001.webp'
+    })
+    .page-text(itemprop="articleBody")
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p Е1
+              td
+                p Медленная подача воды
+            tr
+              td
+                p ЕЗ
+              td
+                p За 60 минут вода не нагрелась до температуры, заданной в программе мойки
+            tr
+              td
+                p Е4
+              td
+                p Слишком сильный напор воды или перелив
+            tr
+              td
+                p Е6
+              td
+                p Вода не нагревается из-за неисправного термодатчика
+            tr
+              td
+                p Е7
+              td
+                p Неисправен термодатчик
+            tr
+              td
+                p Е8
+              td
+                p
+                  | Вода не поступает в машину из-за неработающего распределительного(заливочного) клапана
+
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="качественный ремонт посудомоечных машин с гарантией")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качественный ремонт посудомоечных машин на дому!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

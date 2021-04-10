@@ -1,0 +1,226 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Стиральная машина сразу сливает воду' 
+  - var content = 'Выявить причины самослива стиральной машины можно самостоятельно, использовав наши советы. Однако устранение неисправности может быть отсутствием знаний и необходимого инструмента.'
+  - var pathToImgArticles = domen + '/assets/img/pictures/repair-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    'Неисправности стиральных машин': domen + '/neispravnosti-stiralnyh-mashin/',
+    "Стиральная машина сразу сливает воду": "#"})
+
+  .article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    h1.page-title-h1(itemprop="name")= title 
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-009.webp'
+    })
+    .page-text.page-text-hidden-container(itemprop="articleBody")
+      .page-text-hidden__bgrnd
+      .page-text-hidden__button.page-text-hidden__button_down
+      img.page-img.page-img_float-left( src= pathToImgArticles + "wash-mash/" + "sm-srazu-slivaet" + ".webp" alt= 'Стиральная машина сливает воду' itemprop="image")
+
+      p
+        | Если стиральная машина, сразу после набора воды ее стачивает, значит, происходит сбой с выполнением ее программы. Самослив в стиральной машине может быть вызван несколькими поломками:
+      ul.page-list.page-list-ul
+        li Неправильное подключение машинки к канализации. А именно пробка, находящаяся в системе канализационно слива или ошибки при установлении шланга.
+        li Неисправности в таких технических устройствах автомата, как входной или спускной клапан, реле уровня, прессостат.
+        li Неполадки в электронном модуле управления.
+      p
+        | Выявить причины слива воды вашей стиральной машиной, можно осуществив следующие мероприятия. Сначала потребуются подключить какую либо программу стирки, затем подождать полного наполнения бака. После чего произвести остановку цикла (кнопка "Стоп") и, используя соответствующую клавишу, включить слив воды. Затем снова остановить процесс. После потребуется контролировать и делать выводы. В случае, когда вода продолжает сливаться, то существуют проблемы с монтажом входа в канализацию или с дренажным шлангом. Тогда вам придется разобрать имеющееся подключение и вновь, подсоединить машинку, ориентируясь на алгоритм в инструкции эксплуатации.
+      h2.page-title-h2 Ошибки при подключении машины к канализационным трубам.
+      p
+        | Правильность подключения шланга для слива, не сложно проверить визуально. Для этого стирка не обаятельна. Его верхняя изогнутая часть должна находиться на полметра выше от пола, а именно над отметкой бака машинки. При этом положении самослив воды, вызванный этой причиной будет исключен. Если изгиб шланга находится ниже, в баке падает уровень воды. В результате происходит реакция датчика, который подключает заливку жидкости. Это будет продолжаться все время, на которое рассчитана выбранная программа. Для решения проблемы нужно осуществить следующие действия:
+      ul.page-list.page-list-ul
+        li
+          | Для сброса воды в трубы канализации используют специальный сантехнический сифон, в котором предусмотрен отвод, для подключения рукава машинки. Этот вариант подсоединения соответствует инструкции.
+        li
+          | Все стиральные машины комплектуются пластиковым изогнутым держателем шланга. Он крепится на борту раковины или ванной. Куда впоследствии и будет сливаться вода.
+      p
+        | При заведении шланга в канализационную трубу непосредственно на уровне пола, ваша стиральная машина выполнит самослив воды. Если отсутствует обратный клапан при сбросе воды может произойти эффект сифона. Поскольку возникшее в стояке разряжение, способно вызвать подсос воды из бака через подключенный к системе шланг, в следствие вода уйдет. Решить проблему можно отключив рукав от канализации, и опустив его в раковину или ванну.
+      h2.page-title-h2 Технические неполадки.
+      p
+        | Порой в стиральной машине самослив по причине технических неполадок вызывают поломки ее механизма или деталей. Вот несколько возможных неисправностей:
+      ol.page-list.page-list-ol
+        li
+          | Прессостат - устройство контролирующее уровень жидкости в барабане. Датчик призван остановить набор воды при определенной степени наполнения машинки водой. Этот регулятор иногда ломается. Обычно поломки вызваны окислением контактов, разгерметизацией мембраны, повреждением или засорением напольной трубки.
+        li
+          | Поломка сливного клапана. Машина запрограммирована так, что при его неисправности, она дает команду постоянно наполнять водой бак. Сливной клапан ремонту не подлежит, его придется поменять на новый.
+      p
+        | Бывают и другие проблемы. Например, получая команду на наполнение бака, система открывает поток воды. Однако из-за испорченной мембраны или пробитой прокладки, клапан не срабатывает и не останавливает поступление жидкости. Включается защита машинки и начинается самослив. В результате стиральная машинка прекращает стирку и продолжает периодически перезапускать воду.
+      h2.page-title-h2 Неполадки с программным управлением.
+      p
+        | Поломки электронного модуля отображаются на дисплее машинке как код ошибки, показывающий, где произошла неисправность. Расшифровку такого шифра, можно найти в инструкции. В данном случае допускается произвести отключение и перезагрузку программы машины. Если проблема продолжается лучше обратиться к специалисту. Он всегда разберется, чем вызван самослив стиральной машины и как его исправить.
+      p
+        | У машин Zanussi бывает, что через 15 секунд набора воды происходит ее сброс, сопровождающийся миганием лампочек. Тогда следует проверка:
+      ul.page-list.page-list-ul
+        li контактов двигателя либо пробоев в обмотках;
+        li прессостата;
+        li щеток на роторе;
+        li нагревательного элемента;
+        li электронной платы управления.
+      p
+        | Тестирование производят постепенно: заливают воду, следят за температурой, выполняют прокрутку барабана. Также выявление причины самослива облегчит изучение кодов ошибок.
+    .page-text
+      h2.page-title-h2 Основные причины неисправности и стоимость их устранения
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p
+                  b Неисправность
+              th
+                p
+                  b Возможный ремонт
+              th
+                p
+                  b Стоимость работы
+            tr
+              td
+                p Неисправность обратного клапана
+              td
+                p Замена/установка обратного клапана
+              td
+                p от 1000 р.
+            tr
+              td
+                p Неправильная установка или подключение
+              td
+                p Подключение стиральной машины к коммуникациям
+              td
+                p от 600 р.
+            tr
+              td
+                p Неисправность прессостата
+              td
+                p Замена прессостата
+              td
+                p от 1200 р.
+            tr
+              td
+                p Неисправность электронного модуля
+              td
+                p Ремонт модуля управления
+              td
+                p от 1500 р.
+
+
+    .calc-banner.page-banner
+      .page-banner-img
+        img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/men_1.webp' alt="")
+      .page-banner-content
+        .page-banner-content__title 
+          p Доверьте ремонт Вашей стиральной машины профессионалам!
+        .page-banner-content__text 
+          p  телефоны для связи
+          a(href='#')= telNumber_1 
+          |  или 
+          a(href='#')= telNumber_2 
+
+        .page-banner-content__text Также Вы можете оформить on-line заказ или заказать звонок
+        .page-banner-content-buttons
+          .page-banner-button.button-order 
+            | Оформить заявку
+            br
+            | on-line
+          .page-banner-button.button-callback Заказать звонок 
+    +brands-washmach({
+      title: "Ремонтируем стиральные машины любых брендов"
+    })
+    .page-articles-link
+      h2.page-title-h2 Другие возможные неисправности стиральных машин
+      .page-articles-link-wrapper
+        -var pathToPage = domen + '/neispravnosti-stiralnyh-mashin/'
+        .page-articles-link-item
+          a(href=pathToPage + 'ne-krutitsya-baraban-v-stiralnoj-mashine' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-krutit' + '.webp' alt='Стиральная машина не крутит барабан')
+            p Стиральная машина не крутит барабан
+        .page-articles-link-item
+          a(href=pathToPage + 'pena-iz-stiralnoj-mashiny' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-penitsa' + '.webp' alt='Пена из стиральной машины')
+            p Пена из стиральной машины
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-bet-tokom' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-bjet-tokom' + '.webp' alt='Стиральная машина бьет')
+            p Стиральная машина бьет
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-gudit' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-gudit' + '.webp' alt='Стиральная машина гудит')
+            p Стиральная машина гудит
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-migaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-migaet' + '.webp' alt='На стиральной машине мигают все лампочки')
+            p На стиральной машине мигают все лампочки
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-greet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-greet' + '.webp' alt='Стиральная машина не греет воду')
+            p Стиральная машина не греет воду
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-nabiraet-vodu' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-nabiraet' + '.webp' alt='Стиральная машина не набирает воду')
+            p Стиральная машина не набирает воду
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-ostanavlivaetsya-stiraet-bez-ostanovki' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-nabiraet' + '.webp' alt='Стиральная машина не останавливается')
+            p Стиральная машина не останавливается
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-otkryvaetsya' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-otkrivaet' + '.webp' alt='Стиральная машина не открывает дверь')
+            p Стиральная машина не открывает дверь
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-otzhimaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-otgimaet' + '.webp' alt='Стиральная машина не отжимает')
+            p Стиральная машина не отжимает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-poloskaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-poloskaet' + '.webp' alt='Стиральная машина не полоскает')
+            p Стиральная машина не полоскает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-slivaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-slivaet' + '.webp' alt='Стиральная машина не сливает')
+            p Стиральная машина не сливает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-vklyuchaetsya' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-vkluchaetsa' + '.webp' alt='Стиральная машина не включается')
+            p Стиральная машина не включается
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-zakryvaetsya' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-blokiruet' + '.webp' alt='Стиральная машина не блокирует дверь')
+            p Стиральная машина не блокирует дверь
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ploho-stiraet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ploho-stiraet' + '.webp' alt='Стиральная машина не отстирывает вещи')
+            p Стиральная машина не отстирывает вещи
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-pokazyvaet-oshibku' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-pokazivaet-oshibku' + '.webp' alt='Стиральная машина показывает ошибку')
+            p Стиральная машина показывает ошибку
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-prygaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-prigaet' + '.webp' alt='Стиральная машина прыгает')
+            p Стиральная машина прыгает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-skripit' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-scripit' + '.webp' alt='Стиральная машина скрипит')
+            p Стиральная машина скрипит
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-srazu-slivaet-vodu' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-srazu-slivaet' + '.webp' alt='Стиральная машина набирает и сразу сливает воду')
+            p Стиральная машина набирает и сразу сливает воду
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-techet-podtekaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-techet' + '.webp' alt='Стиральная машина подтекает')
+            p Стиральная машина подтекает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-vibriruet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-vibriruet' + '.webp' alt='Стиральная машина сильно вибрирует')
+            p Стиральная машина сильно вибрирует
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-zavisaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-migaet' + '.webp' alt='Стиральная машина зависает в одном режиме')
+            p Стиральная машина зависает в одном режиме

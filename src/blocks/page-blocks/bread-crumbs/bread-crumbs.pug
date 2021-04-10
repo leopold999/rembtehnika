@@ -1,0 +1,17 @@
+mixin bread-crumbs(options)
+    -var options = options;
+    -var titlesArr = Object.keys(options);
+    -var pathArr = Object.values(options);
+
+    ul.bread-crumbs(itemscope itemtype="https://schema.org/BreadcrumbList")
+
+        - for (var i = 0; i < (titlesArr.length - 1); i++) 
+            li.bread-crumbs__item(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+                a(href= pathArr[i] class="bread-crumbs__link" itemprop="item")
+                    span(itemprop="name")= titlesArr[i]
+                meta(itemprop="position" content= i + 1)
+        li.bread-crumbs__item(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+            a.bread-crumbs__not-link(itemprop="item" href="#")
+                span(itemprop="name")= titlesArr[titlesArr.length-1]
+            meta(itemprop="position" content= titlesArr.length)
+

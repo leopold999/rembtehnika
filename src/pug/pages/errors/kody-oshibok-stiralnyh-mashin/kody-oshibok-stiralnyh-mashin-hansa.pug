@@ -1,0 +1,507 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок стиральных машин Hansa (Ханса)'
+  - var content = "Расшифровка ошибок стиральных машин Hansa (Ханса)'"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок стиральных машин": "/errors/kody-oshibok-stiralnyh-mashin/",
+    "Коды ошибок стиральных машин Hansa (Ханса)" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    h1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-012.webp'
+    })
+    .page-text(itemprop="articleBody")
+      h2 Коды ошибок Hansa, серия РА.
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              td
+                p Код ошибки
+              td
+                p Описание ошибки
+            tr
+              td
+                p Е01
+              td
+                p Отсутствует блокировка дверцы
+            tr
+              td
+                p Е02
+              td
+                p Ошибка при наполнении бака водой
+            tr
+              td
+                p ЕОЗ
+              td
+                p Нет слива воды
+            tr
+              td
+                p Е04
+              td
+                p Ошибка во время набора воды в бак
+            tr
+              td
+                p Е05
+              td
+                p Ошибка во время нагрева воды
+            tr
+              td
+                p Е07
+              td
+                p Нет сигнала с тахогенератора о вращении мотора
+            tr
+              td
+                p Е08
+              td
+                p Нет сигнала с тахогенератора о вращении электродвигателя во время отжима
+            tr
+              td
+                p ЕЮ
+              td
+                p Параметры питающей сети вышли за пределы рекомендованных
+            tr
+              td
+                p Е11
+              td
+                p Неисправен (короткое замыкание) управляющий симистор приводного двигателя
+            tr
+              td
+                p Е12
+              td
+                p Зафиксирована утечка воды в поддон
+            tr
+              td
+                p Е14
+              td
+                p Ошибка (сбой) электронного контроллера
+            tr
+              td
+                p Е15
+              td
+                p Фатальная неисправность электронного контроллера
+
+      h2
+        | Коды ошибок Hansa, серия PC
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              td
+                p Код ошибки
+              td
+                p Описание ошибки
+            tr
+              td
+                p Е01
+              td
+                p Отсутствует сигнал о блокировке дверцы люка
+            tr
+              td
+                p Е02
+              td
+                p Ошибка во время наполнения бака водой
+            tr
+              td
+                p ЕОЗ
+              td
+                p Ошибка во время слива воды
+            tr
+              td
+                p Е04
+              td
+                p Прессостат формирует сигнал «ПЕРЕПОЛНЕНИЕ БАКА»
+            tr
+              td
+                p Е05
+              td
+                p Медленный набор воды в бак
+            tr
+              td
+                p Е06
+              td
+                p Отсутствует сигнал «Пустой бак» от датчика уровня
+            tr
+              td
+                p Е07
+              td
+                p Зафиксирована утечка воды в поддон
+            tr
+              td
+                p Е08
+              td
+                p Ошибка при подаче напряжения сети питания
+            tr
+              td
+                p Е09
+              td
+                p Избыточное пенообразование
+            tr
+              td
+                p Е11
+              td
+                p Не включается симистор цепи питания дверной блокировки
+            tr
+              td
+                p Е21
+              td
+                p Отсутствует сигнал обратной связи с тахогенератора
+            tr
+              td
+                p Е22
+              td
+                p Происходит самозапуск электродвигателя
+            tr
+              td
+                p Е31
+              td
+                p Ошибка датчика температуры
+            tr
+              td
+                p Е32
+              td
+                p Отсутствует сигнал от датчика температуры
+            tr
+              td
+                p Е42
+              td
+                p Ошибка в работе устройства блокировки люка
+            tr
+              td
+                p Е51
+              td
+                p Сбой энергонезависимой памяти\Неисправность селектора
+            tr
+              td
+                p Е52
+              td
+                p Сбой энергонезависимой памяти
+            tr
+              td
+              td
+      img(alt='Коды ошибок стиральных машин hansa' src=pathToImgArticles + 'hansa-1.jpg')
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              td
+                p Кол. миганий лампочки — готова к работе
+              td
+                p Вид неисправности
+            tr
+              td
+                p 1 раз
+              td
+                p Не закрыта дверца
+            tr
+              td
+                p 2 раза
+              td
+                p Не поступает вода
+            tr
+              td
+                p 3
+              td
+                p Нет слива воды
+            tr
+              td
+                p 4
+              td
+                p Слишком много воды в машине. Закупорен фильтр
+            tr
+              td
+                p 5
+              td
+                p Неисправность нагревательной системы
+            tr
+              td
+                p 7,8,11
+              td
+                p Неисправность систем привода машины
+            tr
+              td
+                p 10
+              td
+                p Не стабильное напряжение в сети
+            tr
+              td
+                p 6,9,12,13,14,15
+              td
+                p Неисправность во внутренней коммуникации машины
+      h2 Ошибки на другом видt панели:
+      img(alt='Коды ошибок стиральных машин hansa' src=pathToImgArticles + 'hansa-2.jpg')
+      h3 Дверца не закрыта
+      img(alt='Коды ошибок стиральных машин hansa' src=pathToImgArticles + 'hansa-3.jpg')
+      h3 Низкое давление
+      img(alt='Коды ошибок стиральных машин hansa' src=pathToImgArticles + 'hansa-4.jpg')
+  
+      h3 Нет слива воды
+      img(alt='Коды ошибок стиральных машин hansa' src=pathToImgArticles + 'hansa-5.jpg')
+      h3 Переполнение воды в баке
+      img(alt='Коды ошибок стиральных машин hansa' src=pathToImgArticles + 'hansa-6.jpg')
+      h3 Отсутствие воды в машине
+      img(alt='Коды ошибок стиральных машин hansa' src=pathToImgArticles + 'hansa-7.jpg')
+      h3 Нет слива воды
+      img(alt='Коды ошибок стиральных машин hansa' src=pathToImgArticles + 'hansa-8.jpg')
+      h3 Избыток пены
+      img(alt='Коды ошибок стиральных машин hansa' src=pathToImgArticles + 'hansa-9.jpg')
+      
+      
+      h2 Ошибки Hansa AWS610DH и аналогичные
+      img(alt='Коды ошибок стиральных машин hansa' src=pathToImgArticles + 'hansa-10.jpg')
+      .table-container_scroll 
+        table(border='1')
+          tbody
+      
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p ЕЮ
+              td
+                p Ошибка подачи воды
+            tr
+              td
+                p Е12
+              td
+                p Переполнение воды в баке
+            tr
+              td
+                p Е20
+                p Е21
+              td
+                p Нет слива воды
+            tr
+              td
+                p ЕЗО
+                p Е31
+              td
+                p Ошибка блокировки люка
+            tr
+              td
+                p ЕЗЗ
+              td
+                p Ошибка датчика уровня воды
+            tr
+              td
+                p Е34
+                p Е35
+              td
+                p Ошибка датчика температуры
+            tr
+              td
+                p Е36
+              td
+                p Нет нагрева воды
+            tr
+              td
+                p Е60
+              td
+                p Ошибка двигателя
+            tr
+              td
+                p Е61
+              td
+                p Нет сигнала о скорости вращения двигателя
+            tr
+              td
+                p Е62
+              td
+                p Ошибка двигателя\Неисправен триак
+            tr
+              td
+                p Е70
+              td
+                p Кнопка на панели застревает при нажатии на нее в течении 10 секунд
+            tr
+              td
+                p Е80
+              td
+                p Нет связи между модулем индикации и основной платы
+            tr
+              td
+              td
+      h2 Ошибки для PC машин Comfort и Optimum
+      img(alt='Коды ошибок стиральных машин hansa' src=pathToImgArticles + 'hansa-11.jpg')
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Коды
+                p Comfort
+              th
+                p Коды
+                p Optimum
+              td
+                p Описание
+            tr
+              td
+                p E01
+              td
+                p D4
+              td
+                p Нет сигнала обратной связи от дверного замка
+            tr
+              td
+                p E02
+              td
+                p D2
+              td
+                p Время забора воды более 2 мин
+            tr
+              td
+                p E03
+              td
+                p D2
+                p D3
+              td
+                p Время откачки более 1,5 минут
+            tr
+              td
+                p E04
+              td
+                p D3
+                p D4
+              td
+                p Регулятор давления посылает сигнал "переполнение”
+            tr
+              td
+                p E05
+              td
+                p D2
+                p D4
+              td
+                p Нет сигнала от датчика давленг
+            tr
+              td
+                p E06
+              td
+                p D2
+                p D3
+                p D4
+              td
+                p Отсутствует сигнал ''пустой бак" датчика давления
+            tr
+              td
+                p E07
+              td
+                p D1
+              td
+                p Утечка воды в поддон
+            tr
+              td
+                p E08
+              td
+                p D1
+                p D2
+                p D3
+                p D4
+              td
+                p Напряжение сети вне диапазон 160-253В, 50/60 Гц.
+            tr
+              td
+                p E09
+              td
+                p D1
+                p D3
+                p D4
+              td
+                p Стиральная машина обнаружил слишком много пены во время последнего отжима
+            tr
+              td
+                p Ell
+              td
+                p D4
+              td
+                p Отсутствие регулировки симистора дверного замка
+            tr
+              td
+                p E21
+              td
+                p D3
+              td
+                p Нет сигнала от тахогенератора
+            tr
+              td
+                p E22
+              td
+                p D3
+              td
+                p Короткое замыкание на симисторе двигателя
+            tr
+              td
+                p E31
+              td
+                p D1
+                p D4
+              td
+                p Ошибка датчика температуры
+            tr
+              td
+                p E32
+              td
+                p D1
+                p D4
+              td
+                p Отсутствует сигнал от датчика температуры
+            tr
+              td
+                p E33
+                p E34
+              td
+                p D1
+                p D3
+              td
+                p Превышено время нагрева
+            tr
+              td
+                p E42
+              td
+                p D4
+              td
+                p Время разблокировки дверной замка составляет более 120 секунд
+            tr
+              td
+                p E52
+              td
+                p D1
+                p D2
+              td
+                p Неверные данные в EEPROM
+
+
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="100% качественный ремонт стиральных машин")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качество и гарантия на ремонт стиральных машин!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

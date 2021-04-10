@@ -1,0 +1,149 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок стиральных машин LG'
+  - var content = "Расшифровка ошибок стиральных машин LG'"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок стиральных машин": "/errors/kody-oshibok-stiralnyh-mashin/",
+    "Коды ошибок стиральных машин LG" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    h1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-013.webp'
+    })
+    .page-text(itemprop="articleBody")
+      h2
+        | Коды ошибок LG - дисплей
+      img(alt='коды ошибок стиральных машин lg' src=pathToImgArticles + 'LG-1.jpg')
+
+      img(alt='коды ошибок стиральных машин lg' src=pathToImgArticles + 'LG-2.jpg')
+
+      img(alt='коды ошибок стиральных машин lg' src=pathToImgArticles + 'LG-3.jpg')
+
+      img(alt='коды ошибок стиральных машин lg' src=pathToImgArticles + 'LG-4.jpg')
+
+      img(alt='коды ошибок стиральных машин lg' src=pathToImgArticles + 'LG-5.jpg')
+
+      h2 Другие ошибки в зависимости от модели:
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              td
+                p Код ошибки
+              td
+                p Описание ошибки
+            tr
+              td
+                p CF
+              td
+                p Ошибка охлаждения
+            tr
+              td
+                p FF
+              td
+                p Замерзание шланги подачи воды\сливного шланга или насоса
+            tr
+              td
+                p Е1
+              td
+                p Протечка воды в поддон
+            tr
+              td
+                p ЕЗ
+              td
+                p Ошибка загрузки
+            tr
+              td
+                p ЕЕ
+              td
+                p Ошибка EEPROM
+            tr
+              td
+                p НЕ
+              td
+                p Проблема с ТЭНом
+            tr
+              td
+                p LE
+              td
+                p Ошибки в работе механизма блокировки
+            tr
+              td
+                p НЕ
+              td
+                p Проблема с ТЭНом
+            tr
+              td
+                p SE
+              td
+                p Ошибка датчика приводного мотора
+      img(alt='коды ошибок стиральных машин lg' src=pathToImgArticles + 'LG-6.jpg')
+      br
+      img(alt='коды ошибок стиральных машин lg' src=pathToImgArticles + 'LG-7.jpg')
+      br
+      img(alt='коды ошибок стиральных машин lg' src=pathToImgArticles + 'LG-8.jpg')
+      br
+      img(alt='коды ошибок стиральных машин lg' src=pathToImgArticles + 'LG-9.jpg')
+      br
+      img(alt='коды ошибок стиральных машин lg' src=pathToImgArticles + 'LG-10.jpg')
+      br
+      img(alt='коды ошибок стиральных машин lg' src=pathToImgArticles + 'LG-11.jpg')
+      br
+      img(alt='коды ошибок стиральных машин lg' src=pathToImgArticles + 'LG-12.jpg')
+      br
+      img(alt='коды ошибок стиральных машин lg' src=pathToImgArticles + 'LG-13.jpg')
+      br
+      img(alt='коды ошибок стиральных машин lg' src=pathToImgArticles + 'LG-14.jpg')
+      br
+      img(alt='коды ошибок стиральных машин lg' src=pathToImgArticles + 'LG-15.jpg')
+      br
+      img(alt='коды ошибок стиральных машин lg' src=pathToImgArticles + 'LG-16.jpg')
+      br
+      img(alt='коды ошибок стиральных машин lg' src=pathToImgArticles + 'LG-17.jpg')
+      br
+      img(alt='коды ошибок стиральных машин lg' src=pathToImgArticles + 'LG-18.jpg')
+      br
+      img(alt='коды ошибок стиральных машин lg' src=pathToImgArticles + 'LG-19.jpg')
+      br
+      img(alt='коды ошибок стиральных машин lg' src=pathToImgArticles + 'LG-20.jpg')
+      br
+      img(alt='коды ошибок стиральных машин lg' src=pathToImgArticles + 'LG-21.jpg')
+      br
+      img(alt='коды ошибок стиральных машин lg' src=pathToImgArticles + 'LG-22.jpg')
+      br
+      img(alt='коды ошибок стиральных машин lg' src=pathToImgArticles + 'LG-23.jpg')
+      br
+      img(alt='коды ошибок стиральных машин lg' src=pathToImgArticles + 'LG-24.jpg')
+      br
+
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="100% качественный ремонт стиральных машин")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качество и гарантия на ремонт стиральных машин!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

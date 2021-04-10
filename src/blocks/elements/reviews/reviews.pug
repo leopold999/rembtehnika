@@ -1,0 +1,35 @@
+mixin reviews(options)
+    - var name = options.userName
+    - var typeRepair = options.typeRepair
+    - var date = options.date
+    - var rating = options.rating
+    - var text = options.text
+    - var answerSupport = options.answerSupport
+    - var pathToReviews = options.path
+
+    .reviews
+        .reviews-wrap   
+            .reviews__name
+                span= name
+            .reviews__date
+                span= date
+            .reviews__rating.material-icon
+                - for (var i = 0; i < rating; i++) 
+                    .star_elem star
+                - for (var i = 0; i < (5 - rating); i++) 
+                    .star_elem star_border
+            .reviews__type-repair
+                p Вид услуги: 
+                    span= typeRepair
+            .reviews__text
+                p= text
+            
+        .reviews-answer-wrap 
+            if answerSupport
+                .answer-title
+                    span Ответ службы качества
+                
+                .answer-text
+                    p= answerSupport
+
+                

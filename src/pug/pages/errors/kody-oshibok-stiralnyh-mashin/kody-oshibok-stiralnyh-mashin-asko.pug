@@ -1,0 +1,182 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок стиральных машин Asko (Аско)'
+  - var content = "Расшифровка ошибок стиральных машин Asko"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок стиральных машин": "/errors/kody-oshibok-stiralnyh-mashin/",
+    "Коды ошибок стиральных машин Asko" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    h1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-010.webp'
+    })
+    .page-text(itemprop="articleBody")
+      .table-container_scroll 	
+        table(border='1')
+          tbody
+            tr
+              td
+                p Код
+                p ошибки
+              td
+                p Описание ошибки
+            tr
+              td
+                p Е01
+              td
+                p Ошибка в работе электродвигателя
+            tr
+              td
+                p Е02
+              td
+                p Ошибка при заполнении бакс водой
+            tr
+              td
+                p ЕОЗ
+              td
+                p Ошибка при сливе воды
+            tr
+              td
+                p Е04
+              td
+                p Ошибка при подаче воды
+            tr
+              td
+                p Е05
+              td
+                p
+                  | Проблемы с нагревом воды. Ошибка возникает, если температура воды в баке значительно превышает заданную
+            tr
+              td
+                p Е06
+              td
+                p
+                  | Проблемы с нагревом воды Ошибка возникает, если температура воды в баке не достигла заданного значения : отведенное время
+            tr
+              td
+                p Door lock fault
+              td
+                p Ошибка дверцы люка
+            tr
+              td
+                p Floaming
+              td
+                p Зафиксировано повышенное пенообразование
+            tr
+              td
+                p Over flov
+              td
+                p Зафиксирован уровень перели воды в баке
+            tr
+              td
+                p Termistor fault
+              td
+                p Неисправен датчик температур
+            tr
+              td
+                p Pressure sensor error
+              td
+                p Неисправность датчика уровн
+      h2 Ошибки Asko WL6532 XXI
+      .table-container_scroll 	  
+        table(border='1')
+          tbody
+            tr
+              td
+                p Код ошибки
+              td
+                p Описание ошибки
+            tr
+              td
+                p IE
+              td
+                p Ошибка подачи воды
+            tr
+              td
+                p ОЕ
+              td
+                p Нет слива воды
+            tr
+              td
+                p UE
+              td
+                p Дисбаланс
+            tr
+              td
+                p LE
+              td
+                p Ошибка блокировки люка
+            tr
+              td
+                p Е1
+              td
+                p Ошибка определения уровня воды
+            tr
+              td
+                p Е2
+              td
+                p Ошибка переполнения воды в баке
+            tr
+              td
+                p Е4
+              td
+                p Утечка воды во время стирки
+            tr
+              td
+                p Е5, Е6
+              td
+                p Ошибка двигателя
+            tr
+              td
+                p Е7, Е8
+              td
+                p Ошибка двигателя\Датчика хола
+            tr
+              td
+                p Е9
+              td
+                p Ошибка датчика уровня воды
+            tr
+              td
+                p Н2
+                p Н4
+                p Н5
+                p Н6
+                p Н8
+              td
+                p Ошибки связанные с ТЭНом или с датчиком температуры
+            tr
+              td
+                p PFE
+              td
+                p Ошибка фильтра насоса
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качество и гарантия на ремонт стиральных машин!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок

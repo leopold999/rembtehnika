@@ -1,0 +1,76 @@
+.education-page-wrapper {
+  padding: 0 rem(20);
+  }
+
+.education-form-wrapper {
+  
+
+}
+
+.education-form {
+  display: flex;
+  flex-direction: column;
+  width: rem(500);
+  margin-bottom: rem(50);
+  @media screen and (max-width: 500px) {
+    width: 100%;
+
+  }
+
+}
+
+.education-form-input {
+  height: rem(50);
+  border: 2px solid $colorMain-1;
+  border-radius: rem(5);
+  margin-bottom: rem(15);
+  padding: rem(5);
+  box-sizing: border-box;
+  @include fontBody(rem(18));
+  color: $dark75;
+  &:focus {
+      border-color: $dark50;
+  }
+
+  @media screen and (max-width: 1000px) {
+      height: rem(60);
+  }
+
+}
+.education-form-input__textarea {
+  width: 100%;
+  height: rem(300);
+  resize: none;
+}
+
+
+.order-popup__consent {
+  @include fontBody(rem(15), rem(20));
+  color: $dark75;
+
+}
+
+.consent-checkbox {
+
+}
+
+.education-form-button {
+  width: 100%;
+  height: rem(50);
+  background: linear-gradient($colorMain-1-07, $colorMain-1-05);
+  color: $white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: 2px solid $colorMain-1-07;
+  letter-spacing: 1px;
+
+  &:active {
+    border: 2px solid $colorMain-1;
+    background: linear-gradient($colorMain-1-09, $colorMain-1-07);
+  }
+
+  @media screen and (max-width: 1000px) {
+      height: rem(60);
+  }
+}

@@ -1,0 +1,23 @@
+mixin footer
+    footer(class="footer")
+
+        .footer-wrapper 
+            .footer-section-item
+     
+                p 196143, Санкт-Петербург, Проспект Юрия Гагарина, 34к3 лит В
+                p= telNumber_1
+                p= telNumber_2
+                a(href="mailto:info@rembtehnika.ru")  info@rembtehnika.ru
+            .footer-section-item
+                ul
+                    li
+                        a(href=domen + "/about/privacy.html") Политика конфиденциальности
+                    li 
+                        a(href=domen + "/about/partnership.html") Сотрудничество
+
+            .footer-section-item
+                p 
+                    span &#169 
+                    span= nameCompany
+                p Содержимое данного ресурса не является публичной офертой
+            

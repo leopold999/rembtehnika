@@ -1,0 +1,149 @@
+extends ../../../layout/repair_page_layout.pug
+
+block variables
+  - var title = 'Неисправности стиральных машин'
+  - var descriptionContent = 'Устранение любых неисправностей стиральных машин в кратчайшие сроки'
+block head
+  
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    'Неисправности стиральных машин': '#',
+  })
+  .repair-page-text-section
+    H1.page-title-h1(itemprop="name")=title
+  .repair-page-list-wrapper
+    -var pathToImg = domen + '/assets/img/pictures/repair-img/wash-mash/'
+    ul.repair-page-list-container
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'sm-ne-krutit' + '.webp' alt='Стиральная машина не крутит барабан')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-stiralnyh-mashin/' + 'ne-krutitsya-baraban-v-stiralnoj-mashine' + '.html') Стиральная машина не крутит барабан
+    ul.repair-page-list-container
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'sm-penitsa' + '.webp' alt='Пена из стиральной машины')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-stiralnyh-mashin/' + 'pena-iz-stiralnoj-mashiny' + '.html') Пена из стиральной машины
+    ul.repair-page-list-container
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'sm-bjet-tokom' + '.webp' alt='Стиральная машина бьет током')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-stiralnyh-mashin/' + 'stiralnaya-mashina-bet-tokom' + '.html') Стиральная машина бьет током
+    ul.repair-page-list-container
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'sm-gudit' + '.webp' alt='Стиральная машина гудит')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-stiralnyh-mashin/' + 'stiralnaya-mashina-gudit' + '.html') Стиральная машина гудит
+    ul.repair-page-list-container
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'sm-migaet' + '.webp' alt='Стиральная машина мигает')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-stiralnyh-mashin/' + 'stiralnaya-mashina-migaet' + '.html') Стиральная машина мигает
+    ul.repair-page-list-container
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'sm-ne-greet' + '.webp' alt='Стиральная машина не греет')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-stiralnyh-mashin/' + 'stiralnaya-mashina-ne-greet' + '.html') Стиральная машина не греет
+    ul.repair-page-list-container
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'sm-ne-nabiraet' + '.webp' alt='Стиральная машина не набирает воду')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-stiralnyh-mashin/' + 'stiralnaya-mashina-ne-nabiraet-vodu' + '.html') Стиральная машина не набирает воду
+    ul.repair-page-list-container
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'sm-bez-ostanovki' + '.webp' alt='Стиральная машина стирает без остановки')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-stiralnyh-mashin/' + 'stiralnaya-mashina-ne-ostanavlivaetsya-stiraet-bez-ostanovki' + '.html') Стиральная машина стирает без остановки
+    ul.repair-page-list-container
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'sm-ne-otkrivaet' + '.webp' alt='Стиральная машина не открывает дверь')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-stiralnyh-mashin/' + 'stiralnaya-mashina-ne-otkryvaetsya' + '.html') Стиральная машина не открывает дверь
+    ul.repair-page-list-container
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'sm-ne-otgimaet' + '.webp' alt='Стиральная машина не отжимает')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-stiralnyh-mashin/' + 'stiralnaya-mashina-ne-otzhimaet' + '.html') Стиральная машина не отжимает
+    ul.repair-page-list-container
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'sm-ne-poloskaet' + '.webp' alt='Стиральная машина не полоскает')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-stiralnyh-mashin/' + 'stiralnaya-mashina-ne-poloskaet' + '.html') Стиральная машина не полоскает
+    ul.repair-page-list-container
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'sm-ne-slivaet' + '.webp' alt='Стиральная машина не сливает')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-stiralnyh-mashin/' + 'stiralnaya-mashina-ne-slivaet' + '.html') Стиральная машина не сливает
+    ul.repair-page-list-container
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'sm-ne-vkluchaetsa' + '.webp' alt='Стиральная машина не включается')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-stiralnyh-mashin/' + 'stiralnaya-mashina-ne-vklyuchaetsya' + '.html') Стиральная машина не включается
+    ul.repair-page-list-container
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'sm-ne-blokiruet' + '.webp' alt='Стиральная машина не закрывается')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-stiralnyh-mashin/' + 'stiralnaya-mashina-ne-zakryvaetsya' + '.html') Стиральная машина не закрывается
+    ul.repair-page-list-container
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'sm-ploho-stiraet' + '.webp' alt='Стиральная машина плохо стирает')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-stiralnyh-mashin/' + 'stiralnaya-mashina-ploho-stiraet' + '.html') Стиральная машина плохо стирает
+    ul.repair-page-list-container
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'sm-pokazivaet-oshibku' + '.webp' alt='Стиральная машина показывает ошибку')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-stiralnyh-mashin/' + 'stiralnaya-mashina-pokazyvaet-oshibku' + '.html') Стиральная машина показывает ошибку
+    ul.repair-page-list-container
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'sm-prigaet' + '.webp' alt='Стиральная машина прыгает')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-stiralnyh-mashin/' + 'stiralnaya-mashina-prygaet' + '.html') Стиральная машина прыгает
+    ul.repair-page-list-container
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'sm-scripit' + '.webp' alt='Стиральная машина скрипит')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-stiralnyh-mashin/' + 'stiralnaya-mashina-skripit' + '.html') Стиральная машина скрипит
+    ul.repair-page-list-container
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'sm-srazu-slivaet' + '.webp' alt='Стиральная машина набирает и сразу сливает воду')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-stiralnyh-mashin/' + 'stiralnaya-mashina-ne-slivaet' + '.html') Стиральная машина набирает и сразу сливает воду
+    ul.repair-page-list-container
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'sm-techet' + '.webp' alt='Стиральная машина течет')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-stiralnyh-mashin/' + 'stiralnaya-mashina-techet-podtekaet' + '.html') Стиральная машина течет
+    ul.repair-page-list-container
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'sm-vibriruet' + '.webp' alt='Стиральная машина вибрирует')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-stiralnyh-mashin/' + 'stiralnaya-mashina-vibriruet' + '.html') Стиральная машина вибрирует
+    ul.repair-page-list-container
+      li.repair-page-list-item
+        .repair-page-list-item__img
+          img(src= pathToImg + 'sm-migaet' + '.webp' alt='Стиральная машина зависает')
+        .repair-page-list-item__link 
+          a(href= domen + '/neispravnosti-stiralnyh-mashin/' + 'stiralnaya-mashina-zavisaet' + '.html') Стиральная машина зависает
+    

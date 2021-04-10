@@ -1,0 +1,48 @@
+//- include ../../../pug/layout/vars.pug
+mixin services
+	-var pathToFolder = '/repairs/'
+	.services.services-hidden-container
+		.services-hidden__bgrnd
+		.services-hidden__button.services-hidden__button_down
+		ul.sevices-wrap
+			li.serv-item
+				a.serv-item-link(href=domen + pathToFolder + 'remont-holodilnikov-na-domu.html')
+					.serv-item__img
+						include ../../../img/pictures/svg/fridge.pug
+					.serv-item__title 
+						p Ремонт холодильников
+			li.serv-item
+				a.serv-item-link(href=domen + pathToFolder + 'remont-stiralnyh-mashin-na-domu.html')
+					.serv-item__img
+						include ../../../img/pictures/svg/washmash.pug
+					.serv-item__title Ремонт стиральных машин
+			li.serv-item
+				a.serv-item-link(href=domen + pathToFolder + 'remont-posudomoechnyh-mashin-na-domu.html')
+					.serv-item__img
+						include ../../../img/pictures/svg/dishwash.pug
+					.serv-item__title Ремонт посудомоечных машин
+			li.serv-item
+				a.serv-item-link(href=domen + pathToFolder + 'remont-varochnyh-paneley.html')
+					.serv-item__img
+						include ../../../img/pictures/svg/stove.pug
+					.serv-item__title Ремонт варочных поверхностей
+			li.serv-item
+				a.serv-item-link(href=domen + pathToFolder + 'remont-duhovyh-shkafov.html')
+					.serv-item__img
+						include ../../../img/pictures/svg/oven.pug
+					.serv-item__title Ремонт духовых шкафов
+			li.serv-item
+				a.serv-item-link(href=domen + pathToFolder + 'remont-kompyuterov-i-noutbukov.html')
+					.serv-item__img
+						include ../../../img/pictures/svg/comp.pug
+					.serv-item__title Ремонт компьютеров
+			li.serv-item
+				a.serv-item-link(href=domen + pathToFolder + 'remont-televizorov.html')
+					.serv-item__img
+						include ../../../img/pictures/svg/tv.pug
+					.serv-item__title Ремонт телевизоров
+			li.serv-item
+				a.serv-item-link(href=domen + pathToFolder + 'master-na-chas.html')
+					.serv-item__img
+						include ../../../img/pictures/svg/master.pug
+					.serv-item__title Мастер на час

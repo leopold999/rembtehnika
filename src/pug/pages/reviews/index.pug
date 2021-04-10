@@ -1,0 +1,24 @@
+extends ../../layout/reviews_page_layout.pug
+
+block variables
+	- var title = 'Отзывы о нашей работе'
+	- var content = "Все отзывы о работе нашей компании"
+	- var pathToImgArticles = domen + '/assets/img/pictures/articles-img/'
+
+block content
+	+bread-crumbs({ 
+		'Главная': '/',
+		"Отзывы": "#"
+	})
+	.reviews-page.article-page-wrapper
+		h1.page-title-h1= title
+		.reviews-description 
+			.reviews-description__text 
+				p 
+					| Вы можете оставить отзыв о проделанной работе. Все сообщения направляются руководству компании. 
+					| Любая конфликтная ситуация рассматривается индивидуально. 
+					| Заполните форму для направления отзыва.
+			.reviews-description__button
+				.reviews-new-button Оставить отзыв
+		.reviews-data-container#reviews-data-container
+		.reviews-paginator-container#reviews-paginator-container

@@ -1,0 +1,298 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок стиральных машин Miele (Миле)'
+  - var content = "Расшифровка ошибок стиральных машин Miele (Миле)'"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок стиральных машин": "/errors/kody-oshibok-stiralnyh-mashin/",
+    "Коды ошибок стиральных машин Miele (Миле)" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    H1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-009.webp'
+    })
+    .page-text(itemprop="articleBody")
+      .table-container_scroll
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p F1
+              td
+                p Короткое замыкание ТЭНа или датчика температуры
+            tr
+              td
+                p F2
+              td
+                p Ошибка датчика температуры
+            tr
+              td
+                p F3
+              td
+                p Короткое замыкание датчика температуры сушки
+            tr
+              td
+                p F4
+              td
+                p Ошибка датчика температуры сушки
+            tr
+              td
+                p F10
+              td
+                p Ошибка при наборе воды
+            tr
+              td
+                p F11
+              td
+                p За отведенное время не выполнен залив воды
+            tr
+              td
+                p F15
+              td
+                p Машина набирает горячую воду
+            tr
+              td
+                p F16
+              td
+                p Излишнее пенообразование
+            tr
+              td
+                p F19
+              td
+                p Медленно вращается либо заблокирован датчик расхода воды
+            tr
+              td
+                p F20
+              td
+                p Ошибка при нагреве воды в баке
+            tr
+              td
+                p F29
+              td
+                p Ошибка в работе ТЭНа сушки
+            tr
+              td
+                p F32
+                p F34
+              td
+                p Не блокируется дверца люка
+            tr
+              td
+                p F33
+                p F35
+              td
+                p Невозможно разблокировать дверцу люка
+            tr
+              td
+                p F36
+              td
+                p Неисправность кнопок
+            tr
+              td
+                p F39
+              td
+                p Неисправность в электронном модуле
+            tr
+              td
+                p F41
+              td
+                p Ошибка блока памяти EEPROM
+            tr
+              td
+                p F43
+              td
+                p Не запрограммирован тип модели
+            tr
+              td
+                p F45
+              td
+                p Переполнение оперативной памяти
+            tr
+              td
+                p F46
+              td
+                p Ошибка дисплея - дефект подключения
+            tr
+              td
+                p F47
+              td
+                p Отключение питания во время программы. Неисправность реле дополнительного модуля
+            tr
+              td
+                p F49
+              td
+                p Неисправность реле дополнительного модуля
+            tr
+              td
+                p F50
+              td
+                p Ошибка двигателя
+            tr
+              td
+                p F51
+              td
+                p Ошибка датчика уровня воды
+            tr
+              td
+                p F53
+              td
+                p Ошибка тахометра
+            tr
+              td
+                p F55
+              td
+                p Ошибка при контроле времени работы
+            tr
+              td
+                p F56
+              td
+                p Низкая скорость оборотов при отжиме
+            tr
+              td
+                p F62
+              td
+                p Ошибка в работе селектора выбора программ
+            tr
+              td
+                p F63
+              td
+                p Ошибка в работе блока управления траекторией воды
+            tr
+              td
+                p F64
+              td
+                p Ошибка в работе датчика траектории
+            tr
+              td
+                p F65
+              td
+                p Проблема с освещением барабана
+            tr
+              td
+                p F66
+              td
+                p Утечка потока воздуха
+            tr
+              td
+                p F92
+              td
+                p Риск бактерий
+            tr
+              td
+                p F93
+              td
+                p Поломка реле дополнительного модуля управления
+            tr
+              td
+                p F97
+              td
+                p Неисправность в блоке питания
+            tr
+              td
+                p F98
+              td
+                p Нет включения
+            tr
+              td
+                p F102
+              td
+                p Ошибка в блоке управления
+            tr
+              td
+                p F103
+              td
+                p Ошибка питания
+            tr
+              td
+                p F131
+              td
+                p Ошибка в EZDL256
+            tr
+              td
+                p F138
+              td
+                p Сработала система "Аквастоп”
+            tr
+              td
+                p F156
+              td
+                p Короткое замыкание на вторичном датчике NTC
+            tr
+              td
+                p Waterproof
+              td
+                p Протечка, вода в поддоне
+            tr
+              td
+              td
+      img(src=pathToImgArticles + 'Miele-1.jpg' alt='коды ошибок стиральных машин Miele')
+      .table-container_scroll
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p Проверить слив - мигает
+              td
+                p Ошибка слива воды
+            tr
+              td
+                p Проверить залив - мигает
+              td
+                p Нет подачи воды
+            tr
+              td
+                p Проверить слив - мигает Проверить залив - мигает
+              td
+                p Сработала система Auastop
+            tr
+              td
+                p Проверить дозировку - мигает
+              td
+                p Слишком много пены
+            tr
+              td
+                p Защита от сминания/Конец - мигает
+              td
+                p
+                  | Переключатель выбора программ был переставлен в другое положение после начала выполнения программы. Поверните переключатель в положение текущей программы.
+
+      
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="100% качественный ремонт стиральных машин")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качество и гарантия на ремонт стиральных машин!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

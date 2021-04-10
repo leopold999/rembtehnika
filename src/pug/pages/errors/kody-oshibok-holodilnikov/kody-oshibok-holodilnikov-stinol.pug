@@ -1,0 +1,105 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок холодильников Stinol (Стинол)'
+  - var content = "Расшифровка ошибок холодильников Stinol (Стинол)"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок холодильников": "/errors/kody-oshibok-holodilnikov/",
+    "Коды ошибок холодильников Stinol (Стинол)" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    H1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-006.webp'
+    })
+    .page-text(itemprop="articleBody")
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p Е00
+              td
+                p Ошибка датчика температуры
+            tr
+              td
+                p Е01
+                p Е10
+                p Е11
+              td
+                p Температура в холодильной камере выше 50 градусов
+            tr
+              td
+                p Е02
+                p Е20
+                p Е22
+              td
+                p
+                  | Температура в холодильной камере поднялась выше +12 градусов или не закрыта дверь
+            tr
+              td
+                p ЕОЗ
+                p ЕЗО
+                p ЕЗЗ
+              td
+                p Температура в холодильной камере выше +12 градусов при закрытой двери
+            tr
+              td
+                p Е04
+                p Е40
+                p Е44
+              td
+                p
+                  | Температура в холодильной камере опустилась ниже допустимого и не повышается в течении двух часов
+            tr
+              td
+                p Е05
+              td
+                p
+                  | Температура испарителе не достигает +14 градусов после одного часа с момента работы нагревателя
+            tr
+              td
+                p Е06
+              td
+                p Нет напряжения на нагревателе при включенном режиме оттайки
+            tr
+              td
+                p Е07
+              td
+                p
+                  | Нет снятия напряжения с нагревателя при включенном режиме оттайки (замыкание в цепи управления)
+
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="качественный ремонт холодильников с гарантией")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качественный ремонт холодильников на дому!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

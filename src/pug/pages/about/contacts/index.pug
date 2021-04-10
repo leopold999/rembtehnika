@@ -1,0 +1,61 @@
+
+extends ../../../layout/main.pug
+
+block variables
+  - var title = 'Контакты'
+  - var descriptionContent = 'Компания РемБытТехника основана в 2005 году. '
+
+block content
+  include ../../../../blocks/elements/elements.pug
+
+  +bread-crumbs({ 
+    'Главная': '/',
+    'Контакты': '#',
+  })
+  .education-page-wrapper
+    H1.page-title-h1= title
+
+    .page-text
+      h3.page-title-h3 Свяжитесь с нами любым удобным способом
+      p 
+        span Позвоните по телефонам:
+      p
+        a(href= telNumber_1_int)= telNumber_1
+      p 
+        a(href= telNumber_2_int)= telNumber_2
+        span 
+      p 
+        span.repair-page-questions__button-order.button-callback Закажите звонок. 
+        span Мы перезвоним Вам в течение пяти минут.
+      p 
+        span Оформите 
+        span.repair-page-questions__button-order.button-order заявку on-line. 
+        span Мастер приедет в указанное Вами время, а перед визитом позвонит.
+
+    h3.page-title-h3 Адреса
+    .map-wrapper.landing-page-map-iframe#map_container
+      script(id="ymap_lazy" data-skip-moving="true" async="" type="text/javascript" charset="utf-8" data-src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aaec62368f7832ec892d92db8ea9a37049eb900e48eac68a4b90a26f5aba6bc05&amp;lang=ru_RU&amp;scroll=false")
+      include ../../../../scss/pages/landing-page/landing-page-map.html
+    .page-text
+      h3.page-title-h3 Головной офис
+      p г. Санкт-Петербург, проспект Юрия Гагарина, 34к3, лит В, офис 23
+      h3.page-title-h3 Филиал "Север"
+      p г. Санкт-Петербург, проспект Просвещения, 60к1
+      h3.page-title-h3 Филиал "Северо-Запад"
+      p г. Санкт-Петербург,ул. Гаккелевская, 34
+      h3.page-title-h3 Филиал "Васильевский остров"
+      p г. Санкт-Петербург, Большой проспект ВО, 68
+      h3.page-title-h3 Филиал "Центр"
+      p г. Санкт-Петербург, Полюстровский проспект, 45
+      h3.page-title-h3 Филиал "Восток"
+      p г. Санкт-Петербург, Индустриальный проспект, 24
+      h3.page-title-h3 Филиал "Юго-Восток"
+      p г. Санкт-Петербург, улица Ольги Берггольц, 35
+      h3.page-title-h3 Филиал "Юго-Запад"
+      p г. Санкт-Петербург, Ленинский проспект, 100к1
+      h3.page-title-h3 Филиал "Шушары"
+      p г. Санкт-Петербург, п.Шушары, Старорусский проспект, 6
+      h3.page-title-h3 Филиал "Пушкин"
+      p г. Санкт-Петербург, Октябрьский бульвар, 7/29
+
+    

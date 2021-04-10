@@ -1,0 +1,297 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок холодильников Candy'
+  - var content = "Расшифровка ошибок холодильников Candy"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок холодильников": "/errors/kody-oshibok-holodilnikov/",
+    "Коды ошибок холодильников Candy" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    H1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-007.webp'
+    })
+    .page-text(itemprop="articleBody")
+      .table-container_scroll
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p Е0
+              td
+                p
+                  | Нарушение в электроцепи холодильника, из-за чего плата управления не получает правильной информации
+            tr
+              td
+                p Е01
+              td
+                p Превышение заданной температуры в одной из камер из-за не плотно закрытой дверцы
+            tr
+              td
+                p Е02
+                p ЕОЗ
+              td
+                p Ошибки в работе термостата
+            tr
+              td
+                p Е04
+                p Е05
+              td
+                p Ошибка температурного датчика
+      h2
+        | Ошибки для Candy CHSBSO 6174XWD, CHSVN 174Х, HHSBSO 6174XWD, HHSBSO 6174XWDK, HHSBSO 6174ХК
+      .table-container_scroll
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p Е0
+              td
+                p
+                  | Проблема связи - отсутствует сигнал на плате управления и главной плате - проверьте провод и соединения
+            tr
+              td
+                p Е1
+              td
+                p Неисправность датчика холодильника
+            tr
+              td
+                p Е2
+              td
+                p Неисправность датчика морозильной камеры
+            tr
+              td
+                p ЕЗ
+              td
+                p Неисправность датчика размораживания
+            tr
+              td
+                p Е5
+              td
+                p ТЭН оттайки - или предохранитель, соединенный с нагревателем
+      h2 Ошибки для Candy CHSBSV 5172Х, CHSBV 5172ХК, HHSBSV 5172ХК
+      .table-container_scroll
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p Е1
+              td
+                p Неисправность датчика холодильника
+            tr
+              td
+                p Е2
+              td
+                p Неисправность датчика морозильной камеры
+            tr
+              td
+                p ЕЗ
+              td
+                p Неисправность датчика размораживания - на испарителе морозильной камеры
+            tr
+              td
+                p Е4
+              td
+                p Двигатель вентилятора -в испарительной камере морозильной камеры
+            tr
+              td
+                p Е5
+              td
+                p
+                  | Проблема связи - отсутствует сигнал на плате управления и главной плате - проверьте провод и соединения
+            tr
+              td
+                p Е6
+              td
+                p Ошибка EEPROM
+            tr
+              td
+                p Е7
+              td
+                p ТЭН оттайки - или предохранитель, соединенный с нагревателем
+      .page-text
+        p
+          | * Если есть две или более ошибок, коды ошибок будут отображаться на соответствующих светодиодах поочередно.
+        p
+          | * Если "Е5” отображается на правом светодиоде, вероятно, есть и другие ошибки, которые не могут быть отображены.
+      h2 Ошибки Candy с модулем Wi-Fi
+      .table-container_scroll
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p Е0
+              td
+                p
+                  | Проблема связи - отсутствует сигнал на плате управления и главной плате - проверьте провод и соединения
+            tr
+              td
+                p Е1
+              td
+                p Неисправность датчика холодильника
+            tr
+              td
+                p Е2
+              td
+                p Неисправность датчика испарителя морозильной камеры
+            tr
+              td
+                p ЕЗ
+              td
+                p Неисправность датчика морозильной камеры
+            tr
+              td
+                p Е4
+              td
+                p Неисправность датчика температуры окружающей среды
+            tr
+              td
+                p EL
+              td
+                p Неисправность связи между дисплеем и модулем Wi-FI
+            tr
+              td
+                p Ег
+              td
+                p Тест продукции модуля WiFi
+    
+      h2
+        | Ошибки Candy CBCA230NFEU, CBCA230FFK, HBCA230FFK
+      .table-container_scroll
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p Е
+              td
+                p Датчик холодильника разомкнут или находится в коротком замыкании
+            tr
+              td
+                p Е-
+              td
+                p Датчик морозильной камеры разомкнут или находится в коротком замыкании
+            tr
+              td
+                p -Е
+              td
+                p Неисправность датчика размораживания
+            tr
+              td
+                p Н
+              td
+                p Температура внутри холодильника высокая
+      h2 Ошибки Candy CXS7204A
+      img(alt='коды ошибок холодильников candy' src=pathToImgArticles + 'hol_candy-1.jpg')
+      .table-container_scroll
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p Е1
+              td
+                p Датчик NTC холодильника закорочен или разомкнут
+            tr
+              td
+                p Е2
+              td
+                p Датчик NTC морозильника закорочен или разомкнут
+            tr
+              td
+                p ЕЗ
+              td
+                p Ошибка NTC-датчика испарителя морозильной камеры
+            tr
+              td
+                p Е6
+              td
+                p Неисправность связи между жидкокристаллическим дисплеем и силовым модулем
+      h2
+        | Ошибки Candy - CITY COMBY
+      .page-text
+        p
+          | Если какой-либо датчик выходит из строя, соответствующий светодиодный индикатор мигает с частотой 1 Гц (включен в течение 0,5 с, выключен в течение 0,5 с).
+      img(alt='коды ошибок холодильников candy' src=pathToImgArticles + 'hol_candy-2.jpg')
+      .table-container_scroll
+        table(border='1')
+          tbody
+            tr
+              th
+                p LED
+              th
+                p Описание ошибки
+            tr
+              td
+                p 2
+              td
+                p Неисправность датчика холодильника
+            tr
+              td
+                p 5
+              td
+                p Неисправность датчика морозильной камеры
+            tr
+              td
+                p 8
+              td
+                p Неисправность датчика окружающей среды
+   
+        
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="качественный ремонт холодильников с гарантией")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качественный ремонт холодильников на дому!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

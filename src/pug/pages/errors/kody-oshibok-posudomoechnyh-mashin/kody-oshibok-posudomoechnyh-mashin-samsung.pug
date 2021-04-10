@@ -1,0 +1,153 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок посудомоечных машин Samsung (Самсунг)'
+  - var content = "Расшифровка ошибок посудомоечных машин Samsung (Самсунг)"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок посудомоечных машин": "/errors/kody-oshibok-posudomoechnyh-mashin/",
+    "Коды ошибок посудомоечных машин Samsung (Самсунг)" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    H1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-003.webp'
+    })
+    .page-text(itemprop="articleBody")
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p El
+              td
+                p Превышено время подачи воды
+            tr
+              td
+                p E2
+              td
+                p Ошибка слива воды
+            tr
+              td
+                p ЕЗ
+              td
+                p Увеличенное время нагрева
+            tr
+              td
+                p E4
+              td
+                p Протекание воды или переполнение
+            tr
+              td
+                p E5
+              td
+                p Слабый напор воды
+            tr
+              td
+                p E6
+              td
+                p Ошибка датчика температуры
+            tr
+              td
+                p E7
+              td
+                p Неисправность в работе температурного датчика
+            tr
+              td
+                p E8
+              td
+                p Ошибка в работе альтернативного клапана
+            tr
+              td
+                p E9
+              td
+                p Дефект работы кнопки запуска
+            tr
+              td
+                p EA
+              td
+                p Ошибка датчика уровня воды
+            tr
+              td
+                p UC
+              td
+                p Не стабильное напряжение
+            tr
+              td
+                p dC
+              td
+                p Дверца открыта
+            tr
+              td
+                p 4C
+              td
+                p Неисправность подачи воды
+            tr
+              td
+                p 5C
+              td
+                p Неисправность слива воды
+            tr
+              td
+                p tc
+              td
+                p Датчик температуры
+            tr
+              td
+                p oC
+              td
+                p Обнаружено переполнение/утечка воды
+            tr
+              td
+                p LC
+              td
+                p Утечка воды
+            tr
+              td
+                p HC
+              td
+                p Ошибка нагрева
+            tr
+              td
+                p PC
+              td
+                p Нарушение функционирования системы отвода воды
+      h2 Коды ошибок для DM-M39AHC
+      img(alt='коды ошибок посудомоечных машин Samsung' src= pathToImgArticles + 'pm_sumsung-1.jpg')
+      img(alt='коды ошибок посудомоечных машин Samsung' src= pathToImgArticles + 'pm_sumsung-2.jpg')
+
+    
+
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="качественный ремонт посудомоечных машин с гарантией")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качественный ремонт посудомоечных машин на дому!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

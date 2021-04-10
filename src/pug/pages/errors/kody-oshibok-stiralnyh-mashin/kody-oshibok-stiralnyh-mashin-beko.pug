@@ -1,0 +1,301 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var brand = 'Beko (Беко)'
+  - var title = 'Коды ошибок стиральных машин ' + brand
+  - var content = "Расшифровка ошибок стиральных машин " + brand
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок стиральных машин": "/errors/kody-oshibok-stiralnyh-mashin/",
+    "Коды ошибок стиральных машин Beko (Беко)" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    h1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-012.webp'
+    })
+    .page-text(itemprop="articleBody")
+      h2 Коды ошибок Веко HERO-Mini LCD-B7S-B7S-led
+      br
+      img(src=pathToImgArticles + '31353a3e-1.jpg' alt='коды ошибок стиральных машин beko')
+      br
+      h2 Коды ошибок Веко - FORA
+      img(src=pathToImgArticles+'31353a3e-2.jpg' alt='коды ошибок стиральных машин beko')
+      br
+      img(src=pathToImgArticles+'31353a3e-3.jpg' alt='коды ошибок стиральных машин beko')
+      br
+      img(src=pathToImgArticles+'31353a3e-4.jpg' alt='коды ошибок стиральных машин beko')
+      br
+      img(src=pathToImgArticles+'31353a3e-5.jpg' alt='коды ошибок стиральных машин beko')
+      br
+      img(src=pathToImgArticles+'31353a3e-6.jpg' alt='коды ошибок стиральных машин beko')
+      br
+      img(src=pathToImgArticles+'31353a3e-7.jpg' alt='коды ошибок стиральных машин beko')
+      br
+      img(src=pathToImgArticles+'31353a3e-8.jpg' alt='коды ошибок стиральных машин beko')
+      img(src=pathToImgArticles+'31353a3e-9.jpg' alt='коды ошибок стиральных машин beko')
+      h2
+
+        | Ошибки для Веко с сушкой
+      img(src=pathToImgArticles+'31353a3e-10.jpg' alt='коды ошибок стиральных машин beko')
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              td
+                p Код ошибки
+              td
+                p Описание ошибки
+            tr
+              td
+                p Е01
+              td
+                p Короткое замыкание или обрыв цепи NTC датчика
+            tr
+              td
+                p Е02
+              td
+                p Тэн: короткое замыкание или обрыв цепи
+            tr
+              td
+                p ЕОЗ
+              td
+                p Непрерывная работа тэна
+            tr
+              td
+                p Е04
+              td
+                p Ошибка входного клапана
+            tr
+              td
+                p Е05
+              td
+                p Насос: обрыв цепи
+            tr
+              td
+                p Е07
+              td
+                p Датчик уровня воды
+            tr
+              td
+                p Е08
+              td
+                p
+                  | Нет залива воды. Неисправен симистор клапана. Симистор насоса в КЗ или неисправен переключатель уровня воды
+            tr
+              td
+                p Е09
+              td
+                p Дверной замок: ошибка в цепи
+            tr
+              td
+                p ЕЮ
+              td
+                p Дверной замок: Ошибка цепи
+            tr
+              td
+                p Е11
+              td
+                p Мотор и тахометр :Ошибка цепи
+            tr
+              td
+                p Е13
+              td
+                p Ошибка двигателя. Неисправен модуль, проводка
+            tr
+              td
+                p Е14
+              td
+                p JET насос. Триак управления JET насосом в КЗ.
+            tr
+              td
+                p Е15
+              td
+                p
+                  | Ошибка расходомера. Проверьте, установлен ли патрубок расходомера на водозаборном шланге
+            tr
+              td
+                p Е17
+              td
+                p Излишняя пена
+            tr
+              td
+                p ЕЮ
+              td
+                p Дисбаланс
+            tr
+              td
+                p Е22
+              td
+                p Нет связи между LCD дисплеем
+            tr
+              td
+                p Е23
+              td
+                p Ошибка дверного выключателя
+            tr
+              td
+                p Е26
+              td
+                p Ошибка памяти EEPROM
+            tr
+              td
+                p Е27
+              td
+                p
+                  | Произвольный слив воды.Симистор насоса в КЗ. Управление расходомером и датчиком уровня
+            tr
+              td
+                p Е28
+              td
+                p Нет сигнала от блокировки двери
+            tr
+              td
+                p Е29
+              td
+                p Не стабильные параметры сети
+            tr
+              td
+                p Е31
+              td
+                p Ошибка NTC конденсатора (испарителя).
+            tr
+              td
+                p Е32
+              td
+                p Ошибка NTC датчика пены
+            tr
+              td
+                p Е35
+              td
+                p Ошибка воздухонагревателя
+            tr
+              td
+                p Е37
+              td
+                p Ошибка NTC датчика стирки
+
+            tr
+              td
+                p Е14
+              td
+                p JET насос. Триак управления JET насосом в КЗ.
+            tr
+              td
+                p Е15
+              td
+                p
+                  | Ошибка расходомера. Проверьте, установлен ли патрубок расходомера на водозаборном шланге
+            tr
+              td
+                p Е17
+              td
+                p Излишняя пена
+            tr
+              td
+                p ЕЮ
+              td
+                p Дисбаланс
+            tr
+              td
+                p Е22
+              td
+                p Нет связи между LCD дисплеем
+            tr
+              td
+                p Е23
+              td
+                p Ошибка дверного выключателя
+            tr
+              td
+                p Е26
+              td
+                p Ошибка памяти EEPROM
+            tr
+              td
+                p Е27
+              td
+                p
+                  | Произвольный слив воды.Симистор насоса в КЗ. Управление расходомером и датчиком уровня
+            tr
+              td
+                p Е28
+              td
+                p Нет сигнала от блокировки двери
+            tr
+              td
+                p Е29
+              td
+                p Не стабильные параметры сети
+            tr
+              td
+                p Е31
+              td
+                p Ошибка NTC конденсатора (испарителя).
+            tr
+              td
+                p Е32
+              td
+                p Ошибка NTC датчика пены
+            tr
+              td
+                p Е35
+              td
+                p Ошибка воздухонагревателя
+            tr
+              td
+                p Е37
+              td
+                p Ошибка NTC датчика стирки
+            tr
+              td
+                p Е38
+              td
+                p Ошибка NTC сушки
+            tr
+              td
+                p Е41
+              td
+                p Ошибка вентилятора FAN.
+            tr
+              td
+                p Е43
+              td
+                p Ошибка воздухонагревателя, вентилятора или испарителя
+            tr
+              td
+                p Е45
+              td
+                p НетХИли ошибочная версия файла программы
+      img(src=pathToImgArticles+'31353a3e-11.jpg' alt='коды ошибок стиральных машин beko')
+      img(src=pathToImgArticles+'31353a3e-12.jpg' alt='коды ошибок стиральных машин beko')
+      img(src=pathToImgArticles+'31353a3e-13.jpg' alt='коды ошибок стиральных машин beko')
+
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качество и гарантия на ремонт стиральных машин!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

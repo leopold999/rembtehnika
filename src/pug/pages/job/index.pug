@@ -1,0 +1,33 @@
+extends ../../layout/main.pug
+
+block variables
+  - var title = 'Работа мастером по ремонту бытовой техники'
+  - var descriptionContent = 'Приглашаем на работу мастеров по ремонту бытовой техники'
+
+block content
+  include ../../../blocks/elements/elements.pug
+
+  +bread-crumbs({ 
+    'Главная': '/',
+    'Работа': '#',
+  })
+  .education-page-wrapper
+    H1.page-title-h1= title
+    .education-description
+      .page-text
+        p 
+          | Приглашаем на работу мастеров по ремонту бытовой техники - профессионалов своего дела. Предлагаем комфортные условия для работы, доброжелательный коллектив, удобный график работы 
+        p Для рассмотрения Вашей кандидатуры необходимо заполнить и отправить форму. Специалист по подбору персонала свяжется с Вами в ближайшее время.
+    .education-form-wrapper 
+      form#job-form.education-form(action="" method="get")
+        input(class="education-form-input" type="text" name="lastname" placeholder='Фамилия' required)
+        input(class="education-form-input" type="text" name="firstname" placeholder='Имя' required)
+        input(class="education-form-input education-form-input__phone" type="tel" name="telephone" placeholder='Номер телефона' required)
+        textarea(class="education-form-input education-form-input__textarea" name="text" placeholder='Опишите Ваши навыки и предыдущий опыт работы в произвольной форме' required)
+        br
+        label.order-popup__consent 
+          p Подтверждаю согласие на обработку моих персональных данных
+          .consent-checkbox 
+            input(class="education-form-input" type="checkbox" name="consent" placeholder='' required)
+        br
+        button(class="education-form-button" name="" type="submit" value="Отправить") Отправить

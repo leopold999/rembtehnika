@@ -1,0 +1,169 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Лед в холодильной камере холодильника' 
+  - var content = "Появление льда в камере холодильника в больших и не очень количествах наиболее встречается в холодильных камерах капельной (плачущей) разморозки, однако это может произойти и в холодильниках, имеющих систему no-frost. "
+  - var pathToImgArticles = domen + '/assets/img/pictures/repair-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    'Неисправности холодильников': domen + '/neispravnosti-holodilnikov/',
+    "Лед в холодильной камере": "#"})
+
+  .article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    h1.page-title-h1(itemprop="name")= title 
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-006.webp'
+    })
+    .page-text.page-text-hidden-container(itemprop="articleBody")
+      .page-text-hidden__bgrnd
+      .page-text-hidden__button.page-text-hidden__button_down
+      img.page-img.page-img_float-left( src= pathToImgArticles + "fridges/hol-led-v-holodilke.webp" alt= 'Лед в холодильной камере холодильника' itemprop="image")
+      p
+        | Появление льда в камере холодильника в больших и не очень количествах наиболее часто встречающаяся проблема. Такая проблема как правило встречается в холодильных камерах капельной (плачущей) разморозки, однако это может произойти и в холодильниках, имеющих систему no-frost. Если не решить эту проблему своевременно, то продукты, находящиеся рядом с внутренней стенкой холодильника, могут примерзать, а то и сами перемерзнуть. Также намерзший снег может таять, и вода будет подтекать из холодильника, что доставляет массу неудобств.
+      p
+        | Многие владельцы в этой ситуации зачастую начинают отбивать скопившийся лед, считая это решением проблемы. Однако сразу стоить отметить, что это не является решением проблемы, но наоборот может привести к более печальным последствиям. Например, из-за неосторожности можно пробить трубку испарителя.
+      p
+        | Для начала рассмотрим причины образования ледяной шубы на задней стенке холодильной камеры. А они могут быть следующими:
+      h2.page-title-h2
+        | Износ уплотнителя. 
+      p Если уплотнительная резинка двери существенно износилась и неплотно прилегает к корпусу холодильника, теплый воздух помещения будет проникать в камеру, за счет чего может образовываться ледяная шуба.
+      h2.page-title-h2
+        | Неправильно выставленный режим работы холодильника. 
+      p К примеру, в очень жаркую погоду и при высокой температуре в помещении пользователи могут выставить регулятор устройства на максимальное охлаждение. В этом случае также может образовываться лед.
+        img.page-img.page-img_float-right( src= pathToImgArticles + "bt-problem-0002.webp" alt= 'Неисправность системы no-frost холодильника' itemprop="image")
+
+      h2.page-title-h2
+        | Неостывшие продукты в камере. 
+      p Если вы имеете привычку ставить в холодильник продукты не остывшие до комнатной температуры, также можете получить эффект намерзания льда.
+      h2.page-title-h2
+        | Неисправный терморегулятор. 
+      p Если термостат не выполняет свою функцию, и при достижении нужной температуры не отключает компрессор, последний будет работать без остановки. Такая работа приведет в указанным выше последствиям. Однако здесь есть важное замечание, при такой неисправности вероятнее всего также будет перемерзать продукты в холодильной камере.
+      h2.page-title-h2
+        | Не работает система оттайки в холодильнике no-frost. 
+      p Система оттайки довольно сложное устройство, и включает в себя несколько ключевых узлов, например: ТЭН, таймер оттайки, датчик температуры, дефростер, также вся электроника может быть завязана на модуль управления. Выход из работы любого узла может привести к неправильной работе и образованию льда в морозильной камере.
+      p
+        | Стоит обратить внимание, что незначительное образование снежного покрова на стенке с капельной системой разморозки является абсолютно нормальным. В иных случаях на поломку стоит обратить внимание и обратиться за помощью к профессионалам.
+      p
+        | Обратившись в нашу компанию Вы можете рассчитывать на квалифицированную помощь по приемлемой цене.
+ 
+    .page-text     
+      h2.page-title-h2 Возможные причины неисправности и стоимость их устранения
+      .table-container_scroll  
+        table(border='1')
+          tbody
+            tr
+              th
+                p
+                  b Неисправность
+              th
+                p
+                  b Возможный ремонт
+              th
+                p
+                  b Стоимость работы
+            tr
+              td
+                p Износ уплотнителя двери
+              td
+                p Замена уплотнителя двери холодильника
+              td
+                p от 1500 р.
+            tr
+              td(rowspan='5')
+                p Неисправность системы оттайки
+              td
+                p Замена ТЭНа оттайки
+              td
+                p от 1500 р.
+            tr
+              td
+                p Замена предохранителя
+              td
+                p от 1200 р.
+            tr
+              td
+                p Замена таймера оттайки
+              td
+                p от 1200 р.
+            tr
+              td
+                p Замена датчика температуры
+              td
+                p от 800 р.
+            tr
+              td
+                p Ремонт модуля управления (платы)
+              td
+                p от 1500 р.
+            tr
+              td
+                p Неисправность терморегулятора
+              td
+                p Замена терморегулятора
+              td
+                p от 1200 р.
+
+    .calc-banner.page-banner
+      .page-banner-img
+        img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/men_1.webp' alt="")
+      .page-banner-content
+        .page-banner-content__title 
+          p Доверьте ремонт Вашего холодильника профессионалам!
+        .page-banner-content__text 
+          p  телефоны для связи
+          a(href='#')= telNumber_1 
+          |  или 
+          a(href='#')= telNumber_2 
+
+        .page-banner-content__text Также Вы можете оформить on-line заказ или заказать звонок
+        .page-banner-content-buttons
+          .page-banner-button.button-order 
+            | Оформить заявку
+            br
+            | on-line
+          .page-banner-button.button-callback Заказать звонок 
+    +brands-fridge({
+      title: "Ремонт холодильников любого производителя"
+    })
+    .page-articles-link
+      h2.page-title-h2 Другие возможные неисправности холодильников
+      .page-articles-link-wrapper
+        -var pathToPage = domen + '/malfunctions/neispravnosti-holodilnikov/'
+        .page-articles-link-item
+          a(href=pathToPage + 'holodilnik-gromko-rabotaet.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/fridges/hol-gromko-rabotaet.webp' alt="Холодильник громко работает")
+            p Холодильник громко работает
+        .page-articles-link-item
+          a(href=pathToPage + 'holodilnik-ne-vklyuchaetsya.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/fridges/hol-ne-vkluchaetsa.webp' alt="Холодильник не включается")
+            p Холодильник не включается
+        .page-articles-link-item
+          a(href=pathToPage + 'holodilnik-silno-morozit.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/fridges/hol-silno-morozit.webp' alt="Холодильник сильно морозит")
+            p Холодильник сильно морозит
+        .page-articles-link-item
+          a(href=pathToPage + 'led-v-morozilnoj-kamere.html')
+            img(src= domen + '/assets/img/pictures/repair-img/fridges/hol-led-v-morozilke.webp' alt="Лед в морозильной камере")
+            p Лед в морозильной камере
+        .page-articles-link-item
+          a(href=pathToPage + 'holodilnik-pishchit.html')
+            img(src= domen + '/assets/img/pictures/repair-img/fridges/hol-pishit.webp' alt="Холодильник пищит")
+            p Холодильник пищит
+        .page-articles-link-item
+          a(href=pathToPage + 'holodilnik-gudit.html')
+            img(src= domen + '/assets/img/pictures/repair-img/fridges/hol-gudit.webp' alt="Холодильник гудит")
+            p Холодильник гудит
+        .page-articles-link-item
+          a(href=pathToPage + 'holodilnik-shchelkaet.html')
+            img(src= domen + '/assets/img/pictures/repair-img/fridges/hol-shelkaet.webp' alt="Холодильник щелкает")
+            p Холодильник щелкает
+        .page-articles-link-item
+          a(href=pathToPage + 'holodilnik-techet.html')
+            img(src= domen + '/assets/img/pictures/repair-img/fridges/hol-plachet.webp' alt="Холодильник течет")
+            p Холодильник течет
+

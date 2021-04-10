@@ -1,0 +1,146 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок посудомоечных машин Hotpoint-Ariston (Хотпойнт Аристон)'
+  - var content = "Расшифровка ошибок посудомоечных машин Hotpoint-Ariston (Хотпойнт Аристон)"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок посудомоечных машин": "/errors/kody-oshibok-posudomoechnyh-mashin/",
+    "Коды ошибок посудомоечных машин Hotpoint-Ariston (Хотпойнт Аристон)" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    H1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-002.webp'
+    })
+    .page-text(itemprop="articleBody")
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p AL01
+              td
+                p Сработал Аквастоп
+            tr
+              td
+                p AL02
+              td
+                p Вода не поступает
+            tr
+              td
+                p AL03
+              td
+                p Нет слива воды
+            tr
+              td
+                p AL04
+              td
+                p Нарушение цепи питания датчика температуры NTC
+            tr
+              td
+                p AL05
+              td
+                p Неисправность циркуляционной помпы.
+                p Неисправность датчика уровня.
+            tr
+              td
+                p AL06
+              td
+                p Нарушение цепи питания заливного клапана SV
+            tr
+              td
+                p AL08
+              td
+                p Ошибка датчика температуры NTC
+            tr
+              td
+                p AL09
+              td
+                p
+                  | Ошибка распознавания програмного обеспечения. Электронный модуль не запрограмирован, неисправна клавиатура
+            tr
+              td
+                p AL10
+              td
+                p Нарушение цепи питания нагревательного элемента (ТЭНа)
+            tr
+              td
+                p AL99
+              td
+                p Связь невозможна. Проблемы с кабелем или электронным модулем
+            tr
+              td
+                p AL11
+              td
+                p Не поступает питание на двигатель циркуляционного насоса, либо он заклинил
+            tr
+              td
+                p AL12
+              td
+                p Ошибка связи между основной платой и платой дисплея
+            tr
+              td
+                p AL13
+              td
+                p
+                  | Ошибка основной платы. Неисправность диспенсера, либо в цепи управления короткое замыкание.
+                p Не выбрасывает таблетку моющего средства, нет нагрева
+            tr
+              td
+                p AL14
+              td
+                p Сливной шланг слишком низко, что привело к сифонному эффекту
+            tr
+              td
+                p Н20
+              td
+                p Давление воды в трубе низкое или отсутствует.
+                p Либо неисправность клапана залива воды
+      h2 Таблица неисправностей "EOS"
+      img(alr='коды неисправностей посудомоечных машин hotpoint-ariston' src= pathToImgArticles + 'pm_hotpoint-1.jpg')
+      img(alr='коды неисправностей посудомоечных машин hotpoint-ariston' src= pathToImgArticles + 'pm_hotpoint-2.jpg')
+      img(alr='коды неисправностей посудомоечных машин hotpoint-ariston' src= pathToImgArticles + 'pm_hotpoint-3.jpg')
+      h2 Индикация ошибок EVO 3
+      img(alr='коды неисправностей посудомоечных машин hotpoint-ariston' src= pathToImgArticles + 'pm_hotpoint-4.jpg')
+      img(alr='коды неисправностей посудомоечных машин hotpoint-ariston' src= pathToImgArticles + 'pm_hotpoint-5.jpg')
+      img(alr='коды неисправностей посудомоечных машин hotpoint-ariston' src= pathToImgArticles + 'pm_hotpoint-6.jpg')
+      .page-text
+        p * Пояснения:
+        p Селекторный переключатель: модели с селекторными переключателями.
+        p LED: модели LED (светодиодн.)
+        p Дисплей LCD: LCD (жидкокристалл.) отображение данных.
+      
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="качественный ремонт посудомоечных машин с гарантией")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качественный ремонт посудомоечных машин на дому!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

@@ -1,0 +1,234 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок холодильников Indesit (Индезит)'
+  - var content = "Расшифровка ошибок холодильников Indesit (Индезит)"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок холодильников": "/errors/kody-oshibok-holodilnikov/",
+    "Коды ошибок холодильников Indesit (Индезит)" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    H1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-005.webp'
+    })
+    .page-text(itemprop="articleBody")
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p F01
+              td
+                p Залипло реле включения компрессора
+            tr
+              td
+                p F02
+              td
+                p Разомкнуты контакты реле включения компрессора
+            tr
+              td
+                p F03
+              td
+                p Неполадки в силовой плате
+            tr
+              td
+                p F04
+              td
+                p Не работает вентилятор морозильника
+            tr
+              td
+                p F05
+              td
+                p Заслонка с электронным управлением (шаговая) не открывается/не закрывается
+            tr
+              td
+                p F06
+              td
+                p Дефект тиристора в управлении в ТЭНе оттаивания
+            tr
+              td
+                p F07
+              td
+                p Отсутствует потребление тока ТЭНом оттаивания
+            tr
+              td
+                p F09
+              td
+                p Сбой прошивки
+            tr
+              td
+                p F10
+              td
+                p Неисправна заслонка типа "Вкл/ Выкл"
+            tr
+              td
+                p F11
+              td
+                p Тиристор ТЭна обогрева отверстий забора воздуха короткозамкнут
+            tr
+              td
+                p F12
+              td
+                p Нет связи между платами дисплея и управления
+            tr
+              td
+                p F13
+              td
+                p Тиристор ТЭНа обогрева отверстий забора воздуха не включается
+            tr
+              td
+                p F14
+              td
+                p Неисправна силовая плата
+            tr
+              td
+                p F15
+              td
+                p Тиристор ТЭНа стойки хол.камеры короткозамкнут
+            tr
+              td
+                p F16
+              td
+                p Тиристор ТЭНа стойки хол.камеры не срабатывает
+            tr
+              td
+                p F18
+              td
+                p Цепь датчика NTC воздуха CCZ разомкнута/короткозамкнута
+            tr
+              td
+                p F20
+              td
+                p Сгорела лампа освещения холодильного отсека
+            tr
+              td
+                p F21
+              td
+                p Датчик NTC температуры окружающей среды UI не исправен
+            tr
+              td
+                p F22
+              td
+                p Цепь датчика NTC воздуха в холодильной камере разомкнута/ короткозамкнута
+            tr
+              td
+                p F24
+              td
+                p Цепь датчика NTC воздуха в морозильной камере разомкнута/ короткозамкнута
+            tr
+              td
+                p F25
+              td
+                p Цепь датчика NTC испарителя морозильной камеры разомкнута/ короткозамкнута
+            tr
+              td
+                p F28
+              td
+                p Вышла из строя плата дисплея
+            tr
+              td
+                p F40
+              td
+                p Вышла из строя клавиша ВклХВыкл на сенсорном дисплее
+            tr
+              td
+                p F41
+              td
+                p Вышла из строя клавиша 1 Саге сенсорного управления
+            tr
+              td
+                p F42
+              td
+                p Вышла из строя клавиша функции Holiday
+            tr
+              td
+                p F43
+              td
+                p Вышла из строя клавиша Ice Party
+            tr
+              td
+                p F44
+              td
+                p Вышла из строя клавиша Ever Fresh
+            tr
+              td
+                p F45
+              td
+                p Вышла из строя клавиша Super Freeze
+            tr
+              td
+                p F46
+              td
+                p Вышла из строя клавиша Super Cool
+            tr
+              td
+                p F47
+              td
+                p Вышла из строя клавиша аварийного сообщения
+            tr
+              td
+                p F49
+              td
+                p Вышла из строя клавиша FRIGO увеличения
+            tr
+              td
+                p F50
+              td
+                p Вышла из строя клавиша FRIGO уменьшения
+            tr
+              td
+                p F51
+              td
+                p Вышла из строя клавиша CCZ
+            tr
+              td
+                p F52
+              td
+                p Вышла из строя клавиша FREEZER
+                p "+"
+            tr
+              td
+                p F53
+              td
+                p Вышла из строя клавиша FREEZER
+        h2 Индикация ошибок
+        h3 Таблица неисправностей 3-дверных и 4-дверных холодильников с TVZ.
+        img(src=pathToImgArticles + 'hol_indesit-1.jpg' alt='коды ошибок холодильников indesit')
+        img(src=pathToImgArticles + 'hol_indesit-2.jpg' alt='коды ошибок холодильников indesit')
+
+
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="качественный ремонт холодильников с гарантией")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качественный ремонт холодильников на дому!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

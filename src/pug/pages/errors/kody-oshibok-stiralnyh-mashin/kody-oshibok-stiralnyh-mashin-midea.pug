@@ -1,0 +1,265 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок стиральных машин Midea'
+  - var content = "Расшифровка ошибок стиральных машин Midea'"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок стиральных машин": "/errors/kody-oshibok-stiralnyh-mashin/",
+    "Коды ошибок стиральных машин Midea" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    h1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-014.webp'
+    })
+    .page(itemprop="articleBody")
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p Е1
+              td
+                p Ошибка блокировки люка
+            tr
+              td
+                p Е2
+              td
+                p Нет залива воды
+            tr
+              td
+                p ЕЗ
+              td
+                p Нет слива воды
+            tr
+              td
+                p Е4
+              td
+                p Перелив воды в баке
+            tr
+              td
+                p Е5
+              td
+                p Ошибка двигателя
+            tr
+              td
+                p Е6
+              td
+                p Ошибка нагрева воды
+            tr
+              td
+                p Е7
+              td
+                p Ошибка датчика NTC
+            tr
+              td
+                p Е8
+              td
+                p Слишком много пены
+            tr
+              td
+                p Е9
+              td
+                p Мотор не работает\Перегрев
+            tr
+              td
+                p Е10
+              td
+                p Ошибка двигателя
+            tr
+              td
+                p HU
+              td
+                p Высокое или низкое напряжение в сети
+      h2 Ошибки для Midea Glory и Е - С серий.
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p ЕЮ
+              td
+                p Ошибка подачи воды
+            tr
+              td
+                p Е12
+              td
+                p Переполнение воды в баке
+            tr
+              td
+                p Е20, Е21
+              td
+                p Нет слива воды
+            tr
+              td
+                p ЕЗО, Е31
+              td
+                p Ошибка блокировки люка
+            tr
+              td
+                p ЕЗЗ
+              td
+                p Ошибка датчика уровня воды
+            tr
+              td
+                p Е34, Е35
+              td
+                p Ошибка датчика температуры
+            tr
+              td
+                p Е36
+              td
+                p Нет нагрева воды
+            tr
+              td
+                p Е60
+              td
+                p Ошибка двигателя
+            tr
+              td
+                p Е61
+              td
+                p Печатная плата не может получить сигнал о скорости вращения двигателя
+            tr
+              td
+                p Е62
+              td
+                p Ошибка двигателя\Неисправен триак
+            tr
+              td
+                p Е70
+              td
+                p Кнопка на панели застревает при нажатии на нее в течение 10 секунд
+            tr
+              td
+                p Е80
+              td
+                p Нет связи между модулем индикации и основной платы
+            
+      h2 Чтение ошибок Е - серии
+      img(alt='коды ошибок стиральных машина midea' src=pathToImgArticles + 'midea-1.jpg')
+      h2 Ошибки Midea MG52-10508 и аналогичные
+      img(alt='коды ошибок стиральных машина midea' src=pathToImgArticles + 'midea-2.jpg')
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код
+              th
+                p Состояние
+                p индикаторов
+              th
+                p Описание
+            tr
+              td
+                p Е1
+              td
+                p Отжим - мигает
+              td
+                p Дверца не закрыта
+            tr
+              td
+                p Е2
+              td
+                p Полоскание - мигает
+              td
+                p Нет залива воды
+            tr
+              td
+                p ЕЗ
+              td
+                p Полоскание - мигает Отжим - мигает
+              td
+                p Нет слива воды
+            tr
+              td
+                p Е4
+              td
+                p Стирка - мигает
+              td
+                p Перелив воды
+            tr
+              td
+                p Е5
+              td
+                p Стирка - мигает Отжим - мигает
+              td
+                p Ошибка двигателя
+            tr
+              td
+                p Е6
+              td
+                p Стирка - мигает Полоскание - мигает
+              td
+                p Ошибка нагрева воды
+            tr
+              td
+                p Е7
+              td
+                p Стирка - мигает Полоскание - мигает Отжим - мигает
+              td
+                p Ошибка датчика NTC
+            tr
+              td
+                p Е8
+              td
+                p Полоскание - горит Отжим - мигает
+              td
+                p Слишком много пены
+            tr
+              td
+                p Е9
+              td
+                p Стирка - горит Полоскание - мигает Отжим - мигает
+              td
+                p Мотор не работает\Перегрев
+            tr
+              td
+                p Е10
+              td
+                p Стирка - горит Полоскание - мигает
+              td
+                p Ошибка двигателя
+        
+
+
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="100% качественный ремонт стиральных машин")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качество и гарантия на ремонт стиральных машин!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

@@ -1,0 +1,178 @@
+.services {
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.6);
+}
+
+.sevices-wrap {
+    max-width: $maxWidth;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    
+    @media screen and (max-width: 1280px) {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
+
+.serv-item {
+    position: relative;
+    width: 100%;
+    height: rem(150);
+    // display: grid;
+    // grid-template-columns: 1fr;
+    // grid-template-rows: 40% 1fr;
+    // box-sizing: border-box;
+ 
+    padding: rem(7);
+    cursor: pointer;
+
+    &:hover {
+        background-color: $colorMain-1;
+    }
+    &:hover .fil0 {
+        fill: $white;
+    }
+    &:hover .serv-item__title {
+        color: $white;
+    }
+
+    @media screen and (max-width: 1280px) {
+       
+        width: rem(200); 
+    }
+    @media screen and (max-width: 768px) {
+
+    }
+}
+.serv-item-link {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 1fr;
+    box-sizing: border-box; 
+    width: 100%;
+    height: 100%;
+}
+
+.serv-item__img {
+    width: 100%;
+    height: 100%;
+}
+
+.serviceImg {
+    width: 100%;
+    height: 100%;
+}
+ 
+.fil0 {
+    fill: $colorMain-1;
+}
+
+.serv-item__title {
+    @include fontH2(rem(15), rem(20));
+    text-align: center;
+    @include justify-center;
+    padding: 0 rem(5);
+    color: $colorMain-1;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 400px) {
+
+    .services-hidden-container {
+        overflow: hidden;
+        transition: 1s;
+        max-height: rem(500);
+        padding-bottom: rem(120);
+        position: relative;
+    }
+    .services-hidden-container_visible {
+        transition: 1s;    
+        max-height: 10000px;
+    }
+    .services-hidden__bgrnd {
+        position: absolute;
+        background: linear-gradient(to top, white, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.01));
+        z-index: 1000;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: rem(120);
+
+    }
+    .services-hidden__button {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: rem(100);
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 2000;
+        color: $dark50;
+        &:before {
+            text-align: center;
+            font-family: 'Material Icons';
+            font-size: rem(60);
+            line-height: rem(60);
+            
+            font-weight: bold;
+            transition: 1s;
+        }
+        // &:after {
+        //     @include fontH3(rem(20), rem(50));
+            
+        //     font-weight: bold;
+        //     text-align: center;
+
+        // }
+
+    }
+
+    .services-hidden__button_up {
+        &:before {
+            content: "keyboard_arrow_down";
+            transform: rotate(180deg);
+        }
+        // &:after {
+        //     content: "Свернуть текст";
+        // }
+    }
+    .services-hidden__button_down {
+        &:before {
+            content: "keyboard_arrow_down";
+            transform: rotate(0deg);
+        }
+        
+        // &:after {
+        //     content: "Читать дальше";
+        // }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

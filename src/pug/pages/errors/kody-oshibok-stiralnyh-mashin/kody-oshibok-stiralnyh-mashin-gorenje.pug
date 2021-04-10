@@ -1,0 +1,305 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок стиральных машин gorenje'
+  - var content = "Расшифровка ошибок стиральных машин gorenje'"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок стиральных машин": "/errors/kody-oshibok-stiralnyh-mashin/",
+    "Коды ошибок стиральных машин gorenje" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    h1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-010.webp'
+    })
+    .page-text(itemprop="articleBody")
+      h2
+        | Коды ошибок Gorenje с системами управления PG1 — PG5
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p F1
+              td
+                p Ошибка датчика температуры
+            tr
+              td
+                p F2
+              td
+                p Ошибка при закрытии дверцы люка
+            tr
+              td
+                p F3
+              td
+                p В баке не достигается 1 -й уровень воды
+            tr
+              td
+                p F4
+              td
+                p Отсутствуют сигналы с тахогенератора приводного мотора
+            tr
+              td
+                p F5
+              td
+                p Замыкание управляющего симистора приводного мотора
+            tr
+              td
+                p F6
+              td
+                p Ошибка при нагреве воды
+            tr
+              td
+                p F7
+              td
+                p Нет слива воды
+            tr
+              td
+                p F8
+              td
+                p Низкая скорость вращения барабана в режиме отжима
+            tr
+              td
+                p F9
+              td
+                p В поддоне обнаружена протечка
+            tr
+              td
+                p F10
+              td
+                p Датчик воды не подключен
+            tr
+              td
+                p F11
+              td
+                p Перелив воды
+            tr
+              td(colspan='2')
+      h2
+        | Коды ошибок «Gorenje WA-101/121 /132/162/162Р»
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p F1
+              td
+                p Обрыв или короткое замыкание в цепи датчика температуры
+            tr
+              td
+                p F2
+              td
+                p Нет залива воды
+            tr
+              td
+                p F4
+              td
+                p Температура воды в баке не достигает заданного значения
+            tr
+              td
+                p F5
+              td
+                p Отсутствует слив воды
+            tr
+              td
+                p F31
+              td
+                p Проблемы с тахогенератором
+            tr
+              td
+                p F32
+              td
+                p Неисправна схема управления приводным мотором
+            tr
+              td
+                p F41
+              td
+                p Температура воды в баке выше допустимой
+            tr
+              td
+                p F43
+              td
+                p Скорость нарастания температуры воды в баке выше допустимой
+            tr
+              td
+                p F61
+              td
+                p Низкая скорость вращения барабана в режиме отжима
+            tr
+              td
+                p F63
+              td
+                p Отсутствует связь между модулем и мотором
+      h2
+        | Ошибки Gorenje с миганием лампочек (для машин без экрана)
+      img(alt='коды ошибок стиральных машина gorenje' src= pathToImgArticles + 'gorenje-1.jpg')
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Кол. миганий
+              th
+                p Значение ошибки
+            tr
+              td
+                p 1
+              td
+                p Неисправность датчика температуры
+            tr
+              td
+                p 2
+              td
+                p Неплотно закрыта дверца
+            tr
+              td
+                p 3
+              td
+                p Вода не поступает в машину
+            tr
+              td
+                p 4
+              td
+                p Неисправность датчика скорости вращения барабана
+            tr
+              td
+                p 5
+              td
+                p Неисправность мотора
+            tr
+              td
+                p 6
+              td
+                p Неисправен ТЭН
+            tr
+              td
+                p 7
+              td
+                p Нет слива воды
+      h2 Коды ошибок Gorenje WT 52122, WT 52133
+        
+      img(alt='коды ошибок стиральных машина gorenje' src= pathToImgArticles + 'gorenje-2.jpg')
+      img(alt='коды ошибок стиральных машина gorenje' src= pathToImgArticles + 'gorenje-3.jpg')
+      h2
+        | Ошибки Gorenje, Линии: Basic, Classic, Exclusive
+      img(alt='коды ошибок стиральных машина gorenje' src= pathToImgArticles + 'gorenje-4.jpg')
+      .page-text
+        p
+          | * На машинках без экрана, ошибки определяются количеством морганием led индикаторов.
+        p
+          | * Наример: ошибка ЕЗ - все индикаторы мигают Зх (1/2 секунды ВКЛ, 1/2 секунды ВЫКЛ) и 5 секунд ПАУЗА.
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              td
+                p Код ошибки
+              td
+                p Описание ошибки
+            tr
+              td
+                p Е1
+                p ERROR 1
+              td
+                p Ошибка датчика температуры
+            tr
+              td
+                p Е2
+                p ERROR 2
+              td
+                p Дверца не закрыта
+            tr
+              td
+                p ЕЗ
+                p ERROR 3
+              td
+                p Ошибка подачи воды
+            tr
+              td
+                p Е4
+                p ERROR 4
+              td
+                p Соединение с тахогенератором разорвано, либо коротко замкнуто
+            tr
+              td
+                p Е5
+                p ERROR 5
+              td
+                p Ошибка двигателя
+            tr
+              td
+                p E6
+                p ERROR 6
+              td
+                p Нет нагрева воды
+            tr
+              td
+                p E7
+                p ERROR 7
+              td
+                p Ошибка слива воды
+            tr
+              td
+                p E8
+                p ERROR 8
+              td
+                p Ошибка скорости вращения барабана
+            tr
+              td
+                p E9
+                p ERROR 9
+              td
+                p Утечка воды - AquaStop
+            tr
+              td
+                p E10
+                p ERROR 10
+              td
+                p Неисправность датчика уровня воды
+            tr
+              td
+                p El 1
+                p ERROR 11
+              td
+                p Ошибка перелива воды
+
+    
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="100% качественный ремонт стиральных машин")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качество и гарантия на ремонт стиральных машин!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

@@ -1,0 +1,184 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок посудомоечных машин Ardo (Ардо)'
+  - var content = "Расшифровка ошибок посудомоечных машин Ardo (Ардо)"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок посудомоечных машин": "/errors/kody-oshibok-posudomoechnyh-mashin/",
+    "Коды ошибок посудомоечных машин Ardo (Ардо)" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    H1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-001.webp'
+    })
+    .page-text(itemprop="articleBody")
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p Е1
+              td
+                p Вода не начинает заливаться в ПММ
+                p Обнаружена протечка, вода в поддоне
+            tr
+              td
+                p Е2
+              td
+                p Неисправен термодатчик. Нет нагрева воды
+            tr
+              td
+                p ЕЗ
+              td
+                p
+                  | Вода плохо нагревается, проблемы с ТЭНом или термодатчик отключил нагрев из-за перегрева
+            tr
+              td
+                p Е4
+              td
+                p Вода слишком медленно набирается в ПММ
+            tr
+              td
+                p Е5
+              td
+                p Не начинается слив воды из ПММ
+            tr
+              td
+                p Е6
+              td
+                p Вода не сливается полностью, скорее всего, из-за неверно установленной посуды
+            tr
+              td
+                p Е7
+              td
+                p Обнаружены проблемы с принудительным распределением воды
+            tr
+              td
+                p Часто мигает «Быстрая мойка»
+              td
+                p Проблемы с заливом воды
+            tr
+              td
+                p Часто мигает «Мойка стекла»
+              td
+                p Утечка воды
+      .page-text
+        p Выше перечисленные коды ошибок, характерны для моделей Ardo DB60LW, DB60LX, DB60LC, LS9212B2, LS9212EDT, LS9212ED, DF60L, DBI60L.
+
+      h2
+        | Индикация ошибок для моделей Ardo DBI60S, DF60S, DB60SX, DW60SW, DB60SC.
+      img(alt='коды ошибок посудомоечных машин Ardo' src= pathToImgArticles + 'pm_ardo-1.jpg')
+      img(alt='коды ошибок посудомоечных машин Ardo' src= pathToImgArticles + 'pm_ardo-2.jpg')
+      img(alt='коды ошибок посудомоечных машин Ardo' src= pathToImgArticles + 'pm_ardo-3.jpg')
+      h2 Коды ошибок Ardo DW45AL, DW45AEL, LS9325BE, LS9205E
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p Е1
+              td
+                p В машину не начала поступать вода за отведенное время
+            tr
+              td
+                p Е2
+              td
+                p Вода не начала сливаться за положенное время
+            tr
+              td
+                p ЕЗ
+              td
+                p Вода не начала нагреваться за требуемое время
+            tr
+              td
+                p Е4
+              td
+                p Система ''Аква-Стоп" сигнализирует о протечке
+            tr
+              td
+                p Е6
+              td
+                p Вышел из строя термодатчик NTC, возможно, из-за короткого замыкания
+            tr
+              td
+                p Е7
+              td
+                p
+                  | Нет сигнала от термодатчика NTC, всего, из-за обрыва в цепи или отсоединившихся контактов
+      h2 Коды ошибок Ardo DW60, DWB60, DWI60, DW060
+      .table-container_scroll
+        table(border='1')
+          tbody
+            tr
+              td
+                p Код ошибки
+              td
+                p Описание ошибки
+            tr
+              td
+                p Е1
+              td
+                p Не начинается залив воды
+            tr
+              td
+                p Е2
+              td
+                p
+                  | Не запускается слив воды. Ошибка показывается только в диагностическом режиме, мойка при этом не останавливается
+            tr
+              td
+                p ЕЗ
+              td
+                p Не начинается нагрев воды. Проблема выявляется только в режиме тестирования
+            tr
+              td
+                p Е4
+              td
+                p Обнаружена вода в поддоне ПММ
+            tr
+              td
+                p Е7
+              td
+                p
+                  | Вода не нагревается из-за обрыва в цепи термодатчика. Ошибка не выводится в пользовательском режиме, мойка продолжается без нагрева
+    
+
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="качественный ремонт посудомоечных машин с гарантией")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качественный ремонт посудомоечных машин на дому!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок

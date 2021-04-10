@@ -1,0 +1,254 @@
+extends ../../layout/repair_page_layout.pug
+
+
+block variables
+  - var title = 'Установка и подключение стиральных машин'
+  - var content = "Профессиональная установка и подключение стиральных машин в Санкт-Петербурге. Подведение коммуникаций, выставление и регулировка по уровню, проверка работоспособности. От 800 р."
+
+
+block content
+  include ../../../blocks/page-blocks/page-blocks
+  include ../../../blocks/elements/elements
+
+  +bread-crumbs({
+    'Главная': '/',
+    "Установка стиральных машин": "#",
+  })
+  .repair-page-title-section
+    H1.page-title-h1(itemprop="name")=title
+  .repair-page-text-section
+    .page-text
+      h2.page-title-h2 Стоимость работ по установке и подключению стиральной машины:
+      table.page-table(border='0')
+        tbody
+          tr
+            th
+              p Вид работы
+            th
+              p Стоимость
+          tr
+            td
+              p Установка стиральной машины
+            td
+              p от 400 р.
+          tr
+            td
+              p Подключение стиральной машины к коммуникациям
+            td
+              p от 600 р.
+          tr
+            td
+              p Монтаж/демонтаж встроенной стиральной машины
+            td
+              p от 250 р.
+      p
+        | Стиральная машина стала практически незаменимым аксессуаром в нашей жизни. На сегодняшний день на рынке представлено огромное количество моделей стиральных машины от самых разных производителей. Однако не смотря на многообразие моделей стиральных машин, по способу установки устройство делится только на два типа: отдельно стоящие и встроенные. Чаще всего приобретаются машины отдельно стоящие, которые в свою очередь могут быть с фронтальной (боковой) верхней загрузкой белья.
+      p
+        | Независимо от типа установки или способа закладки белья, любая стиральная машина требует грамотной установки и подключения. В процессе установки и подключения стиральной машины к коммуникациям требуется выполнить следующие работы:
+      ul.page-list.page-list-ul
+        li Демонтаж креплений и транспортировочных винтов.
+        li Подготовка места для установки машины и непосредственно ее установка.
+        li Подготовка коммуникаций для подключения (электроэнергия, подвод воды, канализация).
+        li Выравнивание стиральной машины по уровню.
+        li Подключение стиральной машины к коммуникациям.
+        li Регулировка напора воды для корректной работы техники.
+        li Проверка стиральной машины на работоспособность.
+      p
+        | Из этого списка необходимо отдельно выделить работы по подведению внешних коммуникаций.
+      h2.page-title-h2 Присоединение стиралки к электрической сети.
+      p
+        | Стиральная машина является достаточно мощным электроприемником. Ее мощность может достигать 3-4 кВт. Учитывая, что в нашей стране огромный фонд старого жилья, в котором с момента постройки не менялась электропроводка, требует обратить особое внимание на качество и сечение проводов электросети, к которым подключается стиральная машина.
+      p
+        | Если вы не обладаете достаточными знаниями в электротехнике, и не можете сопоставить мощность вашей машинки и необходимые параметры электропроводки, лучше доверьте этот вопрос профессионалам. Это залог Вашей же безопасности.
+      p
+        | Кроме электропроводки немаловажным моментом является установка защитных устройств в электрощитке, таких как УЗО или дифавтомат. Эти аппараты защищают оборудование от замыканий и перегрева, а также могут защитить пользователя от удара электротоком при его утечке на корпус устройства.
+      p
+        | Следующим важным этапом подключения стиральной машины к электросети является обеспечение ее заземление. Отсутствие заземления сети, к которой подключается агрегат, является неприемлемым с точки зрения правил эксплуатации и безопасности. Более того, отсутствие заземления может являться поводом для отказа в гарантийном обслуживании и ремонте техники производителем.
+      h3.page-title-h3 Обратите внимание!
+      p
+        | Установка и подключение стиралки людьми, не имеющими соответствующего образования и квалификации чревато повреждением техники и снижением безопасности ее использования. Нашим мастерам зачастую приходится сталкиваться с неисправностями стиральных машин, которые были установлены и подключены частными мастерами или собственными силами, с нарушением требований и правил.
+      p
+        | В компании РемБытТехника все мастера имеют техническое образование, и аттестованы для проведения работ по установке стиральных машин, а также проведению электротехнических и сантехнических работ.
+
+
+
+  .repair-page-advantages-section
+    H2.page-title-h2 Приемущества обращения к нам
+    .landing-page__advantages
+      .advantages-item
+        .advantages__img.icon-master
+        .advantages__text 
+          p Бесплатный выезд мастера и диагностика
+          .advantages__quest ?
+            .advantages__descr Выезд и диагностика выполняется бесплатно при выполнении ремонта.
+      .advantages-item
+        .advantages__img.icon-warranty
+        .advantages__text 
+          p Гарантия до 2-х лет (работа + запчасти)
+          .advantages__quest ?
+            .advantages__descr Предоставляется официальная гарантия на работу и установленные запасные части.
+      .advantages-item
+        .advantages__img.icon-people
+        .advantages__text 
+          p Большой штат квалифицированных мастеров
+          .advantages__quest ?
+            .advantages__descr У нас в штате более 70 мастеров. Мы тщательно отбираем мастеров, и регулярно проверяем их квалификацию.
+      .advantages-item
+        .advantages__img.icon-hour
+        .advantages__text 
+          p Выезд мастера на адрес в течение часа
+          .advantages__quest ?
+            .advantages__descr Большой штат сотрудников и наличие филиалов в каждом районе города позволяют нам очень быстро прибыть к Вам.
+      .advantages-item
+        .advantages__img.icon-original
+        .advantages__text 
+          p Используем только оригинальные запчасти для стиральных машин
+          .advantages__quest ?
+            .advantages__descr Мы сотрудничаем только с официальными и проверенным годами поставщиками. 
+      .advantages-item
+        .advantages__img.icon-srtificate
+        .advantages__text 
+          p Сертифицированный сервисный центр компаний Bosch, Miele, Siemens, Samsung и др.
+          .advantages__quest ?
+            .advantages__descr Мы имеем официальную сертификацию у ведущих производителей техники и регулярно ее подтверждаем.
+  
+  .calc-banner.page-banner
+      .page-banner-img
+        img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/men_1.webp' alt="")
+      .page-banner-content
+        .page-banner-content__title 
+          p Профессиональное подключение и установка стиральной машины в кратчайшие сроки
+        .page-banner-content__text 
+          p  телефоны для связи
+          a(href='#')= telNumber_1 
+          |  или 
+          a(href='#')= telNumber_2 
+
+        .page-banner-content__text Также Вы можете оформить on-line заказ или заказать звонок
+        .page-banner-content-buttons
+          .page-banner-button.button-order 
+            | Оформить заявку
+            br
+            | on-line
+          .page-banner-button.button-callback Заказать звонок 
+ 
+
+  .repair-page-brands
+    H2.page-title-h2 Подключение стиральных машин любых брендов
+    .brands-carousel.owl-carousel#js-carousel-3
+      .brands-carousel-item-group
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/miele_300.webp" alt="Подключение стиральной машины Miele в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/smeg_300.webp" alt="Подключение стиральной машины Smeg в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/bosch_300.webp" alt="Подключение стиральной машины Bosch в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/siemens_300.webp" alt="Подключение стиральной машины Siemens в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/aeg_300.webp" alt="Подключение стиральной машины AEG в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/teka_300.webp" alt="Подключение стиральной машины Teka в Санкт-петербурге")
+      .brands-carousel-item-group
+        a.brands-carousel-item__link(href="#")  
+          img.brands-carousel-item(src="/assets/img/pictures/brands/samsung_300.webp" alt="Подключение стиральной машины Samsung в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/lg_300.webp" alt="Подключение стиральной машины LG в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/korting_300.webp" alt="Подключение стиральной машины Korting в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/electrolux_300.webp" alt="Подключение стиральной машины Electrolux в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/ardo_300.webp" alt="Подключение стиральной машины Ardo в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/atlant_300.webp" alt="Подключение стиральной машины Atlant в Санкт-петербурге")
+      .brands-carousel-item-group
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/beko_300.webp" alt="Подключение стиральной машины Beko в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/candy_300.webp" alt="Подключение стиральной машины Candy в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/gorenje_300.webp" alt="Подключение стиральной машины Gorenje в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/hansa_300.webp" alt="Подключение стиральной машины Hansa в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/indezit_300.webp" alt="Подключение стиральной машины Indezit в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/liebherr_300.webp" alt="Подключение стиральной машины Liebherr в Санкт-петербурге")
+      .brands-carousel-item-group
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/panasonic_300.webp" alt="Подключение стиральной машины Panasonic в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/philips_300.webp" alt="Подключение стиральной машины Philips в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/whirpool_300.webp" alt="Подключение стиральной машины whirpool в Санкт-петербурге")
+      .brands-carousel-item-group
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/asko_300.webp" alt="Подключение стиральной машины Asko в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/daewoo_300.webp" alt="Подключение стиральной машины Daewoo в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/haier_300.webp" alt="Подключение стиральной машины Haier в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/hotpoint-ariston_300.webp" alt="Подключение стиральной машины Hotpoint-Ariston в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/mabe_300.webp" alt="Подключение стиральной машины Mabe в Санкт-петербурге")
+
+  
+
+  .repair-page-questions
+    .repair-page-questions-item
+      H2.repair-page-questions-item__title Почему стоит обратиться за подключением стиральной машины именно к нам?
+      ul.repair-page-questions-list
+        li.repair-page-questions-list-item 
+          p
+            span.repair-page-questions__subtitle.font-bold У нас бесплатный выезд по городу. 
+          p При согласии на проведение работ Вы не платите за приезд специалиста на дом и диагностику.
+        li.repair-page-questions-list-item 
+          p
+            span.repair-page-questions__subtitle.font-bold Гарантия на установку и подключение. 
+          p Вы получаете гарантию до 1 года на комплектующие при подключении стиральной машины.
+        li.repair-page-questions-list-item 
+          p
+            span.repair-page-questions__subtitle.font-bold Мы приедем в удобное для Вас время. 
+          p Вы можете выбрать время для визита мастера.
+            span Также Вы можете оформить 
+            span.repair-page-questions__button-order.button-order заявку
+            span на ремонт подключение стирально машины и получить гарантированную скидку 10% на работы.
+        li.repair-page-questions-list-item.font-bold
+          p
+            span.repair-page-questions__subtitle Экономия Вашего времени!
+            span Мастер приедет на ремонт уже подготовленный и сделает работу в кратчайшие сроки.
+            span В среднем подключение стиральной машины на дому  занимает от 45 минут до 1,5 часов.
+       
+    .repair-page-questions-item.repair-page-questions-item_active
+      H2.repair-page-questions-item__title Как быстро осуществляется подключение стиральной машины?
+      .repair-page-questions-list
+        p.repair-page-questions-list-text 
+          span В среднем подключение стиралки занимает от 45 минут до 1,5 часов. 
+    .repair-page-questions-item.repair-page-questions-item_active
+      H2.repair-page-questions-item__title Как вызвать мастера?
+      .repair-page-questions-list
+        p.repair-page-questions-list-text 
+          span Если Вам необходимо подключить и установить стиральную машину, позвоните в компанию 
+          span= nameCompany 
+          span  по телефонам
+
+        a(herf=telNumber_1_int)= telNumber_1
+        br
+        a(herf=telNumber_2_int)= telNumber_2
+        br
+        p или оформите 
+          span.repair-page-questions__button-order.button-order заявку on-line  
+          span на сайте.
+    .repair-page-questions-item.repair-page-questions-item_active
+      H2.repair-page-questions-item__title Насколько опытные специалисты приезжают на ремонт?
+      .repair-page-questions-list
+        p У нас в штате специалисты по ремонту и установке стиральных машин с минимальным опытом работы 3 года. Большинство наших мастеров имеет опыт работы 8-10 лет.
+        p Кроме того, при принятии на работу, и в дальнейшем мы проводим аттестацию сотрудников и повышение их квалификации.
+        p Также все наши мастера проходят ежедневный медицинский контроль, а также тестирование на заболевание короновирусом COVID-19.
+
+
+
+
+

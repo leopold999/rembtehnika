@@ -1,0 +1,21 @@
+mixin callback-popup
+    .callback-popup
+
+        .callback-popup-wrapper
+            .callback-popup__close-button
+            .callback-popup__title Оставьте свой номер телефона
+            .callback-popup__descr Мы перезвоним Вам в течение 5-ти минут
+            form#callback-form-1.callback-popup-form(action="" method="get")
+                input(class="callback-popup-form__name-input callback-popup-form-input" type="text" name="name" placeholder="Ваше Имя" required action='?' method='POST') 
+                input(class="callback-popup-form__phone-input callback-popup-form-input" type="text" name="phone" placeholder="Ваш телефон" maxlength="32" required)
+                input(class="callback-popup-form__button callback-popup-form-input" name="" type="submit" value="Заказать звонок")
+                .g-recaptcha(data-sitekey='6Le16YwaAAAAAL3IwI4-SniEnXU5YDeXTmk0QOn2')
+                p#msg.text-danger
+            //- .callback-popup__privacy Нажимая кнопку "Заказать звонок" Вы соглашетесь на обработку Ваших персональных данных.
+            .callback-popup-info
+                p Также вы можете оформить 
+                a.button-order(href="#") on-line заявку
+                p на сайте и получить скидку 10% на ремонт
+
+
+

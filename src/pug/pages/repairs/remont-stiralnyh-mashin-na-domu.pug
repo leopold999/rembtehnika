@@ -1,0 +1,714 @@
+extends ../../layout/repair_page_layout.pug
+
+
+block variables
+    - var title = 'Ремонт стиральных машин на дому Санкт-Петербурге'
+    - var content = "Ремонт стиральных любых марок за один визит к Вам. Бесплатный выезд и диагностика. Профессиональное оборудование. Гарантия до 2-х лет."
+    
+
+block content
+    include ../../../blocks/page-blocks/page-blocks
+    include ../../../blocks/elements/elements
+
+    +bread-crumbs({
+      'Главная': '/',
+
+      "Ремонт стиральных машин": "#",
+  
+    })
+    .repair-page-title-section
+      H1.page-title-h1(itemprop="name")=title
+    .repair-page-text-section
+      .repair-page-img.repair-page-img_float-left
+        include ../../../img/pictures/svg/washmash.pug
+      .page-text
+        p
+          | Все мы привыкли к комфорту. И обыденные предметы быта воспринимаем как должное. 
+          | Однако, техника не вечна, особенно современные модели. Это не значит, что они хуже старых, 
+          | советских приборов. Просто они устроены более сложным образом. Стиральные машинки не исключение 
+          |из этого списка. 
+        p
+          | Рано или поздно, даже самая надежная техника требует починки.
+          | Как правило, поломки становятся неприятным сюрпризом для владельцев 
+          | и срочно требуется ремонт стиральной машинки на дому. 
+          | Сократить траты поможет своевременная диагностика. 
+          | Незначительные дефекты способны со временем привести технику в полную негодность.
+      .repair-page-img.repair-page-img_float-left
+        img(itemprop="image" src=domen + '/assets/img/pictures/repair-img/wash-mash/remont-sm-001.webp' alt="Ремонт стиральных машин на дому в спб")
+      .page-text 
+        p
+          | Как показывает статистика, в большинстве ситуаций, поломки связанны с 
+          |неправильной эксплуатацией и откладыванием ремонта техники. Реже вина в износе изделия. 
+          | Поэтому в случае со стиральной машинкой в 90% выгодней починить старую, нежели приобрести новую модель.
+        p
+          | Зачастую это явные признаки: не включается машинка или 
+          | не открывается загрузочный люк. При этом необходимость вызова мастера очевидна. 
+          | Но существует множество видов неисправностей, при которых владельцы не спешат 
+          | с ремонтом. В таком случае возможно придется оплачивать не только починку машинки, 
+          | но и косметический ремонт соседям снизу.
+      .repair-page-img.repair-page-img_float-right
+        img(itemprop="image" src=domen + '/assets/img/pictures/repair-img/wash-mash/remont-sm-002.webp' alt="Ремонт стиральных машин на дому в спб")
+
+
+      .page-text
+        p
+          | Следует немедленно обратиться к специалисту если вы заметили, 
+          | что техника издает непривычные для нее звуки, чрезмерно вибрирует 
+          | или заметны подтекания. Иногда может плохо работать отжим или не 
+          | вращаться барабан. Не менее редко случаются проблемы с нагреванием воды: 
+          | она может перегреваться или не нагреваться должным образом.
+        p
+          | Чтобы вовремя заметить дефекты работы, необходимо обращать 
+          | внимание на состояние белья после стирки. Объективно необходимо 
+          | бить тревогу если: у вас в квартире выбивает пробки во время работы машинки или явно пахнет горелой проводкой.
+      
+    
+    .repair-page-advantages-section
+      H2.page-title-h2 Приемущества обращения к нам
+      .landing-page__advantages
+        .advantages-item
+          .advantages__img.icon-master
+          .advantages__text 
+            p Бесплатный выезд мастера и диагностика неисправности стиральной машины
+            .advantages__quest ?
+              .advantages__descr Выезд и диагностика выполняется бесплатно при выполнении ремонта.
+        .advantages-item
+          .advantages__img.icon-warranty
+          .advantages__text 
+            p Гарантия до 2-х лет (работа + запчасти)
+            .advantages__quest ?
+              .advantages__descr Предоставляется официальная гарантия на работу и установленные запасные части.
+        .advantages-item
+          .advantages__img.icon-people
+          .advantages__text 
+            p Большой штат квалифицированных мастеров
+            .advantages__quest ?
+              .advantages__descr У нас в штате более 70 мастеров. Мы тщательно отбираем мастеров, и регулярно проверяем их квалификацию.
+        .advantages-item
+          .advantages__img.icon-hour
+          .advantages__text 
+            p Выезд мастера на адрес в течение часа
+            .advantages__quest ?
+              .advantages__descr Большой штат сотрудников и наличие филиалов в каждом районе города позволяют нам очень быстро прибыть к Вам.
+        .advantages-item
+          .advantages__img.icon-original
+          .advantages__text 
+            p Используем только оригинальные запчасти для стиральных машин
+            .advantages__quest ?
+              .advantages__descr Мы сотрудничаем только с официальными и проверенным годами поставщиками. 
+        .advantages-item
+          .advantages__img.icon-srtificate
+          .advantages__text 
+            p Сертифицированный сервисный центр компаний Bosch, Miele, Siemens, Samsung и др.
+            .advantages__quest ?
+              .advantages__descr Мы имеем официальную сертификацию у ведущих производителей техники и регулярно ее подтверждаем.
+    .repair-page-problems
+        H2.page-title-h2 Популярные неисправности стиральных и способы их устранения
+        .repair-page-problems-items
+          - let pathToFolder = '/neispravnosti-stiralnyh-mashin/'
+          +problem-item({
+              link: domen + pathToFolder + 'stiralnaya-mashina-ne-slivaet.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/wash-mash/sm-ne-slivaet.webp',
+              title: 'Стиральная машина не сливает',
+              repairOptions: ['Чистка сливной системы', 'Замена сливного насоса', 'Ремонт модуля'],
+              price: '600',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'stiralnaya-mashina-ne-otzhimaet.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/wash-mash/sm-ne-otgimaet.webp',
+              title: 'Стиральная машина не отжимает',
+              repairOptions: ['Чистка сливной системы', 'Замена сливного насоса', 'Замена подшипников'],
+              price: '600',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'stiralnaya-mashina-ne-greet.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/wash-mash/sm-ne-greet.webp',
+              title: 'Стиральная машина не греет',
+              repairOptions: ['Замена ТЭНа', 'Ремонт электроцепи'],
+              price: '1200',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'stiralnaya-mashina-ne-vklyuchaetsya.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/wash-mash/sm-ne-vkluchaetsa.webp',
+              title: 'Стиральная машина не включается',
+              repairOptions: ['Ремонт электросхемы', 'Ремонт модуля управления'],
+              price: '600',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'stiralnaya-mashina-ne-nabiraet-vodu.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/wash-mash/sm-ne-nabiraet.webp',
+              title: 'Стиральная машина не набирает воду',
+              repairOptions: ['Чистка наливного фильтра', 'Замена наливного клапана'],
+              price: '600',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'stiralnaya-mashina-prygaet.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/wash-mash/sm-prigaet.webp',
+              title: 'Стиральная машина прыгает',
+              repairOptions: ['Замена противовеса', 'Замена амортизаторов', 'Замена крестовины'],
+              price: '800',
+          })
+         
+        .repair-page-problems-items-add.repair-page-problems-items-add_invisible
+          +problem-item({
+              link: domen + pathToFolder + 'stiralnaya-mashina-gudit.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/wash-mash/sm-gudit.webp',
+              title: 'Стиральная машина гудит',
+              repairOptions: ['Замена подшипников'],
+              price: '2100',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'stiralnaya-mashina-ne-otkryvaetsya.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/wash-mash/sm-ne-otkrivaet.webp',
+              title: 'Стиральная машина не открывается',
+              repairOptions: ['Ремонт замка люка', 'Замена устройства блокировки'],
+              price: '600',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'stiralnaya-mashina-migaet.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/wash-mash/sm-migaet.webp',
+              title: 'Стиральная машина мигает',
+              repairOptions: ['Замена щеток двигателя', 'Замена наливного клапана'
+              ],
+              price: '1200',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'stiralnaya-mashina-bet-tokom.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/wash-mash/sm-bjet-tokom.webp',
+              title: 'Стиральная машина бьет током',
+              repairOptions: ['Ремонт электросхемы', 'Замена ТЭНа'],
+              price: '600',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'stiralnaya-mashina-ploho-stiraet.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/wash-mash/sm-ploho-stiraet.webp',
+              title: 'Стиральная машина плохо стирает',
+              repairOptions: ['Чистка сливной системы', 'Замена сливного насоса'],
+              price: '600',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'stiralnaya-mashina-ne-ostanavlivaetsya-stiraet-bez-ostanovki.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/wash-mash/sm-bez-ostanovki.webp',
+              title: 'Стиральная машина не останавливается',
+              repairOptions: ['Замена ТЭНа', 'Ремонт модуля управления'],
+              price: '600',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'pena-iz-stiralnoj-mashiny.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/wash-mash/sm-penitsa.webp',
+              title: 'Пена из стиральной машины',
+              repairOptions: ['Чистка сливной системы', 'Замена сливного насоса', 'Замена подшипников'],
+              price: '1200',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'ne-krutitsya-baraban-v-stiralnoj-mashine.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/wash-mash/sm-ne-krutit.webp',
+              title: 'Не крутится барабан в стиральной машине',
+              repairOptions: ['Замена щеток двигателя', 'Замена ремня'],
+              price: '800',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'stiralnaya-mashina-ne-poloskaet.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/wash-mash/sm-ne-poloskaet.webp',
+              title: 'Стиральная машина не полоскает',
+              repairOptions: ['Чистка сливной системы', 'Чистка наливного фильтра'],
+              price: '600',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'stiralnaya-mashina-ne-zakryvaetsya.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/wash-mash/sm-ne-blokiruet.webp',
+              title: 'Стиральная машина не закрывается',
+              repairOptions: ['Ремонт замка люка', 'Замена устройства блокировки'],
+              price: '600',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'stiralnaya-mashina-pokazyvaet-oshibku.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/wash-mash/sm-pokazivaet-oshibku.webp',
+              title: 'Стиральная машина показывает ошибку',
+              repairOptions: ['Возможна любая неисправность'],
+              price: '600',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'stiralnaya-mashina-skripit.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/wash-mash/sm-scripit.webp',
+              title: 'Стиральная машина скрипит',
+              repairOptions: ['Замена амортизаторов', 'Замена подшипников'],
+              price: '1500',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'stiralnaya-mashina-techet-podtekaet.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/wash-mash/sm-techet.webp',
+              title: 'Стиральная машина течёт',
+              repairOptions: ['Замена патрубков', 'Замена сливного насоса', 'Замена шланга'],
+              price: '500',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'stiralnaya-mashina-vibriruet.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/wash-mash/sm-vibriruet.webp',
+              title: 'Стиральная машина вибрирует',
+              repairOptions: ['Установка стиральной машины', 'Замена амортизаторов', 'Замена противовеса'],
+              price: '400',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'stiralnaya-mashina-srazu-slivaet-vodu.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/wash-mash/sm-srazu-slivaet.webp',
+              title: 'Стиральная машина сразу сливает воду',
+              repairOptions: ['Установка стиральной машины', 'Ремонт модуля управления'],
+              price: '400',
+          })
+
+        .problem-button-wrap
+          .problem-button
+          
+    .calc-banner-container
+      +calc-banner
+    .repair-page-text-section
+      .page-text 
+        p
+          | Указанные неисправности являются не полным перечнем поломок. 
+          | Мастера проводят полную диагностику и только после нее можно 
+          | установить полную картину состояния вашей техники. Внимание,
+          | только квалифицированный сотрудник способен установить причину поломки.
+          | Поэтому, при первых признаках неисправности, как можно скорее звоните специалисту. 
+          | Он исправит поломку и сможет дать вам необходимые рекомендации, чтобы техника прослужила как можно дольше.
+        p
+          | Компания РемБытТехника предоставляет услуги по ремонту техники в городе Санкт-Петербурге. 
+          | Работаем с 2005 года и имеем 11 филиалов в городе. Готовы взяться за любую модель,
+          | вне зависимости ее возраста. Имеем широкий штат сотрудников: более 50 по всему городу.
+          |  Каждый имеет высокую квалификацию и опыт работы от трех лет. Мастера бесплатно выезжают по городу. 
+
+
+    .repair-page-brands
+      H2.page-title-h2 Мы ремонтируем стиральные машины большинства известных брендов
+      .brands-carousel.owl-carousel#js-carousel-3
+        .brands-carousel-item-group
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/miele_300.webp" alt="Ремонт стиральных машин Miele в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/smeg_300.webp" alt="Ремонт стиральных машин Smeg в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/bosch_300.webp" alt="Ремонт стиральных машин Bosch в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/siemens_300.webp" alt="Ремонт стиральных машин Siemens в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/aeg_300.webp" alt="Ремонт стиральных машин AEG в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/teka_300.webp" alt="Ремонт стиральных машин Teka в Санкт-петербурге")
+        .brands-carousel-item-group
+          a.brands-carousel-item__link(href="#")  
+            img.brands-carousel-item(src="/assets/img/pictures/brands/samsung_300.webp" alt="Ремонт стиральных машин Samsung в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/lg_300.webp" alt="Ремонт стиральных машин LG в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/korting_300.webp" alt="Ремонт стиральных машин Korting в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/electrolux_300.webp" alt="Ремонт стиральных машин Electrolux в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/ardo_300.webp" alt="Ремонт стиральных машин Ardo в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/atlant_300.webp" alt="Ремонт стиральных машин Atlant в Санкт-петербурге")
+        .brands-carousel-item-group
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/beko_300.webp" alt="Ремонт стиральных машин Beko в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/candy_300.webp" alt="Ремонт стиральных машин Candy в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/gorenje_300.webp" alt="Ремонт стиральных машин Gorenje в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/hansa_300.webp" alt="Ремонт стиральных машин Hansa в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/indezit_300.webp" alt="Ремонт стиральных машин Indezit в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/liebherr_300.webp" alt="Ремонт стиральных машин Liebherr в Санкт-петербурге")
+        .brands-carousel-item-group
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/panasonic_300.webp" alt="Ремонт стиральных машин Panasonic в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/philips_300.webp" alt="Ремонт стиральных машин Philips в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/whirpool_300.webp" alt="Ремонт стиральных машин whirpool в Санкт-петербурге")
+        .brands-carousel-item-group
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/asko_300.webp" alt="Ремонт стиральных машин Asko в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/daewoo_300.webp" alt="Ремонт стиральных машин Daewoo в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/haier_300.webp" alt="Ремонт стиральных машин Haier в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/hotpoint-ariston_300.webp" alt="Ремонт стиральных машин Hotpoint-Ariston в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/mabe_300.webp" alt="Ремонт стиральных машин Mabe в Санкт-петербурге")
+
+    .call-action-banner-container
+      .calc-banner.page-banner
+        .page-banner-img
+            img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/master.webp' alt="")
+        .page-banner-content
+            .page-banner-content__title 
+                p Ремонт в течение двух часов!
+            .page-banner-content__text 
+                p Свяжитесь с нами по телефонам  
+                a(href=telNumber_1_int)= telNumber_1 
+                |  или 
+                a(href=telNumber_2_int)= telNumber_2 
+                |  и в течение двух часов Ваша стиральная машина будет исправна!
+            .page-banner-content__text Также Вы можете оформить on-line заявку на ремонт стиральной машины или заказать обратный звонок
+            .page-banner-content-buttons
+                .page-banner-button 
+                    | Оформить заявку
+                    br
+                    | on-line
+                .page-banner-button Заказать звонок
+    .repair-page-prices
+      H2.page-title-h2 Цены на услуги по ремонту стирыльных машин в г. Санкт-Петербург
+      .table-container
+        .table-container__bgrnd
+        .table-container__button.table-container__button_down
+        table.page-table
+          tbody
+            tr
+              th Вид работ
+              th Стоимость
+            tr
+              td Выезд мастера на дом
+              td бесплатно
+            tr
+              td Диагностика неисправности
+              td бесплатно
+            tr
+              td Диагностика без разбора техники (в случае отказа от проведения ремонта)
+              td 400 р.
+            tr
+              td Выезд за пределы КАД
+              td 15 р/км. от КАД
+            tr
+              td.table-subtitle(colspan='2') Мелкий ремонт
+            tr
+              td Замена ручки люка
+              td от 800 р.
+            tr
+              td Ремонт (замена) кнопки
+              td от 800 р.
+            tr
+              td Замена стекла люка
+              td от 900 р.
+            tr
+              td Чистка сливного фильтра
+              td от 600 р.
+            tr
+              td Чистка наливного фильтра
+              td от 600 р.
+            tr
+              td Замена ремня
+              td от 800 р.
+            tr
+              td Установка стиральной машины
+              td от 400 р.
+            tr
+              td Замена шланга (наливного/сливного)
+              td от 500 р.
+            tr
+              td Ремонт механизма замка люка
+              td от 600 р.
+            tr
+              td Монтаж/демонтаж встроенной стиральной машины
+              td от 250 р.
+            tr
+              td Подключение стиральной машины к коммуникациям
+              td от 600 р.
+            tr
+              td Замена петель люка
+              td от 600 р.
+            tr
+              td Сброс ошибок
+              td от 500 р.
+
+            tr
+              td.table-subtitle(colspan='2') Ремонт средней сложности
+            tr
+              td Замена электро-наливного клапана
+              td от 800 р.
+            tr
+              td Замена щеток двигателя
+              td от 1200 р.
+            tr
+              td Замена сливного насоса (помпы)
+              td от 1200 р.
+            tr
+              td Замена устройства блокировки люка (УБЛ)
+              td от 1200 р.
+            tr
+              td Чистка двигателя
+              td от 600 р.
+            tr
+              td Замена противовеса
+              td от 800 р.
+            tr
+              td Замена манжеты люка
+              td от 1500 р.
+            tr
+              td Вскрытие машины
+              td от 600 р.
+            tr
+              td Диагностика модуля управления
+              td от 400 р.
+            tr
+              td Ремонт модуля управления
+              td от 1500 р.
+            tr
+              td Замена патрубков
+              td от 1000 р.
+            tr
+              td Замена таходатчика
+              td от 1000 р.
+            tr
+              td Замена люка
+              td от 800 р.
+            tr
+              td Извлечение постороннего предмета из бака
+              td от 1200 р.
+
+            tr
+              td.table-subtitle(colspan='2') Сложный ремонт
+            tr
+              td Замена двигателя
+              td от 1200 р.
+            tr
+              td Замена подшипников
+              td от 2100 р.
+            tr
+              td Замена крестовины
+              td от 2100 р.
+            tr
+              td Замена амортизаторов
+              td от 1500 р.
+            tr
+              td Замена суппортов
+              td от 1500 р.
+            tr
+              td Замена ТЭНа
+              td от 1200 р.
+            tr
+              td Замена прессостата
+              td от 1200 р.
+            tr
+              td Ремонт электросхемы
+              td от 600 р.
+            tr
+              td Замена бака
+              td от 2500 р.
+ 
+            tr
+              td.table-subtitle(colspan='2') Дополнительная информация
+            tr
+              td Диагностика без разбора техники (в случае отказа от проведения ремонта)
+              td 400 р.
+            tr
+              td Сборка и разборка встроенной техники
+              td от 700 р.
+            tr
+              td Сборка и разборка стиральной машины
+              td от 600 р.
+            tr
+              td Коэффициент стесненности
+              td от 10%
+            tr
+              td Ложный вызов
+              td 1,500р.
+
+  
+    .repair-page-reviews
+      H2.page-title-h2 Отзывы клиентов о ремонте стиральных машин
+      .repair-page-reviews-items.owl-carousel#js-carousel-2
+        
+        +reviews({
+          id: '00093',
+          typeRepair: 'Ремонт стиральных машин',
+          userName: 'Людмила',
+          date: '10.01.2021',
+          rating: '5',
+          text: 'Замену подшипников сделали за 4 часа, плюс бонусом профилактика все машинки.',
+          answerSupport: ''
+          })
+        +reviews({
+          id: '00085',
+          typeRepair: 'Ремонт стиральных машин',
+          userName: 'Виктор',
+          date: '12.11.2020',
+          rating: '4',
+          text: 'Все на высшем уровне. спасибо.',
+          answerSupport: 'Рады стараться!'
+          })
+        +reviews({
+          id: '00080',
+          typeRepair: 'Ремонт стиральных машин',
+          userName: 'Андрей',
+          date: '25.09.2020',
+          rating: '5',
+          text: 'Все сделано очень оперативно и качественно. Мастер приехал примерно через 40 минут с несколькими чемоданами инструментов. Минут через 10 определил неисправность сливного насоса. Вся работа заняла не более 40 минут. Спасибо!',
+          answerSupport: 'Спасибо Вам за отзыв!'
+          })
+        +reviews({
+          id: '00079',
+          typeRepair: 'Ремонт стиральных машин',
+          userName: 'Алёна',
+          date: '20.09.2020',
+          rating: '1',
+          text: 'Вызывала мастера по стиральной машине, тк горел индикатор незакрытого люка. Мастер нажал комбинацию кнопок и озвучил цену 400 рублей. Мы конечно заплатили, хотя были шокированы ценником... ',
+          answerSupport: 'Уважаемая Алена! Фактически мастер запустил Вам исправную стиральную машину. Это расценивается как ложный вызов, при этом мастер взял с Вас сумму за проведение диагностики, вместо суммы за ложный вызов.'
+          })
+        +reviews({
+          id: '00074',
+          typeRepair: 'Ремонт стиральных машин',
+          userName: 'Татьяна',
+          date: '18.07.2020',
+          rating: '5',
+          text: 'Не сливала машинка. Все починили очень быстро.',
+          answerSupport: ''
+          })
+                  
+    .repair-page-questions
+      .repair-page-questions-item
+        H2.repair-page-questions-item__title Почему стоит обратиться за ремонтом стиральной машины именно к нам?
+        ul.repair-page-questions-list
+          li.repair-page-questions-list-item 
+            p
+              span.repair-page-questions__subtitle.font-bold У нас бесплатный выезд по городу и диагностика неисправности. 
+            p При осуществлении ремонта Вы не платите за приезд специалиста на дом и диагностику.
+          li.repair-page-questions-list-item 
+            p
+              span.repair-page-questions__subtitle.font-bold Гарантия до 2-х лет. 
+            p В зависимости от вида ремонта вы получаете официальную гарантию на ремонтные работы от 3-х месяцев до 2-х лет.
+          li.repair-page-questions-list-item 
+            p
+              span.repair-page-questions__subtitle.font-bold Мы приедем в удобное для Вас время. 
+            p Вы можете выбрать время для визита мастера.
+              span Также Вы можете оформить 
+              span.repair-page-questions__button-order.button-order заявку
+              span на ремонт стиральной машины и получить гарантированную скидку 10% на ремонт.
+          li.repair-page-questions-list-item.font-bold
+            p
+              span.repair-page-questions__subtitle Ремонт за один визит - экономия Вашего времени!
+              span Наши мастера имеют все необходимое современное оборудование для ремонта. Все для того чтобы сделать ремонт качественно и в кратчайшие сроки.
+              span В среднем ремонт стиральной мышины на дому в с реднем занимает от 45 минут до 1,5 часов.
+          li.repair-page-questions-list-item.font-bold
+            p
+              span.repair-page-questions__subtitle Бесплатная телефонная консультация.
+              span На приеме звонков у нас опытные мастера по ремонту бытовой техники. 
+              span Звоните, ответим на все вопросы и бесплатно проконсултируем.
+      .repair-page-questions-item.repair-page-questions-item_active
+        H2.repair-page-questions-item__title Как быстро осуществляется ремонт стиральной машины?
+        .repair-page-questions-list
+          p.repair-page-questions-list-text 
+            span В среднем ремонт стиралки занимает от 45 минут до 1,5 часов. 
+            span Весь ремонт происходит у Вас дома. В некоторых случаях ремонт может занять больше времени.
+            span К примеру, если требуется замена подшипников, замена крестовины или ремонт электронного модуля (платы).
+      .repair-page-questions-item.repair-page-questions-item_active
+        H2.repair-page-questions-item__title Как вызвать мастера?
+        .repair-page-questions-list
+          p.repair-page-questions-list-text 
+            span Если у Вас не работает стиральная машина обратитесь в компанию 
+            span= nameCompany 
+            span  по телефонам
+          
+          a(herf=telNumber_1_int)= telNumber_1
+          br
+          a(herf=telNumber_2_int)= telNumber_2
+          br
+          p или оформите 
+            span.repair-page-questions__button-order.button-order заявку on-line  
+            span на сайте.
+          br
+          p.font-bold Чтобы мы могли лучше подготовится к визиту, пожалуйста сообщите при звонке нам или при оформлении заявки он-дайн следующую информацию:
+          ol
+            li.repair-page-questions__subtitle.repair-page-questions-list-item
+              p Марку стиральной машины и её примерный возраст.    
+            li.repair-page-questions__subtitle.repair-page-questions-list-item
+              p Сообщите коротко о проблеме с техникой (например: не запускает стирку, не крутит барабан, не сливает и т.п.).
+            li.repair-page-questions__subtitle.repair-page-questions-list-item        
+              p Сообщите время и дату, удобную для визита мастера.
+            li.repair-page-questions__subtitle.repair-page-questions-list-item          
+              p Адрес и телефон для связи.
+          p Мастер приедет к Вам в назначенное время, а перед визитом позвонит Вам.
+      .repair-page-questions-item.repair-page-questions-item_active
+        H2.repair-page-questions-item__title Какая гарантия на работу?
+        .repair-page-questions-list
+          p.repair-page-questions-list-text 
+            | После осуществления ремонта специалист проверит стиральную машину и выпишет гарантийный талон. 
+            |  Срок гарантии на ремонт и запасные части может составлять от 3-х месяцев до 2-х лет в зависимости от вида ремонта.
+      .repair-page-questions-item.repair-page-questions-item_active
+        H2.repair-page-questions-item__title Какие марки стиральных машин ремонтируете?
+        .repair-page-questions-list
+          p.repair-page-questions-list-text Мы ремонтируем большинство известных марок современных автоматических стиральных машин.
+          p.repair-page-questions-list-text.font-bold Наиболее известные марки стиральных машин, которые в настоящее время используются:
+          ul.repair-page-questions-brands
+            li
+              a(href='#') Aeg
+            li
+              a(href='#') Ardo
+            li
+              a(href='#') Asco
+            li
+              a(href='#') Atlant
+            li
+              a(href='#') Beko
+            li
+              a(href='#') Bosch
+            li
+              a(href='#') Candy
+            li
+              a(href='#') Daewoo
+            li
+              a(href='#') Electrolux
+            li
+              a(href='#') Goldstar
+            li
+              a(href='#') Gorenje
+            li
+              a(href='#') Haier
+            li
+              a(href='#') Hansa
+            li
+              a(href='#') Hotpoint Ariston
+            li
+              a(href='#') Indezit
+            li
+              a(href='#') Korting
+            li
+              a(href='#') LG
+            li
+              a(href='#') Liebherr
+            li
+              a(href='#') Mabe
+            li
+              a(href='#') Miele
+            li
+              a(href='#') Mitsubishi
+            li
+              a(href='#') Panasonic
+            li
+              a(href='#') Philips
+            li
+              a(href='#') Samsung
+            li
+              a(href='#') Sharp
+            li
+              a(href='#') Siemens
+            li
+              a(href='#') Smeg
+            li
+              a(href='#') Teka
+            li
+              a(href='#') Whirpool
+
+      .repair-page-questions-item.repair-page-questions-item_active
+        H2.repair-page-questions-item__title Насколько опытные специалисты приезжают на ремонт?
+        .repair-page-questions-list
+          p У нас в штате специалисты по ремонту стиральных машин с минимальным опытом работы 3 года. Большинство наших мастеров имеет опыт работы 8-10 лет.
+          p Кроме того, при принятии на работу, и в дальнейшем мы проводим аттестацию сотрудников и повышение их квалификации.
+          p Также все наши мастера проходят ежедневный медицинский контроль, а также тестирование на заболевание короновирусом COVID-19.
+
+                        
+
+            
+

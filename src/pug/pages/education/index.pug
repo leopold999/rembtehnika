@@ -1,0 +1,34 @@
+extends ../../layout/main.pug
+
+block variables
+  - var title = 'Обучающие курсы по ремонту холодильников, стиральных и посудомоечных машин'
+  - var descriptionContent = 'Обучитесь востребованной и интересной профессии. Независимо от уровня подготовки вы можете обучится с нуля и пройти стажировку, или повысить свой уровень квалификации'
+
+block content
+  include ../../../blocks/elements/elements.pug
+
+  +bread-crumbs({ 
+    'Главная': '/',
+    'Обучение': '#',
+  })
+  .education-page-wrapper
+    H1.page-title-h1= title
+    .education-description
+      .page-text
+        p 
+          | Вы можете обучиться востребованной и интересной профессии специалиста по ремонту холодильников, 
+          | стиральных или посудомоечных машины, варочных панелей и духовых шкафов,
+          | или повысить свой уровень квалификации.
+          | Для этого Вам необходимо заполнить и отправить форму. Специалист по обучению свяжется с Вами в ближайшее время.  
+    .education-form-wrapper 
+      form#education-form.education-form(action="" method="get")
+        input(class="education-form-input" type="text" name="lastname" placeholder='Фамилия' required)
+        input(class="education-form-input" type="text" name="firstname" placeholder='Имя' required)
+        input(class="education-form-input  education-form-input__phone" type="tel" name="telephone" placeholder='Номер телефона' required)
+        br
+        label.order-popup__consent 
+          p Подтверждаю согласие на обработку моих персональных данных
+          .consent-checkbox 
+            input(class="education-form-input" type="checkbox" name="consent" placeholder='' required)
+        br
+        button(class="education-form-button" name="" type="submit" value="Отправить") Отправить

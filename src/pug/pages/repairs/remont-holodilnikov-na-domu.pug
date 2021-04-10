@@ -1,0 +1,698 @@
+extends ../../layout/repair_page_layout.pug
+
+
+block variables
+    - var title = 'Ремонт холодильников на дому в г.Санкт-Петербурге'
+    - var content = "Ремонт холодильнико любых марок за один визит к Вам. Бесплатный выезд и диагностика. Профессиональное оборудование. Гарантия до 2-х лет."
+    
+
+block content
+    include ../../../blocks/page-blocks/page-blocks
+    include ../../../blocks/elements/elements
+
+    +bread-crumbs({
+      'Главная': '/',
+
+      "Ремонт холодильников": "#",
+  
+    })
+    .repair-page-title-section
+      H1.page-title-h1(itemprop="name")=title
+    .repair-page-text-section
+      .repair-page-img.repair-page-img_float-left
+        include ../../../img/pictures/svg/fridge.pug
+      .page-text
+        p
+          | Мы настолько привыкли к технике, что считаем ее наличие само собой разумеющимся. Однако в любой момент она может сломаться. Представьте свою жизнь без холодильника. Хуже только его внезапная поломка. Камера сможет сохранить холод какое-то время, но вскоре температура начнет повышаться, а продукты портиться. И случается это всегда внезапно, что является крайне неприятным сюрпризом для владельца.
+        p
+          | В таком случае сразу возникает вопрос: менять холодильник или чинить старый? Обновка безусловно принесет удовольствие, но влетит в копеечку. Поэтому стоит задуматься о починке старого. Установить причину поломки и насколько сложно ее будет устранить сможет только профессионал.
+        p
+          | Безусловно старые, советские модели способны служить десятилетия! Однако современная техника не может похвастаться износостойкостью. Поэтому она требует периодического визита мастера по ремонту холодильников в ваш дом. Это связанно с их более сложным устройством. Они обладают множеством функций, которые старым моделям даже не снились. Чтобы продлить жизнь холодильника, следует придерживаться ряда рекомендаций.
+        p
+          | Необходима свободная циркуляция воздуха. Также важно устанавливать холодильник на достаточном расстоянии от радиаторов и кухонной плиты. При установке теплых полов оставьте место без обогрева, для того, чтобы установить на него холодильник. Его дверца должна быть всегда закрыта. В этом поможет маленькая хитрость: передние ножки должны быть немного выше задних. Благодаря этому дверца будет закрываться самостоятельно.
+        
+      .repair-page-img.repair-page-img_float-right
+        img(itemprop="image" src=domen + '/assets/img/pictures/repair-img/fridges/remont-holodilnikov-0001.webp' alt="Ремонт холодильников на дому в спб")
+      .page-text
+        p
+          | Даже при соблюдении этих простых правил, поломки не исключаются. Важно ликвидировать их как можно быстро. Это снизит возникновение более серьезных проблем, при которых придется покупать новую технику. Даже небольшие дефекты требуют немедленного вызова мастера для ремонта холодильника. Не включается свет, перебои с температурным режимом, протечки, непривычный звук работы — все это весомые поводы обратиться к специалисту.
+        p
+          | Кроме того, серьезно нужно отнестись к выбору мастера. Недобросовестный ремонт приведет к более серьезным проблемам.
+        p(itemprop="description") Компания РемБытТехника занимается обслуживанием и ремонтом холодильников начиная с 2005 года. Мы работаем с высококвалифицированными специалистами, которые быстро и качественно выполняют ремонт холодильников в спб на дому. Мастер приедет к Вам в кратчайшие сроки, диагностирует поломку, рассчитает стоимость и произведет ремонт прямо у Вас дома.
+
+
+    .repair-page-advantages-section
+      H2.page-title-h2 Приемущества обращения к нам
+      .landing-page__advantages
+        .advantages-item
+          .advantages__img.icon-master
+          .advantages__text 
+            p Бесплатный выезд мастера и диагностика неисправности
+            .advantages__quest ?
+              .advantages__descr Выезд и диагностика выполняется бесплатно при выполнении ремонта.
+        .advantages-item
+          .advantages__img.icon-warranty
+          .advantages__text 
+            p Гарантия до 2-х лет (работа + запчасти)
+            .advantages__quest ?
+              .advantages__descr Предоставляется официальная гарантия на работу и установленные запасные части.
+        .advantages-item
+          .advantages__img.icon-people
+          .advantages__text 
+            p Большой штат квалифицированных мастеров
+            .advantages__quest ?
+              .advantages__descr У нас в штате более 70 мастеров. Мы тщательно отбираем мастеров, и регулярно проверяем их квалификацию.
+        .advantages-item
+          .advantages__img.icon-hour
+          .advantages__text 
+            p Выезд мастера на адрес в течение часа
+            .advantages__quest ?
+              .advantages__descr Большой штат сотрудников и наличие филиалов в каждом районе города позволяют нам очень быстро прибыть к Вам.
+        .advantages-item
+          .advantages__img.icon-original
+          .advantages__text 
+            p Используем только оригинальные запчасти
+            .advantages__quest ?
+              .advantages__descr Мы сотрудничаем только с официальными и проверенным годами поставщиками. 
+        .advantages-item
+          .advantages__img.icon-srtificate
+          .advantages__text 
+            p Сертифицированный сервисный центр компаний Bosch, Miele, Siemens, Samsung и др.
+            .advantages__quest ?
+              .advantages__descr Мы имеем официальную сертификацию у ведущих производителей техники и регулярно ее подтверждаем.
+    .repair-page-problems
+        H2.page-title-h2 Популярные неисправности холодильников и способы их устранения
+        .repair-page-problems-items
+          - let pathToFolder = '/neispravnosti-holodilnikov/'
+          
+          +problem-item({
+              link: domen + pathToFolder + 'holodilnik-ne-otklyuchaetsya.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/fridges/hol-ne-otkluchaetsa.webp',
+              title: 'Холодильник не отключается',
+              repairOptions: ['Замена терморегулятора', 'Устранение утечки'],
+              price: '800',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'holodilnik-ploho-morozit.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/fridges/hol-ploho-morozit.webp',
+              title: 'Холодильник плохо морозит',
+              repairOptions: ['Устранение засора', 'Заправка фреоном', 'Устранение утечки'],
+              price: '1000',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'holodilnik-techet.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/fridges/hol-plachet.webp',
+              title: 'Холодильник течет',
+              repairOptions: ['Чистка дренажа', 'Ремонт системы оттайки'],
+              price: '600',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'ne-rabotaet-holodilnaya-kamera.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/fridges/hol-ne-ohl-holodilka.webp',
+              title: 'Не работает холодильная камера',
+              repairOptions: ['Ремонт заслонки', 'Заправка фреоном', 'Ремонт системы оттайки'],
+              price: '800',
+          })
+        
+          +problem-item({
+              link: domen + pathToFolder + 'led-v-morozilnoj-kamere.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/fridges/hol-led-v-morozilke.webp',
+              title: 'Лед в морозильной камере',
+              repairOptions: ['Устранение утечки', 'Ремонт системы оттайки'],
+              price: '1000',
+          })
+        
+          +problem-item({
+              link: domen + pathToFolder + 'holodilnik-gromko-rabotaet.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/fridges/hol-gromko-rabotaet.webp',
+              title: 'Холодильник громко работает',
+              repairOptions: ['Ремонт крепления компрессора', 'Замена вентилятора', 'Замена компрессора'],
+              price: '900',
+          })
+        .repair-page-problems-items-add.repair-page-problems-items-add_invisible
+          +problem-item({
+              link: domen + pathToFolder + 'led-v-kamere-holodilnika.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/fridges/hol-led-v-holodilke.webp',
+              title: 'Лед в камере холодильника',
+              repairOptions: ['Чистка дренажа', 'Ремонт системы оттайки', 'Устранение утечки'],
+              price: '600',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'holodilnik-shchelkaet.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/fridges/hol-shelkaet.webp',
+              title: 'Холодильник щелкает',
+              repairOptions: ['Замена ПЗУ холодильника', 'Замена компрессора', 'Ремонт заслонки'],
+              price: '1200',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'holodilnik-silno-morozit.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/fridges/hol-silno-morozit.webp',
+              title: 'Холодильник сильно морозит',
+              repairOptions: ['Замена термостата', 'Ремонт заслонки', 'Ремонт системы оттайки'],
+              price: '1000',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'voda-v-holodilnike.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/fridges/hol-voda-v-holodilnike.webp',
+              title: 'Вода в холодильнике',
+              repairOptions: ['Чистка дренажа', 'Ремонт системы оттайки'],
+              price: '600',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'holodilnik-pokazyvaet-oshibku.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/fridges/hol-pokazivaet-oshibka.webp',
+              title: 'Холодильник показывает ошибку',
+              repairOptions: ['Заправка фреоном', 'Ремонт электронного модуля'],
+              price: '1400',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'holodilnik-vybivaet-avtomat.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/fridges/hol-vibivaet-avtomat.webp',
+              title: 'Холодильник выбивает автомат',
+              repairOptions: ['Замена ТЭНа оттайки', 'Замена компрессора', 'Ремонт электросхемы'],
+              price: '1200',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'holodilnik-ne-vklyuchaetsya.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/fridges/hol-ne-vkluchaetsa.webp',
+              title: 'Холодильник не включается',
+              repairOptions: ['Ремонтр электросхемы', 'Замена компрессора', 'Ремонт электронного модуля'],
+              price: '1200',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'holodilnik-pishchit.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/fridges/hol-pishit.webp',
+              title: 'Холодильник пищит',
+              repairOptions: ['Ремонт датчика закрытия', 'Ремонт электронного модуля', 'Заправка фреоном'],
+              price: '800',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'holodilnik-gudit.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/fridges/hol-gudit.webp',
+              title: 'Холодильник гудит',
+              repairOptions: ['Замена вентилятора холодильника', 'Устранение засора', 'Заправка фреоном'],
+              price: '1400',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'ne-rabotaet-morozilka.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/fridges/hol-ne-rabotaet-morozilka.webp',
+              title: 'Не работает морозилка холодильника',
+              repairOptions: ['Заправка фреоном', 'Замена компрессора', 'Замена термостата'],
+              price: '1200',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'holodilnik-vklyuchaetsya-i-srazu-otklyuchaetsya.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/fridges/hol-vkluchaetsa-i-otkluchaetsa.webp',
+              title: 'Холодильник включается и отключается',
+              repairOptions: ['Ремонт электронного модуля', 'Замена компрессора'],
+              price: '1200',
+          })
+          +problem-item({
+              link: domen + pathToFolder + 'holodilnik-ne-morozit.html',
+              pathToImg: domen + '/assets/img/pictures/repair-img/fridges/hol-ne-morozit.webp',
+              title: 'Холодильник не морозит',
+              repairOptions: ['Заправка фреоном', 'Замена термостата', 'Устранение засора'],
+              price: '1000',
+          })
+
+        .problem-button-wrap
+          .problem-button
+          
+    .calc-banner-container
+      +calc-banner
+    .repair-page-text-section
+      .page-text
+        p
+          | Выше приведен только примерный перечень наиболее встречаемых неисправностей холодильников и возможный ремонт. Может случиться так, что некорректная работа Вашего холодильника не попадает в данный список.
+        p
+          | Что же делать, если неисправность Вашей техники не подпадает под классификацию неисправностей?
+        p
+          | Самым правильным действием в таких ситуациях, пожалуй, будет обесточивание холодильника и консультация со специалистом.
+        p
+          | Часто, жизнь любой техники можно сохранить просто отключив ее от сети, и предотвратим тем самым дальнейшие необратимые последствия выхода из строя каких либо узлов устройства.
+        p
+          | Позвонив нам, Вы можете рассчитывать на 
+          b бесплатную 
+          | консультацию опытного специалиста, а не просто диспетчера-приемщика.
+
+    .repair-page-brands
+      H2.page-title-h2 Мы ремонтируем холодильники любых брендов
+      .brands-carousel.owl-carousel#js-carousel-3
+        .brands-carousel-item-group
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/miele_300.webp" alt="Ремонт холодильников Miele в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/smeg_300.webp" alt="Ремонт холодильников Smeg в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/bosch_300.webp" alt="Ремонт холодильников Bosch в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/siemens_300.webp" alt="Ремонт холодильников Siemens в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/aeg_300.webp" alt="Ремонт холодильников AEG в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/teka_300.webp" alt="Ремонт холодильников Teka в Санкт-петербурге")
+        .brands-carousel-item-group
+          a.brands-carousel-item__link(href="#")  
+            img.brands-carousel-item(src="/assets/img/pictures/brands/samsung_300.webp" alt="Ремонт холодильников Samsung в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/lg_300.webp" alt="Ремонт холодильников LG в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/korting_300.webp" alt="Ремонт холодильников Korting в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/electrolux_300.webp" alt="Ремонт холодильников Electrolux в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/ardo_300.webp" alt="Ремонт холодильников Ardo в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/atlant_300.webp" alt="Ремонт холодильников Atlant в Санкт-петербурге")
+        .brands-carousel-item-group
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/beko_300.webp" alt="Ремонт холодильников Beko в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/candy_300.webp" alt="Ремонт холодильников Candy в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/gorenje_300.webp" alt="Ремонт холодильников Gorenje в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/hansa_300.webp" alt="Ремонт холодильников Hansa в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/indezit_300.webp" alt="Ремонт холодильников Indezit в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/liebherr_300.webp" alt="Ремонт холодильников Liebherr в Санкт-петербурге")
+        .brands-carousel-item-group
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/panasonic_300.webp" alt="Ремонт холодильников Panasonic в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/philips_300.webp" alt="Ремонт холодильников Philips в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/whirpool_300.webp" alt="Ремонт холодильников whirpool в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/stinol_300.webp" alt="Ремонт холодильников Stinol в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/zil_300.webp" alt="Ремонт холодильников Зил в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/saratov_300.webp" alt="Ремонт холодильников Саратов в Санкт-петербурге")
+        .brands-carousel-item-group
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/asko_300.webp" alt="Ремонт холодильников Asko в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/daewoo_300.webp" alt="Ремонт холодильников Daewoo в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/haier_300.webp" alt="Ремонт холодильников Haier в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/hotpoint-ariston_300.webp" alt="Ремонт холодильников Hotpoint-Ariston в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/mabe_300.webp" alt="Ремонт холодильников Mabe в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/pozis_300.webp" alt="Ремонт холодильников Pozis в Санкт-петербурге")
+          
+    .call-action-banner-container
+      .calc-banner.page-banner
+        .page-banner-img
+            img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/master.webp' alt="")
+        .page-banner-content
+            .page-banner-content__title 
+                p Ремонт в течение двух часов!
+            .page-banner-content__text 
+                p Свяжитесь с нами по телефонам  
+                a(href=telNumber_1_int)= telNumber_1 
+                |  или 
+                a(href=telNumber_2_int)= telNumber_2 
+                |  и в течение двух часов Ваша техника будет исправна!
+            .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+            .page-banner-content-buttons
+                .page-banner-button 
+                    | Оформить заявку
+                    br
+                    | on-line
+                .page-banner-button Заказать звонок
+    .repair-page-prices
+      H2.page-title-h2 Цены на услуги по ремонту холодильников в г. Санкт-Петербург
+      .table-container
+        .table-container__bgrnd
+        .table-container__button.table-container__button_down
+        table.page-table
+          tbody
+            tr
+              th Вид работ
+              th Стоимость
+            tr
+              td Выезд мастера на дом
+              td бесплатно
+            tr
+              td Диагностика неисправности
+              td бесплатно
+            tr
+              td Диагностика без разбора техники (в случае отказа от проведения ремонта)
+              td 400
+            tr
+              td Выезд за пределы КАД
+              td 15 р/км. от КАД
+            tr
+              td.table-subtitle(colspan="2") Мелкий ремонт
+            tr
+              td Прочистка дренажа
+              td от 600 р.
+            tr
+              td Разморозка холодильника на холодильнике
+              td от 800 р.
+            tr
+              td Ремонт электросхемы
+              td от 600 р.
+            tr
+              td Замена лампочки
+              td от 500 р.
+            tr
+              td Прочистка дренажной системы с полным разбором
+              td от 600 р.
+            tr
+              td Перенавес дверей холодильника
+              td от 850 р.
+            tr
+              td Выравнивание холодильника по уровню
+              td от 700 р.
+            tr
+              td Замена ручки
+              td от 600 р.
+            tr
+              td Нестандартный ремонт
+              td от 800 р.
+            tr
+              td Устранение постороннего шума холодильника
+              td от 800 р.
+            tr
+              td Ремонт дренажной системы
+              td от 600 р.
+            tr
+              td.table-subtitle(colspan="2") Ремонт мелких узлов холодильника
+            tr
+              td Замена уплотнителя двери холодильника
+              td от 1500 р.
+            tr
+              td Замена пускозащитного реле
+              td от 1200 р.
+            tr
+              td Заправка фреоном (хладагентом)
+              td от 1000 р.
+            tr
+              td Замена датчика температуры
+              td от 800 р.
+            tr
+              td Ремонт модуля управления (платы)
+              td от 1500 р.
+            tr
+              td Замена двигателя вентилятора
+              td от 1400 р.
+            tr
+              td Замена фильтра осушителя
+              td от 300 р.
+            tr
+              td Установка (замена) клапана шредера
+              td от 250 р.
+            tr
+              td Замена заслонки
+              td от 1600 р.
+            tr
+              td Замена вентилятора в сборе
+              td от 1600 р.
+            tr
+              td Замена привода заслонки
+              td от 1600 р.
+            tr
+              td Замена шлейфа блока управления
+              td от 1200 р.
+            tr
+              td Замена сенсорного датчика
+              td от 1500 р.
+            tr
+              td Замена терморегулятора
+              td от 1200 р.
+            tr
+              td Замена соленоидного (магнитного) клапана
+              td от 2400 р.
+            tr
+              td Замена ТЭНа оттайки
+              td от 1500 р.
+            tr
+              td Замена предохранителя
+              td от 1200 р.
+            tr
+              td Замена таймера оттайки
+              td от 1200 р.
+            tr
+              td.table-subtitle(colspan="2") Ремонт крупных узлов холодильника
+            tr
+              td Устранение засора капиллярной трубки
+              td от 1100 р.
+            tr
+              td Замена капиллярной трубки
+              td от 1500 р.
+            tr
+              td Устранение утечки хладагента
+              td от 1200 р.
+            tr
+              td Устранение утечки в испарителе
+              td от 1200 р.
+            tr
+              td Устранение утечки в запененной части
+              td от 1800 р.
+            tr
+              td Замена испарителя
+              td от 1200 р.
+            tr
+              td Замена конденсатора
+              td от 2500 р.
+            tr
+              td Замена компрессора
+              td от 2500 р.
+            tr
+              td Ремонт конденсатора
+              td от 1200 р.
+            tr
+              td Замена модуля управления (платы)
+              td от 1500 р.
+            tr
+              td.table-subtitle(colspan='2') Дополнительная информация
+            tr
+              td Диагностика без разбора техники (в случае отказа от проведения ремонта)
+              td 400
+            tr
+              td Сборка и разборка встроенной техники
+              td от 700 р.
+            tr
+              td Сборка и разборка холодильника
+              td от 400 р.
+            tr
+              td Коэффициент стесненности
+              td 10%
+            tr
+              td Ложный вызов
+              td 1500р.
+
+  
+    .repair-page-reviews
+      H2.page-title-h2 Отзывы клиентов о ремонте холодильников
+      .repair-page-reviews-items.owl-carousel#js-carousel-2
+        +reviews({
+          id: '00092',
+          typeRepair: 'Ремонт холодильников',
+          userName: 'Влад',
+          date: '04.01.2021',
+          rating: '5',
+          text: '31.12.2020 наш старенький холодильник Стинол приказал долго жить. Мастер примчался минут за 30. Как я и предполагал сгорел компрессор холодильника. Мастер Михаил подобрал на месте нужный компрессор, все поменял, сделал профилактику и заправил холодильник примерно за 2 часа. Благодарю за отличную работу! ',
+          answerSupport: 'Рады были помочь!'
+          })
+        +reviews({
+          id: '00084',
+          typeRepair: 'Ремонт холодильников',
+          userName: 'Алла',
+          date: '06.11.2020',
+          rating: '5',
+          text: 'Достойная компания. Мастер вежливый, интеллигентный. Был в маске и перчатках. ',
+          answerSupport: ''
+          })
+        +reviews({
+          id: '00078',
+          typeRepair: 'Ремонт холодильников',
+          userName: 'Марьям',
+          date: '18.09.2020',
+          rating: '5',
+          text: 'Спасибо за работу. Дважды обращались в ваш сервисный центр всегда все на высшем уровне.',
+          answerSupport: 'Были рады Вам помочь! Обращайтесь!'
+            })
+        +reviews({
+          id: '00076',
+          typeRepair: 'Ремонт холодильников',
+          userName: 'Артем',
+          date: '12.08.2020',
+          rating: '5',
+          text: 'Вежливость, пунктуальность, цена. Приятный сервис',
+          answerSupport: ''
+        })
+ 
+        
+    .repair-page-questions
+      .repair-page-questions-item
+        H2.repair-page-questions-item__title Почему стоит обратиться именно к нам?
+        ul.repair-page-questions-list
+          li.repair-page-questions-list-item 
+            p
+              span.repair-page-questions__subtitle.font-bold Бесплатная диагностика и выезд. 
+            p При выполнении ремонта Вы не оплачиваете выезд мастера на дом и работу по проведению диагностики.
+          li.repair-page-questions-list-item 
+            p
+              span.repair-page-questions__subtitle.font-bold Гарантия до 2-х лет. 
+            p В зависимости от вида ремонта мы предоставляем гарантию на выполненные рнаботы от 3-х месяцев до 2-х лет.
+          li.repair-page-questions-list-item 
+            p
+              span.repair-page-questions__subtitle.font-bold Удобное для Вас время визита мастера. 
+            p Вы можете сами предложеить время, когда Вам удобно принять мастера.
+              span Также Вы можете воспользоваться 
+              span.repair-page-questions__button-order.button-order сервисом 
+              span для оформления заявки на ремонт холодильника.
+          li.repair-page-questions-list-item.font-bold
+            p
+              span.repair-page-questions__subtitle Экономим Ваше время.
+              span Наши мастера оснащены всем необходимым оборудованием для проведения ремонта на дому.
+              span В среднем ремонт холодильника на дому занимает от 45 минут до 2,5 часов.
+          li.repair-page-questions-list-item.font-bold
+            p
+              span.repair-page-questions__subtitle Проконсультируем по телефону бесплатно.
+              span Звонки принимают мастера по ремонту холодильников, а не просто деспетчеры.
+              span Позвонив нам и описав проблему, Вы получите бесплатную консультацию о возможных неисправностях, примерной стоимости и сроках их устранения. 
+      .repair-page-questions-item.repair-page-questions-item_active
+        H2.repair-page-questions-item__title Сколько времени займет ремонт?
+        .repair-page-questions-list
+          p.repair-page-questions-list-text 
+            span В среднем ремонт холодильника занимает от 45 минут до 2,5 часов. 
+            span Ремонт производится у Вас дома. В некоторых случаях ремонт холодильника может занять больше времени.
+            span Например, если требуется ремонт электронной платы (модуля управления), или восстановление испарителя в условиях мастерской.
+      .repair-page-questions-item.repair-page-questions-item_active
+        H2.repair-page-questions-item__title Как с нами связаться?
+        .repair-page-questions-list
+          p.repair-page-questions-list-text 
+            span Если у Вас не работает холодильник обратитесь в компанию 
+            span= nameCompany 
+            span  по телефонам
+          
+          a(herf=telNumber_1_int)= telNumber_1
+          br
+          a(herf=telNumber_2_int)= telNumber_2
+          br
+          p или оформите 
+            span.repair-page-questions__button-order.button-order заявку on-line  
+            span на сайте.
+          br
+          p.font-bold Чтобы мастер лучше подготовился к ремонту сообщите при звонке или оформлении заявки на ремонт холодильника следующую информацию:
+          ol
+            li.repair-page-questions__subtitle.repair-page-questions-list-item
+              p Марку холодильника и его примерный возраст.    
+            li.repair-page-questions__subtitle.repair-page-questions-list-item
+              p Сообщите что не так с Вашим холодильником (например: не охлаждает весь или одна из камер холодильника, перемораживает, подтекает и т.п.).
+            li.repair-page-questions__subtitle.repair-page-questions-list-item        
+              p Удобное время для визита мастера.
+            li.repair-page-questions__subtitle.repair-page-questions-list-item          
+              p Адрес и телефон для связи.
+          p Мастер приедет в назначенное время, а перед выездом позвонит Вам.
+      .repair-page-questions-item.repair-page-questions-item_active
+        H2.repair-page-questions-item__title Какая гарантия на работу?
+        .repair-page-questions-list
+          p.repair-page-questions-list-text 
+            | После завершения ремонта мастер обязательно проверит работоспособность холодильника, а также продемонстрирует Вам. 
+            | После чего будет оформлен гарантийный талон. Срок гарантии составлят от 3-х месяцев до 2-х лет в зависимости от вида ремонта.
+            | Гарантия распространяется на как на запчасти, так и на выполненные работы.
+      .repair-page-questions-item.repair-page-questions-item_active
+        H2.repair-page-questions-item__title Какие марки холодильников ремонтируете?
+        .repair-page-questions-list
+          p.repair-page-questions-list-text Мы ремонтируем все известные на сегодняшний день марки холодильников, независимо от страны производства и возраста.
+          p.repair-page-questions-list-text.font-bold Наиболее известные марки холодильников, которые в настоящее время используются:
+          ul.repair-page-questions-brands
+            li
+              a(href='#') Aeg
+            li
+              a(href='#') Ardo
+            li
+              a(href='#') Asco
+            li
+              a(href='#') Atlant
+            li
+              a(href='#') Beko
+            li
+              a(href='#') Bosch
+            li
+              a(href='#') Candy
+            li
+              a(href='#') Daewoo
+            li
+              a(href='#') Electrolux
+            li
+              a(href='#') Goldstar
+            li
+              a(href='#') Gorenje
+            li
+              a(href='#') Haier
+            li
+              a(href='#') Hansa
+            li
+              a(href='#') Hotpoint Ariston
+            li
+              a(href='#') Indezit
+            li
+              a(href='#') Korting
+            li
+              a(href='#') LG
+            li
+              a(href='#') Liebherr
+            li
+              a(href='#') Mabe
+            li
+              a(href='#') Miele
+            li
+              a(href='#') Mitsubishi
+            li
+              a(href='#') Nord
+            li
+              a(href='#') Panasonic
+            li
+              a(href='#') Philips
+            li
+              a(href='#') Polair
+            li
+              a(href='#') Pozis
+            li
+              a(href='#') Rolenlew
+            li
+              a(href='#') Samsung
+            li
+              a(href='#') Sharp
+            li
+              a(href='#') Siemens
+            li
+              a(href='#') Smeg
+            li
+              a(href='#') Stinol
+            li
+              a(href='#') Teka
+            li
+              a(href='#') Vestfrost
+            li
+              a(href='#') Whirpool
+            li
+              a(href='#') Yohiba
+            li
+              a(href='#') Бирюса
+            li
+              a(href='#') Зил
+            li
+              a(href='#') Ока
+            li
+              a(href='#') Саратов
+      .repair-page-questions-item.repair-page-questions-item_active
+        H2.repair-page-questions-item__title Насколько опытные мастера работают у Нас?
+        .repair-page-questions-list
+          p У нас в штате мастера по ремонту холодильников с минимальным опытом работы 3 года. Большинство мастеров имеет опыт работы 8-10 лет.
+          p Кроме того, при поступлении на работу, и в дальнейшем мы проводим регулярную аттестацию персонала и повышение квалификации.
+          p Также все наши мастера проходят ежедневный медицинский контроль, а также тестирование на заболевание короновирусом COVID-19.
+
+                        
+
+            
+

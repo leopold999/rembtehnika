@@ -1,0 +1,176 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок посудомоечных машин Vestel (Вестел)'
+  - var content = "Расшифровка ошибок посудомоечных машин Vestel (Вестел)"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок посудомоечных машин": "/errors/kody-oshibok-posudomoechnyh-mashin/",
+    "Коды ошибок посудомоечных машин Vestel (Вестел)" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    H1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-004.webp'
+    })
+    .page-text(itemprop="articleBody")
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p Е1
+              td
+                p Ошибка подачи воды
+            tr
+              td
+                p Е2
+              td
+                p Постоянная подача воды
+            tr
+              td
+                p ЕЗ
+              td
+                p Ошибка слива
+            tr
+              td
+                p Е4
+              td
+                p Ошибка нагрева воды
+            tr
+              td
+                p Е5
+              td
+                p Перелив воды
+            tr
+              td
+                p Е6
+              td
+                p Неисправность системной платы
+            tr
+              td
+                p F0
+              td
+                p Активирован сигнал перелива воды
+            tr
+              td
+                p F1
+              td
+                p Активирован сигнал утечки воды
+            tr
+              td
+                p F2
+              td
+                p Ошибка слива воды
+            tr
+              td
+                p F3
+              td
+                p Ошибка постоянной подачи воды
+            tr
+              td
+                p F4
+              td
+                p Неисправный расходомер
+            tr
+              td
+                p F5
+              td
+                p Недостаточная подача воды
+            tr
+              td
+                p F6
+              td
+                p Ошибка NTC датчика нагревателя
+            tr
+              td
+                p F7
+              td
+                p Ошибка перегрева (температура воды в машине слишком высокая)
+            tr
+              td
+                p F8
+              td
+                p Сбой нагревателя
+            tr
+              td
+                p F9
+              td
+                p Ошибка расположения делителя
+            tr
+              td
+                p 5Е
+              td
+                p Электронная карта жесткость воды неисправна
+            tr
+              td
+                p FA
+              td
+                p Неисправный датчик мутности
+            tr
+              td
+                p FE
+              td
+                p Ошибка парметров электронной платы \ Не стабильное напряжение сети
+      h2 ПММ Отдельно стоящие и полуинтегрированные С21,С31,С41
+      h3 F 0 - Активирован сигнал перелива воды
+      img(alt='коды ошибок посудомоечных машин Vestel' src=pathToImgArticles + 'pm_vestel-1.jpg')
+      h3 F 1 - Активирован сигнал утечки воды
+      img(alt='коды ошибок посудомоечных машин Vestel' src=pathToImgArticles + 'pm_vestel-2.jpg')
+      h3 F 2 - Ошибка слива воды
+      img(alt='коды ошибок посудомоечных машин Vestel' src=pathToImgArticles + 'pm_vestel-3.jpg')
+      h3 F 3 - Ошибка постоянной
+      img(alt='коды ошибок посудомоечных машин Vestel' src=pathToImgArticles + 'pm_vestel-4.jpg')
+      h3 F 4 - Неисправный расходомер
+      img(alt='коды ошибок посудомоечных машин Vestel' src=pathToImgArticles + 'pm_vestel-5.jpg')
+      h3 F 5 - Недостаточная подача воды
+      img(alt='коды ошибок посудомоечных машин Vestel' src=pathToImgArticles + 'pm_vestel-6.jpg')
+      h3 F 6 - Ошибка NTC датчика
+      img(alt='коды ошибок посудомоечных машин Vestel' src=pathToImgArticles + 'pm_vestel-7.jpg')
+      h3 F 7 - Ошибка перегрева воды
+      img(alt='коды ошибок посудомоечных машин Vestel' src=pathToImgArticles + 'pm_vestel-8.jpg')
+      h3 F 8 - Сбой нагревателя
+      img(alt='коды ошибок посудомоечных машин Vestel' src=pathToImgArticles + 'pm_vestel-9.jpg')
+      h3 F 9 - Ошибка расположения делителя
+      img(alt='коды ошибок посудомоечных машин Vestel' src=pathToImgArticles + 'pm_vestel-10.jpg')
+      h3 5 Е - Электронная карта жесткость воды неисправна_
+      img(alt='коды ошибок посудомоечных машин Vestel' src=pathToImgArticles + 'pm_vestel-11.jpg')
+      h3 F Е - Ошибка параметров платы Не стабильное напряжение сети
+      img(alt='коды ошибок посудомоечных машин Vestel' src=pathToImgArticles + 'pm_vestel-12.jpg')
+      h3 Дверь открыта
+      img(alt='коды ошибок посудомоечных машин Vestel' src=pathToImgArticles + 'pm_vestel-13.jpg')
+    
+
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="качественный ремонт посудомоечных машин с гарантией")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качественный ремонт посудомоечных машин на дому!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

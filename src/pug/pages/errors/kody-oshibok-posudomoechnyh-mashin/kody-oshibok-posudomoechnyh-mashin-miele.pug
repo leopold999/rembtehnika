@@ -1,0 +1,265 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок посудомоечных машин Miele (Миле)'
+  - var content = "Расшифровка ошибок посудомоечных машин Miele (Миле)"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок посудомоечных машин": "/errors/kody-oshibok-posudomoechnyh-mashin/",
+    "Коды ошибок посудомоечных машин Miele (Миле)" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    H1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-002.webp'
+    })
+    .page-text(itemprop="articleBody")
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p F0
+              td
+                p Ошибок нет
+            tr
+              td
+                p F01
+                p F02
+              td
+                p Ошибка датчика NTC
+            tr
+              td
+                p F11
+              td
+                p Нет слива воды
+            tr
+              td
+                p F12
+              td
+                p Вода не поступает в машину на начальном этапе
+            tr
+              td
+                p F13
+              td
+                p Не поступает вода: ошибка реле давления нагревателя
+            tr
+              td
+                p F14
+              td
+                p Ошибка подачи воды. Ошибка реле давления нагревателя
+            tr
+              td
+                p F15
+              td
+                p Ошибка подачи воды.
+                p В посудомоечную машину заливается горячая вода вместо холодной
+            tr
+              td
+                p F18
+              td
+                p Блокировка расходомера
+            tr
+              td
+                p F19
+              td
+                p Расходомер не вращается регулярно
+            tr
+              td
+                p F24
+              td
+                p Ошибка реле нагревателя
+            tr
+              td
+                p F25
+              td
+                p Ошибка нагревателя
+            tr
+              td
+                p F26
+              td
+                p Проблема с закрытием двери
+            tr
+              td
+                p F32
+              td
+                p Дверь заперта и не открывается
+            tr
+              td
+                p F33
+              td
+                p Механическая неисправность двери
+            tr
+              td
+                p F36
+              td
+                p Неисправность дверного переключателя
+            tr
+              td
+                p F40
+              td
+                p Ошибка электропитания
+            tr
+              td
+                p F47
+              td
+                p Ошибка связи
+            tr
+              td
+                p F51
+                p F52
+              td
+                p Сбой давления или обнаружен избыток пены
+            tr
+              td
+                p F53
+              td
+                p Ошибка датчика скорости
+            tr
+              td
+                p F63
+              td
+                p Ошибка в модуле регистрации контроля воды
+            tr
+              td
+                p F67
+              td
+                p Ошибка циркуляционного насоса
+            tr
+              td
+                p F68
+              td
+                p
+                  | Циркуляционный насос не реагирует на команды блока управления - вращается, даже если был выключен
+            tr
+              td
+                p F69
+              td
+                p Блокировка циркуляционного насоса
+            tr
+              td
+                p F70
+              td
+                p Ошибка протечки воды
+            tr
+              td
+                p F78
+              td
+                p Слишком низкое напряжение питания циркуляционного насоса
+            tr
+              td
+                p F79
+              td
+                p Нарушение связи между циркуляционным насосом и распределителем
+            tr
+              td
+                p F84
+                p F85
+              td
+                p Ошибка затвора дверцы
+            tr
+              td
+                p F86
+              td
+                p Ошибка датчика крышки контейнера соли
+            tr
+              td
+                p F87
+              td
+                p Ошибка датчика смягчителя
+            tr
+              td
+                p F88
+              td
+                p Ошибка датчика мутности
+            tr
+              td
+                p F91
+              td
+                p Ошибка датчика, определяющего количество посуды
+            tr
+              td
+                p F102
+              td
+                p Ошибка умного дома. Отказ линии связи с умным домом (smart house).
+            tr
+              td
+                p F103
+              td
+                p Ошибка умного дома. Несовместимость связи с умным домом (smart house).
+            tr
+              td
+                p F170
+              td
+                p Блокировка ввода компонентов
+            tr
+              td
+                p F171
+              td
+                p Входное препятствие
+            tr
+              td
+                p F172
+              td
+                p Повторное изменение сигнала на блоке управления водного тракта
+            tr
+              td
+                p F173
+              td
+                p Функция проверки минимального импульса
+            tr
+              td
+                p F174
+              td
+                p
+                  | Внутренняя ошибка датчика. Датчик распылительного рычага -средний распылительный рычаг
+            tr
+              td
+                p F175
+              td
+                p Ошибка в нижней внутренней системе. Датчик распылителя -нижний распылитель
+            tr
+              td
+                p F176
+              td
+                p
+                  | Сбой в более высокой внутренней системе безопасности. Датчик распылительного рычага - верхний распылительный рычаг
+            tr
+              td
+                p F177
+              td
+                p Ошибка фильтра
+
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="качественный ремонт посудомоечных машин с гарантией")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качественный ремонт посудомоечных машин на дому!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

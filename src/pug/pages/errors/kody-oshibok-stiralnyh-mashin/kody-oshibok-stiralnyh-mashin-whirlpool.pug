@@ -1,0 +1,233 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок стиральных машин whirlpool (Вирпул)'
+  - var content = "Расшифровка ошибок стиральных машин whirlpool (Вирпул)'"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок стиральных машин": "/errors/kody-oshibok-stiralnyh-mashin/",
+    "Коды ошибок стиральных машин whirlpool (Вирпул)" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    H1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-013.webp'
+    })
+    .page-text(itemprop="articleBody")
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Коды ошибок
+              th
+                p Описание ошибок
+            tr
+              td
+                p F00
+              td
+                p Симистор насоса
+            tr
+              td
+                p AH/FH/F01
+              td
+                p Нет залива воды
+            tr
+              td
+                p FA/F02
+              td
+                p Аквастоп
+            tr
+              td
+                p FP/F03
+              td
+                p Нет слива воды
+            tr
+              td
+                p F04
+              td
+                p Нет повышения температуры за отведенное время
+            tr
+              td
+                p F05
+              td
+                p Ошибка датчика температуры
+            tr
+              td
+                p F06
+              td
+                p Ошибка работы тахогенератора электродвигателя
+            tr
+              td
+                p F07
+              td
+                p Ошибки в цепи управления двигателем
+            tr
+              td
+                p F08
+              td
+                p Обрыв в цепи нагревателя
+            tr
+              td
+                p F09
+              td
+                p Переполнение водой бака
+            tr
+              td
+                p F10
+              td
+                p Ошибка в работе блока теплопоглощения мотора
+            tr
+              td
+                p F11
+              td
+                p Ошибка в цепях управления между разными элементами машины
+            tr
+              td
+                p F12
+              td
+                p Реле тэна залипло или тэн пробит на массу
+            tr
+              td
+                p F13
+              td
+                p Дверь не закрыта в течении 10 секунд. Ошибка в работе дозатора (диспенсера)
+            tr
+              td
+                p F14
+              td
+                p Ошибка энергозависимой памяти EEPROM
+            tr
+              td
+                p F15
+              td
+                p Нет сигнала позиционирования барабана\Неисправен двигатель
+            tr
+              td
+                p F16
+              td
+                p Сбой программы
+            tr
+              td
+                p FOD/SUD/ F18
+              td
+                p Избыточное пенообразование
+            tr
+              td
+                p F19
+              td
+                p Сбой питающего напряжения
+            tr
+              td
+                p F20
+              td
+                p Сбой программы
+            tr
+              td
+                p F21
+              td
+                p Нет связи между панелью и платой управления
+            tr
+              td
+                p F23
+              td
+                p Ошибка прессостата. Ошибка ТЭНа, пробой на корпус
+            tr
+              td
+                p F24
+              td
+                p Перполнение бака/прессостат
+            tr
+              td
+                p F25
+              td
+                p Насос включен, но сигнал защитного уровня не пропадает 60 секунд
+            tr
+              td
+                p F26
+              td
+                p Сбой в работе электродвигателя
+            tr
+              td
+                p F27
+              td
+                p Двигатель вращается только в одну сторону
+            tr
+              td
+                p F28
+              td
+                p Реле переключения обмоток статора
+            tr
+              td
+                p F31
+              td
+                p Не происходит обновление программного обеспечения через интернет (новые модели)
+            tr
+              td
+                p FH
+              td
+                p Ошибка в работе датчика уровня воды
+            tr
+              td
+                p FdL/F29
+              td
+                p Неисправна система блокировки люка
+            tr
+              td
+                p FdU
+              td
+                p Не открывается/закрывается дверца люка
+            tr
+              td
+                p Bdd/F31
+              td
+                p
+                  | Обнаружен заблокированный барабан (только для устройств с верхней загрузкой) Проверьте, правильно ли закрыта дверца барабана Проверьте положение ремня Проверьте на ошибку F06
+            tr
+              td
+                p F32
+              td
+                p Мотор не останавливается
+            tr
+              td
+                p F40
+              td
+                p Ошибка связи с модулем пара или низкая окружающая температура
+            tr
+              td
+                p F41
+              td
+                p Ошибка модуля пара
+            tr
+              td
+                p F42
+              td
+                p Ошибка клапана пара
+        
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="100% качественный ремонт стиральных машин")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качество и гарантия на ремонт стиральных машин!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

@@ -1,0 +1,38 @@
+.page-img {
+    // width: rem(250);
+    margin-bottom: rem(20);
+    margin-top: rem(20);
+}
+
+.page-img_float-left {
+    float: left;
+    margin-right: rem(40);
+    @media screen and (max-width: 360px) {
+        float: none;
+        margin: rem(20) auto;
+        // text-align: center;
+    }
+
+}
+
+.page-img_float-right {
+    float: right;
+    margin-left: rem(40);
+    @media screen and (max-width: 360px) {
+        float: none;
+        margin: rem(20) auto;
+        // text-align: center;
+    }
+    
+}
+.page-img_center {
+    width: 100%;
+  
+    & img {
+        margin: auto;
+        display: block;
+    }
+    
+
+    
+}

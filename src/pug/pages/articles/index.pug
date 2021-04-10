@@ -1,0 +1,33 @@
+extends ../../layout/article_page_layout.pug
+
+block variables
+	- var title = 'Хозяйке на заметку'
+	- var content = "Статьи по ремонту, обслуживанию и продлению срока жизни бытовой техники"
+	- var pathToImgArticles = domen + '/assets/img/pictures/articles-img/'
+
+block content
+	+bread-crumbs({ 
+		'Главная': '/',
+		"Хозяйке на заметку": "#",
+
+	})
+	.article-page-wrapper
+		h1.page-title-h1(itemprop="name")= title 
+		.articles-page-list-wrapper
+			ul.articles-page-list-container
+				li.articles-page-list-item
+					.articles-page-list-item__img
+						img(src= pathToImgArticles + 'razmorozka-morozilki' + '.webp' alt='')
+					.articles-page-list-item__link 
+						a(href= domen + '/articles/' + 'Kak-razmorozit-holodilnik-bystro-i-pravilno' + '.html') Как быстро и правильно разморозить холодильник
+				li.articles-page-list-item
+					.articles-page-list-item__img
+						img(src= pathToImgArticles + 'podkluchenie-stiralnoi-mashini' + '.webp' alt='')
+					.articles-page-list-item__link 
+						a(href= domen + '/articles/' + 'kak-pravilno-ustanovit-stiralnuy-mashinu' + '.html') Как установить стиральную машину
+				li.articles-page-list-item
+					.articles-page-list-item__img
+						img(src= pathToImgArticles + 'zapah-iz-stiralki' + '.webp' alt='')
+					.articles-page-list-item__link 
+						a(href= domen + '/articles/' + 'kak-ustranit-zapah-v-stiralnoy-mashine' + '.html') Как устранить неприятный запах в стиральной машине
+				

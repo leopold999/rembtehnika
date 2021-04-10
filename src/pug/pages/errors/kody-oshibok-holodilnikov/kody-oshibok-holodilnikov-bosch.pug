@@ -1,0 +1,174 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок холодильников Bosch (Бош)'
+  - var content = "Расшифровка ошибок холодильников Bosch (Бош)"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок холодильников": "/errors/kody-oshibok-holodilnikov/",
+    "Коды ошибок холодильников Bosch (Бош)" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    H1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-006.webp'
+    })
+    .page-text(itemprop="articleBody")
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p F1
+              td
+                p Неисправен датчик морозильной камеры
+            tr
+              td
+                p И
+              td
+                p Проверьте датчик холодильного отсека
+            tr
+              td
+                p РТ
+              td
+                p Ошибка датчика модуля управления
+            tr
+              td
+                p d1
+              td
+                p Проверьте датчик на ребре
+            tr
+              td
+                p Dr
+              td
+                p Проверьте датчик открытия двери холодильника
+            tr
+              td
+                p dF
+              td
+                p
+                  | Замерзание двери переключения -проверьте дверь морозильной камеры, замените переключатель
+            tr
+              td
+                p El
+              td
+                p Ошибка датчика льда
+            tr
+              td
+                p E2
+              td
+                p Неисправен термодатчик конденсатора (испарителя) холодильного отделения
+            tr
+              td
+                p ЕЗ
+              td
+                p Нет сигнала от термодатчика морозилки
+            tr
+              td
+                p E4
+              td
+                p Сломался датчик испарителя (конденсатора) морозильного отделения
+            tr
+              td
+                p EF
+              td
+                p Датчик потока - проверьте датчик изменения клапанов
+            tr
+              td
+                p Et
+              td
+                p Проверьте горизонтальный переключатель
+            tr
+              td
+                p EC
+              td
+                p ВклХВыкл - проверьте намерзание, заменить переключатель
+            tr
+              td
+                p ES
+              td
+                p Ошибка входного переключателя -ледХвода, заменить переключатель
+            tr
+              td
+                p Ea
+              td
+                p Проверьте двигатель морозильника
+            tr
+              td
+                p Eg
+              td
+                p Ошибка впускного клапана
+            tr
+              td
+                p E01
+              td
+                p Датчик ХК за температурными границами (-55°С - 60°С)
+            tr
+              td
+                p E02
+              td
+                p Датчик МК за температурными границами (-55°С - 60°С)
+            tr
+              td
+                p E03
+              td
+                p Датчик камеры свежести за температурными границами (-55°С - 60°С)
+            tr
+              td
+                p E10
+              td
+                p EEPROM модуль управления
+            tr
+              td
+                p E11
+              td
+                p EEPROM модуля DoM
+            tr
+              td
+                p E15
+              td
+                p Датчик окружающей температуры за границами (-55°С - 60°С)
+            tr
+              td
+                p E20
+              td
+                p Ошибка коммуникации между модулем управления и DoM
+            tr
+              td
+                p E21
+              td
+                p Ошибка коммуникации между DoM и модулем льдогенератора
+
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="качественный ремонт холодильников с гарантией")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качественный ремонт холодильников на дому!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

@@ -1,0 +1,347 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок стиральных машин Haier'
+  - var content = "Расшифровка ошибок стиральных машин Haier'"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок стиральных машин": "/errors/kody-oshibok-stiralnyh-mashin/",
+    "Коды ошибок стиральных машин Haier" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    H1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-011.webp'
+    })
+    .page-text(itemprop="articleBody")
+      .table-container_scroll
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p ERR1
+              td
+                p Дверца не закрыта
+            tr
+              td
+                p ERR2
+              td
+                p Ошибка слива воды
+            tr
+              td
+                p ERR3
+              td
+                p Проблемы с датчиком температуры
+            tr
+              td
+                p ERR4
+              td
+                p Проблемы с нагревательным элементом
+            tr
+              td
+                p ERR5
+              td
+                p Проблемы с набором воды, время наполнения превышает 8 минут.
+            tr
+              td
+                p ERR6
+              td
+                p Неисправность в цепи модуля управления
+            tr
+              td
+                p ERR7
+              td
+                p Вышел из строя электронный контроллер
+            tr
+              td
+                p ERR8
+              td
+                p Вода в стиральной машине превышает допустимый уровень
+            tr
+              td
+                p ERR9
+              td
+                p Вода в стиральной машине превышает допустимый уровень
+            tr
+              td
+                p ERR10
+              td
+                p Неисправность датчика уровня воды
+            tr
+              td
+                p UNB
+              td
+                p Разбалансировка белья в барабане
+            tr
+              td
+                p EUAR
+              td
+                p Ошибка в системе управления
+            tr
+              td
+                p NO SALT
+              td
+                p Отсутствие или не правильный состав порошка
+       
+      h2
+        | Коды ошибок Haier 8kg HWD80-B14686
+      img(alt='коды ошибок стиральных машин  haier' src=pathToImgArticles + 'haier-1.jpg')
+      .table-container_scroll
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p Е1
+              td
+                p Ошибка слива, вода не полностью сливается в течение 6 минут
+            tr
+              td
+                p Е2
+              td
+                p Ошибка закрытия замка
+            tr
+              td
+                p F3
+              td
+                p Ошибка датчика температуты
+            tr
+              td
+                p Е4
+              td
+                p Через 12 минут не набирается уровень воды
+            tr
+              td
+                p F4
+              td
+                p Ошибка нагрева воды
+            tr
+              td
+                p F7
+              td
+                p Ошибка двигателя
+            tr
+              td
+                p Е8
+              td
+                p Ошибка защиты уровня воды
+            tr
+              td
+                p FA
+              td
+                p Ошибка датчика уровня воды
+            tr
+              td
+                p FC0
+                p FC1
+                p FC2
+              td
+                p Ошибка шины связи. Ошибка связи модуля привода двигателя
+            tr
+              td
+                p UNB
+              td
+                p Ошибка: несбалансированная загрузка
+            tr
+              td
+                p Н
+              td
+                p Температура в барабане выше 80°С
+            tr
+              td
+                p F9
+              td
+                p Ошибка датчика температуры сушки
+            tr
+              td
+                p Fd
+              td
+                p Ошибка сушильного элемента
+            tr
+              td
+                p FE
+              td
+                p Ошибка мотора сушилки
+            tr
+              td
+                p FC3
+              td
+                p Ошибка связи табло дисплея и коммуникационной платы сушилки
+            tr
+              td
+              td
+                p Включена блокировка от детей
+      
+      img(alt='коды ошибок стиральных машин  haier' src=pathToImgArticles + 'haier-2.jpg')
+      h2
+        | Коды ошибок Haier HW50-1010 и аналогичные
+      img(alt='коды ошибок стиральных машин  haier' src=pathToImgArticles + 'haier-3.jpg')
+      .table-container_scroll
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код
+              th
+                p Мигание
+              td
+                p Причина
+            tr
+              td
+                p Error 1
+              td
+                p Индикатор "СТАРТ / ПАУЗА" не горит, слышен звуковой сигнал
+              td
+                p Дверца люка не закрыта
+            tr
+              td
+                p Error 2
+              td
+                p Индикатор "СТАРТ / ПАУЗА" кратковременно мигает 2 раза с интервалом 4 сек.
+              td
+                p Ошибка при сливе воды, время слива превышает 4 минуты
+            tr
+              td
+                p Error 3
+              td
+                p Индикатор "СТАРТ / ПАУЗА" кратковременно мигает 3 раза с интервалом 4 сек.
+              td
+                p Проблемы с датчиком температуры
+            tr
+              td
+                p Error 4
+              td
+                p Индикатор "СТАРТ / ПАУЗА" кратковременно мигает 4 раза с интервалом 4 сек.
+              td
+                p Проблемы с нагревательным элементом
+            tr
+              td
+                p Error 5
+              td
+                p Индикатор "СТАРТ / ПАУЗА" кратковременно мигает 5 раз с интервалом 4 сек.
+              td
+                p Проблемы с набором воды, время набора превышает 8 минут
+            tr
+              td
+                p Error 7
+              td
+                p Индикатор "СТАРТ / ПАУЗА" кратковременно мигает 7 раз с интервалом 4 сек.
+              td
+                p Ошибка в работе электродвигателя
+            tr
+              td
+                p Error 8
+              td
+                p Индикатор "СТАРТ / ПАУЗА" кратковременно мигает 8 раз с интервалом 4 сек.
+              td
+                p Вода в стиральной машине превышает допустимый уровень
+      
+      h2
+        | Ошибки Haier HWD1000
+      img(alt='коды ошибок стиральных машин  haier' src=pathToImgArticles + 'haier-4.jpg')
+      .table-container_scroll
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p Е 11
+              td
+                p Ошибка залива воды
+            tr
+              td
+                p Е 12
+              td
+                p Ошибка слива воды
+            tr
+              td
+                p Е 13
+              td
+                p Перелив воды
+            tr
+              td
+                p Е 31
+              td
+                p Сработала защита от перегрева двигателя
+            tr
+              td
+                p ЕАЗ
+              td
+                p Не корректный уровень воды в процессе сушки
+            tr
+              td
+                p ЕСЗ
+              td
+                p Цепь датчика уровня воды разомкнута или в КЗ
+            tr
+              td
+                p ЕС4
+              td
+                p Ошибка ТЭНа сушки
+            tr
+              td
+                p ЕС5
+              td
+                p NTC сушки в обрыве или в КЗ
+            tr
+              td
+                p U02
+              td
+                p Дверца не закрыта
+            tr
+              td
+                p U03
+              td
+                p Дисбаланс
+            tr
+              td
+                p U04
+              td
+                p Дверь не закрыта
+            tr
+              td
+                p Е22
+              td
+                p Сбой EEPROM
+
+       
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="100% качественный ремонт стиральных машин")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качество и гарантия на ремонт стиральных машин!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

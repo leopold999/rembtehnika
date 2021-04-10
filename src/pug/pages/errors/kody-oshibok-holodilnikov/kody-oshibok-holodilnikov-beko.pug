@@ -1,0 +1,188 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок холодильников Beko (Беко)'
+  - var content = "Расшифровка ошибок холодильников Beko (Беко)"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок холодильников": "/errors/kody-oshibok-holodilnikov/",
+    "Коды ошибок холодильников Beko (Беко)" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    H1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-005.webp'
+    })
+    .page-text(itemprop="articleBody")
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th 
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p Е0
+              td
+                p
+                  | Компрессор работает без остановки из-за неисправности датчика FRZ (датчик воздуха)
+            tr
+              td
+                p Е1
+              td
+                p Проблемы сдатчиком испарителя (NTC)
+            tr
+              td
+                p ЕЗ
+              td
+                p Неисправен датчик воздуха (NTC)
+            tr
+              td
+                p Е4
+              td
+                p Не работает ТЭН оттайки
+            tr
+              td
+                p Е5
+              td
+                p Плохо работает воздушная заслона холодильного отделения
+            tr
+              td
+                p Е6
+              td
+                p Нестабильно или вообще не работает вентилятор в моделях с системой No-Frost
+            tr
+              td
+                p Е7
+              td
+                p Проблемы с одним из внутренних датчиков
+            tr
+              td
+                p Е8
+              td
+                p Сломан внутренний соленоидный датчик
+            tr
+              td
+                p Е9
+              td
+                p Сломан внешний соленоидный датчик
+        
+        
+        
+      h2  Ошибки с миганием датчика температуры
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код
+              th
+                p Описание ошибки
+            tr
+              td
+                p +2
+              td
+                p Неисправна система охлаждения
+            tr
+              td
+                p +3
+              td
+                p Неисправен нагреватель
+            tr
+              td
+                p +4
+              td
+                p Цепь датчика разомкнута
+            tr
+              td
+                p +5
+              td
+                p Замыкание в датчике
+            tr
+              td
+                p +6
+              td
+                p Одна из кнопок на панели нажата
+            tr
+              td
+                p +7
+              td
+                p Неисправен компрессор
+            tr
+              td
+                p -12
+              td
+                p Цепь переключателя неисправна Ошибки для моделей "NE"
+            tr
+              td
+                p Код
+              td
+                p Описание ошибок
+            tr
+              td
+                p 2 и !
+              td
+                p Неисправность воздушного FF AIR сенсора холодильной камеры
+            tr
+              td
+                p 4 и !
+              td
+                p Неисправность FF DEFROST сенсора испарителя холодильной камеры
+            tr
+              td
+                p 18 и !
+              td
+                p Неисправность воздушного FRZ AIR сенсора морозильной камеры
+            tr
+              td
+                p 20 и !
+              td
+                p Неисправность FRZ DEFROST сенсора испарителя морозильной камеры
+            tr
+              td
+                p 22 и !
+              td
+                p
+                  | Индикация будет включена после 4-х циклов режима размораживания (примерно 12 дней работы холодильника, когда не включается нагреватель системы размораживания. Причиной этому может быть неисправность:
+                p - термопредохранителя
+                p - нагревателя системы
+                p размораживания - нагревателя водослива
+            tr
+              td
+                p I
+              td
+                p Высокая температура в морозильной камере.
+                p
+                  | Неисправность сенсора (либо его неправильное расположение, смещение) или неисправна система охлаждения
+
+
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="качественный ремонт холодильников с гарантией")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качественный ремонт холодильников на дому!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

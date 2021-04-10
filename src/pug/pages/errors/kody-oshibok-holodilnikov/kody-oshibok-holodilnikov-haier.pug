@@ -1,0 +1,98 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок холодильников Haier (Хайер)'
+  - var content = "Расшифровка ошибок холодильников Haier (Хайер)"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок холодильников": "/errors/kody-oshibok-holodilnikov/",
+    "Коды ошибок холодильников Haier (Хайер)" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    H1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-007.webp'
+    })
+    .page-text(itemprop="articleBody")
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p F1
+              td
+                p Неисправность датчика температуры хранения холодильника
+            tr
+              td
+                p F2
+              td
+                p Неисправность датчика температуры хранения морозильной камеры
+            tr
+              td
+                p F3
+              td
+                p Неисправность датчика температуры окружающей среды
+            tr
+              td
+                p F4
+              td
+                p Неисправность датчика оттаивания испарителя
+            tr
+              td
+                p F5
+              td
+                p Неисправность датчика температуры размораживания
+            tr
+              td
+                p ЕО
+              td
+                p Отсутствие связи между дисплейной панелью и силовой платой в течение 2 минут
+            tr
+              td
+                p Е1
+              td
+                p Неисправность вентилятора морозильной камеры
+            tr
+              td
+                p Е2
+              td
+                p Неисправность вентилятора холодильной камеры
+            tr
+              td
+                p ER
+              td
+                p Не работает ледогенератор
+
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="качественный ремонт холодильников с гарантией")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качественный ремонт холодильников на дому!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

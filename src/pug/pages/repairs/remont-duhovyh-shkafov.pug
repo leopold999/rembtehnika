@@ -1,0 +1,550 @@
+extends ../../layout/repair_page_layout.pug
+
+
+block variables
+    - var title = 'Ремонт духовых шкафов на дому в г.Санкт-Петербурге'
+    - var content = "Ремонт духовых шкафов любых марок за один визит к Вам. Бесплатный выезд и диагностика. Профессиональное оборудование. Гарантия до 2-х лет."
+    
+
+block content
+    include ../../../blocks/page-blocks/page-blocks
+    include ../../../blocks/elements/elements
+
+    +bread-crumbs({
+      'Главная': '/',
+    
+      "Ремонт духовых шкафов": "#",
+  
+    })
+    .repair-page-title-section
+      H1.page-title-h1(itemprop="name")=title
+    .repair-page-text-section
+      .repair-page-img.repair-page-img_float-left
+        include ../../../img/pictures/svg/oven.pug
+      .page-text
+        p
+          | До сих пор можно встретить духовые шкафы советских времен, которые работают десятилетиями, при этом не требуют ремонта. Однако так везет не всем владельцам. Современные модели не могут похвастаться такой износостойкостью. Проблема в том, что они обладают более сложным устройством. Нашим бабушкам и не снилось, что духовка будет обладать таймером выключения или регулировка нагревания отдельных элементов.
+        p
+          | Поломки случаются всегда неожиданно. Духовка не для каждого является предметом первой необходимости, но рано или поздно ее все равно придется чинить. И чем быстрее вы вызовете мастера на дом, тем выше вероятность, что неисправность можно будет ликвидировать без особых затрат времени и средств.
+        p
+          | Явные перебои в работе не оставляют выбора. Если духовой шкаф не включается, визит специалиста неизбежен. Но есть ряд признаков, которые многие игнорируют. Пламя самопроизвольно потухает, когда должно гореть, ручка духовки плохо поворачивается, при этом огонь горит слабо. Нередко заметны колебания напряжения газа. В некоторых случаях можно даже готовить в таких условиях. Однако это приведет к печальным последствиям.
+        p
+          | Поломка может возникнуть из-за внешних или внутренних причин. К первым относят перебои с электросетью. Как бы банально не звучало, но перед вызовом ремонтника, самостоятельно проверьте функционирование розетки и наличие электричества в доме. Для этого подключите в нее другой прибор. Если все работает, лучше вызвать специалиста.
+        p
+          | Только квалифицированный мастер сможет установить причину неисправности и устранить ее как можно быстрее. Кроме того, он даст вам необходимые рекомендации, чтобы техника прослужила как можно дольше. При своевременной диагностике решить проблему намного проще. Ряд неисправностей легко ликвидируются, если их не запускать.
+        p(itemprop="description") Компания РемБытТехника предоставляет услуги по ремонту техники в городе Санкт-Петербурге. Работаем с 2005 года и имеем 11 филиалов в городе. Готовы взяться за любую модель, вне зависимости ее возраста. Имеем широкий штат сотрудников: более 50 по всему городу. Каждый имеет высокую квалификацию и опыт работы от трех лет. Мастера бесплатно выезжают по городу. В пригород готовы выехать не дальше 30 КМ от КАД.
+
+    .repair-page-advantages-section
+      H2.page-title-h2 Приемущества обращения к нам
+      .landing-page__advantages
+        .advantages-item
+          .advantages__img.icon-master
+          .advantages__text 
+            p Бесплатный выезд мастера и диагностика неисправности
+            .advantages__quest ?
+              .advantages__descr Выезд и диагностика выполняется бесплатно при выполнении ремонта.
+        .advantages-item
+          .advantages__img.icon-warranty
+          .advantages__text 
+            p Гарантия до 2-х лет (работа + запчасти)
+            .advantages__quest ?
+              .advantages__descr Предоставляется официальная гарантия на работу и установленные запасные части.
+        .advantages-item
+          .advantages__img.icon-people
+          .advantages__text 
+            p Большой штат квалифицированных мастеров
+            .advantages__quest ?
+              .advantages__descr У нас в штате более 70 мастеров. Мы тщательно отбираем мастеров, и регулярно проверяем их квалификацию.
+        .advantages-item
+          .advantages__img.icon-hour
+          .advantages__text 
+            p Выезд мастера на адрес в течение часа
+            .advantages__quest ?
+              .advantages__descr Большой штат сотрудников и наличие филиалов в каждом районе города позволяют нам очень быстро прибыть к Вам.
+        .advantages-item
+          .advantages__img.icon-original
+          .advantages__text 
+            p Используем только оригинальные запчасти
+            .advantages__quest ?
+              .advantages__descr Мы сотрудничаем только с официальными и проверенным годами поставщиками. 
+        .advantages-item
+          .advantages__img.icon-srtificate
+          .advantages__text 
+            p Сертифицированный сервисный центр компаний Bosch, Miele, Siemens, Samsung и др.
+            .advantages__quest ?
+              .advantages__descr Мы имеем официальную сертификацию у ведущих производителей техники и регулярно ее подтверждаем.
+    
+    .repair-page-brands
+      H2.page-title-h2 Мы ремонтируем духовые шкафы всех известных брендов
+      .brands-carousel.owl-carousel#js-carousel-3
+        .brands-carousel-item-group
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/miele_300.webp" alt="Ремонт варочных панелей Miele в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/smeg_300.webp" alt="Ремонт варочных панелей Smeg в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/bosch_300.webp" alt="Ремонт варочных панелей Bosch в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/siemens_300.webp" alt="Ремонт варочных панелей Siemens в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/aeg_300.webp" alt="Ремонт варочных панелей AEG в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/teka_300.webp" alt="Ремонт варочных панелей Teka в Санкт-петербурге")
+        .brands-carousel-item-group
+          a.brands-carousel-item__link(href="#")  
+            img.brands-carousel-item(src="/assets/img/pictures/brands/samsung_300.webp" alt="Ремонт варочных панелей Samsung в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/lg_300.webp" alt="Ремонт варочных панелей LG в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/korting_300.webp" alt="Ремонт варочных панелей Korting в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/electrolux_300.webp" alt="Ремонт варочных панелей Electrolux в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/ardo_300.webp" alt="Ремонт варочных панелей Ardo в Санкт-петербурге")
+        
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/beko_300.webp" alt="Ремонт варочных панелей Beko в Санкт-петербурге")
+        .brands-carousel-item-group
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/candy_300.webp" alt="Ремонт варочных панелей Candy в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/gorenje_300.webp" alt="Ремонт варочных панелей Gorenje в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/hansa_300.webp" alt="Ремонт варочных панелей Hansa в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/indezit_300.webp" alt="Ремонт варочных панелей Indezit в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/liebherr_300.webp" alt="Ремонт варочных панелей Liebherr в Санкт-петербурге")
+        
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/panasonic_300.webp" alt="Ремонт варочных панелей Panasonic в Санкт-петербурге")
+        .brands-carousel-item-group 
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/philips_300.webp" alt="Ремонт варочных панелей Philips в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/whirpool_300.webp" alt="Ремонт варочных панелей whirpool в Санкт-петербурге")
+        
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/asko_300.webp" alt="Ремонт варочных панелей Asko в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/daewoo_300.webp" alt="Ремонт варочных панелей Daewoo в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/haier_300.webp" alt="Ремонт варочных панелей Haier в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/hotpoint-ariston_300.webp" alt="Ремонт варочных панелей Hotpoint-Ariston в Санкт-петербурге")
+          
+    .call-action-banner-container
+      .calc-banner.page-banner
+        .page-banner-img
+            img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/master.webp' alt="")
+        .page-banner-content
+            .page-banner-content__title 
+                p Ремонт в течение двух часов!
+            .page-banner-content__text 
+                p Свяжитесь с нами по телефонам  
+                a(href=telNumber_1_int)= telNumber_1 
+                |  или 
+                a(href=telNumber_2_int)= telNumber_2 
+                |  и в течение двух часов Ваша техника будет исправна!
+            .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+            .page-banner-content-buttons
+                .page-banner-button 
+                    | Оформить заявку
+                    br
+                    | on-line
+                .page-banner-button Заказать звонок
+    .repair-page-prices
+      H2.page-title-h2 Цены на услуги по ремонту духовых шкафов в г. Санкт-Петербург
+      .table-container
+        .table-container__bgrnd
+        .table-container__button.table-container__button_down
+        table.page-table
+          tbody
+            tr
+              th Вид работ
+              th Стоимость
+            tr
+              td
+                p Выезд мастера на дом
+              td
+                p бесплатно
+            tr
+              td
+                p Диагностика неисправности при ремонте
+              td
+                p бесплатно
+            tr
+              td
+                p Диагностика в случае отказа от проведения ремонта
+              td
+                p 400
+            tr
+              td
+                p Замена ТЭНа
+              td
+                p от 800 р.
+            tr
+              td
+                p Замена переключателя
+              td
+                p от 700 р.
+            tr
+              td
+                p Ремонт электросхемы
+              td
+                p от 500 р.
+            tr
+              td
+                p Восстановление проводки
+              td
+                p от 700 р.
+            tr
+              td
+                p Замена терморегулятора
+              td
+                p от 800 р.
+            tr
+              td
+                p Ремонт модуля управления
+              td
+                p от 1000 р.
+            tr
+              td
+                p Замена таймера
+              td
+                p от 800 р.
+            tr
+              td
+                p Замена уплотнителя
+              td
+                p от 800 р.
+            tr
+              td
+                p Замена замка дверцы
+              td
+                p от 500 р.
+            tr
+              td
+                p Замена вентилятора
+              td
+                p от 600 р.
+
+
+  
+    .repair-page-reviews
+      H2.page-title-h2 Отзывы клиентов о ремонте духовых шкафов
+      .repair-page-reviews-items.owl-carousel#js-carousel-2
+        +reviews({
+          id: '00087',
+          typeRepair: 'Ремонт духовых шкафов',
+          userName: 'Оксана',
+          date: '12.12.2020',
+          rating: '5',
+          text: 'Никаких претензий. Мастер был вежлив и аккуратен. Все починили без лишних разводов. Был сломан переключатель.',
+          answerSupport: ''
+          })
+        +reviews({
+          id: '00077',
+          typeRepair: 'Ремонт духовых шкафов',
+          userName: '',
+          date: '17.08.2020',
+          rating: '5',
+          text: 'Ремонтировали 08.08.2020 духовку. Все устроило, цены по прайсу доступные. Приехали вовремя. Спасибо.',
+          answerSupport: ''
+          })
+        +reviews({
+          id: '00055',
+          typeRepair: 'Ремонт духовых шкафов',
+          userName: 'Алина',
+          date: '01.02.2020',
+          rating: '5',
+          text: 'Спасибо за работу! Мастер приехал очень оперативно! Профессионально быстро разобрал духовку нашел какие то перегоревшие детали, все показал рассказал. минут через 40-50 все уже было сделано',
+          answerSupport: ''
+          })
+        +reviews({
+          id: '00048',
+          typeRepair: 'Ремонт духовых шкафов',
+          userName: 'Владислав',
+          date: '10.11.2019',
+          rating: '5',
+          text: 'Заменили в духовке переключатель и тен. Меня все устроило и цена и качество. все работает. спасибо',
+          answerSupport: ''
+          })
+    
+        
+    .repair-page-questions
+      .repair-page-questions-item
+        H2.repair-page-questions-item__title Почему стоит обратиться именно к нам?
+        ul.repair-page-questions-list
+          li.repair-page-questions-list-item 
+            p
+              span.repair-page-questions__subtitle.font-bold Бесплатная диагностика и выезд. 
+            p При выполнении ремонта Вы не оплачиваете выезд мастера на дом и работу по проведению диагностики.
+          li.repair-page-questions-list-item 
+            p
+              span.repair-page-questions__subtitle.font-bold Гарантия до 2-х лет. 
+            p В зависимости от вида ремонта мы предоставляем гарантию на выполненные работы от 3-х месяцев до 2-х лет.
+          li.repair-page-questions-list-item 
+            p
+              span.repair-page-questions__subtitle.font-bold Удобное для Вас время визита мастера. 
+            p Вы можете сами предложить время, когда Вам удобно принять мастера.
+              span Также Вы можете воспользоваться 
+              span.repair-page-questions__button-order.button-order сервисом 
+              span для оформления заявки на ремонт духовки.
+          li.repair-page-questions-list-item.font-bold
+            p
+              span.repair-page-questions__subtitle Экономим Ваше время.
+              span Наши мастера оснащены всем необходимым оборудованием для проведения ремонта на дому.
+              span В среднем ремонт духового на дому занимает от 45 минут до 2,5 часов.
+          li.repair-page-questions-list-item.font-bold
+            p
+              span.repair-page-questions__subtitle Проконсультируем по телефону бесплатно.
+              span Звонки принимают мастера по ремонту духовых шкафов, а не просто диспетчеры.
+              span Позвонив нам и описав проблему, Вы получите бесплатную консультацию о возможных неисправностях, примерной стоимости и сроках их устранения. 
+      .repair-page-questions-item.repair-page-questions-item_active
+        H2.repair-page-questions-item__title Сколько времени займет ремонт?
+        .repair-page-questions-list
+          p.repair-page-questions-list-text 
+            span В среднем ремонт холодильника занимает от 45 минут до 2,5 часов. 
+            span Ремонт производится у Вас дома. В некоторых случаях ремонт духовки может занять больше времени.
+            span Например, если требуется ремонт электронной платы (модуля управления).
+      .repair-page-questions-item.repair-page-questions-item_active
+        H2.repair-page-questions-item__title Как с нами связаться?
+        .repair-page-questions-list
+          p.repair-page-questions-list-text 
+            span Если у Вас не работает духовой шкаф обратитесь в компанию 
+            span= nameCompany 
+            span  по телефонам
+          
+          a(herf=telNumber_1_int)= telNumber_1
+          br
+          a(herf=telNumber_2_int)= telNumber_2
+          br
+          p или оформите 
+            span.repair-page-questions__button-order.button-order заявку on-line  
+            span на сайте.
+          br
+          p.font-bold Чтобы мастер лучше подготовился к ремонту сообщите при звонке или оформлении заявки на ремонт духового шкафа следующую информацию:
+          ol
+            li.repair-page-questions__subtitle.repair-page-questions-list-item
+              p Марку техники её примерный возраст.    
+            li.repair-page-questions__subtitle.repair-page-questions-list-item
+              p Опишите проблему (например: не работает переключатель, не нагревается и т.п.).
+            li.repair-page-questions__subtitle.repair-page-questions-list-item        
+              p Удобное время для визита мастера.
+            li.repair-page-questions__subtitle.repair-page-questions-list-item          
+              p Адрес и телефон для связи.
+          p Мастер приедет в назначенное время, а перед выездом позвонит Вам.
+      .repair-page-questions-item.repair-page-questions-item_active
+        H2.repair-page-questions-item__title Какая гарантия на работу?
+        .repair-page-questions-list
+          p.repair-page-questions-list-text 
+            | После завершения ремонта мастер обязательно проверит работоспособность устройства, а также продемонстрирует Вам. 
+            | После чего будет оформлен гарантийный талон. Срок гарантии составляет от 3-х месяцев до 2-х лет в зависимости от вида ремонта.
+            | Гарантия распространяется на как на запчасти, так и на выполненные работы.
+      .repair-page-questions-item.repair-page-questions-item_active
+        H2.repair-page-questions-item__title Какие марки духовых шкафов ремонтируете?
+        .repair-page-questions-list
+          p.repair-page-questions-list-text Мы ремонтируем все известные на сегодняшний день марки духовых шкафов, независимо от страны производства и возраста.
+          p.repair-page-questions-list-text.font-bold Наиболее известные марки духовок, которые в настоящее время используются:
+          ul.repair-page-questions-brands
+            li
+              p AEG
+            li
+              p AKPO
+            li
+              p ASCOLI
+            li
+              p Asko
+            li
+              p AVEX
+
+            li
+              p Bosch
+            li
+              p Beko
+            li
+              p Bosfor
+
+            li
+              p Candy
+            li
+              p CATA
+          
+            li
+              p De Dietrich
+            li
+              p De'Longhi
+          
+            li
+              p Electrolux
+            li
+              p Electronicsdeluxe
+            li
+              p Elica
+            li
+              p EXITEQ
+            li
+              p Faber
+            li
+              p FALMEC
+            li
+              p Fornelli
+            li
+              p Foster
+            li
+              p FRANKE
+            li
+              p FULGOR MILANO
+
+            li
+              p GEFEST
+            li
+              p Gorenje
+            li
+              p Gaggenau
+            li
+              p Ginzzu
+            li
+              p Glem
+            li
+              p GRAUDE
+            li
+              p GRETA
+            li
+              p Gunter & Hauer
+
+            li
+              p Hansa
+            li
+              p Haier
+            li
+              p Hankel
+            li
+              p HIBERG
+            li
+              p HOMSAIR
+            li
+              p Hotpoint-Ariston
+            li
+              p Hyundai       
+            li
+              p IKEA
+            li
+              p ILVE
+            li
+              p Indesit
+            li
+              p Jacky's
+          
+            li
+              p Krona
+            li
+              p Kuppersberg
+            li
+              p Kaiser
+            li
+              p KitchenAid
+            li
+              p Konigin
+            li
+              p Korting
+            li
+              p Kuchenchef
+            li
+              p Kuppersbusch
+
+            li
+              p LEX
+            li
+              p Leran
+            li
+              p LG
+            li
+              p Linberg
+            li
+              p LOFRA
+            li
+              p Longran
+            li
+              p Luxdorf
+
+            li
+              p MAUNFELD
+            li
+              p Midea
+            li
+              p MBS
+            li
+              p Miele
+            li
+              p MONSHER
+
+            li
+              p Nardi
+            li
+              p NEFF
+            li
+              p Normann
+          
+            li
+              p Oasis
+            li
+              p ORE
+            
+            li
+              p PYRAMIDA
+            
+            li
+              p Rainford
+            li
+              p REEX
+            li
+              p RICCI
+            li
+              p Samsung
+            li
+              p Schaub Lorenz
+            li
+              p Siemens
+            li
+              p Simfer
+            li
+              p Smart Life
+            li
+              p smeg
+            li
+              p TEKA
+            li
+              p Termikel
+            li
+              p Tessa
+            li
+              p THOR
+            li
+              p V-ZUG
+            li
+              p Vestfrost
+            li
+              p Weissgauff
+            li
+              p Whirlpool
+            li
+              p Xiaomi
+            li
+              p Zigmund & Shtain
+            li
+              p Zanussi
+            li
+              p ZorG
+      .repair-page-questions-item.repair-page-questions-item_active
+        H2.repair-page-questions-item__title Насколько опытные мастера работают у Нас?
+        .repair-page-questions-list
+          p У нас в штате мастера по ремонту с минимальным опытом работы 3 года. Большинство мастеров имеет опыт работы 8-10 лет.
+          p Кроме того, при поступлении на работу, и в дальнейшем мы проводим регулярную аттестацию персонала и повышение квалификации.
+          p Также все наши мастера проходят ежедневный медицинский контроль, а также тестирование на заболевание короновирусом COVID-19.
+
+                        
+
+            
+

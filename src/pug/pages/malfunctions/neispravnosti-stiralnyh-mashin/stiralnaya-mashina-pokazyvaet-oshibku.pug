@@ -1,0 +1,161 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Стиральная машина показывает ошибку' 
+  - var content = 'Отсутствие вращение барабана - одна из наиболее распространенных неисправностей стиральных машин. Но не стоит бить тревогу. Попробуйте самостоятельно выяснить причину, и предпринять необходимые меры.'
+  - var pathToImgArticles = domen + '/assets/img/pictures/repair-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    'Неисправности стиральных машин': domen + '/neispravnosti-stiralnyh-mashin/',
+    "Стиральная машина показывает ошибку": "#"})
+
+  .article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    h1.page-title-h1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-013.webp'
+    })
+    .page-text(itemprop="articleBody")
+      
+      img.page-img.page-img_float-left( src= pathToImgArticles + "wash-mash/" + "sm-pokazivaet-oshibku" + ".webp" alt= 'Стиральная машина показывает ошибку' itemprop="image")
+
+      p
+        | Стиральная машина – незаменимый предмет в каждом современном доме. Хозяйки уже давно забыли каково это кипятить белье, или стирать его в тазу. Более того, постирать вещи в наше время может любой человек, достаточно лишь погрузить белье в машину и нажать комбинацию кнопок. Мы настолько привыкли к такому комфорту, что выход из строя стиральной машины может доставить серьезные неудобства.
+      p
+        | Стиральная машина - это довольно сложное технически устройство. В нем есть двигатель, управляющая электроника, нагревательный элемент, датчики, насос, клапан и т.д. Все эти устройства взаимодействуют друг с другом и настраиваются при производстве техники так, чтобы работа агрегата была слажена и идеальна.
+      p
+        | Практически все современные агрегаты для стирки оборудованы модулем управления (платой). Модуль дает сигналы ну открытие клапана или пуск двигателя, и принимает сигналы с датчиков и панели управления. При выходе из строя какого-либо периферийного устройства машины в модуле возникает внутренняя ошибка, и чаще всего эта ошибка отображается на дисплее устройства (если он есть) или дает знать о себе миганием определенных индикаторов.
+      p
+        | Поэтому все без исключения современные стиральные машины оснащаются руководством по эксплуатации, в котором указана информация о возможных ошибках устройства и необходимых действиях пользователя при этом. Но что делать если аппарату уже достаточно много лет, и инструкция по эксплуатации уже давно утеряна. А может быть вы вообще не знаете историю конкретной стиральной машины, о том, кто и когда ее купил.
+      p
+        span Для такого случая мы собрали
+        a(href=domen + '/errors/')  информацию об ошибках стиральных машин известных брендов
+        span . Данная коллекция постоянно пополняется.
+      p
+        | Здесь необходимо отметить важный момент. Чаще всего, ошибка, которую показывает стиральная машина, говорит о следствии, а не причине возникновения. К примеру: стиральная машина Samsung показывает ошибку SE или E2. Ошибка трактуется как «Не сливается вода из машины». Однако, причиной этому может быть засор, неисправность сливного насоса, неисправность прессостата или модуля управления (см. 
+        a(href=domen + '/neispravnosti-stiralnyh-mashin/stiralnaya-mashina-ne-slivaet' + '.html') статью «стиральная машина не сливает»
+        | ). Но устройство чаще всего не способно в точности определить какой именно узел вышел из строя.
+      p
+        | Поэтому точную информацию о неисправности можно получить только при профессиональной диагностике.
+      p
+        | Если вы не обладаете достаточными знаниями в ремонте бытовой техники, лучше доверьте диагностику и ремонт своей стиральной машины профессиональным мастерам компании РемБытТехника.
+
+
+    .calc-banner.page-banner
+      .page-banner-img
+        img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/men_1.webp' alt="")
+      .page-banner-content
+        .page-banner-content__title 
+          p Не тяните с ремонтом! Мы отремонтируем вашу стиралку всего за пару часов!
+        .page-banner-content__text 
+          p  телефоны для связи
+          a(href='#')= telNumber_1 
+          |  или 
+          a(href='#')= telNumber_2 
+
+        .page-banner-content__text Также Вы можете оформить on-line заказ или заказать звонок
+        .page-banner-content-buttons
+          .page-banner-button.button-order 
+            | Оформить заявку
+            br
+            | on-line
+          .page-banner-button.button-callback Заказать звонок 
+    +brands-washmach({
+      title: "Ремонтируем стиральные машины любых брендов"
+    })
+    .page-articles-link
+      h2.page-title-h2 Другие возможные неисправности стиральных машин
+      .page-articles-link-wrapper
+        -var pathToPage = domen + '/neispravnosti-stiralnyh-mashin/'
+        .page-articles-link-item
+          a(href=pathToPage + 'ne-krutitsya-baraban-v-stiralnoj-mashine' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-krutit' + '.webp' alt='Стиральная машина не крутит барабан')
+            p Стиральная машина не крутит барабан
+        .page-articles-link-item
+          a(href=pathToPage + 'pena-iz-stiralnoj-mashiny' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-penitsa' + '.webp' alt='Пена из стиральной машины')
+            p Пена из стиральной машины
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-bet-tokom' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-bjet-tokom' + '.webp' alt='Стиральная машина бьет')
+            p Стиральная машина бьет
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-gudit' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-gudit' + '.webp' alt='Стиральная машина гудит')
+            p Стиральная машина гудит
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-migaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-migaet' + '.webp' alt='На стиральной машине мигают все лампочки')
+            p На стиральной машине мигают все лампочки
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-greet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-greet' + '.webp' alt='Стиральная машина не греет воду')
+            p Стиральная машина не греет воду
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-nabiraet-vodu' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-nabiraet' + '.webp' alt='Стиральная машина не набирает воду')
+            p Стиральная машина не набирает воду
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-ostanavlivaetsya-stiraet-bez-ostanovki' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-nabiraet' + '.webp' alt='Стиральная машина не останавливается')
+            p Стиральная машина не останавливается
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-otkryvaetsya' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-otkrivaet' + '.webp' alt='Стиральная машина не открывает дверь')
+            p Стиральная машина не открывает дверь
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-otzhimaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-otgimaet' + '.webp' alt='Стиральная машина не отжимает')
+            p Стиральная машина не отжимает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-poloskaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-poloskaet' + '.webp' alt='Стиральная машина не полоскает')
+            p Стиральная машина не полоскает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-slivaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-slivaet' + '.webp' alt='Стиральная машина не сливает')
+            p Стиральная машина не сливает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-vklyuchaetsya' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-vkluchaetsa' + '.webp' alt='Стиральная машина не включается')
+            p Стиральная машина не включается
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-zakryvaetsya' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-blokiruet' + '.webp' alt='Стиральная машина не блокирует дверь')
+            p Стиральная машина не блокирует дверь
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ploho-stiraet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ploho-stiraet' + '.webp' alt='Стиральная машина не отстирывает вещи')
+            p Стиральная машина не отстирывает вещи
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-pokazyvaet-oshibku' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-pokazivaet-oshibku' + '.webp' alt='Стиральная машина показывает ошибку')
+            p Стиральная машина показывает ошибку
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-prygaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-prigaet' + '.webp' alt='Стиральная машина прыгает')
+            p Стиральная машина прыгает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-skripit' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-scripit' + '.webp' alt='Стиральная машина скрипит')
+            p Стиральная машина скрипит
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-srazu-slivaet-vodu' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-srazu-slivaet' + '.webp' alt='Стиральная машина набирает и сразу сливает воду')
+            p Стиральная машина набирает и сразу сливает воду
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-techet-podtekaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-techet' + '.webp' alt='Стиральная машина подтекает')
+            p Стиральная машина подтекает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-vibriruet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-vibriruet' + '.webp' alt='Стиральная машина сильно вибрирует')
+            p Стиральная машина сильно вибрирует
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-zavisaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-migaet' + '.webp' alt='Стиральная машина зависает в одном режиме')
+            p Стиральная машина зависает в одном режиме

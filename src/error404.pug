@@ -1,0 +1,20 @@
+extends ./pug/layout/main.pug
+
+block variables
+  - var title = 'Ошибка 404'
+  - var descriptionContent = 'Ошибка 404 - РемБытТехника - Ремонт бытовой техники в Санкт-Петербурге'
+  - var keywordsContent = ''
+block head
+  
+block content
+    //- include ../../../blocks/page-blocks/page-blocks
+    //- include ../../../blocks/elements/elements
+
+    //- +bread-crumbs({
+    //-   'Главная': '/',
+    //-   "Ошибка 404": "#"})
+
+    .article-page-wrapper
+      h1.page-title-h1 Ошибка 404 - страница не найдена
+      h2 Такой страницы не существует на нашем сайте. 
+      p Попробуйте уточнить запрос или воспользуйтесь меню

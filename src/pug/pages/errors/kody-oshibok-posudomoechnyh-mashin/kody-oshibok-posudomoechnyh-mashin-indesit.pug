@@ -1,0 +1,64 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок посудомоечных машин Indesit (Индезит)'
+  - var content = "Расшифровка ошибок посудомоечных машин Indesit (Индезит)"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок посудомоечных машин": "/errors/kody-oshibok-posudomoechnyh-mashin/",
+    "Коды ошибок посудомоечных машин Indesit (Индезит)" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    H1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-003.webp'
+    })
+    .page-text(itemprop="articleBody")
+      img(alr='коды неисправностей посудомоечных машин Indesit' src= pathToImgArticles + 'pm_indesit-1.jpg')
+      img(alr='коды неисправностей посудомоечных машин Indesit' src= pathToImgArticles + 'pm_indesit-2.jpg')
+      img(alr='коды неисправностей посудомоечных машин Indesit' src= pathToImgArticles + 'pm_indesit-3.jpg')
+      table
+      h2 Посудомойки с 4-мя и с 6-ю программами
+      img(alr='коды неисправностей посудомоечных машин Indesit' src= pathToImgArticles + 'pm_indesit-4.jpg')
+      img(alr='коды неисправностей посудомоечных машин Indesit' src= pathToImgArticles + 'pm_indesit-5.jpg')
+      img(alr='коды неисправностей посудомоечных машин Indesit' src= pathToImgArticles + 'pm_indesit-6.jpg')
+      .page-text
+        p Информация:
+        p * Управление аварийными сигналами в моделях EOS осуществляется при помощи:
+        p
+          | - ИСКЛЮЧИТЕЛЬНО первыми 4 светодиодами с левой стороны (мод. с полностью крытой панелью управления)
+        p
+          | - ИСКЛЮЧИТЕЛЬНО при помощи светодиодов: "мойка” - "сушка” - "конец” - "запуск с задержкой".
+        p - НИКАКИЕ ДРУГИЕ СВЕТОДИОДЫ не используются для кодирования аварийного сигнала.
+        p - ИНДИКАТОРЫ соли и ополаскивателя не стоит принимать во внимание.
+      img.width-70(alr='коды неисправностей посудомоечных машин Indesit' src= pathToImgArticles + 'pm_indesit-7.jpg')
+
+
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="качественный ремонт посудомоечных машин с гарантией")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качественный ремонт посудомоечных машин на дому!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

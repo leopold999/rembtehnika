@@ -1,0 +1,165 @@
+.problem-item {
+    @include size(rem(400), rem(300) );
+    border: 3px solid $colorMain-1-03;
+    padding: rem(10) rem(15);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include fontBody;
+    // margin-top: rem(20);
+    // margin-right: rem(20);
+    margin: rem(20) auto;
+
+    &:hover {
+        border: 3px solid $colorMain-1;
+        box-shadow: rem(8) rem(8) rem(8) rem(2) $colorMain-1-07;
+        cursor: pointer;
+        & .problem-item__img {
+            transform: scale(1);
+            transition: 1s;
+        }
+        & .problem-item-buttons {
+            opacity: 1;
+            display: flex;
+        }
+
+    }
+    @media screen and (max-width: 400px) { 
+        width: 100%;       
+    }
+
+    @media screen and (max-width: 768px) { 
+        max-height: rem(260);
+        transform: scale(1);
+        transition: 0.3s;
+        &:hover {
+            max-height: 2000px;
+            transform: scale(1);
+            transition: 0.3s;
+        }
+    }
+    @media screen and (max-width: 1024px) { 
+        height: rem(340);
+    }
+}
+.problem-item-content {
+    position: relative;
+    padding-left: rem(110);
+    
+
+
+}
+.problem-item-link {
+    font-size: rem(20);
+    color: $colorMain-1-09;
+    font-weight: bold;
+    text-decoration: underline;
+    &:hover {
+        color: $colorSecond-1;
+    }
+  
+
+}
+.problem-item__img {
+    position: absolute;
+    width: rem(100);
+    left: 0;
+    top: 0;
+    transform: scale(0.7);
+    & img {
+        width: 100%;
+    }
+
+}
+.proplem-item__title {
+    font-size: rem(20);
+    line-height: rem(24);
+    font-weight: bold;
+    color: $colorMain-1;
+    margin-bottom: rem(15);
+    text-transform: uppercase;
+
+
+}
+.repair-options-item__descr {
+    font-size: rem(18);
+    line-height: rem(18);
+    font-weight: bold;
+    color: $dark75;
+    margin-bottom: rem(10);
+    
+
+}
+
+.proplem-item__repair-options {
+   
+
+}
+.repair-options-item {
+    position: relative;
+    padding-left: rem(20);
+    font-size: rem(18);
+    line-height: rem(24);
+    color: $colorMain-1;
+    &:before {
+        content: 'check';
+        font-family: 'Material Icons';
+        font-style: normal;
+        position: absolute;
+        font-size: rem(18);
+        line-height: rem(24);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: rem(-12);
+        color: $colorSecond-2;
+
+    }
+
+}
+.proplem-item__price {
+    font-size: rem(18);
+    color: $dark75;
+    & b {
+        color: $colorMain-1;
+    }
+    
+
+}
+.problem-item-buttons {
+  
+    width: 100%;
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: rem(10) 0;
+    @media screen and (max-width: 360px) {  
+        justify-content: space-between;
+
+    }
+
+    
+
+}
+.problem-item__button-item {
+    @include size(rem(170), rem(50));
+    border: 2px solid $colorMain-1-07;
+    border-radius: 5px;
+    @include justify-center;
+    font-size: rem(17);
+    line-height: rem(18);
+    text-align: center;
+    background: linear-gradient(180deg, $colorMain-1, $colorMain-1-05);
+    color: $white;
+    font-weight: bold;
+    &:hover {
+        background: linear-gradient(180deg, $colorMain-1-05, $colorMain-1, $colorMain-1-05);
+        color: $colorSecond-2;
+    }
+    @media screen and (max-width: 360px) {  
+        @include size(rem(155), rem(60));
+
+    }
+
+}

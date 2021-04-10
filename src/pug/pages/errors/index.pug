@@ -1,0 +1,21 @@
+extends ../../layout/article_page_layout.pug
+
+block variables
+	- var title = 'Коды ошибок бытовой техники'
+	- var content = "Расшифровка ошибок бытовой техники"
+	- var pathToImgArticles = domen + '/assets/img/pictures/articles-img/'
+
+block content
+	+bread-crumbs({ 
+		'Главная': '/',
+		"Коды ошибок бытовой техники": "/errors/"
+		})
+	.errors-page-list
+		H1.page-title-h1 Коды ошибок бытовой техники
+		ul.errors-page-list-items.page-link-list
+			li.errors-page-list__item
+				a(href=domen + "/errors/kody-oshibok-stiralnyh-mashin/") Коды ошибок стиральных машин
+			li.errors-page-list__item
+				a(href=domen + "/errors/kody-oshibok-holodilnikov/") Коды ошибок холодильников
+			li.errors-page-list__item
+				a(href=domen + "/errors/kody-oshibok-posudomoechnyh-mashin/") Коды ошибок посудомоечных машин

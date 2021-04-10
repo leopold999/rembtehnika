@@ -1,0 +1,146 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок стиральных машин Ardo (Ардо)'
+  - var content = "Расшифровка ошибок стиральных машин Ardo (Ардо)'"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок стиральных машин": "/errors/kody-oshibok-stiralnyh-mashin/",
+    "Коды ошибок стиральных машин Ardo" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    h1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-009.webp'
+    })
+    .page-text(itemprop="articleBody")
+      .table-container_scroll 	
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p Е00, Е01
+              td
+                p Ошибка слива воды
+            tr
+              td
+                p Е02
+              td
+                p Ошибка при сливе/заливе и отжиме
+            tr
+              td
+                p ЕОЗ
+              td
+                p Превышено время слива воды (более 3 минут)
+            tr
+              td
+                p F2
+              td
+                p Ошибка нагрева воды
+            tr
+              td
+                p F4
+              td
+                p Отсутствует слив воды
+            tr
+              td
+                p F5
+              td
+                p Одновременный слив и набор воды
+            tr
+              td
+                p F6, F9, F12
+              td
+                p Неисправность модуля или двигателя
+            tr
+              td
+                p F8
+              td
+                p Превышен уровень воды в баке
+            tr
+              td
+                p F13, F14
+              td
+                p Неисправность в электронном модуле
+      h2
+        | Ошибки Ardo на базе электронного модуля JP - mono
+      img(src=pathToImgArticles +'1040343e-1.jpg')
+      .table-container_scroll 	
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p Е01
+              td
+                p Дверь не закрыта
+            tr
+              td
+                p Е02
+              td
+                p Ошибка подачи воды
+            tr
+              td
+                p ЕОЗ
+              td
+                p Ошибка слива воды
+            tr
+              td
+                p Е04
+              td
+                p Ошибка двигателя
+            tr
+              td
+                p Е05
+              td
+                p Ошибка датчика давления
+            tr
+              td
+                p Е06
+              td
+                p Ошибка датчика температуры
+            tr
+              td
+                p Е07
+              td
+                p Ошибка нагрева воды
+            tr
+              td
+                p Е08
+              td
+                p Переполнение бака водой
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качество и гарантия на ремонт стиральных машин!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок

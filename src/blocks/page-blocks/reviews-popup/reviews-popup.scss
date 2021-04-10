@@ -1,0 +1,170 @@
+.reviews-popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 10000;
+    overflow: scroll;
+    box-sizing: border-box;
+    display: none;
+
+}
+.reviews-popup-wrapper {
+    width: rem(500);
+    height: auto;
+    border: 3px solid $colorMain-1;
+    position: relative;
+    padding: rem(10);
+    background-color: $colorTextHeader-1;
+    border-radius: rem(7);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    @media screen and (max-width: 1000px) {
+        width: rem(600);
+        
+    }
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
+
+}
+
+
+
+.reviews-popup_visible {
+    background-color: $dark50;
+    @include justify-center;
+    @media screen and (max-width: 1024px) {
+        align-items: flex-start;
+    }
+
+}
+// .reviews-popup_invisible {
+//     background: none;
+//     left: -10000px
+
+// }
+.reviews-popup__close-button {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    width: rem(35);
+    height: rem(35);
+    padding: rem(5);
+    // border: 1px solid red;
+    &:before {
+        content: "close";
+        @include material-icon(rem(30));
+        color: $colorMain-1;
+    }
+    
+
+}
+.reviews-popup__title {
+    @include fontH3(rem(22));
+    color: $colorMain-1;
+    white-space: nowrap;
+    margin: rem(15) 0 0;
+}
+.reviews-popup__descr {
+    @include fontH2(rem(17));
+    color: $colorMain-1;
+    white-space: wrap;
+    margin: rem(10) 0;
+}
+.reviews-popup-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.reviews-popup-form__lable {
+    display: flex;
+    flex-direction: column;
+    @include fontBody(rem(16), rem(22));
+    margin-bottom: rem(5);
+}
+.lable-rate {
+    width: 100%;
+}
+.rate-reviews {
+
+}
+.reviews-popup-form-input {
+    height: rem(50);
+    border: 2px solid $colorMain-1;
+    border-radius: rem(5);
+    padding: rem(5);
+    box-sizing: border-box;
+    &:focus {
+        border-color: $dark50;
+    }
+
+    @media screen and (max-width: 1000px) {
+  
+    }
+
+}
+.lable-name, .lable-phone {
+    width: 48%;
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
+
+}
+.lable-phone {
+
+}
+.lable-address {
+    width: 100%;
+}
+.lable-text {
+    width: 100%;
+    min-height: rem(150);
+
+    @media screen and (max-width: 1000px) {
+        height: rem(140);
+    }
+    & textarea {
+        height: 100%;
+        resize: none;
+    }
+
+}
+
+.reviews-popup-form__consent {
+    display: flex !important;
+    flex-direction: row-reverse !important;;
+    flex-wrap: nowrap;
+    justify-content: space-between !important;
+    padding-top: rem(20) 0;
+    & input {
+        width: rem(20);
+        height: rem(20);
+    }
+    p {
+        font-size: rem(14);
+        line-height: rem(17);
+    }
+}
+.reviews-popup-form-button {
+
+    width: 100%;
+    height: rem(50);
+    background: linear-gradient(180deg, $colorMain-1, $colorMain-1-05);
+    color: $white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: 2px solid $colorMain-1;
+    letter-spacing: 1px;
+
+    @media screen and (max-width: 1000px) {
+        height: rem(60);
+    }
+
+}

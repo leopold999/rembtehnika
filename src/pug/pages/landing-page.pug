@@ -1,0 +1,265 @@
+extends ../layout/main.pug
+
+block variables
+  - var title = 'Ремонт бытовой техники в городе Санкт-Петербурге'
+  - var descriptionContent = 'Качественный и недорогой ремонт крупной бытовой техники в г.Санкт-Петербург. Бесплатный выезд и диагностика в течение 1 часа. Лучшие мастера города у нас!'
+  - var keywordsContent = 'Ремонт бытовой техники в г.Санкт-Петербурге, Ремонт холодильников, ремонт стиральных машин, ремонт посудомоечных машин, ремонт ноутбуков, мастер на час, ремонт компьютеров, ремонт телевизоров'
+block head
+  
+block content
+  include ../../blocks/elements/elements.pug
+  
+  
+  .landing-page-wrapper
+    .landing-page-content(itemscope itemtype="http://schema.org/Organization")
+      meta(itemprop="name" content=nameCompany)
+      meta(itemprop="description" content=content)
+      meta(itemprop="telephone" content=telNumber_1)
+      .landing-page-section-1.landing-page-section
+        H1.page-title-h1= title
+        .landing-page-discount
+          .landing-page-discount__title Скидка 10% 
+          .landing-page-discount__text при оформлении on-line заявки на сайте
+          .landing-page-discount__button.button-order Оформить заявку 
+            br 
+            |on-line
+        .landing-page__advantages
+          .advantages-item
+            .advantages__img.icon-master
+            .advantages__text Бесплатный выезд мастера и диагностика неисправности
+              .advantages__quest ?
+                .advantages__descr Выезд и диагностика выполняется бесплатно при выполнении ремонта.
+          .advantages-item
+            .advantages__img.icon-warranty
+            .advantages__text Гарантия до 2-х лет (работа + запчасти)
+              .advantages__quest ?
+                .advantages__descr Предоставляется официальная гарантия на работу и установленные запасные части.
+          .advantages-item
+            .advantages__img.icon-people
+            .advantages__text Большой штат квалифицированных мастеров
+              .advantages__quest ?
+                .advantages__descr У нас в штате более 70 мастеров в г.Санкт-Петербург. Мы тщательно отбираем специалистов, и регулярно проверяем их квалификацию.
+          .advantages-item
+            .advantages__img.icon-hour
+            .advantages__text Выезд мастера на адрес в течение часа
+              .advantages__quest ?
+                .advantages__descr Большой штат сотрудников и наличие филиалов в каждом районе города позволяют нам очень быстро прибыть к Вам.
+          .advantages-item
+            .advantages__img.icon-original
+            .advantages__text Используем только оригинальные запчасти
+              .advantages__quest ?
+                .advantages__descr Мы сотрудничаем только с официальными и проверенным годами поставщиками. 
+          .advantages-item
+            .advantages__img.icon-srtificate
+            .advantages__text Сертифицированный сервисный центр компаний Bosch, Miele, Siemens, Samsung и др.
+              .advantages__quest ?
+                .advantages__descr Мы имеем официальную сертификацию у ведущих производителей техники.
+       
+      .landing-page-section-2.landing-page-section
+        H2.page-title-h2  Официальный сервисный центр производителей техники:
+        div(class="brands-carousel owl-carousel" id="js-carousel-1")
+          .brands-carousel-item-group
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/miele_300.webp" alt="Ремонт бытовой техники Miele в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/smeg_300.webp" alt="Ремонт бытовой техники Smeg в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/bosch_300.webp" alt="Ремонт бытовой техники Bosch в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/siemens_300.webp" alt="Ремонт бытовой техники Siemens в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/aeg_300.webp" alt="Ремонт бытовой техники AEG в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/teka_300.webp" alt="Ремонт бытовой техники Teka в Санкт-петербурге")
+          .brands-carousel-item-group
+            .brands-carousel-item__link  
+              img.brands-carousel-item(src="/assets/img/pictures/brands/samsung_300.webp" alt="Ремонт бытовой техники Samsung в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/lg_300.webp" alt="Ремонт бытовой техники LG в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/korting_300.webp" alt="Ремонт бытовой техники Korting в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/electrolux_300.webp" alt="Ремонт бытовой техники Electrolux в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/ardo_300.webp" alt="Ремонт бытовой техники Ardo в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/atlant_300.webp" alt="Ремонт бытовой техники Atlant в Санкт-петербурге")
+          .brands-carousel-item-group
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/beko_300.webp" alt="Ремонт бытовой техники Beko в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/candy_300.webp" alt="Ремонт бытовой техники Candy в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/gorenje_300.webp" alt="Ремонт бытовой техники Gorenje в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/hansa_300.webp" alt="Ремонт бытовой техники Hansa в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/indezit_300.webp" alt="Ремонт бытовой техники Indezit в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/liebherr_300.webp" alt="Ремонт бытовой техники Liebherr в Санкт-петербурге")
+          .brands-carousel-item-group
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/panasonic_300.webp" alt="Ремонт бытовой техники Panasonic в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/philips_300.webp" alt="Ремонт бытовой техники Philips в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/whirpool_300.webp" alt="Ремонт бытовой техники whirpool в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/stinol_300.webp" alt="Ремонт бытовой техники Stinol в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/zil_300.webp" alt="Ремонт бытовой техники Зил в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/saratov_300.webp" alt="Ремонт бытовой техники Саратов в Санкт-петербурге")
+          .brands-carousel-item-group
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/asko_300.webp" alt="Ремонт бытовой техники Asko в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/daewoo_300.webp" alt="Ремонт бытовой техники Daewoo в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/haier_300.webp" alt="Ремонт бытовой техники Haier в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/hotpoint-ariston_300.webp" alt="Ремонт бытовой техники Hotpoint-Ariston в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/mabe_300.webp" alt="Ремонт бытовой техники Mabe в Санкт-петербурге")
+            .brands-carousel-item__link
+              img.brands-carousel-item(src="/assets/img/pictures/brands/pozis_300.webp" alt="Ремонт бытовой техники Pozis в Санкт-петербурге")
+            
+      .landing-page-section-3.landing-page-section
+        H2.page-title-h2 Отзывы о нашей работе
+        .landing-page-reviews-wrap
+          .landing-page-reviews-container.owl-carousel#js-carousel-2
+            +reviews({
+              name: 'Андрей',
+              typeRepair: 'Ремонт стиральных машин',
+              date: '25.09.2020',
+              rating: 5,
+              text:  "Все сделано очень оперативно и качественно. Мастер приехал примерно через 40 минут с несколькими чемоданами инструментов. Минут через 10 определил неисправность сливного насоса. Вся работа заняла не более 40 минут. Спасибо!",
+              answer: 1,
+              answerText: " Спасибо Вам за отзыв!",
+              
+            })
+            +reviews({
+              name: 'Марьям',
+              typeRepair: 'Ремонт холодильников',
+              date: '18.09.2020',
+              rating: 5,
+              text:  "Спасибо за работу. Дважды обращались в ваш сервисный центр всегда все на высшем уровне.",
+              answer: 1,
+              answerText: "Были рады Вам помочь! Обращайтесь!",
+              
+            })
+            +reviews({
+              name: 'Сергей',
+              typeRepair: 'Ремонт посудомоечных машин',
+              date: '20.11.2020',
+              rating: 5,
+              text:  "Посудомойка фактически сгорела. Когда мастер достал плату она была почти вся черная. Все восстановили,  я очень был удивлен такой работе. Отдельное спасибо мастеру Александру с филиала на Большевиков. Это настоящий профи!",
+              answer: 1,
+              answerText: "Благодарим за отзыв!",
+              
+            })
+            +reviews({
+              name: 'Влад',
+              typeRepair: 'Ремонт холодильников',
+              date: '04.01.2021',
+              rating: 5,
+              text:  "31.12.2020 наш старенький холодильник Стинол приказал долго жить. Мастер примчался минут за 30. Как я и предполагал сгорел компрессор холодильника. Мастер Михаил подобрал на месте нужный компрессор, все поменял, сделал профилактику и заправил холодильник примерно за 2 часа. Благодарю за отличную работу! ",
+              answer: 1,
+              answerText: "Рады были помочь!",
+              
+            })
+          .landing-page-reviews__panel
+            .reviews-all 
+              a.reviews-all__link(href=domen + "/reviews/") Смотреть все отзывы
+            //- .reviews-new-button Новый отзыв
+      .landing-page-section-map.landing-page-section
+        H2.page-title-h2 Филиалы
+        .map-wrapper.landing-page-map-iframe#map_container
+          script(id="ymap_lazy" data-skip-moving="true" async="" type="text/javascript" charset="utf-8" data-src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aaec62368f7832ec892d92db8ea9a37049eb900e48eac68a4b90a26f5aba6bc05&amp;lang=ru_RU&amp;scroll=false")
+          include ../../scss/pages/landing-page/landing-page-map.html
+
+      .landing-page-section-4.landing-page-section
+        .landing-page-articles
+          H2.page-title-h2 Популярные статьи
+          .landing-page-articles-items
+            .landing-page-articles__item
+              a(href=domen + "/articles/kak-ustranit-zapah-v-stiralnoy-mashine.html") Как устранить неприятный запах из стиральной машины?
+                
+            .landing-page-articles__item
+              a(href=domen + "/articles/Kak-razmorozit-holodilnik-bystro-i-pravilno.html") Как правильно разморозить холодильник? 
+                
+            .landing-page-articles__item
+              a(href=domen + "/articles/kak-pravilno-ustanovit-stiralnuy-mashinu.html") Как правильно установить и подключить стиральную машину?
+                
+            
+                
+          .landing-page-articles-link 
+            a(href=domen + "/articles") Смотреть все
+     
+      .landing-page-section-5.landing-page-section
+        H2.page-title-h2 Ремонт бытовой техники на дому
+        .landing-page-section__article 
+          p Время – это самое ценное что есть в нашей жизни. 
+            |Наша миссия заключается в том, чтобы предоставить клиенту качественный и главное оперативный ремонт бытовой техники на дому. 
+            |Мы стремимся сократить время на диагностику, оснащая мастеров самым необходимым и современным оборудованием; 
+            |мы сохраняем достаточный штат сотрудников, чтобы приехать к Вам очень быстро; 
+            |мастера имеют с собой огромное количество запасных частей, чтобы выполнить ремонт максимально быстро; 
+            |мы обучаем и повышаем квалификацию мастеров, чтобы работа была выполнена профессионально и качественно.
+      .landing-page-section-5.landing-page-section
+        H2.page-title-h2 Почему ремонт важно начать при первых признаках поломки?
+        .landing-page-section__article 
+          p Компания РемБытТехника занимается обслуживанием и ремонтом бытовой техники с 2005 года. Довольно часто возникает такая ситуация, когда клиент желая самостоятельно разобраться в поломке, или надеясь, что с оборудованием ни чего серьезного не произошло, продолжает ее эксплуатировать. Последствием этого является более серьезное повреждение электронных узлов устройства. Например: перегоревшие процессоры и микросхемы, лопнувшие баки стиральных машин, треснувшие крестовины, сгоревшие компрессоры холодильников и т.д. Всего этого можно было избежать, если своевременно произвести качественную диагностику и исправление неисправностей.
+          p Кроме того, грамотная и профессиональная установки и монтаж, регулярное техническое обслуживание и профилактика, существенно продлят ее жизнь любого устройства.
+          p Но, говоря словами Шекспира, «Ни что не вечно под луной». Даже самая надежная и ухоженная техника может дать сбой. В силу определенных конструктивных недостатков, или в следствие неосторожного обращения, с прибором могут случаться неполадки.
+          p В случае обнаружения посторонних звуков, сбоев в работе, протечек, гулов и скрежетов, и любых других признаков, которых вы ранее не наблюдали, обязательно обратитесь к профессионалам!
+          p 
+            strong Звоните нам – мы готовы Вам помочь!
+
+      .landing-page-section-6.landing-page-section
+        H2.page-title-h2 Наиболее частые поломки
+        - var pathImgProblem = '/assets/img/pictures/repair-img/'
+        .landing-page-section-6-content
+        
+          .landing-page-section-6-item 
+            a(href= domen + "/neispravnosti-stiralnyh-mashin/stiralnaya-mashina-ne-slivaet.html")
+              img(src=pathImgProblem + "stiralnaya-mashina-ne-slivaet-vodu.webp" alt="Стиральная машина не сливает воду")
+              p Стиральная машина не сливает воду
+          .landing-page-section-6-item 
+            a(href= domen + "neispravnosti-holodilnikov/ne-rabotaet-holodilnaya-kamera.html")
+              img(src=pathImgProblem + "ne-ohlazhdaet-holodilnaya-kamera.webp" alt="Не охлаждает холодильная камера двухкамерного холодильника")
+              p Не охлаждает холодильная камера двухкамерного холодильника
+          .landing-page-section-6-item 
+            a(href= domen + "neispravnosti-posudomoechnyh-mashin/posudomoechnaya-mashina-ne-nabiraet-vodu.html") 
+              img(src=pathImgProblem + "posudomoechnaya-mashina-ne-nabiraet-vodu.webp" alt="Посудомоечная машина не набирает воду")
+              p Посудомоечная машина не набирает воду
+          .landing-page-section-6-item 
+            a(href= domen + "/neispravnosti-stiralnyh-mashin/stiralnaya-mashina-ne-otkryvaetsya.html") 
+              img(src=pathImgProblem + "stiralnaya-mashina-ne-zapuskaet-stirku.webp" alt="Стиральная машина не открывается")
+              p Стиральная машина не запускает стирку
+          .landing-page-section-6-item 
+            a(href= domen + "neispravnosti-holodilnikov/holodilnik-silno-morozit.html")
+              img(src=pathImgProblem + "holodilnik-peremorazhivaet.webp" alt="Холодильник перемораживает")
+              p Холодильник перемораживает 
+          .landing-page-section-6-item 
+            a(href= domen + "/neispravnosti-stiralnyh-mashin/ne-krutitsya-baraban-v-stiralnoj-mashine.html")
+              img(src=pathImgProblem + "stiralnaya-mashina-ne-krutit-baraban.webp" alt="Стиральная машина не крутит барабан")
+              p Стиральная машина не крутит барабан
+      .calc-banner.page-banner
+        .page-banner-img
+          img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/telephone.webp' alt="Звоните прямо сейчас")
+        .page-banner-content
+          .page-banner-content__title 
+            p Звоните прямо сейчас!
+          .page-banner-content__text 
+            p Свяжитесь с нами по телефону
+            a(href='#')= telNumber_1 
+            |  или 
+            a(href='#')= telNumber_2 
+            | 
+          .page-banner-content__text Также Вы можете оформить on-line заказ или заказать звонок
+          .page-banner-content-buttons
+            .page-banner-button.button-callback 
+              | Оформить заявку
+              br
+              | on-line
+            .page-banner-button.button-order Заказать звонок

@@ -1,0 +1,24 @@
+mixin reviews-popup
+	.reviews-popup
+		.reviews-popup-wrapper
+			.reviews-popup__close-button
+			.reviews-popup__title Ваш отзыв
+			.reviews-popup__descr Вы можете оставить свой отзыв о проделанной работе. Все отзывы отправляются руководству компании, и могут быть рассмотрены в частном порядке.
+			form#reviews-form-1.reviews-popup-form(action="" method="get")
+				lable.reviews-popup-form__lable.lable-rate Оцените выполненную работу
+					.rate-reviews
+
+				lable.reviews-popup-form__lable.lable-name Ваше имя
+					input(class="reviews-popup-form__name-input reviews-popup-form-input" type="text" name="name" placeholder="" required) 
+				lable.reviews-popup-form__lable.lable-phone Номер телефона в заказе
+					input(class="reviews-popup-form__phone-input reviews-popup-form-input" type="text" name="phone" placeholder="" maxlength="32" required)
+				lable.reviews-popup-form__lable.lable-address Адрес проведения ремонта
+					input(class="reviews-popup-form__address-input reviews-popup-form-input" type="text" name="address" placeholder="" maxlength="32" required)
+				lable.reviews-popup-form__lable.lable-text Текст отзыва
+					textarea(class="reviews-popup-form__text reviews-popup-form-input" name="review" required)
+				label.reviews-popup-form__consent 
+					p Подтверждаю согласие на обработку моих персональных данных
+					.consent-checkbox 
+						input(class="reviews-popup-form-input" type="checkbox" name="consent" placeholder='' required)
+				input(class="reviews-popup-form-button" name="" type="submit" value="Оставить отзыв") 
+

@@ -1,0 +1,233 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок стиральных машин Atlant (Атлант)'
+  - var content = "Расшифровка ошибок стиральных машин Atlant (Атлант)'"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок стиральных машин": "/errors/kody-oshibok-stiralnyh-mashin/",
+    "Коды ошибок стиральных машин Atlant (Атлант)" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    H1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-011.webp'
+    })
+    .page-text(itemprop="articleBody")
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p F2
+              td
+                p Неисправен температурный датчик
+            tr
+              td
+                p F3
+              td
+                p Неисправен ТЭН
+            tr
+              td
+                p F4
+              td
+                p Неисправен электронасос
+            tr
+              td
+                p F5
+              td
+                p Ошибка при заливе воды
+            tr
+              td
+                p F6, F9 или F12
+              td
+                p Неисправность электродвигателя
+            tr
+              td
+                p F7
+              td
+                p Несоответствие частоты электросети
+            tr
+              td
+                p F8
+              td
+                p Датчик реле уровня — перелив
+            tr
+              td
+                p F10
+              td
+                p Электрозамок блокировки дверцы или модуль управления
+            tr
+              td
+                p F11 или (DOOR)
+              td
+                p Ошибка устройства блокировки люка
+            tr
+              td
+                p F13, F14
+              td
+                p Неисправен модуль управления или модуль интерфейса
+            tr
+              td
+                p F15
+              td
+                p Протечка воды в поддон
+            tr
+              td
+                p SEL
+              td
+                p Ошибка селектора модуля интерфейса
+            tr
+              td
+                p None
+              td
+                p Избыточное пенообразование
+      h1
+  
+        | Считывание ошибки led индикаторов
+      img(alt='коды ошибок стиральных машин Atlant' src= pathToImgArticles + '10423b303d42-1.jpg')
+      img(alt='коды ошибок стиральных машин Atlant' src= pathToImgArticles + '10423b303d42-2.jpg')
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Моргают
+                p индикаторы
+              th
+                p Код
+              th
+                p Описание ошибки
+            tr
+              td
+                p 3
+              td
+                p F2
+              td
+                p Неисправен температурный датчик
+            tr
+              td
+                p 3-4
+              td
+                p F3
+              td
+                p Неисправен ТЭН
+            tr
+              td
+                p 2
+              td
+                p F4
+              td
+                p Нет слива воды
+            tr
+              td
+                p 2-4
+              td
+                p F5
+              td
+                p Ошибка при заливе воды
+            tr
+              td
+                p 2-3
+              td
+                p F6
+              td
+                p Неисправность электродвигатег
+            tr
+              td
+                p 2-3-4
+              td
+                p F7
+              td
+                p Несоответствие частоты электросети
+            tr
+              td
+                p 1
+              td
+                p F8
+              td
+                p Датчик реле уровня - перелив
+            tr
+              td
+                p 1 -4
+              td
+                p F9
+              td
+                p Проблемы с тахометром движк
+            tr
+              td
+                p 1 -3
+              td
+                p F10
+              td
+                p Поломка УБЛ
+            tr
+              td
+                p 1 -2
+              td
+                p F12
+                p F14
+              td
+                p Возможна поломка триака движка. Неисправен электронный модуль.
+            tr
+              td
+                p 1-2-4
+              td
+                p F13
+              td
+                p Неисправен модуль управления или модуль интерфейса(прошивка)
+            tr
+              td
+                p 1-3-4
+              td
+                p door
+              td
+                p Ошибка устройства блокировкг люка
+            tr
+              td
+                p 1-2-3
+              td
+                p -
+              td
+                p Неисправен электронный блок
+            tr
+              td
+                p 1 -2-3-4
+              td
+                p SEL
+              td
+                p Ошибка селектора модуля интерфейса. Неисправен модуль
+
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="100% качественный ремонт стиральных машин")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качество и гарантия на ремонт стиральных машин!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

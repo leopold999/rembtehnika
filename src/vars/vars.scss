@@ -1,0 +1,124 @@
+/*COLORS*/
+
+/*Color names*/
+$dark100:#1F2041;
+$dark90: rgba(31, 32, 65, 0.9);
+$dark75: rgba(31, 32, 65, 0.75);
+$dark50: rgba(31, 32, 65, 0.5);
+$dark25: rgba(31, 32, 65, 0.25);
+$dark15: rgba(31, 32, 65, 0.623);
+$dark10: rgba(31, 32, 65, 0.1);
+$dark5: rgba(31, 32, 65, 0.05);
+$white: #FFFFFF;
+// $red: rgb(0, 183, 79);
+$colorMain-1:     rgb(11, 104, 177);
+$colorMain-1-095:  rgba(11, 104, 161, 0.95);
+$colorMain-1-09:  rgba(11, 104, 161, 0.9);
+$colorMain-1-08:  rgba(11, 104, 161, 0.8);
+$colorMain-1-07:  rgba(11, 104, 161, 0.7);
+$colorMain-1-05:  rgba(11, 104, 161, 0.5);
+$colorMain-1-03:  rgba(11, 104, 161, 0.3);
+$colorMain-1-02:  rgba(11, 104, 161, 0.2);
+$colorMain-1-01:  rgba(11, 104, 161, 0.1);
+$colorMain-1-005:  rgba(11, 104, 161, 0.05);
+// $colorMain-1-02:  rgba(186, 204, 214, 0.2);
+
+$colorSecond-1:    rgba(253, 63, 3, 0.9);
+$colorSecond-1-07: rgba(253, 63, 3, 0.7);
+$colorSecond-1-05: rgba(253, 63, 3, 0.5);
+
+$colorSecond-2:    rgba(253, 186, 3, 0.9);	
+$colorSecond-2-07: rgba(253, 186, 3, 0.7);	
+$colorSecond-2-05: rgba(253, 186, 3, 0.5);	
+$colorSecond-2-02: rgba(253, 186, 3, 0.2);	
+/*font colors*/
+
+
+
+$colorFontH1: $dark75;
+$colorFontH2: $dark100;
+$colorFontH3: $dark75;
+$colorFontBody: $dark75;
+// $colorMain-1: rgba(0, 183, 79, 0.85);
+$colorMain-2: rgb(138, 221, 174);
+$colorMain-3: rgb(254, 254, 254);
+$colorMain-4: rgba(25, 148, 197, 1);
+$colorMain-5: rgba(25, 148, 197, 0.7);
+$colorHeaderMenu-1: rgba(25, 148, 197, 0.9);
+$colorHeaderMenu-2: rgba(25, 148, 197, 1);
+$colorHeaderMenu-3: rgba(25, 148, 197, 1);
+$colorHeaderContacts: rgba(25, 148, 197, 0.7);
+$colorTextHeader-1: rgb(254, 254, 254);
+
+
+
+/*Elements color*/
+
+/*FONTS*/
+
+/*font names*/
+
+/*font-size*/
+$mainFontSize: 25px;
+
+
+$fontSizeH1: rem(28);
+$fontSizeH2: rem(19);
+$fontSizeH3: rem(16);
+$fontSizeBody: rem(14);
+
+/*line-height*/
+
+$lineHeightH1: rem(30);
+$lineHeightH2: rem(24);
+$lineheightH3: rem(20);
+$lineHeightBody: rem(20);
+
+
+/*border*/
+$borderCard: 1px solid rgba(0, 0, 0, 0.2);
+$borderInputDefault: 1px solid $dark25;
+$borderInputHover: 1px solid $dark50;
+
+/*border radius*/
+
+$borderRadiusInput: 4px;
+$borderRadiusCard: 4px;
+$borderRadiusCheckboxButton: rem(4);
+
+
+/*backgrounds*/
+$cardBackgroundColor: #FFFFFF;
+
+
+/*shadows*/
+$cadrShadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+$datepickerShadow: 0px 10px 20px $dark5;
+$headerShadow: 0px rem(10) rem(20) $dark10;
+
+/*Widths*/
+
+$maxWidth: 1440px;
+$minWidth: 350px;
+
+// $path: '.';
+$path: '';
+
+@media screen and (max-width: 1200px) {
+   
+}
+
+@media screen and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 800px) {
+    
+}
+
+
+
+
+
+
+

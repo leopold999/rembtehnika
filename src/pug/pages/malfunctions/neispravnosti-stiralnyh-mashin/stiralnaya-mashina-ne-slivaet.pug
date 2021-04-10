@@ -1,0 +1,227 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Стиральная машина не сливает воду – возможные причины поломки и способы решения проблемы'
+  - var content = "Что делать если стиральная машина перестала сливать воду. Советы по ремонту. Профессиональный ремонт на выезде"
+  - var pathToImgArticles = domen + '/assets/img/pictures/repair-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Неисправности стиральных машин": "/",
+    "Стиральная машина не сливает": "#",
+  })
+  .article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    h1.page-title-h1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-009.webp'
+    })
+    .page-text.page-text-hidden-container(itemprop="articleBody")
+      .page-text-hidden__bgrnd
+      .page-text-hidden__button.page-text-hidden__button_down
+      img.page-img.page-img_float-left( src= pathToImgArticles + "wash-mash/" + "sm-ne-slivaet" + ".webp" alt= 'Стиральная машина не сливает' itemprop="image")
+
+      p
+        | На сегодняшний день стиральная машина для нас неотъемлемая часть быта, помощник, который имеется почти у каждого в доме. Но когда стиральная машина неожиданно ломается нам приходится вспоминать, как же мы обходились без нее – это доставляет массу неудобств. Наиболее частая неисправность стиральной машины, это отсутствие слива воды. Попробуем разобраться подробнее, почему может возникнуть такая ситуация, и как с этим справиться самостоятельно.
+      h2.page-title-h2 Основные причины неисправности – отсутствия слива воды стиральной машины
+      ul.page-list.page-list-ul
+        li Засорился фильтр сливного насоса.
+        li Слив воды стиральной машины может отсутствовать, если сливная системы агрегата засоряется.
+        li Сливная помпа (сливной насос) может быть также заблокирован мусором или вовсе выйти из строя
+        li Может быть засорен сливной шланг или сифон в канализационной системе.
+        li Может отсутствовать питание сливного насоса (сливной помпы). Это связано с проблемами модуля управления
+        li Может выйти из строя датчик уровня воды (прессостат).
+      .page-text
+        p
+          b Внимание! Перед проведением любых ремонтных или профилактических работ со стиральной машиной обязательно обесточьте устройство!
+      h2.page-title-h2 Устранение проблемы.
+      .page-text
+        p
+        | И все таки, по статистике наиболее частой причиной отсутствия слива стиральной машины является засорение сливного фильтра. Желательно производить чистку сливного фильтра не реже чем один раз в 300 циклов стирку. Конечно сложно следить за количеством произведенных стирок, поэтому удобнее это делать раз в 1,5-2 года, в зависимости от частоты использования стиральной машины.
+        p
+        | Наиболее точную инструкцию о прочистке сливного фильтра вашей стиральной машины вы можете найти в инструкции по эксплуатации к устройству. Однако, в общем случае, чаще всего сливной фильтр стиральной машины находится в нижней части лицевой стороны устройства , спрятанный за скрытой панелью. Скрытую панель можно открыть подручными средствами (отверткой, монеткой или ножом). Под данной панелью вы увидите крышку фильтра, которую нужно открутить против часовой стрелки. Имейте ввиду, что в сливной системе может находится вода, поэтому нужно подготовить емкость для воды, приподнять машину и уже после этого начинать откручивать пробку фильтра.
+        
+
+        p
+        | Открутив пробку фильтра необходимо удалить содержимое, после чего поставить ее на место и крепко закрутить.
+        p
+        | Если после проведенных манипуляций машина так и не стала работать исправно и откачивать воду, нужно проверить сливной шланг на предмет засора в нем. Для начала необходимо прощупать шланг рукой на предмет тромбов в нем. Далее следует отсоединить шланг от канализационной системы, опустить его в приготовленную емкость и запустить быструю стирку или цикл полоскание-отжим с пустым барабаном. Если вода, на этапе слива, будет сливаться быстро и с хорошим напором, то проблема в вашей канализационной системе.
+        p
+        | Для прочистки канализации разберите сифон, воспользуйтесь специальным тросом или чистящими средствами.
+        
+
+        p
+        | Если указанные советы вам не помогли, то требуется более серьезное вмешательство, и временить с этим категорически не следует.
+        p
+        | Дело в том, что засор может быть также в самом сливном насосе. Засор блокирует крыльчатку насоса, и он больше не может откачивать воду. Если это произошло, то обмотки заблокированного насоса могут перегореть, или уже перегорели. Далее замыкание в сливном насосе может привести к выгоранию других узлов стиральной машины.
+    .page-text
+      h2.page-title-h2 Основные причины неисправности и стоимость их устранения
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p
+                  b Неисправность
+              th
+                p
+                  b Возможный ремонт
+              th
+                p
+                  b Стоимость работы
+            tr
+              td(rowspan='2')
+                p Засор сливной системы
+              td
+                p Чистка сливного фильтра
+              td
+                p от 600 р.
+            tr
+              td
+                p Чистка сливной системы
+              td
+                p от 600 р.
+            tr
+              td
+                p Неисправность сливной помпы
+              td
+                p Замена сливного насоса (помпы)
+              td
+                p от 1200 р.
+            tr
+              td
+                p Неисправность датчика уровня
+              td
+                p Замена прессостата
+              td
+                p от 1200 р.
+            tr
+              td
+                p Неисправность электронного модуля
+              td
+                p Ремонт модуля управления
+              td
+                p от 1500 р.
+
+    .page-text
+      p
+      | И все таки, по статистике наиболее частой причиной отсутствия слива стиральной машины является засорение сливного фильтра. Желательно производить чистку сливного фильтра не реже чем один раз в 300 циклов стирку. Конечно сложно следить за количеством произведенных стирок, поэтому удобнее это делать раз в 1,5-2 года, в зависимости от частоты использования стиральной машины.
+      p
+      | Наиболее точную инструкцию о прочистке сливного фильтра вашей стиральной машины вы можете найти в инструкции по эксплуатации к устройству. Однако, в общем случае, чаще всего сливной фильтр стиральной машины находится в нижней части лицевой стороны устройства , спрятанный за скрытой панелью. Скрытую панель можно открыть подручными средствами (отверткой, монеткой или ножом). Под данной панелью вы увидите крышку фильтра, которую нужно открутить против часовой стрелки. Имейте ввиду, что в сливной системе может находится вода, поэтому нужно подготовить емкость для воды, приподнять машину и уже после этого начинать откручивать пробку фильтра.
+    .calc-banner.page-banner
+      .page-banner-img
+        img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="")
+      .page-banner-content
+        .page-banner-content__title 
+          p Доверьте ремонт вашей стиральной машины профессионалам!
+        .page-banner-content__text 
+          p Позвоните нам по телефонам  
+          a(href='#')= telNumber_1 
+          |  или 
+          a(href='#')= telNumber_2 
+          |  и мы приедем на помощь в течение 45 минут или в удобное для Вас Время.
+        .page-banner-content__text Также Вы можете оформить on-line заказ или заказать звонок
+        .page-banner-content-buttons
+          .page-banner-button 
+            | Оформить заявку
+            br
+            | on-line
+          .page-banner-button Заказать звонок 
+    +brands-washmach({
+      title: "Ремонтируем стиральные машины любых брендов"
+    })
+    .page-articles-link
+      h2.page-title-h2 Другие возможные неисправности стиральных машин
+      .page-articles-link-wrapper
+        -var pathToPage = domen + '/neispravnosti-stiralnyh-mashin/'
+        .page-articles-link-item
+          a(href=pathToPage + 'ne-krutitsya-baraban-v-stiralnoj-mashine' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-krutit' + '.webp' alt='Стиральная машина не крутит барабан')
+            p Стиральная машина не крутит барабан
+        .page-articles-link-item
+          a(href=pathToPage + 'pena-iz-stiralnoj-mashiny' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-penitsa' + '.webp' alt='Пена из стиральной машины')
+            p Пена из стиральной машины
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-bet-tokom' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-bjet-tokom' + '.webp' alt='Стиральная машина бьет')
+            p Стиральная машина бьет
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-gudit' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-gudit' + '.webp' alt='Стиральная машина гудит')
+            p Стиральная машина гудит
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-migaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-migaet' + '.webp' alt='На стиральной машине мигают все лампочки')
+            p На стиральной машине мигают все лампочки
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-greet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-greet' + '.webp' alt='Стиральная машина не греет воду')
+            p Стиральная машина не греет воду
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-nabiraet-vodu' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-nabiraet' + '.webp' alt='Стиральная машина не набирает воду')
+            p Стиральная машина не набирает воду
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-ostanavlivaetsya-stiraet-bez-ostanovki' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-nabiraet' + '.webp' alt='Стиральная машина не останавливается')
+            p Стиральная машина не останавливается
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-otkryvaetsya' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-otkrivaet' + '.webp' alt='Стиральная машина не открывает дверь')
+            p Стиральная машина не открывает дверь
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-otzhimaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-otgimaet' + '.webp' alt='Стиральная машина не отжимает')
+            p Стиральная машина не отжимает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-poloskaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-poloskaet' + '.webp' alt='Стиральная машина не полоскает')
+            p Стиральная машина не полоскает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-slivaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-slivaet' + '.webp' alt='Стиральная машина не сливает')
+            p Стиральная машина не сливает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-vklyuchaetsya' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-vkluchaetsa' + '.webp' alt='Стиральная машина не включается')
+            p Стиральная машина не включается
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ne-zakryvaetsya' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ne-blokiruet' + '.webp' alt='Стиральная машина не блокирует дверь')
+            p Стиральная машина не блокирует дверь
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-ploho-stiraet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-ploho-stiraet' + '.webp' alt='Стиральная машина не отстирывает вещи')
+            p Стиральная машина не отстирывает вещи
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-pokazyvaet-oshibku' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-pokazivaet-oshibku' + '.webp' alt='Стиральная машина показывает ошибку')
+            p Стиральная машина показывает ошибку
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-prygaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-prigaet' + '.webp' alt='Стиральная машина прыгает')
+            p Стиральная машина прыгает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-skripit' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-scripit' + '.webp' alt='Стиральная машина скрипит')
+            p Стиральная машина скрипит
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-srazu-slivaet-vodu' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-srazu-slivaet' + '.webp' alt='Стиральная машина набирает и сразу сливает воду')
+            p Стиральная машина набирает и сразу сливает воду
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-techet-podtekaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-techet' + '.webp' alt='Стиральная машина подтекает')
+            p Стиральная машина подтекает
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-vibriruet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-vibriruet' + '.webp' alt='Стиральная машина сильно вибрирует')
+            p Стиральная машина сильно вибрирует
+        .page-articles-link-item
+          a(href=pathToPage + 'stiralnaya-mashina-zavisaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/wash-mash/' + 'sm-migaet' + '.webp' alt='Стиральная машина зависает в одном режиме')
+            p Стиральная машина зависает в одном режиме

@@ -1,0 +1,273 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок посудомоечных машин Whirpool (Вирпул)'
+  - var content = "Расшифровка ошибок посудомоечных машин Whirpool (Вирпул)"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок посудомоечных машин": "/errors/kody-oshibok-posudomoechnyh-mashin/",
+    "Коды ошибок посудомоечных машин Whirpool (Вирпул)" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    H1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-0016.webp'
+    })
+    .page-text(itemprop="articleBody")
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Коды ошибок
+              th
+                p Описание ошибок
+            tr
+              td
+                p Е1
+              td
+                p Сработал Аквастоп
+            tr
+              td
+                p Е2
+              td
+                p Переполнение воды в баке
+            tr
+              td
+                p ЕЗ
+              td
+                p Ошибка нагрева
+            tr
+              td
+                p Е4
+              td
+                p Нет сигнала от датчика температуры
+            tr
+              td
+                p Е5
+              td
+                p Проблема с набором воды
+            tr
+              td
+                p Е6
+              td
+                p Не сливается вода
+            tr
+              td
+                p F0
+              td
+                p Неисправен сенсор
+            tr
+              td
+                p F1
+              td
+                p Неисправен датчик NTC
+            tr
+              td
+                p F2
+              td
+                p Утечка воды
+            tr
+              td
+                p F3
+              td
+                p Ошибка системы нагрева
+            tr
+              td
+                p F4
+              td
+                p Нет слива воды
+            tr
+              td
+                p F5
+              td
+                p Разбрызгиватель заблокирован
+            tr
+              td
+                p F6
+              td
+                p Не поступает вода
+            tr
+              td
+                p F7
+              td
+                p Ошибка датчика расхода воды
+            tr
+              td
+                p F8
+              td
+                p Неверный уровень воды
+            tr
+              td
+                p F9
+              td
+                p Постоянная подача воды
+            tr
+              td
+                p FA
+              td
+                p Датчик OWI (оптический индикатор воды) передает неверную информацию
+            tr
+              td
+                p FB
+              td
+                p Ошибка привода (мотора) заслонки
+            tr
+              td
+                p FC
+              td
+                p Ошибка датчика жесткости воды
+            tr
+              td
+                p FE
+              td
+                p Ошибка памяти EEPROM
+      h2 Индикация ошибок
+      h3 Индикаторы
+      img(alt='коды ошибок посудомоечных машин Whirlpool' src=pathToImgArticles + 'pm_whirlpool-1.jpg')
+      h2 Ошибки Whirlpool ADP 550 WH
+      img(alt='коды ошибок посудомоечных машин Whirlpool' src=pathToImgArticles + 'pm_whirlpool-2.jpg')
+      
+      img(alt='коды ошибок посудомоечных машин Whirlpool' src=pathToImgArticles + 'pm_whirlpool-3.jpg')
+      
+      h2 Ошибки с миганием индикатора START
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код
+              th
+                p Кол.
+                p миганий
+              th
+                p Описание
+            tr
+              td
+                p F0
+              td
+                p 10
+              td
+                p Неисправен сенсор
+            tr
+              td
+                p F1
+              td
+                p 1
+              td
+                p Неисправен датчик NTC
+            tr
+              td
+                p F2
+              td
+                p 2
+              td
+                p Протечка
+            tr
+              td
+                p F3
+              td
+                p 3
+              td
+                p Ошибка системы нагрева
+            tr
+              td
+                p F4
+              td
+                p 4
+              td
+                p Ошибка слива воды
+            tr
+              td
+                p F5
+              td
+                p 5
+              td
+                p Разбрызгиватель заблокирован
+            tr
+              td
+                p F6
+              td
+                p 6
+              td
+                p Ошибка подачи воды
+            tr
+              td
+                p F7
+              td
+                p 7
+              td
+                p Ошибка датчика расхода воды
+            tr
+              td
+                p F8
+              td
+                p 8
+              td
+                p Неверный уровень воды
+            tr
+              td
+                p F9
+              td
+                p 9
+              td
+                p Постоянная подача воды
+            tr
+              td
+                p FA
+              td
+                p 11
+              td
+                p Датчик 0WI (оптический индикатор воды) передает неверную информацию
+            tr
+              td
+                p FB
+              td
+                p 12
+              td
+                p Ошибка привода (мотора) заслонки
+            tr
+              td
+                p FC
+              td
+                p 13
+              td
+                p Ошибка датчика жесткости воды
+            tr
+              td
+                p FE
+              td
+                p 15
+              td
+                p Ошибка памяти EEPROM
+
+
+
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="качественный ремонт посудомоечных машин с гарантией")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качественный ремонт посудомоечных машин на дому!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

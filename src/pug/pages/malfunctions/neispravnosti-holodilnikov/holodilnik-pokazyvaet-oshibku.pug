@@ -1,0 +1,102 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Холодильник показывает ошибку' 
+  - var content = "Если холодильник неожиданно стал показывать ошибку, или же пищит и мигает индикатор, это требует особого внимания. Поможем понять почему мигает ошибка и что она означает."
+  - var pathToImgArticles = domen + '/assets/img/pictures/repair-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    'Неисправности холодильников': domen + '/neispravnosti-holodilnikov/',
+    "Холодильник показывает ошибку": "#"})
+
+  .article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    h1.page-title-h1(itemprop="name")= title 
+    +pageBanner-1({
+      title: 'Не медлите с ремонтом!',
+      text: 'Мастер приедет к Вам в течение часа',
+      pathToImg: domen + '/assets/img/pictures/banner-img-005.webp'
+    })
+    .page-text.page-text-hidden-container(itemprop="articleBody")
+
+      img.page-img.page-img_float-left( src= pathToImgArticles + "fridges/hol-pokazivaet-oshibka.webp" alt= 'Холодильник показывает ошибку' itemprop="image")
+      p
+        | В случае, если Ваш холодильник неожиданно стал показывать ошибку, или же пищит и мигает индикатор, на это обязательно стоит обратить внимание. В первую очередь необходимо понять почему это могло произойти.
+      p
+        | Например, холодильник может пищать из-за неплотно закрытой двери, или если на некоторое время открыть дверцу и существенно нагреть одну из камер, устройство может сигнализировать о повышении температуры, и будет продолжать уведомлять Вас об этом вплоть до достижения нужного значения.
+      p
+        | Но все же чаще всего, мигает индикатор холодильника или показывает ошибку тогда, когда есть какая-то серьезная проблема.
+      p
+        | Первым шагом для пользователя в данной ситуации будет необходимость попытаться выяснить из-за чего холодильник стал сигнализировать о проблеме. Возможно вы поставили горячую кастрюлю внутрь? Или ребенок случайно забыл закрыть дверь?
+      p Если понимания в этом вопросе нет, идем дальше.
+      p
+        | Следующим этапом следует попытаться найти инструкцию по эксплуатации для Вашего устройства. В ней написана самая достоверная информация о возможных ошибках конкретно Вашей модели холодильника. Конечно, не всегда это бывает возможным. Большинство владельцев теряют инструкцию к аппарату в первые пару лет. Если и Вы не позаботились о сохранении данного документа, то следуем дальше.
+      p
+        | Расшифровать ошибку Вашего холодильника поможет наш сервис. Здесь Вы можете отыскать описание ошибок на большинство производителей холодильников, современных и не очень. Мы постоянно пополняем эту библиотеку и стараемся, чтоб информация была в ней актуальной.
+      p
+        | Почитав достаточно информации об ошибке вам следует понять, о чем она сигнализирует и насколько критична. 
+        | Поняв первопричину данной ошибку обратитесь за помощью к 
+        span 
+          a(href="#") перечню неисправностей
+        span  на нашем сайте, для понимания возможностей решения проблемы.
+
+    .calc-banner.page-banner
+      .page-banner-img
+        img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/men_1.webp' alt="")
+      .page-banner-content
+        .page-banner-content__title 
+          p Разберемся в любой проблеме холодильника!
+        .page-banner-content__text 
+          p  Вызовете мастера по телефонам
+          a(href='#')= telNumber_1 
+          |  или 
+          a(href='#')= telNumber_2 
+
+        .page-banner-content__text Также Вы можете оформить on-line заказ или заказать звонок
+        .page-banner-content-buttons
+          .page-banner-button.button-order 
+            | Оформить заявку
+            br
+            | on-line
+          .page-banner-button.button-callback Заказать звонок 
+    +brands-fridge({
+      title: "Ремонт холодильников любых брендов"
+    })
+    .page-articles-link
+      h2.page-title-h2 Другие возможные неисправности холодильников
+      .page-articles-link-wrapper
+        -var pathToPage = domen + '/malfunctions/neispravnosti-holodilnikov/'
+        .page-articles-link-item
+          a(href=pathToPage + 'holodilnik-gromko-rabotaet.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/fridges/hol-gromko-rabotaet.webp' alt="Холодильник громко работает")
+            p Холодильник громко работает
+        .page-articles-link-item
+          a(href=pathToPage + 'holodilnik-ne-vklyuchaetsya.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/fridges/hol-ne-vkluchaetsa.webp' alt="Холодильник не включается")
+            p Холодильник не включается
+        .page-articles-link-item
+          a(href=pathToPage + 'holodilnik-silno-morozit.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/fridges/hol-silno-morozit.webp' alt="Холодильник сильно морозит")
+            p Холодильник сильно морозит
+        .page-articles-link-item
+          a(href=pathToPage + 'led-v-morozilnoj-kamere.html')
+            img(src= domen + '/assets/img/pictures/repair-img/fridges/hol-led-v-morozilke.webp' alt="Лед в морозильной камере")
+            p Лед в морозильной камере
+        .page-articles-link-item
+          a(href=pathToPage + 'holodilnik-pishchit.html')
+            img(src= domen + '/assets/img/pictures/repair-img/fridges/hol-pishit.webp' alt="Холодильник пищит")
+            p Холодильник пищит
+        .page-articles-link-item
+          a(href=pathToPage + 'holodilnik-gudit.html')
+            img(src= domen + '/assets/img/pictures/repair-img/fridges/hol-gudit.webp' alt="Холодильник гудит")
+            p Холодильник гудит
+        .page-articles-link-item
+          a(href=pathToPage + 'holodilnik-shchelkaet.html')
+            img(src= domen + '/assets/img/pictures/repair-img/fridges/hol-shelkaet.webp' alt="Холодильник щелкает")
+            p Холодильник щелкает
+        .page-articles-link-item
+          a(href=pathToPage + 'holodilnik-techet.html')
+            img(src= domen + '/assets/img/pictures/repair-img/fridges/hol-plachet.webp' alt="Холодильник течет")
+            p Холодильник течет
+

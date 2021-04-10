@@ -1,0 +1,103 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок стиральных машин Vestel (Вестел)'
+  - var content = "Расшифровка ошибок стиральных машин Vestel (Вестел)'"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок стиральных машин": "/errors/kody-oshibok-stiralnyh-mashin/",
+    "Коды ошибок стиральных машин Vestel (Вестел)" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    H1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-012.webp'
+    })
+    .page-text(itemprop="articleBody")
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p Е01
+              td
+                p Ошибка блокировки люка
+            tr
+              td
+                p Е02
+              td
+                p Ошибка залива воды
+            tr
+              td
+                p ЕОЗ
+              td
+                p Ошибка слива воды
+            tr
+              td
+                p Е04
+              td
+                p Ошибка перелива воды в баке
+            tr
+              td
+                p Е05
+              td
+                p Неисправность термодатчика или тэна
+            tr
+              td
+                p Е06
+              td
+                p Ошибка управления мотором
+            tr
+              td
+                p Е07
+              td
+                p Неисправен модуль управления
+            tr
+              td
+                p Е08
+              td
+                p Мотор вышел из строя
+            tr
+              td
+                p Е09
+              td
+                p Ошибка питающей сети
+            tr
+              td
+                p Е10
+              td
+                p Ошибка коммуникаций в электрической схеме
+
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="100% качественный ремонт стиральных машин")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качество и гарантия на ремонт стиральных машин!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

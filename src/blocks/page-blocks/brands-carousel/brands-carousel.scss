@@ -1,0 +1,98 @@
+
+
+.brands-carousel {
+    position: relative;
+    width: 85% !important;
+    align-self: center;
+    // border: 1px solid black;
+    @media screen and (max-width: 768px) {
+        width: 75% !important
+    }
+
+}
+
+.brands-carousel-item {
+    width: rem(150);
+    height: auto;
+    position: relative;
+    max-width: $maxWidth;
+    &:hover {
+        box-shadow: rem(8) rem(8) rem(8) rem(2) $dark25;
+    }
+    @media screen and (max-width: 500px) {
+        @include size(rem(160), rem(80));
+    }
+
+}
+.brands-carousel-item-group {
+    // width: rem(300);
+    // max-height: rem(300);
+    height: auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    & .brands-carousel-item__link {
+        margin: auto;
+    }
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+
+}
+
+
+
+
+.brands-carousel-item__link {
+    // @include size(100%, 100%);
+    display: block;
+    padding: rem(15);
+    
+}
+
+.brands-carousel-item__img {
+    @include size(100%, 100%);
+
+}
+
+.owl-nav {
+    height: 0 !important;
+
+}
+.owl-dots {
+    height: 0 !important;
+}
+.owl-prev {
+    &:before {
+        content: "navigate_before";
+        font-family: 'Material Icons';
+        font-weight: bold;
+        font-style: normal;
+        position: absolute;
+        font-size: rem(40);
+        line-height: rem(40);
+        top: 50%;
+        margin-top: rem(-20);
+        left: rem(-60);
+        color: $colorMain-1;
+    }
+}
+.owl-next {
+    &:before {
+        content: "navigate_next";
+        font-family: 'Material Icons';
+        font-weight: bold;
+        font-style: normal;
+        position: absolute;
+        font-size: rem(40);
+        line-height: rem(40);
+        top: 50%;
+        margin-top: rem(-20);
+        right: rem(-60);
+        color: $colorMain-1;
+    }
+}

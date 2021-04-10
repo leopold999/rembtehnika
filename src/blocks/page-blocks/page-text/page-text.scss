@@ -1,0 +1,105 @@
+.page-text {
+    @include fontBody(rem(20), rem(30));
+    color: $dark75;
+    text-align: justify;
+    margin-bottom: rem(50);
+    text-indent: rem(30);
+
+    & p {
+        margin-bottom: rem(10);
+    }
+}
+.page-text a {
+    color: $colorMain-1-09;
+    border-bottom: 1px solid $colorMain-1-09;
+    &:hover {
+        color: $colorSecond-1;
+    border-bottom: 1px solid $colorSecond-1;;
+    }
+}
+
+.page-text-hidden-container {
+    overflow: hidden;
+    transition: 1s;
+    max-height: rem(900);
+    padding-bottom: rem(120);
+    position: relative;
+}
+.page-text-hidden-container_visible {
+    transition: 1s;    
+    max-height: 10000px;
+}
+.page-text-hidden__bgrnd {
+    position: absolute;
+    background: linear-gradient(to top, white, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.01));
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: rem(120);
+
+}
+.page-text-hidden__button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: rem(100);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2000;
+    color: $dark50;
+    &:before {
+        text-align: center;
+        font-family: 'Material Icons';
+        font-size: rem(40);
+        line-height: rem(50);
+        
+        font-weight: bold;
+        transition: 1s;
+    }
+    &:after {
+        @include fontH3(rem(20), rem(50));
+        
+        font-weight: bold;
+        text-align: center;
+
+    }
+
+}
+
+.page-text-hidden__button_up {
+    &:before {
+        content: "keyboard_arrow_down";
+        transform: rotate(180deg);
+    }
+    &:after {
+        content: "Свернуть текст";
+    }
+}
+.page-text-hidden__button_down {
+    &:before {
+        content: "keyboard_arrow_down";
+        transform: rotate(0deg);
+    }
+    
+    &:after {
+        content: "Читать дальше";
+    }
+}
+
+.width-70 {
+    @media screen and (min-width: 500px) { 
+        width: 70%
+
+    }
+}
+.width-50 {
+    @media screen and (min-width: 500px) { 
+        width: 50%
+
+    }
+}

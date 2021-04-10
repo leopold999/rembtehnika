@@ -1,0 +1,134 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок холодильников Zanussi (Занусси)'
+  - var content = "Расшифровка ошибок холодильников Zanussi (Занусси)"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок холодильников": "/errors/kody-oshibok-holodilnikov/",
+    "Коды ошибок холодильников Zanussi (Занусси)" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    H1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-008.webp'
+    })
+    .page-text(itemprop="articleBody")
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p F1
+                p F2
+              td
+                p Неисправен термостат в одной из камер
+            tr
+              td
+                p F3
+                p F4
+                p F5
+              td
+                p Вышел из строя один из температурных датчиков NTC в камере
+            tr
+              td
+                p Мигает
+                p символ "-"
+              td
+                p
+                  | Критическая температура в холодильном отделении (ниже 0 градусов), что может привезти к заморозке находящихся там продуктов
+            tr
+              td
+                p Постоянно
+                p горит "-"
+              td
+                p В холодильном отделении стало слишком тепло (выше 10 градусов)
+            tr
+              td
+                p Горит символ "0"
+              td
+                p Ошибка термостата
+            tr
+              td
+                p Е1
+              td
+                p Вышел из строя датчик в морозилке
+            tr
+              td
+                p Е2
+              td
+                p Неисправен датчик испарителя
+            tr
+              td
+                p А2
+              td
+                p Нарушен заданный температурных режим в одной из камер холодильника
+            tr
+              td
+                p ЕНО
+              td
+                p Напряжение питания вышло за допустимые пределы
+            tr
+              td
+                p ЕН1
+                p ЕН2
+                p ЕНЗ
+              td
+                p
+                  | Обнаружен сильный перепад напряжения в электросети, частота напряжения заметно отличается от положенной
+            tr
+              td
+                p EHF
+              td
+                p Проблемы с электроснабжением прибора
+            tr
+              td
+                p Е90
+              td
+                p Вышел из строя какой-то электрический элемент холодильника, возможен разрыв цепи
+            tr
+              td
+                p F6
+                p F7
+              td
+                p Прервано электропитание холодильника. Дверь камеры была открыта слишком долго
+            tr
+              td
+                p F8
+              td
+                p Скорее всего, проблемы в системе размораживания
+
+
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="качественный ремонт холодильников с гарантией")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качественный ремонт холодильников на дому!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

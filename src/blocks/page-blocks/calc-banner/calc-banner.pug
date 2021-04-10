@@ -1,0 +1,25 @@
+mixin calc-banner
+    .calc-banner.page-banner
+        .page-banner-img
+            img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="")
+        .page-banner-content
+            .page-banner-content__title 
+                p Не нашли Вашу неисправность?
+            .page-banner-content__text 
+                p Свяжитесь с нами по телефонам  
+                a(href=telNumber_1_int)= telNumber_1 
+                |  или 
+                a(href=telNumber_2_int)= telNumber_2 
+                |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+            .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+            .page-banner-content-buttons
+                .page-banner-button.button-order
+                    | Оформить заявку
+                    br
+                    | on-line
+                .page-banner-button.button-callback Заказать звонок
+
+
+
+            
+        

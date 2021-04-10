@@ -1,0 +1,125 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок холодильников LG'
+  - var content = "Расшифровка ошибок холодильников LG"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок холодильников": "/errors/kody-oshibok-holodilnikov/",
+    "Коды ошибок холодильников LG" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    H1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-006.webp'
+    })
+    .page-text(itemprop="articleBody")
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код ошибки
+              th
+                p Описание ошибки
+            tr
+              td
+                p FS
+              td
+                p Короткое замыкание в датчике морозильной камеры
+            tr
+              td
+                p rS
+              td
+                p Замыкание в первом датчике холодильной камеры
+            tr
+              td
+                p dSF
+              td
+                p Замыкание датчика морозильной камеры
+            tr
+              td
+                p dH F
+              td
+                p Короткое замыкание в датчике разморозки
+            tr
+              td
+                p FF
+              td
+                p Вышел из строя электродвигатель или неисправен вентилятор в морозильной камере
+            tr
+              td
+                p CF
+              td
+                p Неисправность вентилятора или вышел из строя электродвигатель холодильной камеры
+            tr
+              td
+                p CO
+              td
+                p Неисправность в проводке соединения основной платы с платой дисплея
+            tr
+              td
+                p dp
+              td
+                p Вышел из строя мотор заслонки
+            tr
+              td
+                p Er
+              td
+                p Неполадки в системе морозильной камеры
+            tr
+              td
+                p rt
+              td
+                p Неисправность датчика окружающей среды
+            tr
+              td SS
+              td
+                p Короткое замыкание датчика 0/F
+      h2 Ошибки индикации
+      img(alt='коды ошибок стиральных машин LG' src=pathToImgArticles + 'hol_lg-1.jpg')
+      h2 Короткое замыкание в датчике морозильной камеры
+      img(alt='коды ошибок стиральных машин LG' src=pathToImgArticles + 'hol_lg-2.jpg')
+      h2 Замыкание в датчике холодильной камеры
+      img(alt='коды ошибок стиральных машин LG' src=pathToImgArticles + 'hol_lg-3.jpg')
+      h2 Ошибка датчика разморозки
+      img(alt='коды ошибок стиральных машин LG' src=pathToImgArticles + 'hol_lg-4.jpg')
+      h2 Ошибка RT датчика
+      img(alt='коды ошибок стиральных машин LG' src=pathToImgArticles + 'hol_lg-5.jpg')
+      h2 Ошибка оттайки
+      img(alt='коды ошибок стиральных машин LG' src=pathToImgArticles + 'hol_lg-6.jpg')
+      h2 Вышел из строя электродвигатель или неисправен вентилятор в мороз, камере
+      img(alt='коды ошибок стиральных машин LG' src=pathToImgArticles + 'hol_lg-7.jpg')
+      h2 Неисправность вентилятора или вышел из строя электродвигатель холод, камеры
+      img(alt='коды ошибок стиральных машин LG' src=pathToImgArticles + 'hol_lg-8.jpg')
+      h2 Неисправность в проводке соединения основной платы с платой дисплея
+      img(alt='коды ошибок стиральных машин LG' src=pathToImgArticles + 'hol_lg-9.jpg')
+
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="качественный ремонт холодильников с гарантией")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качественный ремонт холодильников на дому!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

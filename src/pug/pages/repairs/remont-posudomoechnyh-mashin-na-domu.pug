@@ -1,0 +1,626 @@
+extends ../../layout/repair_page_layout.pug
+
+
+block variables
+    - var title = 'Ремонт посудомоечных машин на дому в г.Санкт-Петербурге'
+    - var content = "Ремонт посудомоечных машин любых марок за один визит. Бесплатный выезд и диагностика. Профессиональное оборудование. Гарантия до 2-х лет."
+    
+
+block content
+    include ../../../blocks/page-blocks/page-blocks
+    include ../../../blocks/elements/elements
+
+    +bread-crumbs({
+      'Главная': '/',
+
+      "Ремонт посудомоечных машин": "#",
+  
+    })
+    .repair-page-title-section
+      H1.page-title-h1(itemprop="name")=title
+    .repair-page-text-section
+      .repair-page-img.repair-page-img_float-left
+        include ../../../img/pictures/svg/dishwash.pug
+      .page-text
+        p
+          | Современная бытовая техника не балует нас долговечной службой без поломок. Главная причина этого — ее сложное устройство. Множество режимов и функций, которые облегчают нам жизнь, могут спровоцировать неисправности. Посудомоечные машинки не исключение.
+        p
+          | Поломки всегда случаются неожиданно. В таком случае сразу встает вопрос: купить новую или вызвать мастера? Обновка безусловно принесет вам удовольствие, но может дорого стоить.
+        p
+          | Самой частой причиной неисправной работы является износ запчастей. При этом исправить дефект достаточно просто, но если откладывать ремонт, машинка может прийти в полную негодность. В таком случае ремонт потребует больших вложений.
+        p
+          | Чтобы избежать лишних трат, следует как можно скорее вызвать специалиста. Только квалифицированный мастер сможет диагностировать проблему и быстро ее устранить. Кроме того, даст полезные рекомендации, чтобы поломки случались как можно реже.
+      
+      .repair-page-img.repair-page-img_float-right
+        img(itemprop="image" src=domen + '/assets/img/pictures/repair-img/dish-wash/remont-pm-0001.webp' alt="Ремонт посудомоечных машин на дому в спб")
+      .page-text
+        p
+          | Наиболее частые причины неисправностей кроются в неправильной эксплуатации бытовой техники. Сюда можно отнести: некачественные моющие средства, загрузка запрещенных предметов для мытья в посудомоечной машинке, не плотное закрытие дверцы, остатки еды на посуде, которые забивают фильтр. Также возможно неправильное подключение.
+        p
+          | Посудомоечная машина может попросту не включаться, такая очевидная поломка сразу вызывает мысль о вызове специалиста. Однако есть ряд признаков, при которых многие не спешат обращаться к мастеру.
+        p Следует немедленно обратиться к специалисту в следующих случаях:
+        p Вы заметили протечку.
+        ol
+          li Вода перегревается или не достигает необходимой температуры.
+          li Вы открыли машинку, а в ней осталась вода.
+          li Остатки моющего средства на посуде.
+          li Посуда не сушится.
+          li Новые, непривычные для техники шумы.
+          li Машинка бьет током.
+      .page-text  
+        p(itemprop="description") Компания РемБытТехника предоставляет услуги по ремонту техники в городе Санкт-Петербурге. Работаем с 2005 года и имеем 11 филиалов в городе. Готовы взяться за любую модель, вне зависимости ее возраста. Имеем широкий штат сотрудников: более 50 по всему городу. Каждый имеет высокую квалификацию и опыт работы от трех лет. Мастера бесплатно выезжают по городу.
+
+
+    .repair-page-advantages-section
+      H2.page-title-h2 Приемущества обращения к нам
+      .landing-page__advantages
+        .advantages-item
+          .advantages__img.icon-master
+          .advantages__text 
+            p Бесплатный выезд мастера и диагностика неисправности
+            .advantages__quest ?
+              .advantages__descr Выезд и диагностика выполняется бесплатно при выполнении ремонта.
+        .advantages-item
+          .advantages__img.icon-warranty
+          .advantages__text 
+            p Гарантия до 2-х лет (работа + запчасти)
+            .advantages__quest ?
+              .advantages__descr Предоставляется официальная гарантия на работу и установленные запасные части.
+        .advantages-item
+          .advantages__img.icon-people
+          .advantages__text 
+            p Большой штат квалифицированных мастеров
+            .advantages__quest ?
+              .advantages__descr У нас в штате более 70 мастеров. Мы тщательно отбираем мастеров, и регулярно проверяем их квалификацию.
+        .advantages-item
+          .advantages__img.icon-hour
+          .advantages__text 
+            p Выезд мастера на адрес в течение часа
+            .advantages__quest ?
+              .advantages__descr Большой штат сотрудников и наличие филиалов в каждом районе города позволяют нам очень быстро прибыть к Вам.
+        .advantages-item
+          .advantages__img.icon-original
+          .advantages__text 
+            p Используем только оригинальные запчасти
+            .advantages__quest ?
+              .advantages__descr Мы сотрудничаем только с официальными и проверенным годами поставщиками. 
+        .advantages-item
+          .advantages__img.icon-srtificate
+          .advantages__text 
+            p Сертифицированный сервисный центр компаний Bosch, Miele, Siemens, Samsung и др.
+            .advantages__quest ?
+              .advantages__descr Мы имеем официальную сертификацию у ведущих производителей техники и регулярно ее подтверждаем.
+    .repair-page-problems
+        H2.page-title-h2 Популярные неисправности посудомоечных машин и способы их устранения
+        .repair-page-problems-items
+          - let pathToFolder = '/neispravnosti-posudomoechnyh-mashin'
+          +problem-item({
+            link: domen + pathToFolder + 'posudomoechnaya-mashina-ne-nabiraet-vodu.html',
+            pathToImg: domen + '/assets/img/pictures/repair-img/dish-wash/pm-ne-nabiraet.webp',
+            title: 'Посудомоечная машина не набирает воду',
+            repairOptions: ['Замена клапана', 'Устранение течи'],
+            price: '1000',
+          })
+          +problem-item({
+            link: domen + pathToFolder + 'posudomoechnaya-mashina-ploho-moet-posudu.html',
+            pathToImg: domen + '/assets/img/pictures/repair-img/dish-wash/pm-ploho-moet.webp',
+            title: 'Посудомоечная машина плохо моет посуду',
+            repairOptions: ['Чистка циркуляционной системы', 'Замена импеллера',],
+            price: '800',
+          })
+          +problem-item({
+            link: domen + pathToFolder + 'posudomoechnaya-mashina-ne-slivaet.html',
+            pathToImg: domen + '/assets/img/pictures/repair-img/dish-wash/pm-ne-slivaet.webp',
+            title: 'Посудомоечная машина не сливает',
+            repairOptions: ['Чистка сливной системы', 'Замена сливного насоса'],
+            price: '800',
+          })
+          +problem-item({
+            link: domen + pathToFolder + 'posudomoechnaya-mashina-ne-greet-vodu.html',
+            pathToImg: domen + '/assets/img/pictures/repair-img/dish-wash/pm-ne-greet.webp',
+            title: 'Посудомоечная машина не греет воду',
+            repairOptions: ['Ремонт электросхемы', 'Замена ТЭНа'],
+            price: '800',
+          })
+          +problem-item({
+            link: domen + pathToFolder + 'posudomoechnaya-mashina-gudit.html',
+            pathToImg: domen + '/assets/img/pictures/repair-img/dish-wash/pm-gudit.webp',
+            title: 'посудомоечная машина гудит',
+            repairOptions: ['Устранение течи', 'Замена циркуляционного насоса'],
+            price: '800',
+          })
+        
+          +problem-item({
+            link: domen + pathToFolder + 'posudomoechnaya-mashina-perelivaet-vodu.html',
+            pathToImg: domen + '/assets/img/pictures/repair-img/dish-wash/pm-perelivaet.webp',
+            title: 'Посудомоечная машина переливает воду',
+            repairOptions: ['Замена прессостата', 'Чистка засора'],
+            price: '800',
+          })
+        .repair-page-problems-items-add.repair-page-problems-items-add_invisible
+          +problem-item({
+            link: domen + pathToFolder + 'posudomoechnaya-mashina-techet.html',
+            pathToImg: domen + '/assets/img/pictures/repair-img/dish-wash/pm-techet.webp',
+            title: 'Посудомоечная машина течет',
+            repairOptions: ['Устранение течи', 'Ремонт чаши', 'Замена компрессора'],
+            price: '800',
+          })
+        
+          +problem-item({
+            link: domen + pathToFolder + 'posudomoechnaya-mashina-ne-vklyuchaetsya.html',
+            pathToImg: domen + '/assets/img/pictures/repair-img/dish-wash/pm-ne-vkluchaetsa.webp',
+            title: 'Посудомоечная машина не включается',
+            repairOptions: ['Замена кнопки', 'Ремонт электросхемы', 'Ремонт модуля'],
+            price: '800',
+          })
+          +problem-item({
+            link: domen + pathToFolder + 'stiralnaya-mashina-pokazyvaet-oshibku.html',
+            pathToImg: domen + '/assets/img/pictures/repair-img/dish-wash/pm-vidaet-oshibku.webp',
+            title: 'Посудомоечная машина выдает ошибку',
+            repairOptions: ['Возможна любая неисправность'],
+            price: '500',
+          })
+          
+
+        .problem-button-wrap
+          .problem-button
+          
+    .calc-banner-container
+      +calc-banner
+    .repair-page-text-section
+      .page-text
+        p
+          | Указанные неисправности являются не полным перечнем поломок. Мастера проводят полную диагностику и только после нее можно установить полную картину состояния вашей техники. Внимание, только квалифицированный сотрудник способен установить причину поломки. Поэтому, при первых признаках неисправности, как можно скорее звоните специалисту.
+
+
+    .repair-page-brands
+      H2.page-title-h2 Мы ремонтируем посудомоечные машины всех известных брендов брендов
+      .brands-carousel.owl-carousel#js-carousel-3
+        .brands-carousel-item-group
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/miele_300.webp" alt="Ремонт посудомоечных машин Miele в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/smeg_300.webp" alt="Ремонт посудомоечных машин Smeg в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/bosch_300.webp" alt="Ремонт посудомоечных машин Bosch в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/siemens_300.webp" alt="Ремонт посудомоечных машин Siemens в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/aeg_300.webp" alt="Ремонт посудомоечных машин AEG в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/teka_300.webp" alt="Ремонт посудомоечных машин Teka в Санкт-петербурге")
+        .brands-carousel-item-group
+          a.brands-carousel-item__link(href="#")  
+            img.brands-carousel-item(src="/assets/img/pictures/brands/samsung_300.webp" alt="Ремонт посудомоечных машин Samsung в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/lg_300.webp" alt="Ремонт посудомоечных машин LG в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/korting_300.webp" alt="Ремонт посудомоечных машин Korting в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/electrolux_300.webp" alt="Ремонт посудомоечных машин Electrolux в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/ardo_300.webp" alt="Ремонт посудомоечных машин Ardo в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/beko_300.webp" alt="Ремонт посудомоечных машин Beko в Санкт-петербурге")
+        .brands-carousel-item-group 
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/candy_300.webp" alt="Ремонт посудомоечных машин Candy в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/gorenje_300.webp" alt="Ремонт посудомоечных машин Gorenje в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/hansa_300.webp" alt="Ремонт посудомоечных машин Hansa в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/indezit_300.webp" alt="Ремонт посудомоечных машин Indezit в Санкт-петербурге")
+        
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/panasonic_300.webp" alt="Ремонт посудомоечных машин Panasonic в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/philips_300.webp" alt="Ремонт посудомоечных машин Philips в Санкт-петербурге")
+        .brands-carousel-item-group  
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/whirpool_300.webp" alt="Ремонт посудомоечных машин whirpool в Санкт-петербурге")
+
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/daewoo_300.webp" alt="Ремонт посудомоечных машин Daewoo в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/haier_300.webp" alt="Ремонт посудомоечных машин Haier в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/hotpoint-ariston_300.webp" alt="Ремонт посудомоечных машин Hotpoint-Ariston в Санкт-петербурге")
+          a.brands-carousel-item__link(href="#")
+            img.brands-carousel-item(src="/assets/img/pictures/brands/mabe_300.webp" alt="Ремонт посудомоечных машин Mabe в Санкт-петербурге")
+         
+    .call-action-banner-container
+      .calc-banner.page-banner
+        .page-banner-img
+            img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/master.webp' alt="")
+        .page-banner-content
+            .page-banner-content__title 
+                p Ремонт в течение двух часов!
+            .page-banner-content__text 
+                p Свяжитесь с нами по телефонам  
+                a(href=telNumber_1_int)= telNumber_1 
+                |  или 
+                a(href=telNumber_2_int)= telNumber_2 
+                |  и в течение двух часов Ваша посудомоечная машина будет исправна!
+            .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+            .page-banner-content-buttons
+                .page-banner-button 
+                    | Оформить заявку
+                    br
+                    | on-line
+                .page-banner-button Заказать звонок
+    .repair-page-prices
+      H2.page-title-h2 Цены на услуги по ремонту посудомоечных машин в г. Санкт-Петербург
+      .table-container
+        .table-container__bgrnd
+        .table-container__button.table-container__button_down
+        table.page-table
+          tbody
+            tr
+              th Вид работ
+              th Стоимость
+            tr
+              td Выезд мастера на дом
+              td бесплатно
+   
+            tr
+              td Диагностика неисправности
+              td бесплатно
+             
+            tr
+              td Диагностика без разбора техники (в случае отказа от проведения ремонта)
+              td 400 р.
+            
+            tr
+              td Выезд за пределы КАД
+              td 15р/км.КАД?
+            tr
+              td.table-subtitle(colspan='2') Мелкий ремонт
+      
+            tr
+              td Замена шланга (наливного/сливного)
+              td от 500 р.
+             
+            tr
+              td Чистка сливной системы
+              td от 800 р.
+            
+            tr
+              td Чистка циркуляционной системы
+              td от 800 р.
+             
+            tr
+              td Замена уплотнителя дверцы
+              td от 800 р.
+              
+            tr
+              td Замена/ремонт доводчика двери
+              td от 500 р.
+              
+            tr
+              td Мелкий ремонт
+              td от 500 р.
+              
+            tr
+              td Замена кнопки
+              td от 800 р.
+              
+            tr
+              td Замена сетевого шнура
+              td от 800 р.
+              
+            tr
+              td Сброс ошибок
+              td от 500 р.
+              
+            tr
+              td.table-subtitle(colspan='2') Ремонт средней сложности
+
+            tr
+              td Замена конденсатора
+              td от 1200 р.
+
+            tr
+              td Замена ТЭНа
+              td от 1400 р.
+
+            tr
+              td Замена температурного датчика
+              td от 1200 р.
+              
+           
+            tr
+              td Замена прессостата
+              td от 1000 р.
+            
+            tr
+              td Чистка засора
+              td от 800 р.
+            
+            tr
+              td Ремонт чаши
+              td от 1000 р.
+             
+            tr
+              td Замена чаши
+              td от 1500 р.
+              
+            tr
+              td Замена дозатора моющего средства
+              td от 1000 р.
+           
+            tr
+              td Устарнение течи
+              td от 800 р.
+            
+            tr
+              td Ремонт модуль управления (платы)
+              td от 1500 р.
+             
+            tr
+              td Замена модуля управления (платы)
+              td от 1500 р.
+             
+            tr
+              td Замена клапана
+              td от 600 р.
+            
+            tr
+              td Замена/ремонт импеллера
+              td от 1000 р.
+ 
+            tr
+              td Замена патрубков
+              td от 800 р.
+             
+            tr
+              td Замена аквастопа
+              td от 1000 р.
+        
+            tr
+              td Диагностика модуля управления
+              td от 500 р.
+           
+            tr
+              td Установка посудомоечной машины
+              td от 800 р.
+ 
+            tr
+              td Установка фасада посудомоечной машины
+              td от 500 р.
+         
+            tr
+              td Термоизоляция
+              td от 700 р.
+            tr
+              td Регулировка дверцы
+              td от 600 р.
+            tr
+              td Подключение к коммуникациям
+              td от 600 р.
+
+            tr
+              td.table-subtitle(colspan='2') Сложный ремонт
+         
+            tr
+              td Замена сливного насоса
+              td от 1200 р.
+            tr
+              td Замена циркуляционного насоса
+              td от 1400 р.
+            tr
+              td Ремонт электроцепи
+              td от 800 р.
+            tr
+              td Замена корпуса
+              td от 1500 р.
+            tr
+              td Замена шлейфа, косы
+              td от 1500 р.
+            tr
+              td Иные работы высокой сложности
+              td от 1000 р.
+            tr
+              td.table-subtitle(colspan='2') Дополнительная информация
+         
+            tr
+              td Диагностика без разбора техники (в случае отказа от проведения ремонта)
+              td 400
+            tr
+              td Сборка и разборка встроенной техники
+              td 700
+            tr
+              td Сборка и разборка посудомоечной машины
+              td 600
+            tr
+              td Коэффициент стесненности
+              td 10%
+      
+            tr
+              td Ложный вызов
+              td 1,500р.
+  
+
+  
+    .repair-page-reviews
+      H2.page-title-h2 Отзывы клиентов о ремонте посудомоечных машин
+      .repair-page-reviews-items.owl-carousel#js-carousel-2
+        +reviews({
+          id: '00086',
+          typeRepair: 'Ремонт посудомоечных машин',
+          userName: 'Сергей',
+          date: '20.11.2020',
+          rating: '5',
+          text: 'Посудомойка фактически сгорела. Когда мастер достал плату она была почти вся черная. Все восстановили,  я очень был удивлен такой работе. Отдельное спасибо мастеру Александру с филиала на Большевиков. Это настоящий профи!',
+          answerSupport: 'Благодарим за отзыв!'
+          })
+        +reviews({
+          id: '00075',
+          typeRepair: 'Ремонт посудомоечных машин',
+          userName: 'Сергей',
+          date: '31.07.2020',
+          rating: '5',
+          text: '5 баллов.',
+          answerSupport: ''
+          })
+        +reviews({
+          id: '00073',
+          typeRepair: 'Ремонт посудомоечных машин',
+          userName: 'Виктория',
+          date: '07.07.2020',
+          rating: '5',
+          text: 'У нас сломалась посудомойка Миле. Обратились в официальный сервис, там нам выкатили такую сумму за ремонт, что проще новую посудомойку купить. Соседи посоветовали Ваши фирму.  В итоге ремонт вышел в 5(пять) ! раз дешевле чем тот сервис! честно говоря в шоке от того как разводят людей!  ',
+          answerSupport: ''
+          })
+        +reviews({
+          id: '00067',
+          typeRepair: 'Ремонт посудомоечных машин',
+          userName: 'Жанна',
+          date: '10.05.2020',
+          rating: '5',
+          text: 'Просто реактивный сервис, приехали минут за 30 наверно. Конечно 5 баллов!',
+          answerSupport: ''
+          })
+        
+    .repair-page-questions
+      .repair-page-questions-item
+        H2.repair-page-questions-item__title Чем мы лучше других?
+        ul.repair-page-questions-list
+          li.repair-page-questions-list-item 
+            p
+              span.repair-page-questions__subtitle.font-bold Реальная бесплатная диагностика и выезд при выполнении ремонта. 
+            p При выполнении ремонта Вы не оплачиваете выезд мастера на дом и работу по проведению диагностики.
+            | В случае отказа от проведения работ стоимость диагностика составляет всего 400 р.
+          li.repair-page-questions-list-item 
+            p
+              span.repair-page-questions__subtitle.font-bold Гарантия до 2-х лет. 
+            p Официальная гарантия на выполненные работы от 3-х месяцев до 2-х лет.
+          li.repair-page-questions-list-item 
+            p
+              span.repair-page-questions__subtitle.font-bold Удобное для Вас время приезда мастера. 
+            p Мастер приедет к Вам в течение часа или в любое удобное для Вас время.
+              span Также Вы можете воспользоваться 
+              span.repair-page-questions__button-order.button-order сервисом 
+              span для оформления заявки на ремонт посудомоечной машины.
+          li.repair-page-questions-list-item.font-bold
+            p
+              span.repair-page-questions__subtitle Ремонт за один визит.
+              span Наши мастера оснащены всем необходимым оборудованием для проведения ремонта на дому.
+              span В среднем ремонт посудомоечной машины на дому занимает от 45 минут до 2 часов.
+          li.repair-page-questions-list-item.font-bold
+            p
+              span.repair-page-questions__subtitle Проконсультируем по телефону бесплатно.
+              span Звонки принимают мастера по ремонту посудомоечных машин, а не просто деспетчеры.
+              span Позвонив нам и описав проблему, Вы получите бесплатную консультацию о возможных неисправностях, примерной стоимости и сроках их устранения. 
+      .repair-page-questions-item.repair-page-questions-item_active
+        H2.repair-page-questions-item__title Сколько времени займет ремонт?
+        .repair-page-questions-list
+          p.repair-page-questions-list-text 
+            span В среднем ремонт посудомоечной машины занимает от 45 минут до 2 часов. 
+            span Ремонт производится у Вас дома. В некоторых случаях ремонт  может занять больше времени.
+            span Например, если требуется ремонт электронной платы (модуля управления).
+      .repair-page-questions-item.repair-page-questions-item_active
+        H2.repair-page-questions-item__title Как с нами связаться?
+        .repair-page-questions-list
+          p.repair-page-questions-list-text 
+            span Если у Вас не работает посудомоечной машины обратитесь в компанию 
+            span= nameCompany 
+            span  по телефонам
+          
+          a(herf=telNumber_1_int)= telNumber_1
+          br
+          a(herf=telNumber_2_int)= telNumber_2
+          br
+          p или оформите 
+            span.repair-page-questions__button-order.button-order заявку on-line  
+            span на сайте.
+          br
+          p.font-bold Чтобы мастер приехал к Вам наиболее подготовленным, сообщите при звонке или оформлении заявки на ремонт посудомоечной машины следующую информацию:
+          ol
+            li.repair-page-questions__subtitle.repair-page-questions-list-item
+              p Марку посудомоечной машины а и её примерный возраст.    
+            li.repair-page-questions__subtitle.repair-page-questions-list-item
+              p Опишите коротко проблему (например: не набирает воду, подтекает, гудит и т.п.).
+            li.repair-page-questions__subtitle.repair-page-questions-list-item        
+              p Предложите время для визита мастера.
+            li.repair-page-questions__subtitle.repair-page-questions-list-item          
+              p Укажите адрес и телефон для связи.
+          p Мастер приедет в назначенное время, а перед выездом позвонит Вам.
+      .repair-page-questions-item.repair-page-questions-item_active
+        H2.repair-page-questions-item__title Какая гарантия на работу?
+        .repair-page-questions-list
+          p.repair-page-questions-list-text 
+            | После завершения ремонта мастер обязательно проверит работоспособность посудомоечной машины, а также продемонстрирует Вам. 
+            | После чего будет оформлена гарантия на работу. Срок гарантии составлят от 3-х месяцев до 2-х лет в зависимости от вида ремонта.
+            | Гарантия распространяется на как на запчасти, так и на выполненные работы.
+      .repair-page-questions-item.repair-page-questions-item_active
+        H2.repair-page-questions-item__title Какие марки посудомоечных машин ремонтируете?
+        .repair-page-questions-list
+          p.repair-page-questions-list-text Мы ремонтируем все известные на сегодняшний день марки посудомоечных машин, независимо от страны производства и возраста.
+          p.repair-page-questions-list-text.font-bold Наиболее известные марки посудомоечных машин, которые в настоящее время используются:
+          ul.repair-page-questions-brands
+            li
+              a(href='#') Aeg
+            li
+              a(href='#') Ardo
+            li
+              a(href='#') Asco
+            li
+              a(href='#') Atlant
+            li
+              a(href='#') Beko
+            li
+              a(href='#') Bosch
+            li
+              a(href='#') Candy
+            li
+              a(href='#') Daewoo
+            li
+              a(href='#') Electrolux
+            li
+              a(href='#') Gorenje
+            li
+              a(href='#') Haier
+            li
+              a(href='#') Hansa
+            li
+              a(href='#') Hotpoint Ariston
+            li
+              a(href='#') Indezit
+            li
+              a(href='#') Korting
+            li
+              a(href='#') LG
+            li
+              a(href='#') Mabe
+            li
+              a(href='#') Miele
+            li
+              a(href='#') Panasonic
+            li
+              a(href='#') Philips
+            li
+              a(href='#') Samsung
+            li
+              a(href='#') Sharp
+            li
+              a(href='#') Siemens
+            li
+              a(href='#') Smeg
+            li
+              a(href='#') Teka
+            li
+              a(href='#') Whirpool
+            li
+              a(href='#') Krona
+      .repair-page-questions-item.repair-page-questions-item_active
+        H2.repair-page-questions-item__title Какой опыт работы у наших мастеров?
+        .repair-page-questions-list
+          p Большинство мастеров по ремонту посудомоечных машин имеет опыт работы 10-12 лет.
+          p Кроме того, при поступлении на работу, и в дальнейшем мы проводим регулярную аттестацию персонала и повышение квалификации.
+          p Также все наши мастера проходят ежедневный медицинский контроль, а также тестирование на заболевание короновирусом COVID-19.
+
+                        
+
+            
+

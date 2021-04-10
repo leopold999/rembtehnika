@@ -1,0 +1,136 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Холодильник включается и сразу выключается' 
+  - var content = "В нормальном режиме работы компрессор холодильника работает циклично, включаясь и выключаясь только при достижении расчетных температур. Но когда холодильник включается, и в течение считанных секунд вдруг останавливается и молчит, это является серьезной поломкой устройства"
+  - var pathToImgArticles = domen + '/assets/img/pictures/repair-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    'Неисправности холодильников': domen + '/neispravnosti-holodilnikov/',
+    "Холодильник включается и сразу выключается": "#"})
+
+  .article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    h1.page-title-h1(itemprop="name")= title 
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-006.webp'
+    })
+    .page-text.page-text-hidden-container(itemprop="articleBody")
+      .page-text-hidden__bgrnd
+      .page-text-hidden__button.page-text-hidden__button_down
+      img.page-img.page-img_float-left( src= pathToImgArticles + "fridges/hol-vkluchaetsa-i-otkluchaetsa.webp" alt= 'Холодильник включается и сразу выключается' itemprop="image")
+      p
+        | В нормальном режиме работы компрессор холодильника работает циклично, включаясь и выключаясь только при достижении расчетных температур. Набрав нужную температуру охлаждения устройство отключается и переходит в режим «отдыха». В зависимости от температуры окружающей среды, выбранного пользователем режима и уровня охлаждения, компрессор может работать от 10 минут до часа и более. Это зависит от многих параметров, характеристик и назначения агрегата.
+      p
+        | Кардинально противоположная ситуация, когда холодильник включается, становится слышен шум мотор-компрессора, и в течение считанных секунд вдруг останавливается и молчит, является абсолютно не нормальной, и в абсолютном большинстве случаев говорит о довольно серьезной неисправности устройства.
+      h2.page-title-h2 Разберем возможные причины такой работы.
+      h3.page-title-h3 Поломка компрессора.
+      p  Это наиболее часто встречающаяся причина такой работы. Компрессор в своей конструкции имеет двигатель и поршневую систему для прокачки системы. Двигатель агрегата может выйти из строя за счет межвиткового замыкания или обрыва обмотки. В этом случае мотор при работе начинает сильно нагреваться и в целях защитного отключения срабатывает пуско-защитное устройство. Мотор отключается. Все это происходит во временном интервале как правило 5-30 секунд. Компрессор как устройство неремонтопригодно. Процесс его изготовления настолько сложен, что гораздо целесообразнее его просто заменить, чем менять его внутренние узлы.
+      h3.page-title-h3 Неисправность пускозащитного устройства (ПЗУ). 
+      p Данное устройство несет функцию переключателя с защитным эффектом. Под защитой в данном случае понимается ограничение излишних нагрузок двигателя, перегрева и короткого замыкания. Под переключением понимается запуск и отключение устройства с помощью управляющего сигнала с термостата или электронного модуля управления. Из-за внутренней поломки ПЗУ может работать некорректно, что также приводит к быстром отключению компрессора.
+      h3.page-title-h3 Неисправность модуля управления.
+      p В холодильниках с электронной системой управления сигнал о запуске компрессора на ПЗУ подается с главного блока управления (платы). В случае сбоев в работе модуля, после запуска мотор-компрессора система может ошибочно подать сигнал на его выключение. Причиной этому может служить как неисправность элементов платы, так и сбои программного обеспечения. В наиболее современных холодильниках с инверторными системами (LG, Samsung), выход из строя модуля управления часто сопровождается поломкой компрессора.
+      p
+        | И все же по статистике ремонтов за 5 лет, наиболее частой поломкой (85% случаев) является вышедший из строя компрессор. Это объясняется тем, что пускозащитное устройство по своей сути является довольно надежным устройством, с большим запасом износостойкости. Электронный модуль управления хоть и не может похвастаться высокой надёжностью, но встречается далеко не на всех моделях холодильников.
+      p
+        | При всех вышеописанных неисправностях самостоятельный ремонт холодильника пользователем невозможен. Качественно и правильно сделать данную работу может только высококвалифицированный специалист с довольно большим опытом работы.
+    .page-text   
+      h2.page-title-h2 Возможные причины неисправности и стоимость их устранения
+      .table-container_scroll  
+        table(border='1')
+          tbody
+            tr
+              th
+                p
+                  b Неисправность
+              th
+                p
+                  b Возможный ремонт
+              th
+                p
+                  b Стоимость работы
+            tr
+              td
+                p Неисправность компрессора
+              td
+                p Замена компрессора
+              td
+                p от 2500 р.
+            tr
+              td
+                p Неисправность пускозащитного устройства
+              td
+                p Замена пускозащитного реле
+              td
+                p от 1200 р.
+            tr
+              td
+                p Неисправность модуля управления
+              td
+                p Ремонт модуля управления (платы)
+              td
+                p от 1500 р.
+
+    .calc-banner.page-banner
+      .page-banner-img
+        img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/men_1.webp' alt="")
+      .page-banner-content
+        .page-banner-content__title 
+          p Ремонт холодильника в ближайшие 2 часа! Звоните!
+        .page-banner-content__text 
+          p  телефоны для связи
+          a(href='#')= telNumber_1 
+          |  или 
+          a(href='#')= telNumber_2 
+
+        .page-banner-content__text Также Вы можете оформить on-line заказ или заказать звонок
+        .page-banner-content-buttons
+          .page-banner-button.button-order 
+            | Оформить заявку
+            br
+            | on-line
+          .page-banner-button.button-callback Заказать звонок 
+    +brands-fridge({
+      title: "Мы устраним поломку холодильника любой марки"
+    })
+    .page-articles-link
+      h2.page-title-h2 Другие возможные неисправности холодильников
+      .page-articles-link-wrapper
+        -var pathToPage = domen + '/malfunctions/neispravnosti-holodilnikov/'
+        .page-articles-link-item
+          a(href=pathToPage + 'holodilnik-gromko-rabotaet.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/fridges/hol-gromko-rabotaet.webp' alt="Холодильник громко работает")
+            p Холодильник громко работает
+        .page-articles-link-item
+          a(href=pathToPage + 'holodilnik-ne-vklyuchaetsya.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/fridges/hol-ne-vkluchaetsa.webp' alt="Холодильник не включается")
+            p Холодильник не включается
+        .page-articles-link-item
+          a(href=pathToPage + 'holodilnik-silno-morozit.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/fridges/hol-silno-morozit.webp' alt="Холодильник сильно морозит")
+            p Холодильник сильно морозит
+        .page-articles-link-item
+          a(href=pathToPage + 'led-v-morozilnoj-kamere.html')
+            img(src= domen + '/assets/img/pictures/repair-img/fridges/hol-led-v-morozilke.webp' alt="Лед в морозильной камере")
+            p Лед в морозильной камере
+        .page-articles-link-item
+          a(href=pathToPage + 'holodilnik-pishchit.html')
+            img(src= domen + '/assets/img/pictures/repair-img/fridges/hol-pishit.webp' alt="Холодильник пищит")
+            p Холодильник пищит
+        .page-articles-link-item
+          a(href=pathToPage + 'holodilnik-gudit.html')
+            img(src= domen + '/assets/img/pictures/repair-img/fridges/hol-gudit.webp' alt="Холодильник гудит")
+            p Холодильник гудит
+        .page-articles-link-item
+          a(href=pathToPage + 'holodilnik-shchelkaet.html')
+            img(src= domen + '/assets/img/pictures/repair-img/fridges/hol-shelkaet.webp' alt="Холодильник щелкает")
+            p Холодильник щелкает
+        .page-articles-link-item
+          a(href=pathToPage + 'holodilnik-techet.html')
+            img(src= domen + '/assets/img/pictures/repair-img/fridges/hol-plachet.webp' alt="Холодильник течет")
+            p Холодильник течет
+

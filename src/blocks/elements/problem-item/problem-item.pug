@@ -1,0 +1,34 @@
+mixin problem-item(options)
+
+    - var title = options.title || ''
+    - var link = options.link || ''
+    - var pathToImg = options.pathToImg || ''
+    - var repairOptions = options.repairOptions  || []//массив
+    - var price = options.price
+
+
+    .problem-item 
+        .problem-item-content(itemprop="offers" itemscope itemtype="https://schema.org/Offer")
+            
+            .problem-item__img
+                img(src=pathToImg alt=title)
+            .proplem-item__title(itemprop="description")= title
+
+            .proplem-item__repair-options
+                //- .repair-options-item__descr Возможный ремонт:
+                - for (var i = 0; i < repairOptions.length; i++) 
+                    H3.repair-options-item= repairOptions[i]
+            .proplem-item__price Ремонт от 
+                b 
+                    span(itemprop="price")= price
+                span р.
+                meta(itemprop="priceCurrency" content="RUB")
+            a.problem-item-link(itemprop="url" href=link )= "Узнать больше >>>"
+        .problem-item-buttons
+            .problem-item__button-item.button-order Оформить заказ 
+                br
+                |on-line
+            .problem-item__button-item.button-callback Заказать звонок
+                
+        
+        

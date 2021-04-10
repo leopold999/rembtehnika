@@ -1,0 +1,18 @@
+mixin call-action-banner
+    .call-action-banner.page-banner
+        .page-banner-img
+            img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp')
+        .page-banner-content
+            .page-banner-content__title Звоните прямо сейчас!
+            .page-banner-content__text Мы ответим на Ваши вопросы по телефонам  
+                a(href='#')= telNumber_1 
+                |  или 
+                a(href='#')= telNumber_2 
+                | .
+            .page-banner-content__text Также Вы можете оформить on-line заказ или заказать звонок
+            .page-banner-content-buttons
+                .page-banner-button.button-order 
+                    | Оформить заявку
+                    br
+                    | on-line
+                .page-banner-button.button-callback Заказать звонок

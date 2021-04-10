@@ -1,0 +1,113 @@
+@import "../vars/vars.scss";
+@import "../fonts/fonts.scss";
+
+@mixin textFieldInput($width, $height, $colorPlaceholder: $dark25) {
+    position: relative;
+    width: $width;
+    height: $height;
+    border: $borderInputDefault;
+    border-radius: $borderRadiusInput;
+    @include fontBody();
+    padding-left: rem(13);
+    box-sizing: border-box;
+
+    
+
+    &::placeholder {
+        @include fontBody;
+        color: $colorPlaceholder;   
+    }
+    &:hover, &:focus {
+        border: $borderInputHover;
+    }
+}
+
+
+@mixin checkboxDropdownInput($colorDefault) {
+    
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    border: none;
+    @include size(rem(44), rem(44));
+    background-color: transparent; 
+    color: $colorDefault;
+    @include justify-center;
+    cursor: pointer;   
+    font-size: rem(24); 
+
+    .dropdown__checkbox-input {
+        z-index: -1;
+        position: absolute;
+        opacity: 0;
+        margin: 0 rem(40) 0 0 ;
+    }
+
+    &:checked {
+        display: block;
+    }
+}
+
+@mixin cardBorder {
+    border: $borderCard;
+    border-radius: $borderRadiusCard;
+    box-shadow: $cadrShadow;
+    background-color: $cardBackgroundColor;
+    box-sizing: border-box;  
+    padding: rem(40) rem(30) rem(30) rem(29);
+    // padding: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    
+    @media screen and (max-width: 360px) {
+        padding: rem(15);
+        box-sizing: border-box;
+    }
+
+}
+
+@mixin justify-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+@mixin justify-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+
+@mixin dropdown-list {
+    position: absolute;
+    z-index: 100;
+    border: $borderInputHover;
+    border-radius: $borderRadiusInput;
+    box-sizing: border-box;
+    padding: 0 rem(7) rem(7) rem(15);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: 0;
+    background-color: #FFFFFF;
+}
+
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@function rem($pixels, $context: $mainFontSize) {
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+
+    @return $pixels / $context * 1rem;
+}

@@ -1,0 +1,48 @@
+.page-list {
+    @include fontBody(rem(20), rem(30));
+    color: $dark75;
+    margin-bottom: rem(20);
+    padding: 0 0 0 rem(20);
+}
+
+.page-list-ul li {
+    position: relative;
+    padding-left: rem(30);
+    &:before {
+        content: "\e618";
+        font-family: 'icomoon';
+        font-style: normal;
+        font-size: rem(20);
+        line-height: rem(30);
+        color: $colorMain-1;
+        margin-right: rem(15);
+        // position: absolute;
+        top: 0;
+        left: 0;
+        @media screen and (max-width: 360px) {
+            left: rem(10);
+        }
+    }
+}
+.page-list-ol li {
+    list-style: decimal;
+    list-style-position: inside;
+}
+.page-link-list {
+    @include fontBody(rem(20), rem(30));
+    color: $dark90;
+    font-weight: bold;
+    margin-bottom: rem(20);
+    padding: 0 0 0 rem(50);
+    & li {
+        position: relative;
+        padding: rem(10) 0 rem(10) rem(30);
+    }
+    & li a {
+        border-bottom: 1px solid $dark90;
+        &:hover {
+            color: $colorSecond-1;
+            border-bottom: 1px solid $colorSecond-1;
+        }
+    }
+}

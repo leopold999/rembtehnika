@@ -1,0 +1,53 @@
+mixin order-popup
+    .order-popup
+        .order-popup-wrapper
+            .order-popup__close-button
+            .order-popup__title On-line заказ на ремонт
+            .order-popup__descr При оформлении on-line заказа вы получаете скидку 10% на ремонт
+            form#order-form.order-popup-form(action="" method="get")
+                label.order-popup__type Выберите тип техники
+                    select(class="order-popup-form-input order-popup-form__input" name="type" placeholder='Наприме' required)
+                        option
+                        option(value="Стиральная машина") Стиральная машина
+                        option(value="Сушильная машина") Сушильная машина
+                        option(value="Холодильник бытовой") Холодильник бытовой
+                        option(value="Холодильник торговый") Холодильник торговый
+                        option(value="Холодильник промышленный") Холодильник промышленный
+                        option(value="Морозильник") Морозильник
+                        option(value="Посудомоечная машина бытовая") Посудомоечная машина бытовая
+                        option(value="Посудомоечная машина промышленная") Посудомоечная машина промышленная
+                        option(value="Варочная панель") Варочная панель
+                        option(value="Духовой шкаф") Духовой шкаф
+                        option(value="Компьютер персональный") Компьютер персональный
+                        option(value="Ноутбук") Ноутбук
+                        option(value="Телевизор") Телевизор
+                      
+
+                label.order-popup__brand Производитель техники
+                    Input(class="order-popup-form-input" type="text" name="brand" placeholder='Например "Самсунг"' required)
+                label.order-popup__problem Опишите проблему
+                    textarea(class="order-popup-form-input" name="problem"  placeholder='Например "Не сливает воду"' required)
+                label.order-popup__contacts Укажите Ваши контактные данные
+                label.order-popup__street Улица
+                    Input(class="order-popup-form-input" type="text" name="address-1" placeholder='' required)
+                label.order-popup__house-number Дом
+                    Input(class="order-popup-form-input" type="text" name="address-2" placeholder='' required)
+                label.order-popup__room-number Квартира
+                    Input(class="order-popup-form-input" type="text" name="address-3" placeholder='')
+                label.order-popup__tel-number Телефон для связи
+                    Input(class="order-popup-form-input order-popup-form__phone-input" type="tel" name="phone" placeholder='' required)
+                label.order-popup__client-name Ваше имя
+                    Input(class="order-popup-form-input" type="text" name="name" placeholder='' required)
+                label.order-popup__date-of-repair Дата и время ремонта
+                    input(class="order-popup-form-input order-popup-form__date" type="date"  name="date" placeholder='' required)
+                label.order-popup__time1 с
+                    input(class="order-popup-form-input order-popup-form__input-time1" type="time" min="09:00" max="15:00" step="3600" value="09:00" name="time-1" required )
+                label.order-popup__time2 до
+                    input(class="order-popup-form-input order-popup-form__input-time2" type="time" min="15:00" max="22:00" step="3600" value="15:00" name="time-1"  required readonly)
+                
+          
+                label.order-popup__consent 
+                    p Подтверждаю согласие на обработку моих персональных данных
+                    .consent-checkbox 
+                        input(class="order-popup-form-input" type="checkbox" name="consent" placeholder='' required)
+                input(class="order-popup-form-button" name="" type="submit" value="Оформить заявку") 

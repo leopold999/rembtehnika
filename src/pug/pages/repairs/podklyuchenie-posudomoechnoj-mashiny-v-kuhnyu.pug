@@ -1,0 +1,257 @@
+extends ../../layout/repair_page_layout.pug
+
+
+block variables
+  - var title = 'Установка и подключение посудомоечных машин'
+  - var content = "Профессиональная установка и подключение посудомоечных машин в Санкт-Петербурге. Подведение коммуникаций, выставление и регулировка по уровню, проверка работоспособности. От 800 р."
+
+
+block content
+  include ../../../blocks/page-blocks/page-blocks
+  include ../../../blocks/elements/elements
+
+  +bread-crumbs({
+    'Главная': '/',
+    "Установка посудомоечных машин": "#",
+  })
+  .repair-page-title-section
+    H1.page-title-h1(itemprop="name")=title
+  .repair-page-text-section
+    .page-text
+      h2.page-title-h2 Стоимость работ по установке и подключению посудомоечной машины:
+      table.page-table(border='0')
+        tbody
+          tr
+            th
+              p Вид работы
+            th
+              p Стоимость
+          tr
+            td
+              p Выезд мастера на дом
+            td
+              p Бесплатно
+          tr
+            td
+              p Диагностика неисправности при ремонте
+            td
+              p Бесплатно
+          tr
+            td
+              p Диагностика без разбора техники (в случае отказа от проведения ремонта)
+            td
+              p 400 р.
+          tr
+            td
+              p Установка посудомоечной машины
+            td
+              p от 800 р.
+          tr
+            td
+              p Установка фасада на посудомоечную машину
+            td
+              p от 500 р.
+          tr
+            td
+              p Подключение к коммуникациям
+            td
+              p от 600 р.
+          tr
+            td
+              p Термоизоляция
+            td
+              p от 700 р.
+          tr
+            td
+              p Регулировка дверцы
+            td
+              p от 700 р.
+      p
+        | Подключение посудомоечной машины – процесс, требующий достаточных знаний в устройстве прибора и опыта проведения сантехнических работ. Важно понимать, что дилетантский подход к установке может привести к существенному уменьшению срока службы устройства, или появлению протечек и затоплению помещения.
+      p
+        | Из нашего собственного опыта можем заявить, что около 30% поломок посудомоечных машин связаны с неправильной установкой и подключением, несоответствием номинала защитного устройства или давления воды.
+      p
+        | Если вы хотите, чтобы ваша техника служила Вам дольше, обратитесь в нашу компанию за профессиональной установкой посудомоечной машины в кухню.
+
+
+  .repair-page-advantages-section
+    H2.page-title-h2 Приемущества обращения к нам
+    .landing-page__advantages
+      .advantages-item
+        .advantages__img.icon-master
+        .advantages__text 
+          p Бесплатный выезд мастера и диагностика
+          .advantages__quest ?
+            .advantages__descr Выезд и диагностика выполняется бесплатно при выполнении ремонта.
+      .advantages-item
+        .advantages__img.icon-warranty
+        .advantages__text 
+          p Гарантия до 2-х лет (работа + запчасти)
+          .advantages__quest ?
+            .advantages__descr Предоставляется официальная гарантия на работу и установленные запасные части.
+      .advantages-item
+        .advantages__img.icon-people
+        .advantages__text 
+          p Большой штат квалифицированных мастеров
+          .advantages__quest ?
+            .advantages__descr У нас в штате более 70 мастеров. Мы тщательно отбираем мастеров, и регулярно проверяем их квалификацию.
+      .advantages-item
+        .advantages__img.icon-hour
+        .advantages__text 
+          p Выезд мастера на адрес в течение часа
+          .advantages__quest ?
+            .advantages__descr Большой штат сотрудников и наличие филиалов в каждом районе города позволяют нам очень быстро прибыть к Вам.
+      .advantages-item
+        .advantages__img.icon-original
+        .advantages__text 
+          p Используем только оригинальные запчасти для посудомоечных машин
+          .advantages__quest ?
+            .advantages__descr Мы сотрудничаем только с официальными и проверенным годами поставщиками. 
+      .advantages-item
+        .advantages__img.icon-srtificate
+        .advantages__text 
+          p Сертифицированный сервисный центр компаний Bosch, Miele, Siemens, Samsung и др.
+          .advantages__quest ?
+            .advantages__descr Мы имеем официальную сертификацию у ведущих производителей техники и регулярно ее подтверждаем.
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/men_1.webp' alt="")
+    .page-banner-content
+      .page-banner-content__title 
+        p Профессиональное подключение и установка посудомоечной машины в кратчайшие сроки
+      .page-banner-content__text 
+        p  телефоны для связи
+        a(href='#')= telNumber_1 
+        |  или 
+        a(href='#')= telNumber_2 
+
+      .page-banner-content__text Также Вы можете оформить on-line заказ или заказать звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок 
+
+
+  .repair-page-brands
+    H2.page-title-h2 Подключение посудомоечных машин любых брендов
+    .brands-carousel.owl-carousel#js-carousel-3
+      .brands-carousel-item-group
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/miele_300.webp" alt="Подключение посудомоечной машины Miele в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/smeg_300.webp" alt="Подключение посудомоечной машины Smeg в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/bosch_300.webp" alt="Подключение посудомоечной машины Bosch в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/siemens_300.webp" alt="Подключение посудомоечной машины Siemens в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/aeg_300.webp" alt="Подключение посудомоечной машины AEG в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/teka_300.webp" alt="Подключение посудомоечной машины Teka в Санкт-петербурге")
+      .brands-carousel-item-group
+        a.brands-carousel-item__link(href="#")  
+          img.brands-carousel-item(src="/assets/img/pictures/brands/samsung_300.webp" alt="Подключение посудомоечной машины Samsung в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/lg_300.webp" alt="Подключение посудомоечной машины LG в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/korting_300.webp" alt="Подключение посудомоечной машины Korting в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/electrolux_300.webp" alt="Подключение посудомоечной машины Electrolux в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/ardo_300.webp" alt="Подключение посудомоечной машины Ardo в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/atlant_300.webp" alt="Подключение посудомоечной машины Atlant в Санкт-петербурге")
+      .brands-carousel-item-group
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/beko_300.webp" alt="Подключение посудомоечной машины Beko в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/candy_300.webp" alt="Подключение посудомоечной машины Candy в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/gorenje_300.webp" alt="Подключение посудомоечной машины Gorenje в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/hansa_300.webp" alt="Подключение посудомоечной машины Hansa в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/indezit_300.webp" alt="Подключение посудомоечной машины Indezit в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/liebherr_300.webp" alt="Подключение посудомоечной машины Liebherr в Санкт-петербурге")
+      .brands-carousel-item-group
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/panasonic_300.webp" alt="Подключение посудомоечной машины Panasonic в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/philips_300.webp" alt="Подключение посудомоечной машины Philips в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/whirpool_300.webp" alt="Подключение посудомоечной машины whirpool в Санкт-петербурге")
+      .brands-carousel-item-group
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/asko_300.webp" alt="Подключение посудомоечной машины Asko в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/daewoo_300.webp" alt="Подключение посудомоечной машины Daewoo в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/haier_300.webp" alt="Подключение посудомоечной машины Haier в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/hotpoint-ariston_300.webp" alt="Подключение посудомоечной машины Hotpoint-Ariston в Санкт-петербурге")
+        a.brands-carousel-item__link(href="#")
+          img.brands-carousel-item(src="/assets/img/pictures/brands/mabe_300.webp" alt="Подключение посудомоечной машины Mabe в Санкт-петербурге")
+
+
+
+  .repair-page-questions
+    .repair-page-questions-item
+      H2.repair-page-questions-item__title Почему стоит обратиться за подключением посудомоечной машины именно к нам?
+      ul.repair-page-questions-list
+        li.repair-page-questions-list-item 
+          p
+            span.repair-page-questions__subtitle.font-bold У нас бесплатный выезд по городу. 
+          p При согласии на проведение работ Вы не платите за приезд специалиста на дом и диагностику.
+        li.repair-page-questions-list-item 
+          p
+            span.repair-page-questions__subtitle.font-bold Гарантия на установку и подключение. 
+          p Вы получаете гарантию до 1 года на комплектующие при подключении посудомоечной машины.
+        li.repair-page-questions-list-item 
+          p
+            span.repair-page-questions__subtitle.font-bold Мы приедем в удобное для Вас время. 
+          p Вы можете выбрать время для визита мастера.
+            span Также Вы можете оформить 
+            span.repair-page-questions__button-order.button-order заявку
+            span на ремонт подключение стирально машины и получить гарантированную скидку 10% на работы.
+        li.repair-page-questions-list-item.font-bold
+          p
+            span.repair-page-questions__subtitle Экономия Вашего времени!
+          p
+            | Мастер приедет на ремонт уже подготовленный и сделает работу в кратчайшие сроки.
+            | В среднем подключение посудомоечной машины на дому  занимает от 45 минут до 1,5 часов.
+
+    .repair-page-questions-item.repair-page-questions-item_active
+      H2.repair-page-questions-item__title Как быстро осуществляется подключение посудомоечной машины?
+      .repair-page-questions-list
+        p.repair-page-questions-list-text 
+          span В среднем подключение посудомойки занимает от 45 минут до 1,5 часов. 
+    .repair-page-questions-item.repair-page-questions-item_active
+      H2.repair-page-questions-item__title Как вызвать мастера?
+      .repair-page-questions-list
+        p.repair-page-questions-list-text 
+          span Если Вам необходимо подключить и установить стиральную машину, позвоните в компанию 
+          span= nameCompany 
+          span  по телефонам
+
+        a(herf=telNumber_1_int)= telNumber_1
+        br
+        a(herf=telNumber_2_int)= telNumber_2
+        br
+        p или оформите 
+          span.repair-page-questions__button-order.button-order заявку on-line  
+          span на сайте.
+    .repair-page-questions-item.repair-page-questions-item_active
+      H2.repair-page-questions-item__title Насколько опытные специалисты приезжают на ремонт?
+      .repair-page-questions-list
+        p У нас в штате специалисты по ремонту и установке посудомоечных машин с минимальным опытом работы 3 года. Большинство наших мастеров имеет опыт работы 8-10 лет.
+        p Кроме того, при принятии на работу, и в дальнейшем мы проводим аттестацию сотрудников и повышение их квалификации.
+        p Также все наши мастера проходят ежедневный медицинский контроль, а также тестирование на заболевание короновирусом COVID-19.
+
+
+
+
+

@@ -1,0 +1,93 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Посудомоечная машина показывает ошибку' 
+  - var content = ''
+  - var pathToImgArticles = domen + '/assets/img/pictures/repair-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    'Неисправности посудомоечных машин': domen + '/neispravnosti-posudomoechnyh-mashin/',
+    "Посудомоечная машина показзывает ошибку": "#"})
+
+  .article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    h1.page-title-h1(itemprop="name")= title 
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-003.webp'
+    })
+    .page-text.page-text-hidden-container(itemprop="articleBody")
+      .page-text-hidden__bgrnd
+      .page-text-hidden__button.page-text-hidden__button_down
+      img.page-img.page-img_float-left( src= pathToImgArticles + "dish-wash/" + "pm-vidaet-oshibku" + ".webp" alt= 'Посудомоечная машина выдает ошибку' itemprop="image")
+
+      
+     
+
+    .calc-banner.page-banner
+      .page-banner-img
+        img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/men_1.webp' alt="")
+      .page-banner-content
+        .page-banner-content__title 
+          p Доверьте ремонт Вашей посудомоечной машины профессионалам!
+        .page-banner-content__text 
+          p  телефоны для связи
+          a(href='#')= telNumber_1 
+          |  или 
+          a(href='#')= telNumber_2 
+
+        .page-banner-content__text Также Вы можете оформить on-line заказ или заказать звонок
+        .page-banner-content-buttons
+          .page-banner-button.button-order 
+            | Оформить заявку
+            br
+            | on-line
+          .page-banner-button.button-callback Заказать звонок 
+    +brands-washmach({
+      title: "Ремонтируем посудомоечные машины любых брендов"
+    })
+    .page-articles-link
+      h2.page-title-h2 Другие возможные неисправности посудомоечных машин
+      .page-articles-link-wrapper
+        -var pathToPage = domen + '/neispravnosti-posudomoechnyh-mashin/'
+        .page-articles-link-item
+          a(href=pathToPage + 'posudomoechnaya-mashina-ne-greet-vodu' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/dish-wash/' + 'pm-ne-greet' + '.webp' alt='Посудомоечная машина не греет воду')
+            p Посудомоечная машина не греет воду
+        .page-articles-link-item
+          a(href=pathToPage + 'posudomoechnaya-mashina-ne-nabiraet-vodu' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/dish-wash/' + 'pm-ne-nabiraet' + '.webp' alt='Посудомоечная машина не набирает воду')
+            p Посудомоечная машина не набирает воду
+        .page-articles-link-item
+          a(href=pathToPage + 'posudomoechnaya-mashina-ne-slivaet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/dish-wash/' + 'pm-ne-slivaet' + '.webp' alt='Посудомоечная машина не сливает воду')
+            p Посудомоечная машина не сливает воду
+        .page-articles-link-item
+          a(href=pathToPage + 'posudomoechnaya-mashina-ne-vklyuchaetsya' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/dish-wash/' + 'pm-ne-vkluchaetsa' + '.webp' alt='Посудомоечная машина не включается')
+            p Посудомоечная машина не включается
+        .page-articles-link-item
+          a(href=pathToPage + 'posudomoechnaya-mashina-perelivaet-vodu' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/dish-wash/' + 'pm-perelivaet' + '.webp' alt='Посудомоечная машина переливает воду')
+            p Посудомоечная машина переливает воду
+        .page-articles-link-item
+          a(href=pathToPage + 'posudomoechnaya-mashina-ploho-moet-posudu' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/dish-wash/' + 'pm-ploho-moet' + '.webp' alt='Посудомоечная машина плохо моет посуду')
+            p Посудомоечная машина плохо моет посуду
+        .page-articles-link-item
+          a(href=pathToPage + 'posudomoechnaya-mashina-techet' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/dish-wash/' + 'pm-techet' + '.webp' alt='Посудомоечная машина течет')
+            p Посудомоечная машина течет
+        .page-articles-link-item
+          a(href=pathToPage + 'posudomoechnaya-mashina-gudit' + '.html') 
+            img(src= domen + '/assets/img/pictures/repair-img/dish-wash/' + 'pm-gudit' + '.webp' alt='Посудомоечная машина гудит')
+            p Посудомоечная машина гудит
+        //- .page-articles-link-item
+        //-   a(href=pathToPage + 'posudomoechnaya-mashina-pokazivaet-oshibku' + '.html') 
+        //-     img(src= domen + '/assets/img/pictures/repair-img/dish-wash/' + 'pm-vidaet-oshibku' + '.webp' alt='Посудомоечная машина показывает ошибку')
+        //-     p Посудомоечная показывает ошибку
+        
+        

@@ -1,0 +1,53 @@
+extends ../../../pug/layout/vars.pug
+
+mixin header
+	//- - var domen = 'http://localhost:8081'
+	header(class="header")
+		.header-wrapper
+			.header-container
+				.header-menu-section-wrapper
+					.header-menu-section
+						.services-button.menu-open-button 
+						.header__logo-section
+							.logo-img
+								
+								a(href= domen) 
+									//- include ../../../img/logo/logo_v.3.0.svg
+									img(src= domen + "/assets/img/logo/logo_v.3.0.svg" alt="Логотип компании " + nameCompany)
+								
+						.menu-button.menu-open-button 
+						ul.main-menu.menu_invisible
+							li.main-menu__item
+								a.main-menu__item_home(href= domen) 
+							li.main-menu__item.main-menu__item-arrow Вызвать мастера
+								ul.main-menu__item-drop-list
+									li.drop-list__item
+										p.button-callback Заказать звонок
+									li.drop-list__item
+										p.button-order Оформить заявку
+							li(class="main-menu__item")
+								a(href= domen + "/about/") О компании
+							li(class="main-menu__item")
+								a(href=domen + "/about/contacts/") Контакты
+							li(class="main-menu__item")
+								a(href= domen + "/reviews/") Отзывы
+							li(class="main-menu__item main-menu__item-arrow") Мастерам
+								ul(class="main-menu__item-drop-list ")
+									li(class="drop-list__item") 
+										a(href= domen + "/job/") Работа
+									li(class="drop-list__item") 
+										a(href= domen + "/education/") Обучение
+						
+						+navi_mobile
+				.header-contacts-section-wrapper 												
+					.header-contacts-section 
+						.contact-section__tel.phone-number-1.contact-section-item
+							a(href=telNumber_1_int)= telNumber_1
+						.contact-section__tel.phone-number-2.contact-section-item
+							a(href=telNumber_2_int)= telNumber_2
+						.header-button.button-callback.contact-section-item Перезвонить мне
+						.header-button.button-order.contact-section-item Оформить заявку
+						.contact-section__info.contact-section-item
+							p Работаем с 8:00 до 23:00 без выходных.	 
+						//- 	p Выезд в любую точку города и пригород.
+						//- 	.info-map-button Смотреть карту филиалов

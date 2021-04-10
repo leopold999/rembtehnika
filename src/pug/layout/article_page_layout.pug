@@ -1,0 +1,60 @@
+include ../../blocks/page-blocks/page-blocks
+include ../../blocks/elements/elements
+include ./vars.pug
+
+
+
+
+block variables
+    - var title 
+    - var content
+    - var keywordsContent
+    - var pathToImgArticles
+
+
+doctype html
+html(lang='ru')
+    head
+        meta(charset='utf-8')
+        title= title
+        meta(name="description", content=content)
+        meta(name="keywords" content=keywordsContent)
+        meta(name="viewport" content="width=device-width initial-scale=1")
+        meta(property='og:url' content='[URL]')
+        meta(property='og:title' content='[TITLE]')
+        meta(property='og:description' content='[DESC]')
+        meta(property='og:image' content='[IMAGE]')
+        link(rel="icon" type="image/png" sizes="16x16" href= domen + "/favicon_16x16.png")
+
+        link(rel="icon" type="image/png" sizes="32x32" href= domen + "/favicon_32x32.png")
+        link(rel="icon" type="image/png" sizes="64x64" href= domen + "/favicon_64x64.png")
+        link(rel="icon" type="image/png" sizes="128x128" href= domen + "/favicon_128x128.png")
+        include ../../html/yandex-metrika/yandex-metrika.html
+        //- script(src="//code-ya.jivosite.com/widget/XBX8CLtEXU" async)
+        script(src='https://www.google.com/recaptcha/api.js' async='' defer='')
+
+
+        block head
+
+    body(class=pageClass)
+
+
+        .wrapper
+            .background
+            +up-button
+            +header          
+
+            div(class="content-wrapper")
+                +navi
+
+                div(class="content")
+                    .article-page
+                        block content
+                    +comments-block
+
+            block line
+            +footer
+            +callback-popup
+            +order-popup
+            +reviews-popup
+            script(sync) 

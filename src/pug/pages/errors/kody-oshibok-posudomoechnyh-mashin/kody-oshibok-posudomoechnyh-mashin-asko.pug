@@ -1,0 +1,162 @@
+extends ../../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Коды ошибок посудомоечных машин Asko (Аско)'
+  - var content = "Расшифровка ошибок посудомоечных машин Asko (Аско)"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Коды ошибок бытовой техники": "/errors/",
+    "Коды ошибок посудомоечных машин": "/errors/kody-oshibok-posudomoechnyh-mashin/",
+    "Коды ошибок посудомоечных машин Asko (Аско)" : ""
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    H1(itemprop="name")= title
+    +pageBanner-1({
+      title: 'Нужна консультация?',
+      text: 'Мы ответим на все Ваши вопросы и рассчитаем стоимость ремонта',
+      buttonText: 'Заказать звонок',
+      pathToImg: domen + '/assets/img/pictures/banner-img-002.webp'
+    })
+    .page-text(itemprop="articleBody")
+      .table-container_scroll 
+        table(border='1')
+          tbody
+            tr
+              th
+                p Код
+              th
+                p Индикаторы
+              th
+                p Описание
+            tr
+              td
+                p F1
+              td
+                p L1
+              td
+                p Вода нагревается слишком медленно
+            tr
+              td
+                p F2
+              td
+                p L2
+              td
+                p Перелив воды.
+                p В машине слишком много воды она не сливается или обнаружен протечка
+            tr
+              td
+                p F3
+              td
+                p L3
+              td
+                p Неисправен температурный датчик
+            tr
+              td
+                p F4
+              td
+                p L4
+              td
+                p Вода медленно поступает в машину
+            tr
+              td
+                p F5
+              td
+                p L11
+              td
+                p Протекает один из клапанов ил1 датчиков
+            tr
+              td
+                p F6
+              td
+                p L12
+              td
+                p Неисправен датчик давления, о него не поступает информация
+            tr
+              td
+                p F7
+              td
+                p L1 +L2
+              td
+                p Машина не сливает воду или делает это слишком долго
+            tr
+              td
+                p F8
+              td
+                p L1 +L3
+              td
+                p
+                  | Засорение фильтра. Датчик давления чувствует чрезмерно низкое давление вс время последнего полоскания
+            tr
+              td
+                p F9
+              td
+                p L1 +L4
+              td
+                p Вода плохо или слишком интенсивно циркулирует во врек мойки
+            tr
+              td
+                p FA
+              td
+                p L1 +L11
+              td
+                p Сломался датчик мутности воды (если установлен в данно! модели)
+            tr
+              td
+                p FB
+              td
+                p L1 +L12
+              td
+                p Плохо работает разбрызгивател
+            tr
+              td
+                p -
+              td
+                p L7
+              td
+                p Не хватает соли
+            tr
+              td
+                p -
+              td
+                p L6
+              td
+                p Недостаточно ополаскивателя
+            tr
+              td
+                p -
+              td
+                p L7
+              td
+                p Дверь открыта
+            tr
+              td
+                p -
+              td
+                p L7
+              td
+                p Дверь закрыта
+ 
+
+  .calc-banner.page-banner
+    .page-banner-img
+      img(class='page-banner-img__pct' src= domen + '/assets/img/pictures/calculator.webp' alt="качественный ремонт посудомоечных машин с гарантией")
+    .page-banner-content
+      .page-banner-content__title 
+        p 100% качественный ремонт посудомоечных машин на дому!
+      .page-banner-content__text 
+        p Свяжитесь с нами по телефонам  
+        a(href=telNumber_1_int)= telNumber_1 
+        |  или 
+        a(href=telNumber_2_int)= telNumber_2 
+        |  и мы проконсультируем Вас о стоимости ремонта Вашей техники
+      .page-banner-content__text Также Вы можете оформить on-line заявку или заказать обратный звонок
+      .page-banner-content-buttons
+        .page-banner-button.button-order 
+          | Оформить заявку
+          br
+          | on-line
+        .page-banner-button.button-callback Заказать звонок
+

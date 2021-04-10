@@ -1,0 +1,350 @@
+.repair-page {
+    padding: 0 rem(20);
+    // background-color: $dark10;
+    @media screen and (max-width: 360px) {
+        padding: 0 rem(10);
+    }
+
+
+}
+
+.repair-page-text-section {
+    margin-bottom: rem(40);
+    @media screen and (max-width: 360px) {
+        text-align: justify;
+
+    }
+
+}
+.repair-page-img {
+    @include size(auto);
+    margin-bottom: rem(20);
+    margin-top: rem(20);
+    // text-align: center;
+    & img {
+        width: 100%;
+        margin: auto;
+    }
+    
+    
+    
+}
+.repair-page-img_float-left {
+    float: left;
+    margin-right: rem(20);
+    @media screen and (max-width: 360px) {
+        float: none;
+        margin: rem(20) auto;
+        // text-align: center;
+    }
+}
+.repair-page-img_float-right {
+    float: right;
+    margin-left: rem(20);
+    @media screen and (max-width: 360px) {
+        float: none;
+        margin: rem(20) auto;
+        // text-align: center;
+    }
+}
+.repair-page-advantages-section {
+
+}
+
+.landing-page__advantages {
+
+}
+.repair-page-problems {
+    margin-bottom: rem(25);
+
+}
+.repair-page-problems-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.repair-page-problems-items-add {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: 1s;
+    max-height: 0;
+}
+
+.repair-page-problems-items-add_visible {
+    transition: 1s;    
+    max-height: 10000px;
+}
+
+.problem-button {
+    color: $colorMain-1;
+    cursor: pointer;
+    padding-left: rem(30);
+    position: relative;
+}
+.problem-button {
+    &:before {
+        content: "keyboard_arrow_down";
+        font-family: 'Material Icons';
+        font-size: rem(30);
+        line-height: rem(30);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: rem(-15);
+        transform: rotate(0);
+        transition: 1s;
+    }
+    &:after {
+        content: "Показать другие неисправности";
+        @include fontH3(rem(20), rem(20));
+    }
+
+}
+.problem-button_close {
+    &:before {
+        content: "keyboard_arrow_down";
+        font-family: 'Material Icons';
+        font-size: rem(30);
+        line-height: rem(30);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: rem(-15);
+        transform: rotate(180deg);
+        transition: 1s;
+    }
+    &:after {
+        content: "Скрыть";
+        @include fontH3(rem(20), rem(20));
+        
+    }
+}
+
+.calc-banner-container {
+    width: 100%;
+    margin-bottom: rem(20);
+    @media screen and (max-width: 360px) {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
+
+
+.repair-page-brands {
+    width: 100%;
+    margin-bottom: rem(20);
+    display: flex;
+    flex-direction: column;
+}
+// .repair-page-brands-container {
+//     width: 90%;
+//     align-self: center;
+// }
+
+
+.repair-page-prices {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.repair-page-reviews {
+    margin-bottom: rem(20);
+}
+.ratingBarBlock {
+    display: none !important;
+}
+.repair-page-reviews {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.repair-page-reviews-items {
+    width: 85% !important;
+    align-self: center;
+    @media screen and (max-width: 400px) { 
+        width: 100% !important;       
+    }
+
+}
+
+.repair-page-questions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: rem(20);
+
+}
+.repair-page-questions-item {
+    width: 100%;
+    border-top: 2px solid $dark25;
+    border-left: 2px solid $dark25;
+    border-right: 2px solid $dark25;
+    padding: 0 0 0 rem(50);
+    box-sizing: border-box;
+    overflow: hidden;
+    // position: relative;
+
+    @media screen and (max-width: 360px) {
+        padding: 0;
+    }
+}
+.repair-page-questions-item:last-child {
+    border-bottom: 2px solid $dark25;
+}
+
+.repair-page-questions-item__title {
+    width: 100%;
+    min-height: rem(80);
+
+    display: flex;
+    align-items: center;
+    @include fontH2(rem(25), rem(40));
+    color: $colorMain-1;
+    position: relative;
+    box-sizing: border-box;
+    cursor: help;
+    padding: 0 rem(70);
+    &:before {
+        content: "\e611";
+        font-family: 'icomoon';
+        font-style: normal;
+        font-size: rem(50);
+        line-height: rem(50);
+        // margin-right: rem(20);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: rem(-25);
+        @media screen and (max-width: 360px) {
+            left: rem(10);
+        }
+
+    }
+    &:after {
+        content: "keyboard_arrow_down";
+        font-family: 'Material Icons';
+        font-size: rem(50);
+        line-height: rem(50);
+        position: absolute;
+        right:  rem(40);
+        top: 50%;
+        margin-top: rem(-25);
+        transform: rotate(0);
+        transition: 1s;
+        box-sizing: border-box;
+        @media screen and (max-width: 360px) {
+            right: 0;
+        }
+    }
+    @media screen and (max-width: 360px) {
+        right: rem(5);
+        @include fontH2(rem(20), rem(25));
+        padding-right: rem(35);
+
+    }
+   
+
+}
+.repair-page-questions-item__title_active {
+    &:after {
+        content: "keyboard_arrow_down";
+        font-family: 'Material Icons';
+        font-size: rem(50);
+        line-height: rem(50);
+        position: absolute;
+        right:  rem(40);
+        top: 50%;
+        margin-top: rem(-25);
+        transform: rotate(-180deg);
+        transition: 1s;
+    }
+}
+
+.repair-page-questions-list {    
+    box-sizing: border-box;
+    transition: 1s; 
+    max-height: 0;
+   
+    @include fontBody(rem(20), rem(30));
+    color: $dark75;
+    @media screen and (max-width: 360px) {
+        padding: rem(5);
+    }
+}
+.repair-page-questions-list_active {
+    transition: 1s; 
+    max-height: 2000px;
+}
+
+.repair-page-questions-list-item  {
+    padding: rem(10) 0;
+    position: relative;
+}
+.repair-page-questions__button-order {
+    text-decoration: underline;
+    color: $colorMain-1-09;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+        color: $colorSecond-1-07;
+    }
+
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.repair-page-questions__subtitle {
+    position: relative;
+    
+    &:before {
+        content: "\e613";
+        font-family: 'icomoon';
+        font-style: normal;
+        font-size: rem(20);
+        margin-right: rem(20);
+        position: absolute;
+        top: 50%;
+        margin-top: rem(-15);
+        left: rem(-30);
+        color: $colorSecond-2;
+
+    }
+}
+.repair-page-questions-list-item:last-child  {
+    padding-bottom: rem(20);
+}
+.repair-page-questions-list-text  {
+    padding: rem(10) 0;
+}
+.repair-page-questions-list-text:last-child {
+    padding-bottom: rem(20);
+}
+
+.repair-page-questions-brands {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    & li a {
+        color: $colorMain-1-09;
+        &:hover {
+           color: $colorSecond-1;
+        }
+        border-bottom: 1px solid $colorMain-1-09;
+        &:hover {
+            border-bottom: 1px solid $colorSecond-1;
+        }
+
+    }
+}

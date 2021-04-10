@@ -1,0 +1,31 @@
+.reviews-paginator-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(50);
+}
+.reviews-description {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr;
+    padding-bottom: rem(50);
+    margin-bottom: rem(50);
+    border-bottom: 1px solid $dark10;
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr auto
+
+    }
+}
+.reviews-description__text {
+    @include fontBody(rem(18), rem(27));
+    color: $dark75;
+    padding: 0 rem(50) 0 rem(15);
+    @media screen and (max-width: 768px) {
+        padding: 0 0 rem(50) 0;
+    }
+
+}
+.reviews-description__button {
+    @include justify-center;
+}

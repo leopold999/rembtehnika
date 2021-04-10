@@ -1,0 +1,20 @@
+mixin pageBanner-1(options)
+  -var title = options.title 
+  -var text = options.text 
+  -var pathToImg = options.pathToImg
+  -var buttonText = options.buttonText || 'Вызвать мастера'
+
+  .page-banner-1 
+    .page-banner-1__img
+      img(alt='Вызов мастера по ремонту бытовой техники' src=pathToImg)
+    .page-banner-1__text
+      .page-banner-1__title
+        span= title
+      .page-banner-1__subtitle
+        span= text
+      .page-banner-1-button-container
+        .page-banner-1__callback.button-callback
+          span= buttonText
+
+
+      

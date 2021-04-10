@@ -1,0 +1,33 @@
+
+.errors-page {
+    
+}
+.errors-page h1 {
+    @extend .page-title-h1;
+}
+.errors-page h2 {
+    @extend .page-title-h2;
+}
+.errors-page h3 {
+    @extend .page-title-h3;
+}
+.errors-page p  {
+    
+ 
+}
+.errors-page table {
+    @extend .page-table;    
+}
+
+.errors-page img {
+    display: block;
+    margin: 0 auto rem(25);
+    max-width: 100%;
+    @media screen and (max-width: 500px) {
+        width: 100%;
+    }
+}
+
+
+
+

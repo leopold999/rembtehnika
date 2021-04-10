@@ -1,0 +1,189 @@
+@import "../vars/vars";
+
+$mainFontFamily: "Arial";
+$mainFontFamily: "Arial", Helvetica;
+// $mainFontFamily: "Montserrat";
+// $mainFontFamily: "Quicksand";
+
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url($path + '/assets/fonts/Quicksand-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url($path + '/assets/fonts/Quicksand-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url($path + '/assets/fonts/Montserrat-Bold2.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url($path + '/assets/fonts/Montserrat-Regular2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url($path + '/assets/fonts/MaterialIcons-Regular.ttf') format('truetype');
+
+    ///////////////////////////////////////////////////////////////////////
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+@font-face{
+    font-family: 'icomoon';
+    src:url('/assets/fonts/icomoon.eot');
+    src:url('/assets/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/icomoon.woff') format('woff'),
+    url('/assets/fonts/icomoon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.material-icon {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    
+  //   font-size: 24px;  /* Preferred icon size */
+    // display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+@font-face {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url($path + '/assets/fonts/fa-brands-400.ttf') format('truetype'),
+    url($path + '/assets/fonts/fa-brands-400.svg') format('svg');
+}
+
+.fab {
+    font-family: 'Font Awesome 5 Brands';
+}
+
+/*Mixins*/
+
+@mixin fontH1($font-size: $fontSizeH1, $line-height: 24px, $color: $dark100) {
+    font-family: $mainFontFamily;
+    font-weight: bold;
+    font-style: normal;
+    font-size: $font-size;
+    line-height: $line-height;
+   
+    font-stretch: extra-expanded;
+    letter-spacing: 1.1px;
+}
+@mixin fontH2($font-size: 19px, $line-height: 24px, $color: $dark100) {
+    font-family: $mainFontFamily;
+    font-weight: bold;
+    font-style: normal;
+    font-size: $font-size;
+    line-height: $line-height;
+   
+}
+@mixin fontH3($font-size: 12px, $line-height: 15px, $color: $dark100) {
+    font-family: $mainFontFamily;
+    font-weight: bold;
+    font-style: normal;
+    font-size: $font-size;
+    line-height: $line-height;
+   
+    text-transform: uppercase;
+}
+@mixin fontBody($font-size: 10px, $line-height: 24px, $color: $dark75) {
+    font-family: $mainFontFamily;
+    font-weight: normal;
+    font-style: normal;
+    font-size: $font-size;
+    line-height: $line-height;
+   
+    font-stretch: ultra-expanded;
+}
+ 
+@mixin font-gradient($colorGradient: $colorGradientPurple) {
+    // font-size: $font-size;
+    // line-height: $line-height;
+    background-image: $colorGradient;
+    background-clip: text;
+    color: transparent;
+    // font-family: 'Material Icons';
+
+}
+@mixin material-icon($font-size: 10px) {
+    font-size: $font-size;
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url($path + '/assets/fonts/MaterialIcons-Regular.ttf') format('truetype');
+
+    ///////////////////////////////////////////////////////////////////////
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}

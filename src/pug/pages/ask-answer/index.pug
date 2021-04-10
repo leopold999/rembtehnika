@@ -1,0 +1,13 @@
+extends ../../layout/article_page_layout.pug
+
+block variables
+	- var title = 'Вопрос - Ответ'
+	- var content = ""
+	- var pathToImgArticles = domen + '/assets/img/pictures/articles-img/'
+
+block content
+	+bread-crumbs({ 
+		'Главная': '/',
+		"Вопрос-Ответ": "#",
+	})
+	.article-page-wrapper.ask-answer-page

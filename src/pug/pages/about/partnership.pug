@@ -1,0 +1,19 @@
+extends ../../layout/article_page_layout.pug
+
+block variables
+  - var title = 'Информация о сотрудничестве'
+  - var content = "Сотрудничество с компанией РемБытТехника"
+  - var pathToImgArticles = domen + '/assets/img/pictures/errors-img/'
+
+block content
+  +bread-crumbs({ 
+    'Главная': '/',
+    "Сотрудничество": "",
+
+  })
+  .errors-page.article-page-wrapper(itemscope itemtype="https://schema.org/Article")
+    H1(itemprop="name")= title
+
+    .page-text(itemprop="articleBody")
+      p Предложения о сотрудничестве необходимо направлять на электронный адрес  
+      a(href="mailto:boss@rembtehnika.ru") boss@rembtehnika.ru
